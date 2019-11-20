@@ -1,0 +1,81 @@
+.hc_green {
+  color: #006A00;
+}
+
+.massive {
+  font-size: 3.6em;
+}
+
+.nav {
+  background-color: black !important;
+}
+
+.ui.menu .item {
+  color: white !important;
+}
+
+.body {
+  font-family: Tahoma, serif;
+}
+
+.description_title {
+  font-weight: bold;
+  font-size: 1.7em;
+  color: black;
+}
+
+.sign_up_form {
+  padding: 3em;
+  background-color: #117D00;
+}
+
+.sign_up_button {
+  margin-top: 3em !important;
+  border-radius: 30px !important;
+}
+
+.ui.button {
+  background-color: #2500D6 !important;
+  color: white !important;
+  border-radius: 30px !important;
+}
+
+.ui.form .field > label {
+  color: white !important;
+  font-weight: 100 !important;
+  text-align: left;
+}
+
+.ui.form {
+  border-radius: 30px;
+}
+
+.landing {
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.landing::after {
+  content: "";
+  background: url('images/LandingImage.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.background {
+  background-color: green;
+  border-radius: 30px;
+}
+
+.footer {
+  padding-top: 15px;
+  background-color: #134600;
+  color: white;
+}
+
