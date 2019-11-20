@@ -51,7 +51,7 @@
 }
 
 .landing {
-  height: 100vh;
+  height: 80vh;
   display: block;
   position: relative;
 }
@@ -78,4 +78,3 @@
   background-color: #134600;
   color: white;
 }
-
