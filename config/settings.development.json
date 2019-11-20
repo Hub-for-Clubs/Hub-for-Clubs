@@ -17,6 +17,7 @@
         "leader": "Emma Daily",
         "email": "edaily@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["art", "technology", "academic", "professional"]
     },
     {
@@ -25,6 +26,7 @@
         "leader": "Chelsi Morishige",
         "email": "chelsicm@hawaii.edu",
         "website": "acuhmanoa.com",
+        "description": "",
         "tags": ["business", "accounting", "academic", "professional"]
     },
     {
@@ -33,6 +35,7 @@
         "leader": "Victor Kolonzo",
         "email": "vkilonzo@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", "christian", "social"]
     },
     {
@@ -41,6 +44,7 @@
         "leader": "Rebekah Ray",
         "email": "rray2@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["law", "academic", "professional"]
     },
     {
@@ -49,6 +53,7 @@
         "leader": "Ronja Steinbach",
         "email": "ronja36@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "political"
     },
     {
@@ -57,6 +62,7 @@
         "leader": "Waynele Yu",
         "email": "waynele@hawaii.edu",
         "website": "https://bit.ly/aect-hi",
+        "description": "",
         "tags": ["technology", "education", "social", "academic", "professional"]
     },
     {
@@ -65,6 +71,7 @@
         "leader": "Timothy Halliday",
         "email": "halliday@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -73,6 +80,7 @@
         "leader": "Emma Archambeau",
         "email": "earchamb@hawaii.edu",
         "website": "hawaii.alphagammadelta.org",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -81,6 +89,7 @@
         "leader": "Abel Salinas",
         "email": "abels@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -89,6 +98,7 @@
         "leader": "Nathan Onaka",
         "email": "onankan@hawaii.edu",
         "website": "anfclub.github.io/AlohaNation-Flowarts",
+        "description": "",
         "tags": ["technology", "recreational", "social"]
     },
     {
@@ -97,6 +107,7 @@
         "leader": "Jester Galiza",
         "email": "jpgaliza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "biology", "academic", "professional", "social", "service"]
     },
     {
@@ -105,6 +116,7 @@
         "leader": "Opal Stanfield",
         "email": "opalstan@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["biology", "ecology", "social", "service"]
     },
     {
@@ -113,6 +125,7 @@
         "leader": "Kathleen Kodama",
         "email": "kmmk4@hawaii.edu",
         "website": "aiseshawaii.weebly.com",
+        "description": "",
         "tags": ["engineering", "ethnic", "academic", "professional"]
     },
     {
@@ -121,6 +134,7 @@
         "leader": "Celeste Guarin",
         "email": "cguarin@hawaii.edu",
         "website": "aiashawaii.com",
+        "description": "",
         "tags": ["academic", "professional", "art"]
     },
     {
@@ -129,6 +143,7 @@
         "leader": "Katie Joe Lang",
         "email": "langk@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "language arts"]
     },
     {
@@ -137,6 +152,7 @@
         "leader": "Ashley Regaspi",
         "email": "aregaspi@hawaii.edu",
         "website": "amauhm.org",
+        "description": "",
         "tags": ["business", "professional", "social"]
     },
     {
@@ -145,6 +161,7 @@
         "leader": "Terrence John Corrigan",
         "email": "tjc21@hawaii.edu",
         "website": "amsalohachapter.wixsite.com/aloha",
+        "description": "",
         "tags": ["ecology", "academic", "professional"]
     },
     {
@@ -153,6 +170,7 @@
         "leader": "Maynard Lazo",
         "email": "lazom@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["engineering", "academic", "professional"]
     },
     {
@@ -161,6 +179,7 @@
         "leader": "Daryll Suyat",
         "email": "suyatd@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["engineering", "academic", "professional"]
     },
     {
@@ -169,6 +188,7 @@
         "leader": "Albert To",
         "email": "albertto@hawaii.edu",
         "website": "http://www.asmbranches.org/brhawaii/",
+        "description": "",
         "tags": ["biology", "academic", "professional"]
     },
     {
@@ -177,6 +197,7 @@
         "leader": "Nicholas Fancher",
         "email": "nfancher@hawaii.edu",
         "website": "sites.google.com/view/jabsomaig",
+        "description": "",
         "tags": ["medical", "biology", "academic", "professional"]
     },
     {
@@ -185,6 +206,7 @@
         "leader": "Cody Ching",
         "email": "codylc@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["biology", "academic", "professional", "social"]
     },
     {
@@ -193,6 +215,7 @@
         "leader": "Jitrudi Scheiman",
         "email": "jms26@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social sciences", "academic", "professional"]
     },
     {
@@ -201,6 +224,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "social", "art", "music"]
     },
     {
@@ -209,6 +233,7 @@
         "leader": "Jester Galiza",
         "email": "jpgaliza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "biology", "academic", "professional", "social"]
     },
     {
@@ -217,6 +242,7 @@
         "leader": "Marty Joshua Apilado",
         "email": "mjka@hawaii.edu",
         "website": "acmanoa.github.io",
+        "description": "",
         "tags": ["academic", "professional", "technology"]
     },
     {
@@ -225,6 +251,7 @@
         "leader": "Christina Andres",
         "email": "andrescc@hawaii.edu",
         "website": "athertonymca.org",
+        "description": "",
         "tags": ["professional", "social"]
     },
     {
@@ -233,6 +260,7 @@
         "leader": "Kumiko Hashida",
         "email": "hashidak@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "social", "leisure"]
     },
     {
@@ -241,6 +269,7 @@
         "leader": "Evan Kawamura",
         "email": "evankawa@hawaii.edu",
         "website": "manoa.hawaii.edu/actuas",
+        "description": "",
         "tags": ["technology", "academic", "professional"]
     },
     {
@@ -249,6 +278,7 @@
         "leader": "Kelsey Mills",
         "email": "kelseyjp@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -257,6 +287,7 @@
         "leader": "Dale Spenner",
         "email": "spenner@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -265,6 +296,7 @@
         "leader": "Nathaniel Atwell",
         "email": "natwell@hawaii.edu",
         "website": "www.bcmoahu.org",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -273,6 +305,7 @@
         "leader": "Brittany Castle",
         "email": "bcastle9@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "social", "recreational"]
     },
     {
@@ -281,6 +314,7 @@
         "leader": "Rhonda S. Black",
         "email": "rblack@hawaii.edu",
         "website": "www.bestbuddies.org/find-programs/hawaii",
+        "description": "",
         "tags": ["social", "service"]
     },
     {
@@ -289,6 +323,7 @@
         "leader": "Janae Stilwell",
         "email": "janaeeps@hawaii.edu",
         "website": "www.bapuhm.org",
+        "description": "",
         "tags": ["business", "academic", "professional", "social"]
     },
     {
@@ -297,6 +332,7 @@
         "leader": "Moana Nomura",
         "email": "nomura76@hawaii.edu",
         "website": "http://betabetagamma.weebly.com",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -305,6 +341,7 @@
         "leader": "Britagne Johnson",
         "email": "bnjohnso@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "academic", "professional", "social", "law"]
     },
     {
@@ -313,6 +350,7 @@
         "leader": "Robert Nieto",
         "email": "robertfn@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social", "service"]
     },
     {
@@ -321,6 +359,7 @@
         "leader": "Christian Streit",
         "email": "cstreit@hawaii.edu",
         "website": "www.botany.org",
+        "description": "",
         "tags": ["biology", "academic", "professional"]
     },
     {
@@ -329,6 +368,7 @@
         "leader": "Veronica Gibson",
         "email": "vgibson@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "social", "recreational"]
     },
     {
@@ -337,6 +377,7 @@
         "leader": "Kristyn Fujii",
         "email": "fujiik7@hawaii.edu",
         "website": "bestuhm.org",
+        "description": "",
         "tags": ["business", "professional", "social"]
     },
     {
@@ -345,6 +386,7 @@
         "leader": "Susan Jacob",
         "email": "sjacob77@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "recreational", "social", "music", "art"]
     },
     {
@@ -353,6 +395,7 @@
         "leader": "Damon Grayson",
         "email": "dgrayson@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "social"]
     },
     {
@@ -361,6 +404,7 @@
         "leader": "Rachel Mamiya Hernandez",
         "email": "rmamiya@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -369,6 +413,7 @@
         "leader": "Chizuko Allen",
         "email": "chizuko@hawaii.edu",
         "website": "www.carplife.org",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -377,6 +422,7 @@
         "leader": "Michaela Kop",
         "email": "mkop@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["service", "social"]
     },
     {
@@ -385,6 +431,7 @@
         "leader": "Taha Elwir",
         "email": "elwira@hawaii.edu",
         "website": "chemclubatuhm.weebly.com",
+        "description": "",
         "tags": ["academic", "professional", "social", "chemistry", "science"]
     },
     {
@@ -393,6 +440,7 @@
         "leader": "Michael Omori",
         "email": "omorim@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "recreational", "social"]
     },
     {
@@ -401,6 +449,7 @@
         "leader": "Theodore Uekawa",
         "email": "hawaii.xe@gmail.com",
         "website": "Sites.google.com/site/xeuhmanoa/",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -409,6 +458,7 @@
         "leader": "Manrui Xue",
         "email": "mxue@hawaii.edu",
         "website": "http://www2.hawaii.edu/~cssauh/",
+        "description": "",
         "tags": ["ethnic", "academic", "professional"]
     },
     {
@@ -417,6 +467,7 @@
         "leader": "Xingli Zhang",
         "email": "xinliz@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural"]
     },
     {
@@ -425,6 +476,7 @@
         "leader": "Yinghui Chen",
         "email": "yinghui@hawaii.edu",
         "website": "churchinhonolulu.net",
+        "description": "",
         "tags": ["religious", "social"]
     },
     {
@@ -433,6 +485,7 @@
         "leader": "Kristian Kim",
         "email": "knik@hawaii.edu",
         "website": "ckiuhmaweebly.com",
+        "description": "",
         "tags": ["service", "social"]
     },
     {
@@ -441,6 +494,7 @@
         "leader": "Brad Taylor",
         "email": "brad2@hawaiiedu",
         "website": "",
+        "description": "",
         "tags": ["art", "social"]
     },
     {
@@ -449,6 +503,7 @@
         "leader": "Devin Takahashi",
         "email": "devint@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "biology", "academic", "professional"]
     },
     {
@@ -457,6 +512,7 @@
         "leader": "Kylie Butts",
         "email": "kyliekb@hawaii.edu",
         "website": "cmaa.org/studentmembership",
+        "description": "",
         "tags": ["professional", "social"]
     },
     {
@@ -465,6 +521,7 @@
         "leader": "Ratu Serupepeli Tagivakatini",
         "email": "ratuseru@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "service"
     },
     {
@@ -473,6 +530,7 @@
         "leader": "Ilikea Silva",
         "email": "ilikea.silva@hawaii.edu",
         "website": "www.hawaii.edu/cop/mentoring",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -481,6 +539,7 @@
         "leader": "Liam Tsamous",
         "email": "ltsamous@hawaii.edu",
         "website": "hawaiicru.jimdo.com",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -489,6 +548,7 @@
         "leader": "Michelle Au",
         "email": "aumi@hawaii.edu",
         "website": "cms.ctahr.hawaii.edu/Academics/ASAO/Ambassadors",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -497,6 +557,7 @@
         "leader": "Victoria Huynh",
         "email": "",
         "website": "dspuhm.com",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -505,6 +566,7 @@
         "leader": "Delaney Singletary",
         "email": "delaneys@hawaii.edu",
         "website": "disneyoc.wixsite.com/disneyohanaclub",
+        "description": "",
         "tags": "social"
     },
     {
@@ -513,6 +575,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "biology"]
     },
     {
@@ -521,6 +584,7 @@
         "leader": "Creselle Moraels",
         "email": "creselle@hawaii.edu",
         "website": "eng.hawaii.edu",
+        "description": "",
         "tags": ["engineering", "academic", "professional", "social"]
     },
     {
@@ -529,6 +593,7 @@
         "leader": "Jing Yang Zheng",
         "email": "jzheng@hawaii.edu",
         "website": "enuhm.com",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -537,6 +602,7 @@
         "leader": "Jeanalyn Wadsock-Myers",
         "email": "jlwm@hawaii.edu",
         "website": "hknhawaii.weebly.com",
+        "description": "",
         "tags": ["engineering", "professional", "social"]
     },
     {
@@ -545,6 +611,7 @@
         "leader": "Tara-Ann Marie Pacubas",
         "email": "tpacubas@hawaii.edu",
         "website": "https://www.chrie.org/i4a/pages/index.cfm?pageid=1",
+        "description": "",
         "tags": ["business", "professional", "social"]
     },
     {
@@ -553,6 +620,7 @@
         "leader": "Ruben Campos",
         "email": "recampos@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "social sciencse", "academic"]
     },
     {
@@ -561,6 +629,7 @@
         "leader": "Taylor Mahi",
         "email": "tmahi@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -569,6 +638,7 @@
         "leader": "Anthony Knon",
         "email": "aknon@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["professional", "medical"]
     },
     {
@@ -577,6 +647,7 @@
         "leader": "Nicholas Miyamoto",
         "email": "npmiyamo@hawaii.edu",
         "website": "fmahawaii.club",
+        "description": "",
         "tags": ["business", "professional"]
     },
     {
@@ -585,6 +656,7 @@
         "leader": "Michael Yanos",
         "email": "mpyanos@hawaii.edu",
         "website": "fshncouncil.wordpress.com",
+        "description": "",
         "tags": ["biology", "professional"]
     },
     {
@@ -593,6 +665,7 @@
         "leader": "Silvija Djelic",
         "email": "silvijad@hawaii.edu",
         "website": "rip.eng.hawaii.edu/project/sae-formula",
+        "description": "",
         "tags": ["engineering", "professional"]
     },
     {
@@ -601,6 +674,7 @@
         "leader": "Jason Wong",
         "email": "jbwong@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -609,6 +683,7 @@
         "leader": "Brigitte Tampon-Aragon",
         "email": "btampona@hawaii.edu",
         "website": "fofatuhm.wixsite.com/home",
+        "description": "",
         "tags": ["service", "professional", "social"]
     },
     {
@@ -617,6 +692,7 @@
         "leader": "Emma Ishihara",
         "email": "emmaishi@hawaii.edu",
         "website": "act.plannedparenthoodaction.org/groups-university-of-hawaii-manoa-generation-action",
+        "description": "",
         "tags": ["service", "professional", "social"]
     },
     {
@@ -625,6 +701,7 @@
         "leader": "Nygell Halverson",
         "email": "nygell@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "art"
     },
     {
@@ -633,6 +710,7 @@
         "leader": "Arlene Colis",
         "email": "arlenejc@hawaii.edu",
         "website": "goldenkeyhawaii.wixsite.com/uhmgkwebsite",
+        "description": "",
         "tags": "professional"
     },
     {
@@ -641,6 +719,7 @@
         "leader": "Katherine Kazlauskas",
         "email": "kvk@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["art", "professional"]
     },
     {
@@ -649,6 +728,7 @@
         "leader": "Kirstin Seal",
         "email": "seal@hawaii.edu",
         "website": "sites.google.com/a/hawaii.edu/graduate-business-student-association",
+        "description": "",
         "tags": ["business", "professional"]
     },
     {
@@ -657,6 +737,7 @@
         "leader": "Princess Mae Visconde",
         "email": "pviscond@hawaii.ed",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -665,6 +746,7 @@
         "leader": "Hannah Liebreich",
         "email": "hannahli@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social sciences", "professional"]
     },
     {
@@ -673,6 +755,7 @@
         "leader": "Madeline McKenna",
         "email": "mmck@hawaii.edu",
         "website": "www.gwishawaii.org",
+        "description": "",
         "tags": ["professional", "science"]
     },
     {
@@ -681,6 +764,7 @@
         "leader": "Chad Morita",
         "email": "chadmmm@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "technology"]
     },
     {
@@ -689,6 +773,7 @@
         "leader": "Ingrid Adams",
         "email": "adamsi@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -697,6 +782,7 @@
         "leader": "Elizabeth (Liza) Simon",
         "email": "csimon@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["recreation", "cultural", "leisure", "social"]
     },
     {
@@ -705,6 +791,7 @@
         "leader": "Chad Wilhite",
         "email": "cwilhite@hawaii.edu",
         "website": "www.hiscb.org",
+        "description": "",
         "tags": ["ecology", "biology", "service"]
     },
     {
@@ -713,6 +800,7 @@
         "leader": "Susan Saka",
         "email": "ssaka@hawaii.edu",
         "website": "hawaii.edu/hera",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -721,6 +809,7 @@
         "leader": "Jason Huynh",
         "email": "huynhjas@hawaii.edu",
         "website": "www.hawaiihomeproject.org",
+        "description": "",
         "tags": "service"
     },
     {
@@ -729,6 +818,7 @@
         "leader": "Scott Oshiro",
         "email": "scottosh@hawaii.edu",
         "website": "hawaiishotokankarate.com",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -737,6 +827,7 @@
         "leader": "Aurelia Gonzalez",
         "email": "aureliag@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "ecology"
     },
     {
@@ -745,6 +836,7 @@
         "leader": "Asher Uchiyama",
         "email": "au234@hawaii.edu",
         "website": "http://www.hsentrepreneurs.com",
+        "description": "",
         "tags": ["business", "professional", "social"]
     },
     {
@@ -753,6 +845,7 @@
         "leader": "Kaitlin Nalani Tilitile",
         "email": "tilitie@hawaii.edu",
         "website": "manoa.hawaii.edu/omsshui",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -761,6 +854,7 @@
         "leader": "Avery Nueva",
         "email": "averymn@hawaii.edu",
         "website": "https://www.hercampus.com/school/hawaii",
+        "description": "",
         "tags": "social"
     },
     {
@@ -769,6 +863,7 @@
         "leader": "Lynette Rudolfo",
         "email": "rudolfo@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -777,6 +872,7 @@
         "leader": "Kawehi Kina",
         "email": "kinak@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -785,6 +881,7 @@
         "leader": "Jessica Loi",
         "email": "jkloi@hawaii.edu",
         "website": "hosauhm.wixsite.com/home",
+        "description": "",
         "tags": ["service", "medical", "professional"]
     },
     {
@@ -793,6 +890,7 @@
         "leader": "Katie Joe Lang",
         "email": "langk@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -801,6 +899,7 @@
         "leader": "Donna Lee (Sweetie) Kuehu",
         "email": "dkueku@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "academic", "professional"]
     },
     {
@@ -809,6 +908,7 @@
         "leader": "Swastika Maharjan",
         "email": "swastika@hawaii.edu",
         "website": "publichealthhui.weebly.com",
+        "description": "",
         "tags": ["medical", "academic", "professional"]
     },
     {
@@ -817,6 +917,7 @@
         "leader": "Dr. Healani Chang",
         "email": "hchang@hawaii.edu",
         "website": "www.sacnashawaii.org",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -825,6 +926,7 @@
         "leader": "Luke Clements",
         "email": "lclement@hawaii.edu",
         "website": "http://www.itmahawaii.com/",
+        "description": "",
         "tags": ["technology", "academic", "professional"]
     },
     {
@@ -833,6 +935,7 @@
         "leader": "Kyle Tran",
         "email": "kyletran@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -841,6 +944,7 @@
         "leader": "Jordan Abanto",
         "email": "abanto@hawaii.edu",
         "website": "www.ibcuhm.com",
+        "description": "",
         "tags": ["academic", "professional", "business"]
     },
     {
@@ -849,6 +953,7 @@
         "leader": "Rachel Dunn",
         "email": "dunnrach@hawaii.edu",
         "website": "ibouhm.com",
+        "description": "",
         "tags": ["academic", "professional", "business"]
     },
     {
@@ -857,6 +962,7 @@
         "leader": "Ryan Matsumoto",
         "email": "ryantm2@hawaii.edu",
         "website": "www.isauhm.com",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -865,6 +971,7 @@
         "leader": "Geoffrey Kusaka",
         "email": "gkusaka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "biology"]
     },
     {
@@ -873,6 +980,7 @@
         "leader": "Sabrina Summers",
         "email": "summerss@hawaii.edu",
         "website": "www.intervarsityhawaii.org",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -881,6 +989,7 @@
         "leader": "Christopher J Blake",
         "email": "cjblake@hawaii.edu",
         "website": "ieeeatuhm.com",
+        "description": "",
         "tags": ["academic", "professional", "engineering"]
     },
     {
@@ -889,6 +998,7 @@
         "leader": "Roberta Baird",
         "email": "bairdr@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -897,6 +1007,7 @@
         "leader": "Larson Abilla",
         "email": "labilla@hawaii.edu",
         "website": "www2.hawaii.edu/~judo",
+        "description": "",
         "tags": ["sports", "leisure"]
     },
     {
@@ -905,6 +1016,7 @@
         "leader": "Isaiah Avilla",
         "email": "isaiaha@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "recreational", "social"]
     },
     {
@@ -913,6 +1025,7 @@
         "leader": "Karli Rose Keanu",
         "email": "kkeanu4@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social", "service"]
     },
     {
@@ -921,6 +1034,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -929,6 +1043,7 @@
         "leader": "Diana Moana Nomura",
         "email": "nomura76@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -937,6 +1052,7 @@
         "leader": "Michelle Au",
         "email": "aumi@hawaii.edu",
         "website": "sites.google.com/site/kameakolo",
+        "description": "",
         "tags": ["academic", "professional", "biology"]
     },
     {
@@ -945,6 +1061,7 @@
         "leader": "Ebony Tapasa",
         "email": "etapasa@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -953,6 +1070,7 @@
         "leader": "Carlos Tucker",
         "email": "carlos42@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -961,6 +1079,7 @@
         "leader": "Christine Joy Baltazar",
         "email": "cbaltaza@hawaii.edu",
         "website": "https://manoa.hawaii.edu/rio/katipunan/",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -969,6 +1088,7 @@
         "leader": "Kevin Hanaoka",
         "email": "hanaokak@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure"]
     },
     {
@@ -977,6 +1097,7 @@
         "leader": "Mason Nakadomari",
         "email": "nakadoma@hawaii.edu",
         "website": "hawaiitaekwondo.com",
+        "description": "",
         "tags": ["sports", "leisure"]
     },
     {
@@ -985,6 +1106,7 @@
         "leader": "Keaton Yaw",
         "email": "keatony@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -993,6 +1115,7 @@
         "leader": "Jarren Takaki",
         "email": "jarrent@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1001,6 +1124,7 @@
         "leader": "Shea Ryan Charles",
         "email": "sc67@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1009,6 +1133,7 @@
         "leader": "Sarai Vargas",
         "email": "svargas9@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social", "service"]
     },
     {
@@ -1017,6 +1142,7 @@
         "leader": "Liana Wang",
         "email": "lwang2@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1025,6 +1151,7 @@
         "leader": "Ha Nguyen",
         "email": "ha777@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["business", "professional"]
     },
     {
@@ -1033,6 +1160,7 @@
         "leader": "Venkataraman Balaraman",
         "email": "Fmuza",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1041,6 +1169,7 @@
         "leader": "Tiffany Anne Ganti",
         "email": "tganti@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "art"]
     },
     {
@@ -1049,6 +1178,7 @@
         "leader": "Katsuyuki Yoshia",
         "email": "ky7312@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -1057,6 +1187,7 @@
         "leader": "Michelle Park",
         "email": "parkmj@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1065,6 +1196,7 @@
         "leader": "Emily Steward",
         "email": "esteward@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -1073,6 +1205,7 @@
         "leader": "Sherylynne Andrada",
         "email": "sma3@hawaii.edu",
         "website": "manoa.hawaii.edu/undergrad/mac/mpa",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1081,6 +1214,7 @@
         "leader": "Teana Motoyama",
         "email": "teanam@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1089,6 +1223,7 @@
         "leader": "Leilani Harjati",
         "email": "ltakeuc@hawaii.edu",
         "website": "http://manoa.hawaii.edu/undergrad/sophomore",
+        "description": "",
         "tags": "social"
     },
     {
@@ -1097,6 +1232,7 @@
         "leader": "Van Wishingrad",
         "email": "vanw@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -1105,6 +1241,7 @@
         "leader": "Paula Rae Penullar",
         "email": "paularae@hawaii.edu",
         "website": "rig.eng.hawaii.edu/research/unmanned-x-systems/",
+        "description": "",
         "tags": ["sports", "leisure", "technology"]
     },
     {
@@ -1113,6 +1250,7 @@
         "leader": "Lauren Loualhati",
         "email": "lloual3@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1121,6 +1259,7 @@
         "leader": "Dann Poe ?",
         "email": "dpoei@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1129,6 +1268,7 @@
         "leader": "Alexander Ribao",
         "email": "ribaoa@hawaii.edu",
         "website": "mindhawaii.com",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1137,6 +1277,7 @@
         "leader": "Clare-Marie Anderson",
         "email": "cmanders@hawaii.edu",
         "website": "msfc.org",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1145,6 +1286,7 @@
         "leader": "Eileen Chen",
         "email": "esrchen@hawaii.edu",
         "website": "uhmsmp.org",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1153,6 +1295,7 @@
         "leader": "Jester Galiza",
         "email": "jpgaliza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1161,6 +1304,7 @@
         "leader": "Austin Haleyalpiy",
         "email": "austin46@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1169,6 +1313,7 @@
         "leader": "Man Dhoj Rai",
         "email": "mandhoj@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1177,6 +1322,7 @@
         "leader": "Aime Le",
         "email": "ale77@hawaii.edu",
         "website": "mortarboardmanoa.weebly.com",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1185,6 +1331,7 @@
         "leader": "Sharnelle Renti Cruz",
         "email": "sprc@hawaii.edu",
         "website": "http://nhilhh.weebly.com",
+        "description": "",
         "tags": "social"
     },
     {
@@ -1193,6 +1340,7 @@
         "leader": "Jace Nakama",
         "email": "jacect@hawaii.edu",
         "website": "oahuchurch.org",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1201,6 +1349,7 @@
         "leader": "Brock Barr",
         "email": "barrb@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1209,6 +1358,7 @@
         "leader": "Kyung Moo Kim",
         "email": "kkim29@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["Medical", "professional"]
     },
     {
@@ -1217,6 +1367,7 @@
         "leader": "Avery Nueva",
         "email": "averymn@hawaii.edu",
         "website": "uhmpanhel.com",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -1225,6 +1376,7 @@
         "leader": "Taha Elwir",
         "email": "elwira@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1233,6 +1385,7 @@
         "leader": "Clare-Marie Anderson",
         "email": "cmanders@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "biology"]
     },
     {
@@ -1241,6 +1394,7 @@
         "leader": "Nicholas Fancher",
         "email": "nfancher@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "biology", "medical"]
     },
     {
@@ -1249,6 +1403,7 @@
         "leader": "Kevin Card",
         "email": "cardk@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "biology"]
     },
     {
@@ -1257,6 +1412,7 @@
         "leader": "Jay-O Alforque",
         "email": "alforque@hawaii.edu",
         "website": "patahawaii.com",
+        "description": "",
         "tags": ["academic", "professional", "business"]
     },
     {
@@ -1265,6 +1421,7 @@
         "leader": "Richard Crum",
         "email": "crumr@hawaii.edu",
         "website": "https://www.law.hawaii.edu/student-organization",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1273,6 +1430,7 @@
         "leader": "Akane Dunn",
         "email": "akane2@hawaii.edu",
         "website": "https://www.pih.org/engage",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1281,6 +1439,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "social"]
     },
     {
@@ -1289,6 +1448,7 @@
         "leader": "Kristine Vo",
         "email": "kbvo@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["medical", "professional", "social"]
     },
     {
@@ -1297,6 +1457,7 @@
         "leader": "Kevin Pham",
         "email": "kevinph@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1305,6 +1466,7 @@
         "leader": "Rosemarie Woodruff",
         "email": "",
         "website": "",
+        "description": "",
         "tags": ["academic", "social"]
     },
     {
@@ -1313,6 +1475,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "medical", "social"]
     },
     {
@@ -1321,6 +1484,7 @@
         "leader": "Julie Anne Bacaro",
         "email": "jafb@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1329,6 +1493,7 @@
         "leader": "Emily Holmberg",
         "email": "emilyhol@hawaii.edu",
         "website": "phialphatheta.org",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1337,6 +1502,7 @@
         "leader": "Sarai Vargas",
         "email": "svargas9@hawaii.edu",
         "website": "hawaii.phimu.org",
+        "description": "",
         "tags": ["fraternity", "sorority", "social"]
     },
     {
@@ -1345,6 +1511,7 @@
         "leader": "Arlene Kiyohara",
         "email": "arlenecp@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "medical", "cultural", "social"]
     },
     {
@@ -1353,6 +1520,7 @@
         "leader": "Vendela Lindahl",
         "email": "vendelal@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["professional", "academic", "social"]
     },
     {
@@ -1361,6 +1529,7 @@
         "leader": "Justin Menina",
         "email": "jmenina@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1369,6 +1538,7 @@
         "leader": "Michael Dang",
         "email": "mkdang@hawaii.edu",
         "website": "uhmsigmapi.wixsite.com",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1377,6 +1547,7 @@
         "leader": "Justin Menina",
         "email": "jmenina@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social sciences"]
     },
     {
@@ -1385,6 +1556,7 @@
         "leader": "Jaron Yamane",
         "email": "jarony@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -1393,6 +1565,7 @@
         "leader": "Taylor Pu'uohau",
         "email": "tpuuohau@hawaii.edu",
         "website": "http://premed-at-uhm.uhm.squarespace.com",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1401,6 +1574,7 @@
         "leader": "Tran Trinh",
         "email": "trant2@hawaii.edu",
         "website": "uhmprepharmacyassociation.wordpress.com",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1409,6 +1583,7 @@
         "leader": "Jester Galiza",
         "email": "jpgaliza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1417,6 +1592,7 @@
         "leader": "Maiko Ikeda",
         "email": "maikoi@hawaii.edu",
         "website": "ponohawaii.org",
+        "description": "",
         "tags": ["service", "ecology"]
     },
     {
@@ -1425,6 +1601,7 @@
         "leader": "BrandonBanuelos",
         "email": "bbanuelo@hawaii.ed",
         "website": "thepsychologyconnection.blogspot.com",
+        "description": "",
         "tags": ["professional", "social"]
     },
     {
@@ -1433,6 +1610,7 @@
         "leader": "Lydia Chung",
         "email": "lydiajc@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1441,6 +1619,7 @@
         "leader": "Mei Jie Wu",
         "email": "meijiew@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1449,6 +1628,7 @@
         "leader": "Stephen Case",
         "email": "stevec@hawaii.edu",
         "website": "www.rainbowjugglers.org",
+        "description": "",
         "tags": ["sports", "leisure", "social"]
     },
     {
@@ -1457,6 +1637,7 @@
         "leader": "Noah Rodrigues",
         "email": "noahrodr@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1465,6 +1646,7 @@
         "leader": "Joshua Hu",
         "email": "joshuahu@hawaii.edu",
         "website": "rvfhawaii.org",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1473,6 +1655,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1481,6 +1664,7 @@
         "leader": "Barbara Watanabe",
         "email": "blwatana@hawaii.edu",
         "website": "manoa.hawaii.edu/undergrad/sss",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1489,6 +1673,7 @@
         "leader": "Gordon Walker",
         "email": "gwalker@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social", "recreational"]
     },
     {
@@ -1497,6 +1682,7 @@
         "leader": "Sarah Tucker",
         "email": "tucker4@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1505,6 +1691,7 @@
         "leader": "Leeseul Park",
         "email": "leeseul@hawaii.edu",
         "website": "http://blog.hawaii.edu/slssa/",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1513,6 +1700,7 @@
         "leader": "Michael Liu",
         "email": "liumicha@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1521,6 +1709,7 @@
         "leader": "Anthony Lee",
         "email": "awl@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1529,6 +1718,7 @@
         "leader": "Isaiah Sheppard-Nelson",
         "email": "isaiahsn@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "recreational", "social"]
     },
     {
@@ -1537,6 +1727,7 @@
         "leader": "Marleah Renti Cruz",
         "email": "marleah@hawaii.edu",
         "website": "http://hisaasc.weebly.com",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1545,6 +1736,7 @@
         "leader": "Michael Dang",
         "email": "mkdang@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "engineering"]
     },
     {
@@ -1553,6 +1745,7 @@
         "leader": "Josiah J. Villar",
         "email": "josiahlj@hawaii.edu",
         "website": "shrmuhm.com",
+        "description": "",
         "tags": ["academic", "professional", "social sciences"]
     },
     {
@@ -1561,6 +1754,7 @@
         "leader": "Man Dhoj Rai",
         "email": "mandhoj@hawaii.edu",
         "website": "www.esneha.org",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1569,6 +1763,7 @@
         "leader": "Zachary Martin",
         "email": "zmart@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1577,6 +1772,7 @@
         "leader": "Candice Sarangay",
         "email": "sarangay@hawaii.edu",
         "website": "uhm.swe.org",
+        "description": "",
         "tags": ["academic", "professional", "engineering"]
     },
     {
@@ -1585,6 +1781,7 @@
         "leader": "Megan Fereira",
         "email": "fereira@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1593,6 +1790,7 @@
         "leader": "Kittra Evenson",
         "email": "evenson8@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1601,6 +1799,7 @@
         "leader": "Sharon Widup",
         "email": "swidup@hawaii.edu",
         "website": "https://www.star.hawaii.edu",
+        "description": "",
         "tags": ["academic", "professional", "technology"]
     },
     {
@@ -1609,6 +1808,7 @@
         "leader": "Mark Oandasan",
         "email": "markco@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "social"
     },
     {
@@ -1617,6 +1817,7 @@
         "leader": "Jester Galiza",
         "email": "jpgaliza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1625,6 +1826,7 @@
         "leader": "Albert To",
         "email": "albertto@hawaii.edu",
         "website": "https://www.sihawaii.org",
+        "description": "",
         "tags": ["academic", "professional", "medical", "service"]
     },
     {
@@ -1633,6 +1835,7 @@
         "leader": "Christina Tse",
         "email": "tsec@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "social sciences"]
     },
     {
@@ -1641,6 +1844,7 @@
         "leader": "Chad Russell",
         "email": "chadruss@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": "academic"
     },
     {
@@ -1649,6 +1853,7 @@
         "leader": "Angelique K. Solomon",
         "email": "gotkids@hawaii.edu",
         "website": "uhmstudentswkeiki.wixsite.com/website",
+        "description": "",
         "tags": ["social", "student affairs"]
     },
     {
@@ -1657,6 +1862,7 @@
         "leader": "Miki Matsuoka",
         "email": "snamanoa@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1665,6 +1871,7 @@
         "leader": "Andrew Lanza",
         "email": "ajlanza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1673,6 +1880,7 @@
         "leader": "Quinne Uchida",
         "email": "qauchida@hawaii.edu",
         "website": "swith-uhm.github.io",
+        "description": "",
         "tags": ["academic", "professional", "technology"]
     },
     {
@@ -1681,6 +1889,7 @@
         "leader": "Laurel Perun",
         "email": "lperun@hawaii.edu",
         "website": "uhmanoasurfrider.wordpress.com",
+        "description": "",
         "tags": ["sports", "leisure", "social", "service"]
     },
     {
@@ -1689,6 +1898,7 @@
         "leader": "Anongard Nusartlert",
         "email": "an2009@hawaii.edu",
         "website": "thaistudieshawaii.wordpress.com",
+        "description": "",
         "tags": ["ethnic", "cultural", "academic"]
     },
     {
@@ -1697,6 +1907,7 @@
         "leader": "Barryn Chun",
         "email": "chun808@hawaii.edu",
         "website": "www.amsmanoa.org",
+        "description": "",
         "tags": "social"
     },
     {
@@ -1705,6 +1916,7 @@
         "leader": "Christopher Blake",
         "email": "cjblake@hawaii.edu",
         "website": "elohist.club",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1713,6 +1925,7 @@
         "leader": "Jianna Leonora Orias",
         "email": "jlorias@hawaii.edu",
         "website": "http://www.ecuh.org",
+        "description": "",
         "tags": ["academic", "professional", "engineering"]
     },
     {
@@ -1721,6 +1934,7 @@
         "leader": "Travis Shaver",
         "email": "tshaver@hawaii.edu",
         "website": "https://www.emauhm.org/",
+        "description": "",
         "tags": ["ethnic", "cultural", "art", "music", "recreational"]
     },
     {
@@ -1729,6 +1943,7 @@
         "leader": "Ashley Ostendorf",
         "email": "ashleyno@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["social", "service", "ecology"]
     },
     {
@@ -1737,6 +1952,7 @@
         "leader": "Justin Menina",
         "email": "jmenina@hawaii.edu",
         "website": "manoa.cc",
+        "description": "",
         "tags": ["academic", "professional", "technology"]
     },
     {
@@ -1745,6 +1961,7 @@
         "leader": "Jessica Charest",
         "email": "jcharest@hawaii.edu",
         "website": "ldtc.org",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1753,6 +1970,7 @@
         "leader": "Alyssa Hironaka",
         "email": "alyssahi@hawaii.edu",
         "website": "nscs.org",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1761,6 +1979,7 @@
         "leader": "Lauren Block",
         "email": "blockln7@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1769,6 +1988,7 @@
         "leader": "Paolo Atienza",
         "email": "patienza@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1777,6 +1997,7 @@
         "leader": "Nicole Panos",
         "email": "npanos@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1785,6 +2006,7 @@
         "leader": "Jane Nicole Teneza",
         "email": "teneza20@hawaii.edu",
         "website": "manoa.hawaii.edu/ilokano/timpuyog.html",
+        "description": "",
         "tags": ["ethnic", "cultural", "social"]
     },
     {
@@ -1793,6 +2015,7 @@
         "leader": "Taryn Bond",
         "email": "BondTL@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1801,6 +2024,7 @@
         "leader": "Sharmaine Domingo",
         "email": "sd21@hawaii.edu",
         "website": "www.timsaatuhm.com",
+        "description": "",
         "tags": ["academic", "professional", "social"]
     },
     {
@@ -1809,6 +2033,7 @@
         "leader": "Jaclyn Nicole R. Uy",
         "email": "uyjnr69@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "science"]
     },
     {
@@ -1817,6 +2042,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1825,6 +2051,7 @@
         "leader": "Airi Morita",
         "email": "airimori@hawaii.edu",
         "website": "https://vidahawaii.wixsite.com/uhmanoa http://www.vidavounteer.org",
+        "description": "",
         "tags": ["social", "service", "cultural"]
     },
     {
@@ -1833,6 +2060,7 @@
         "leader": "Gary Glauberman",
         "email": "glauber@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional"]
     },
     {
@@ -1841,6 +2069,7 @@
         "leader": "Liam Griffin",
         "email": "liam9999@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["leisure", "recreational", "social"]
     },
     {
@@ -1849,6 +2078,7 @@
         "leader": "Sateki Taulanga",
         "email": "st37@hawaii.edu",
         "website": "Wesleyfoundationhawaii.com",
+        "description": "",
         "tags": ["religious", " social"]
     },
     {
@@ -1857,6 +2087,7 @@
         "leader": "Weston Mccue",
         "email": "wmccue@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical", "recreational"]
     },
     {
@@ -1865,6 +2096,7 @@
         "leader": "Amandalin Rock",
         "email": "rocka@hawaii.edu",
         "website": "",
+        "description": "",
         "tags": ["academic", "professional", "medical"]
     },
     {
@@ -1873,6 +2105,7 @@
         "leader": "Makenzie Hickey",
         "email": "mmhickey@hawaii.edu",
         "website": "younglife.org",
+        "description": "",
         "tags": ["religious", " social"]
     }
 ]
