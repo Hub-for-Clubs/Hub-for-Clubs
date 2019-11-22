@@ -1,7 +1,8 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    { "email": "admin@foo.com", "password": "changeme", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": ["Accounting Club at UH Manoa"] },
+    { "email": "bar@foo.com", "password": "changeme", "leader": "Academy for Creative Media Student Association", "clubs" : ["Academy for Creative Media Student Association", "Accounting Club at UH Manoa"] },
+    { "email": "john@foo.com", "password": "changeme", "leader": "", "clubs" : ["Academy for Creative Media Student Association"] }
   ],
 
   "defaultData": [
@@ -9,5 +10,28 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
-  ]
+  ],
+
+  "defaultAnnouncements": [
+      { "owner": "john@foo.com", "Title": "Help needed", "Description": "We spent all of our club funds on that last tailgate and now we need more money"}
+  ],
+  "clubs": [
+    {
+      "Name": "Academy for Creative Media Student Association",
+      "type": "Academic/Professional",
+      "leader": "Emma Daily",
+      "email": "edaily@hawaii.edu",
+      "website": "",
+      "description": "",
+      "tags": ["art", "technology", "academic", "professional"]
+    },
+    {
+      "Name": "Accounting Club at UH Manoa",
+      "type": "Academic/Professional",
+      "leader": "Chelsi Morishige",
+      "email": "chelsicm@hawaii.edu",
+      "website": "acuhmanoa.com",
+      "description": "",
+      "tags": ["business", "accounting", "academic", "professional"]
+    }]
 }
