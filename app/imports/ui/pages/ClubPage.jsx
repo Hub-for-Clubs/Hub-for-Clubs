@@ -6,7 +6,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-class Profile extends React.Component {
+class ClubPage extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -17,7 +17,7 @@ class Profile extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">Profile</Header>
+          <Header as="h2" textAlign="center">Club</Header>
           <Grid class="ui two column grid">
             <div className="four wide column">
               <div className="row">
@@ -27,28 +27,22 @@ class Profile extends React.Component {
                 <img src='/images/HubForClubsLogo.png' width='100px' height='100px'></img>
               </div>
               <div className="row">
-                Interests
+                Type
               </div>
               <div className="row">
-                Bio
+                <a href="mailto:">Leader</a>
               </div>
               <div className="row">
-                Clubs
+                <a href="">Website</a>
+              </div>
+              <div className="row">
+                Description
+              </div>
+              <div className="row">
+                Tags
               </div>
             </div>
             <div className="twelve wide column">
-              <div className="row">
-                <h1>Clubs Joined</h1>
-              </div>
-              <div className="row">
-                <h2>Clubs Joined</h2>
-              </div>
-              <div className="row">
-                <h1>Clubs Admin</h1>
-              </div>
-              <div className="row">
-                <h2>Clubs Admin</h2>
-              </div>
               <div className="row">
                 <h1>Announcements</h1>
               </div>
@@ -63,7 +57,7 @@ class Profile extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-Profile.propTypes = {
+ClubPage.propTypes = {
   stuffs: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -76,4 +70,4 @@ export default withTracker(() => {
     stuffs: Stuffs.find({}).fetch(),
     ready: subscription.ready(),
   };
-})(Profile);
+})(ClubPage);
