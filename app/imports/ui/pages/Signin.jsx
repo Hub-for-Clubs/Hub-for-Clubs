@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import '../../../client/style-Jolie.css';
+import { Header, Button, Container, Image, Form } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -42,50 +43,47 @@ export default class Signin extends React.Component {
     }
     // Otherwise return the Login form.
     return (
-      <Container>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Login to your account
-            </Header>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Form.Input
-                  label="Email"
-                  icon="user"
-                  iconPosition="left"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail address"
-                  onChange={this.handleChange}
-                />
-                <Form.Input
-                  label="Password"
-                  icon="lock"
-                  iconPosition="left"
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-                <Form.Button content="Submit"/>
-              </Segment>
-            </Form>
-            <Message>
-              <Link to="/signup">Click here to Register</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
-                error
-                header="Login was not successful"
-                content={this.state.error}
-              />
-            )}
-          </Grid.Column>
-        </Grid>
-      </Container>
+        <Container>
+          <div className="container1">
+            <div className="welcome">
+            <div className="box">
+              <div className="myh1">
+                <Header as="h1" inverted className="myh1">SIGN IN</Header>
+              </div>
+                <Form className = "form" onSubmit={this.submit}>
+                    <Form.Input
+                        label="Email"
+                        icon="user"
+                        iconPosition="left"
+                        name="email"
+                        type="email"
+                        placeholder="E-mail address"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input 
+                        label="Password"
+                        icon="lock"
+                        iconPosition="left"
+                        name="password"
+                        placeholder="Password"
+                        type="password"
+                        onChange={this.handleChange}
+                    />
+                  <Button color='blue' className="button2">submit</Button>
+                </Form>
+            </div>
+              <div className="rightbox">
+                <div className="title">
+              <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
+              <Header as="h5" className="p"> find your perfect club </Header>
+              <Image className="logo" src="images/HubForClubsLogo.png"/>
+              <Header as="h5" className="p signup">don't have an account?</Header>
+              <Button basic color='green' className="button2">sign up</Button>
+                </div>
+            </div>
+          </div>
+        </div>
+        </Container>
     );
   }
 }
