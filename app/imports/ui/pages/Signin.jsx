@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import '../../../client/style-Jolie.css';
-import { Header, Button, Container, Image, Form } from 'semantic-ui-react';
+import { Header, Button, Container, Image, Form, Segment } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -69,7 +69,9 @@ export default class Signin extends React.Component {
                         type="password"
                         onChange={this.handleChange}
                     />
+                  <Form.Button content="Submit"/>
                   <Button color='blue' className="button2">submit</Button>
+                  <Link to="/AnnoucementBoard">Click here for announcements</Link>
                 </Form>
             </div>
               <div className="rightbox">
