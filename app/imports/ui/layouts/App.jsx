@@ -9,10 +9,10 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import AnnouncementBoard from '../pages/AnnouncementBoard';
 import AddAnnouncement from '../pages/AddAnnouncement';
+import EditAnnouncement from '../pages/EditAnnouncement';
 import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
-import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -30,10 +30,10 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
-              <Route path="/addannouncement" component={AddAnnouncement}/>
+              <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
+              <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
@@ -82,6 +82,26 @@ const AdminProtectedRoute = ({ component: Component, ...rest }) => (
     />
 );
 
+/**
+ * LeaderProtectedRoute (see React Router v4 sample)
+ * Checks for Meteor login and leader role before routing to the requested page, otherwise goes to signin page.
+ * @param {any} { component: Component, ...rest }
+ */
+const LeaderProtectedRoute = ({ component: Component, ...rest }) => (
+    <Route
+        {...rest}
+        render={(props) => {
+          const isLogged = Meteor.userId() !== null;
+          const isLeader = Roles.userIsInRole(Meteor.userId(), 'leader');
+          return (isLogged && isLeader) ?
+              (<Component {...props} />) :
+              (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>
+              );
+        }}
+    />
+);
+
+
 /** Require a component and location to be passed to each ProtectedRoute. */
 ProtectedRoute.propTypes = {
   component: PropTypes.func.isRequired,
@@ -90,6 +110,12 @@ ProtectedRoute.propTypes = {
 
 /** Require a component and location to be passed to each AdminProtectedRoute. */
 AdminProtectedRoute.propTypes = {
+  component: PropTypes.func.isRequired,
+  location: PropTypes.object,
+};
+
+/** Require a component and location to be passed to each LeaderProtectedRoute. */
+LeaderProtectedRoute.propTypes = {
   component: PropTypes.func.isRequired,
   location: PropTypes.object,
 };

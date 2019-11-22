@@ -1,19 +1,22 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class AnnouncementPost extends React.Component {
   render() {
     return (
-      <Card>
+      <Card fluid>
           <Card.Content>
-            <Card.Header>{this.props.announcement.owner}</Card.Header>
-            <Card.Meta>{this.props.announcement.Title}</Card.Meta>
+            <Card.Header>{this.props.announcement.Title}</Card.Header>
+            <Card.Meta>{this.props.announcement.owner}</Card.Meta>
             <Card.Description>
               {this.props.announcement.Description}
             </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+          <Link to={`/editannouncement/${this.props.announcement._id}`}>Edit</Link>
           </Card.Content>
       </Card>
     );

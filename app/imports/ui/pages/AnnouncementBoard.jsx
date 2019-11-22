@@ -20,7 +20,7 @@ class AnnouncementBoard extends React.Component {
       <Container>
         <Header as="h2" textAlign="center" inverted>List Announcements</Header>
         <Card.Group centered>
-          {this.props.announcements.map((announcement, index) => <AnnouncementPost key={index}
+          {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
           announcement={announcement}/>)}
         </Card.Group>
       </Container>
@@ -37,7 +37,7 @@ AnnouncementBoard.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Announcement documents.
-  const subscription = Meteor.subscribe('Announcement');
+  const subscription = Meteor.subscribe('Announcements');
   return {
     announcements: Announcements.find({}).fetch(),
     ready: subscription.ready(),
