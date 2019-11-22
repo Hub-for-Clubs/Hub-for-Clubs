@@ -70,8 +70,6 @@ export default class Signin extends React.Component {
                         onChange={this.handleChange}
                     />
                   <Form.Button content="Submit"/>
-                  <Button color='blue' className="button2">submit</Button>
-                  <Link to="/AnnoucementBoard">Click here for announcements</Link>
                 </Form>
             </div>
               <div className="rightbox">
