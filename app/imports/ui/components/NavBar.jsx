@@ -11,23 +11,26 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { padding: '0px' };
     return (
-      <Menu className='nav' attached="top" borderless>
+      <Menu id='navbar' attached="top" borderless>
         <Menu.Item style={menuStyle} as={NavLink} activeClassName="" exact to="/">
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Club Explorer
+            [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/add" key='add'>
+              Club Explorer
             </Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>Announcements</Menu.Item>]
+              <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/list" key='list'>
+                Announcements</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+            <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/admin" key='admin'>
+              Admin</Menu.Item>
         ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (
-              <Menu.Item as={NavLink} exact to="/signin">Sign In</Menu.Item>
+              <Menu.Item className="navitem" as={NavLink} exact to="/signin">Sign In</Menu.Item>
           ) : (
-            <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
+            <Dropdown className="navitem" text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>
                 <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
               </Dropdown.Menu>

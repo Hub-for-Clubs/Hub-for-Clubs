@@ -8,7 +8,6 @@ import { Accounts } from 'meteor/accounts-base';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-    console.log(Meteor.user());
     return Meteor.user() ? <div>Hello</div> : <Signup/>;
   }
 }

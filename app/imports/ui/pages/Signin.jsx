@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import '../../../client/style-Jolie.css';
+import '../../../client/style.css';
 import { Header, Button, Container, Image, Form, Segment } from 'semantic-ui-react';
 
 /**
@@ -43,14 +43,13 @@ export default class Signin extends React.Component {
     }
     // Otherwise return the Login form.
     return (
-        <Container>
           <div className="container1">
             <div className="welcome">
             <div className="box">
               <div className="myh1">
                 <Header as="h1" inverted className="myh1">SIGN IN</Header>
               </div>
-                <Form className = "form" onSubmit={this.submit}>
+                <Form className = "signin_form" onSubmit={this.submit}>
                     <Form.Input
                         label="Email"
                         icon="user"
@@ -60,7 +59,7 @@ export default class Signin extends React.Component {
                         placeholder="E-mail address"
                         onChange={this.handleChange}
                     />
-                    <Form.Input 
+                    <Form.Input
                         label="Password"
                         icon="lock"
                         iconPosition="left"
@@ -77,13 +76,12 @@ export default class Signin extends React.Component {
               <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
               <Header as="h5" className="p"> find your perfect club </Header>
               <Image className="logo" src="images/HubForClubsLogo.png"/>
-              <Header as="h5" className="p signup">don't have an account?</Header>
+              <Header as="h5" className="p signup">Don&apos;t have an account?</Header>
               <Button basic color='green' className="button2">sign up</Button>
                 </div>
             </div>
           </div>
         </div>
-        </Container>
     );
   }
 }
