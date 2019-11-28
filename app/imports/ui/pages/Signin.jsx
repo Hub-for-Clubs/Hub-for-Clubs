@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import '../../../client/style.css';
-import { Header, Button, Container, Image, Form, Segment } from 'semantic-ui-react';
+import { Header, Button, Image, Form } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -43,9 +43,9 @@ export default class Signin extends React.Component {
     }
     // Otherwise return the Login form.
     return (
-          <div className="container1">
-            <div className="welcome">
-            <div className="box">
+          <div className="signin">
+            <div className="midground_box">
+            <div className="foreground_box">
               <div className="myh1">
                 <Header as="h1" inverted className="myh1">SIGN IN</Header>
               </div>
