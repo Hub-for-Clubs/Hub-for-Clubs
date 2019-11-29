@@ -27,11 +27,10 @@ class Signup extends React.Component {
   }
 
   render() {
-    const gridStyle = { paddingTop: '30px' };
     return (
-        <div className="container1" style={gridStyle}>
+        <div className="signup section backgroundimage" style={{ paddingTop: '30px' }}>
           <Grid verticalAlign='middle' textAlign='center' container>
-            <Grid.Column className="signup_description" width={5}>
+            <Grid.Column className="description" width={5}>
               <Grid.Row>
                 <div>Finding Clubs That Are Right For You</div>
               </Grid.Row>
@@ -44,7 +43,7 @@ class Signup extends React.Component {
 
             <Grid.Column width={2}/>
 
-            <Grid.Column className="signup_form" width={5}>
+            <Grid.Column className="form" width={5}>
               <Grid.Row>
                 <h1>Hub for Clubs</h1>
               </Grid.Row>
@@ -57,7 +56,7 @@ class Signup extends React.Component {
                                 onChange={this.handleChange}/>
                     <Form.Input className="item" fluid label='Password:' placeholder='Password' name='password'
                                 type='password' onChange={this.handleChange}/>
-                    <Form.Button fluid className='sign_up_button' content='Sign Up'/>
+                    <Form.Button fluid content='Sign Up'/>
                   </Form.Field>
                 </Form>
               </Grid.Row>
