@@ -217,10 +217,27 @@ body, html {margin:0; padding:0}
 
 */
 
-.profile .user_info {
-  background-color: blue;
+.profile {
+  margin-bottom: 4em;
+}
+
+.profile .user_info .profile_picture {
+  margin: 2em;
+}
+
+.profile .user_info .name {
+  margin-left: 1em;
+  font-size: 30px !important;
+}
+
+.profile .user_info .heading {
+  margin-left: 1.5em;
+}
+
+.profile .user_info .list {
+  margin-left: 3em !important;
 }
 
 .profile .club_info {
-  background-color: green;
+  margin-top: 2em; 
 }

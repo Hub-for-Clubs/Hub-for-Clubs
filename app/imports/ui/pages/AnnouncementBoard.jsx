@@ -2,9 +2,9 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import { Announcements } from '/imports/api/announcement/Announcements';
-import AnnouncementPost from '../components/AnnouncementPost';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import AnnouncementPost from '../components/AnnouncementPost';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class AnnouncementBoard extends React.Component {
