@@ -18,7 +18,18 @@ class Signup extends React.Component {
 
   submit = () => {
     const { username, email, password } = this.state;
-    Accounts.createUser({ username: username, email: email, password: password }, (err) => {
+    Accounts.createUser({
+      username: username,
+      email: email,
+      password: password,
+      profile: {
+        image: 'images/TestProfilePicture.jfif',
+        leader: '',
+        clubs: { joined: [], favorite: [] },
+        interests: [],
+        major: [],
+      },
+    }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
@@ -29,7 +40,7 @@ class Signup extends React.Component {
 
   render() {
     if (this.state.redirectToProfile) {
-      return <Redirect to='/profile'/>
+      return <Redirect to='/profile'/>;
     }
     return (
         <div className="signup" style={{ paddingTop: '30px' }}>

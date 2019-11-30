@@ -1,8 +1,17 @@
 {
   "defaultAccounts": [
-    { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {}, "interests": ["Art", "Video Games", "Cats"], "major": ["Computer Science"] },
-    { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {}, "interests": ["Video Games", "Dogs"], "major": ["Visual Design"] },
-    { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {}, "interests": ["Dogs"], "major": ["Computer Science"] },
+    { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
+      "joined": [],
+      "favorite": []
+    }, "interests": ["Art", "Video Games", "Cats"], "major": ["Computer Science"] },
+    { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {
+      "joined": [],
+      "favorite": []
+    }, "interests": ["Video Games", "Dogs"], "major": ["Visual Design"] },
+    { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {
+      "joined": [],
+      "favorite": []
+    }, "interests": ["Dogs"], "major": ["Computer Science"] },
     { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
       "joined": [{"name":  "PANDA", "subname":  "Programming AND Algorithms", "description":  "A club for people"}],
       "favorite": [{"name":  "Art Club", "subname":  "Artsy Fartsy", "description":  "For Artsy Fartsy Kind of people"}, {"name":  "Dogo Club", "subname":  "Dogs", "description":  "What do you think this club is for?"}]
