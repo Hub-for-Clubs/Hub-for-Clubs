@@ -6,7 +6,6 @@ import { Roles } from 'meteor/alanning:roles';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Landing from '../pages/Landing';
 import AnnouncementBoard from '../pages/AnnouncementBoard';
 import AddAnnouncement from '../pages/AddAnnouncement';
 import EditAnnouncement from '../pages/EditAnnouncement';
@@ -14,9 +13,10 @@ import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
 import NotFound from '../pages/NotFound';
-import Signin3 from '../pages/Signin';
+import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
+import Profile from '../pages/Profile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -26,9 +26,9 @@ class App extends React.Component {
           <div>
             <NavBar/>
             <Switch>
-              <Route exact path="/" component={Landing}/>
-              <Route path="/signin" component={Signin3}/>
-              <Route path="/signup" component={Signup}/>
+              <Route exact path="/" component={Signup}/>
+              <Route path="/signin" component={Signin}/>
+              <Route path="/profile" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <ProtectedRoute path="/list" component={ListStuff}/>

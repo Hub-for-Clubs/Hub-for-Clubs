@@ -1,95 +1,80 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Form, Grid, Header } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Redirect } from 'react-router-dom';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
  */
 class Signup extends React.Component {
-  /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    this.state = { username: '', email: '', password: '', error: '', redirectToProfile: false };
   }
 
-  /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
   }
 
-  /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password } = this.state;
-    Accounts.createUser({ email, username: email, password }, (err) => {
+    const { username, email, password } = this.state;
+    Accounts.createUser({
+      username: username,
+      email: email,
+      password: password,
+      profile: {
+        image: 'images/TestProfilePicture.jfif',
+        leader: '',
+        clubs: { joined: [], favorite: [] },
+        interests: [],
+        major: [],
+      },
+    }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        this.setState({ error: '', redirectToReferer: true });
+        this.setState({ error: '', redirectToProfile: true });
       }
     });
   }
 
-  /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
-    // if correct authentication, redirect to from: page instead of signup screen
-    if (this.state.redirectToReferer) {
-      return <Redirect to={from}/>;
+    if (this.state.redirectToProfile) {
+      return <Redirect to='/profile'/>;
     }
     return (
-      <Container>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Register your account
-            </Header>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Form.Input
-                  label="Email"
-                  icon="user"
-                  iconPosition="left"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail address"
-                  onChange={this.handleChange}
-                />
-                <Form.Input
-                  label="Password"
-                  icon="lock"
-                  iconPosition="left"
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-                <Form.Button content="Submit"/>
-              </Segment>
-            </Form>
-            <Message>
-              Already have an account? Login <Link to="/signin">here</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
-                error
-                header="Registration was not successful"
-                content={this.state.error}
-              />
-            )}
-          </Grid.Column>
-        </Grid>
-      </Container>
+        <div className="signup" style={{ paddingTop: '30px' }}>
+          <div className="background"/>
+          <Grid verticalAlign='middle' textAlign='center' container>
+            <Grid.Column className="description" width={10}>
+              <Header className="heading" as="h1">Finding clubs that are right for you</Header>
+              <Header className="description" as="h3">
+                With more than 200 registered clubs at the University of Hawai'i at Manoa, it can be challenging to find
+                ones that align with your interests. Hub for Clubs provides a way for students to quickly search for
+                clubs that are right for them!</Header>
+            </Grid.Column>
+            <Grid.Column className="form" width={6}>
+              <Grid.Row>
+                <h1 style={{ marginTop: '2em' }}>Hub for Clubs</h1>
+              </Grid.Row>
+              <Grid.Row>
+                <Form style={{ borderStyle: 'none', boxShadow: 'none' }} onSubmit={this.submit}>
+                  <Form.Field>
+                    <Form.Input className="item" fluid label='Username:' placeholder='Username' name='username'
+                                onChange={this.handleChange}/>
+                    <Form.Input className="item" fluid label='Email:' placeholder='Email' name='email'
+                                onChange={this.handleChange}/>
+                    <Form.Input className="item" fluid label='Password:' placeholder='Password' name='password'
+                                type='password' onChange={this.handleChange}/>
+                    <Form.Button className="item" fluid content='Create Your Account'/>
+                  </Form.Field>
+                </Form>
+              </Grid.Row>
+            </Grid.Column>
+          </Grid>
+        </div>
     );
   }
 }
-
-/** Ensure that the React Router location object is available in case we need to redirect. */
-Signup.propTypes = {
-  location: PropTypes.object,
-};
 
 export default Signup;

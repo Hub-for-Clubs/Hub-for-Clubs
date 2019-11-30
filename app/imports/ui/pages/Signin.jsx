@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import '../../../client/style-Jolie.css';
-import { Header, Button, Container, Image, Form, Segment } from 'semantic-ui-react';
+import '../../../client/style.css';
+import { Header, Button, Image, Form } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -36,56 +36,54 @@ export default class Signin extends React.Component {
 
   /** Render the signin form. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
-      return <Redirect to={from}/>;
+      return <Redirect to={'/profile'}/>;
     }
     // Otherwise return the Login form.
     return (
-        <Container>
-          <div className="container1">
-            <div className="welcome">
-            <div className="box">
-              <div className="myh1">
-                <Header as="h1" inverted className="myh1">SIGN IN</Header>
-              </div>
-                <Form className = "form" onSubmit={this.submit}>
-                    <Form.Input
-                        label="Email"
-                        icon="user"
-                        iconPosition="left"
-                        name="email"
-                        type="email"
-                        placeholder="E-mail address"
-                        onChange={this.handleChange}
-                    />
-                    <Form.Input 
-                        label="Password"
-                        icon="lock"
-                        iconPosition="left"
-                        name="password"
-                        placeholder="Password"
-                        type="password"
-                        onChange={this.handleChange}
-                    />
-                  <Form.Button content="Submit"/>
-                  <Button color='blue' className="button2">submit</Button>
-                  <Link to="/AnnoucementBoard">Click here for announcements</Link>
-                </Form>
-            </div>
-              <div className="rightbox">
+          <div className="signin">
+            <div className="midground_box">
+              <div className="description">
                 <div className="title">
-              <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
-              <Header as="h5" className="p"> find your perfect club </Header>
-              <Image className="logo" src="images/HubForClubsLogo.png"/>
-              <Header as="h5" className="p signup">don't have an account?</Header>
-              <Button basic color='green' className="button2">sign up</Button>
+                  <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
+                  <Header as="h5" className="p"> find your perfect club </Header>
+                  <Image className="logo" src="images/HubForClubsLogo.png"/>
+                  <Header as="h5" className="p" style={{ marginTop: '15%', fontSize: '10px' }}>
+                    Don&apos;t have an account?</Header>
+                  <Button basic color='green'>sign up</Button>
                 </div>
+              </div>
             </div>
-          </div>
+            <div className="foreground_box">
+              <div className="heading">
+                <Header as="h1" style={{ marginTop: '-1.5em' }} inverted>SIGN IN</Header>
+              </div>
+              <Form className = "form" onSubmit={this.submit}>
+                <Form.Input
+                    label="Email"
+                    icon="user"
+                    iconPosition="left"
+                    name="email"
+                    type="email"
+                    placeholder="E-mail address"
+                    className="input"
+                    onChange={this.handleChange}
+                />
+                <Form.Input
+                    label="Password"
+                    icon="lock"
+                    iconPosition="left"
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                    className="input"
+                    onChange={this.handleChange}
+                />
+                <Form.Button className="input" content="Submit"/>
+              </Form>
+            </div>
         </div>
-        </Container>
     );
   }
 }

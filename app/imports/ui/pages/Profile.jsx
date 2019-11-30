@@ -1,12 +1,17 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Grid } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card } from 'semantic-ui-react';
 import { Stuffs } from '/imports/api/stuff/Stuff';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import ClubCard from '../components/ClubCard';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Profile extends React.Component {
+
+  state = { activeItem: 'clubs-joined' };
+
+  handleMenuClick = (e, { name }) => this.setState({ activeItem: name });
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -15,49 +20,66 @@ class Profile extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const { activeItem } = this.state;
+    console.log(`User: ${Meteor.user()}`)
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Profile</Header>
-          <Grid class="ui two column grid">
-            <div className="four wide column">
-              <div className="row">
-                <h1>Name</h1>
-              </div>
-              <div className="row">
-                <img src='/images/HubForClubsLogo.png' width='100px' height='100px'></img>
-              </div>
-              <div className="row">
-                Interests
-              </div>
-              <div className="row">
-                Bio
-              </div>
-              <div className="row">
-                Clubs
-              </div>
-            </div>
-            <div className="twelve wide column">
-              <div className="row">
-                <h1>Clubs Joined</h1>
-              </div>
-              <div className="row">
-                <h2>Clubs Joined</h2>
-              </div>
-              <div className="row">
-                <h1>Clubs Admin</h1>
-              </div>
-              <div className="row">
-                <h2>Clubs Admin</h2>
-              </div>
-              <div className="row">
-                <h1>Announcements</h1>
-              </div>
-              <div className="row">
-                <h2>Announcements</h2>
-              </div>
-            </div>
+        <div className="profile">
+          <Grid>
+            <Grid.Column width={4} className="user_info">
+              <Image className="profile_picture" src={Meteor.user().profile.image} size="medium"/>
+              <Header className="name">{Meteor.user().username}</Header>
+              <Header className="heading">Interest</Header>
+              <hr style={{ marginLeft: '1em' }}/>
+              <List bulleted className="list">
+                {Meteor.user().profile.interests.map((interest, index) => <List.Item
+                    key={index}>{interest}</List.Item>)}
+              </List>
+              <Header className="heading">Major</Header>
+              <hr style={{ marginLeft: '1em' }}/>
+              <List bulleted className="list">
+                {Meteor.user().profile.major.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
+              </List>
+            </Grid.Column>
+            <Grid.Column width={12} className="club_info">
+              <Menu pointing secondary>
+                <Menu.Item name="clubs-joined" active={ activeItem === 'clubs-joined' } onClick={this.handleMenuClick}/>
+                <Menu.Item name="favorite-clubs" active={ activeItem === 'favorite-clubs' }
+                           onClick={this.handleMenuClick}/>
+                <Menu.Item name="recommended-clubs" active={ activeItem === 'recommended-clubs' }
+                           onClick={this.handleMenuClick}/>
+                <Menu.Item name="announcements" active={ activeItem === 'announcements' }
+                           onClick={this.handleMenuClick}/>
+              </Menu>
+              <Card.Group>
+                {/* eslint-disable-next-line no-nested-ternary */}
+                {activeItem === 'clubs-joined' ?
+                    Meteor.user().profile.clubs.joined.map((club, index) => <ClubCard key={index} club={club}/>) :
+                    // eslint-disable-next-line no-nested-ternary
+                  activeItem === 'favorite-clubs' ?
+                      Meteor.user().profile.clubs.favorite.map((club, index) => <ClubCard key={index} club={club}/>) :
+                      // eslint-disable-next-line no-nested-ternary
+                  activeItem === 'recommended-clubs' ?
+                  <ClubCard club={{
+                    name: "Algorithm's Club", subname: 'Recommended', description: 'A club for people who ' +
+                        'demonstrate many' +
+                        'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
+                        'will attend a meeting, it is expected that they attend the meeting.',
+                    image: 'images/AlgorithmsLogojpg.jpg',
+                  }}/> :
+                  activeItem === 'announcements' ?
+                  <ClubCard club={{
+                    name: "Algorithm's Club", subname: 'Announcements', description: 'A club for people who ' +
+                        'demonstrate many' +
+                        'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
+                        'will attend a meeting, it is expected that they attend the meeting.',
+                    image: 'images/AlgorithmsLogojpg.jpg',
+                  }}/> :
+                  <Header>Something went terribly terribly wrong</Header>
+                }
+              </Card.Group>
+            </Grid.Column>
           </Grid>
-        </Container>
+        </div>
     );
   }
 }
