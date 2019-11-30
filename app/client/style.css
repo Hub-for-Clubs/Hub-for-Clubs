@@ -1,4 +1,5 @@
 @import url('https://fonts.google.com/specimen/Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 /* Resetting Variables */
 body, html {margin:0; padding:0}
 
@@ -44,49 +45,8 @@ body, html {margin:0; padding:0}
   padding-top: 15px;
   background-color: #134600;
   color: white;
-}
-
-/*
-
-  For: Front Page
-  Notes:
-
-*/
-
-.frontpage {
-  font-family: "Open Sans", sans-serif;
-  height: 100vh;
-}
-
-.frontpage .background {
-  background-image: linear-gradient(150deg, green, white);
-  transform: skewY(-12deg);
-  width: 100%;
-  height: 100%;
-  transform-origin: 0;
-  z-index: 0;
-}
-
-.frontpage .heading {
-  color: white !important;
-  margin: -25em 0 0 5em !important;
-  font-weight: normal !important;
-  position: relative !important;
-  z-index: 1;
-}
-
-.frontpage .description {
-  color: white !important;
-  margin: 2em 50em 0 8em !important;
-  font-weight: normal !important;
   position: relative;
-  z-index: 1;
-}
-
-.frontpage .signup_button {
-  margin: 2em 0 2em 8.5em !important;
-  position: relative;
-  z-index: 1;
+  z-index: 500;
 }
 
 /*
@@ -96,7 +56,54 @@ body, html {margin:0; padding:0}
 
 */
 
+.signup {
+  font-family: "Lora", sans-serif;
+  height: 100vh;
+}
 
+.signup .background {
+  background-image: linear-gradient(150deg, green, white);
+  transform: skewY(-12deg);
+  width: 100%;
+  height: 100%;
+  transform-origin: -10em;
+  position: absolute;
+  z-index: 0;
+}
+
+.signup .heading {
+  color: white !important;
+  margin-top: 0em !important;
+  font-size: 60px !important;
+  font-family: "Lora", sans-serif !important;
+  text-align: left;
+  z-index: 1;
+}
+
+.signup .description {
+  color: white !important;
+  padding-right: 5em !important;
+  font-family: "Lora", sans-serif !important;
+  font-weight: normal !important;
+  text-align: left;
+  z-index: 1;
+}
+
+.signup .form {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+}
+
+.signup .form .item {
+  text-align: left;
+  font-size: 15px;
+  margin: 3em 1em !important;
+}
 
 /*
 
@@ -140,17 +147,16 @@ body, html {margin:0; padding:0}
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 7px;
+  padding: 2em 0;
 }
 
-.signin.form.input {
+.signin .form .input {
   background: #49EEAF;
   width: 65%;
   color: #359B74 ;
   border: none;
-  border-bottom: 1px solid white;
   padding: 9px;
-  margin: 7px;
+  margin: 5px -1em !important;
 }
 
 /* Midground Box, Contains Logo and Sign Up Button */
@@ -203,4 +209,18 @@ body, html {margin:0; padding:0}
   margin-top: 100px;
   font-size: 2em;
   letter-spacing: 8px;
+}
+
+/*
+
+  For: Profile Page
+
+*/
+
+.profile .user_info {
+  background-color: blue;
+}
+
+.profile .club_info {
+  background-color: green;
 }

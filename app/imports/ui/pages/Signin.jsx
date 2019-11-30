@@ -58,7 +58,7 @@ export default class Signin extends React.Component {
             </div>
             <div className="foreground_box">
               <div className="heading">
-                <Header as="h1" inverted>SIGN IN</Header>
+                <Header as="h1" style={{ marginTop: '-1.5em' }} inverted>SIGN IN</Header>
               </div>
               <Form className = "form" onSubmit={this.submit}>
                 <Form.Input
@@ -68,6 +68,7 @@ export default class Signin extends React.Component {
                     name="email"
                     type="email"
                     placeholder="E-mail address"
+                    className="input"
                     onChange={this.handleChange}
                 />
                 <Form.Input
@@ -77,9 +78,10 @@ export default class Signin extends React.Component {
                     name="password"
                     placeholder="Password"
                     type="password"
+                    className="input"
                     onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button className="input" content="Submit"/>
               </Form>
             </div>
         </div>

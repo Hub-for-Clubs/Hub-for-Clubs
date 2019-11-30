@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Grid } from 'semantic-ui-react';
+import { Form, Grid, Header } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -28,27 +28,22 @@ class Signup extends React.Component {
 
   render() {
     return (
-        <div className="signup section backgroundimage" style={{ paddingTop: '30px' }}>
+        <div className="signup" style={{ paddingTop: '30px' }}>
+          <div className="background"/>
           <Grid verticalAlign='middle' textAlign='center' container>
-            <Grid.Column className="description" width={5}>
-              <Grid.Row>
-                <div>Finding Clubs That Are Right For You</div>
-              </Grid.Row>
-              <Grid.Row style={{ padding: '2em', textAlign: 'left' }}>
-                When you start your life in college, it can often be challenging to find clubs that align with your
-                interests.  This can be especially troubling since clubs are what helps define a person in their future
-                careers, as well as helping people explore their interests and build a general sense of community.
-              </Grid.Row>
+            <Grid.Column className="description" width={10}>
+              <Header className="heading" as="h1">Finding clubs that are right for you</Header>
+              <Header className="description" as="h3">
+                With more than 200 registered clubs at the University of Hawai'i at Manoa, it can be challenging to find
+                ones that align with your interests. Hub for Clubs provides a way for students to quickly search for
+                clubs that are right for them!</Header>
             </Grid.Column>
-
-            <Grid.Column width={2}/>
-
-            <Grid.Column className="form" width={5}>
+            <Grid.Column className="form" width={6}>
               <Grid.Row>
-                <h1>Hub for Clubs</h1>
+                <h1 style={{ marginTop: '2em' }}>Hub for Clubs</h1>
               </Grid.Row>
               <Grid.Row>
-                <Form onSubmit={this.submit}>
+                <Form style={{ borderStyle: 'none', boxShadow: 'none' }} onSubmit={this.submit}>
                   <Form.Field>
                     <Form.Input className="item" fluid label='Username:' placeholder='Username' name='username'
                                 onChange={this.handleChange}/>
@@ -56,7 +51,7 @@ class Signup extends React.Component {
                                 onChange={this.handleChange}/>
                     <Form.Input className="item" fluid label='Password:' placeholder='Password' name='password'
                                 type='password' onChange={this.handleChange}/>
-                    <Form.Button fluid content='Sign Up'/>
+                    <Form.Button className="item" fluid content='Create Your Account'/>
                   </Form.Field>
                 </Form>
               </Grid.Row>
