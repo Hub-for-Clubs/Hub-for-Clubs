@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 
@@ -9,14 +9,12 @@ class AnnouncementPost extends React.Component {
     return (
       <Card fluid>
           <Card.Content>
-            <Card.Header>{this.props.announcement.Title}</Card.Header>
-            <Card.Meta>{this.props.announcement.owner}</Card.Meta>
+            <Image floated='left' size='mini' src={this.props.club.image} circular/>
+            <Card.Header>{this.props.announcement.title}</Card.Header>
+            <Card.Meta>{this.props.club.name}</Card.Meta>
             <Card.Description>
-              {this.props.announcement.Description}
+              {this.props.announcement.description}
             </Card.Description>
-          </Card.Content>
-          <Card.Content extra>
-          <Link to={`/editannouncement/${this.props.announcement._id}`}>Edit</Link>
           </Card.Content>
       </Card>
     );
@@ -26,6 +24,7 @@ class AnnouncementPost extends React.Component {
 /** Require a document to be passed to this component. */
 AnnouncementPost.propTypes = {
     announcement: PropTypes.object.isRequired,
+    club: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

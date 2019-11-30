@@ -1,23 +1,20 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": ["Accounting Club at UH Manoa"] },
-    { "email": "bar@foo.com", "password": "changeme", "leader": "Academy for Creative Media Student Association", "clubs" : ["Academy for Creative Media Student Association", "Accounting Club at UH Manoa"] },
-    { "email": "john@foo.com", "password": "changeme", "leader": "", "clubs" : ["Academy for Creative Media Student Association"] }
-  ],
-
-  "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {}, "interests": ["Art", "Video Games", "Cats"], "major": ["Computer Science"] },
+    { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {}, "interests": ["Video Games", "Dogs"], "major": ["Visual Design"] },
+    { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {}, "interests": ["Dogs"], "major": ["Computer Science"] },
+    { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
+      "joined": [{"name":  "PANDA", "subname":  "Programming AND Algorithms", "description":  "A club for people"}],
+      "favorite": [{"name":  "Art Club", "subname":  "Artsy Fartsy", "description":  "For Artsy Fartsy Kind of people"}, {"name":  "Dogo Club", "subname":  "Dogs", "description":  "What do you think this club is for?"}]
+    }, "interests": ["Art", "Video Games", "Dogs"], "major": ["Computer Science", "Visual Design"] }
   ],
 
   "defaultAnnouncements": [
-      { "owner": "john@foo.com", "Title": "Help needed", "Description": "We spent all of our club funds on that last tailgate and now we need more money"}
+      { "owner": "john@foo.com", "title": "Help needed", "description": "We spent all of our club funds on that last tailgate and now we need more money"}
   ],
   "clubs": [
     {
-      "Name": "Academy for Creative Media Student Association",
+      "name": "Academy for Creative Media Student Association",
       "type": "Academic/Professional",
       "leader": "Emma Daily",
       "email": "edaily@hawaii.edu",
@@ -26,7 +23,7 @@
       "tags": ["art", "technology", "academic", "professional"]
     },
     {
-      "Name": "Accounting Club at UH Manoa",
+      "name": "Accounting Club at UH Manoa",
       "type": "Academic/Professional",
       "leader": "Chelsi Morishige",
       "email": "chelsicm@hawaii.edu",
