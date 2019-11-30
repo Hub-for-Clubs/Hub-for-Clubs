@@ -19,9 +19,9 @@ class AnnouncementBoard extends React.Component {
     return (
       <Container>
         <Header as="h2" textAlign="center" inverted>List Announcements</Header>
-        <Card.Group centered>
-          {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
-          announcement={announcement}/>)}
+        <Card.Group centered style={{ marginBottom: '1em' }}>
+          <AnnouncementPost announcement={{ title: 'Help Wanted', description: 'We done goofed' }}
+          club={{ name: "Algorithm's Club", image: 'images/AlgorithmsLogojpg.jpg' }}/>
         </Card.Group>
       </Container>
   );

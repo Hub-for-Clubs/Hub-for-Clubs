@@ -21,24 +21,23 @@ class Profile extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
+    console.log(`User: ${Meteor.user()}`)
     return (
         <div className="profile">
           <Grid>
             <Grid.Column width={4} className="user_info">
-              <Image className="profile_picture" src="images/TestProfilePicture.jfif" size="medium"/>
-              <Header className="name">Jolie</Header>
+              <Image className="profile_picture" src={Meteor.user().profile.image} size="medium"/>
+              <Header className="name">{Meteor.user().username}</Header>
               <Header className="heading">Interest</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
-                <List.Item>Art</List.Item>
-                <List.Item>Video Games</List.Item>
-                <List.Item>Dogs</List.Item>
+                {Meteor.user().profile.interests.map((interest, index) => <List.Item
+                    key={index}>{interest}</List.Item>)}
               </List>
               <Header className="heading">Major</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
-                <List.Item>Computer Science</List.Item>
-                <List.Item>Visual Design</List.Item>
+                {Meteor.user().profile.major.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
               </List>
             </Grid.Column>
             <Grid.Column width={12} className="club_info">
@@ -54,22 +53,10 @@ class Profile extends React.Component {
               <Card.Group>
                 {/* eslint-disable-next-line no-nested-ternary */}
                 {activeItem === 'clubs-joined' ?
-                  <ClubCard club={{
-                    name: "Algorithm's Club", subname: 'Clubs Joined', description: 'A club for people who ' +
-                        'demonstrate many' +
-                        'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
-                        'will attend a meeting, it is expected that they attend the meeting.',
-                    image: 'images/AlgorithmsClubLogojpg.jpg',
-                  }}/> :
+                    Meteor.user().profile.clubs.joined.map((club, index) => <ClubCard key={index} club={club}/>) :
                     // eslint-disable-next-line no-nested-ternary
                   activeItem === 'favorite-clubs' ?
-                  <ClubCard club={{
-                    name: "Algorithm's Club", subname: 'Favorite Clubs', description: 'A club for people who ' +
-                        'demonstrate many' +
-                        'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
-                        'will attend a meeting, it is expected that they attend the meeting.',
-                    image: 'images/AlgorithmsClubLogojpg.jpg',
-                  }}/> :
+                      Meteor.user().profile.clubs.favorite.map((club, index) => <ClubCard key={index} club={club}/>) :
                       // eslint-disable-next-line no-nested-ternary
                   activeItem === 'recommended-clubs' ?
                   <ClubCard club={{
@@ -77,7 +64,7 @@ class Profile extends React.Component {
                         'demonstrate many' +
                         'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
                         'will attend a meeting, it is expected that they attend the meeting.',
-                    image: 'images/AlgorithmsClubLogojpg.jpg',
+                    image: 'images/AlgorithmsLogojpg.jpg',
                   }}/> :
                   activeItem === 'announcements' ?
                   <ClubCard club={{
@@ -85,7 +72,7 @@ class Profile extends React.Component {
                         'demonstrate many' +
                         'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
                         'will attend a meeting, it is expected that they attend the meeting.',
-                    image: 'images/AlgorithmsClubLogojpg.jpg',
+                    image: 'images/AlgorithmsLogojpg.jpg',
                   }}/> :
                   <Header>Something went terribly terribly wrong</Header>
                 }

@@ -37,7 +37,7 @@ body, html {margin:0; padding:0}
   z-index: 500;
 }
 
-#navbar div.right.item .navitem {
+#navbar .navitem {
   color: white !important;
 }
 

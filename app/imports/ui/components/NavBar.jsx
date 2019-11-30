@@ -12,14 +12,15 @@ class NavBar extends React.Component {
     const menuStyle = { padding: '0px' };
     return (
       <Menu id='navbar' attached="top" borderless>
-        <Menu.Item style={menuStyle} as={NavLink} activeClassName="" exact to={this.props.currentUser === '' ? '' : '/profile'}>
+        <Menu.Item style={menuStyle} as={NavLink} activeClassName=""
+                   exact to={this.props.currentUser === '' ? '' : '/profile'}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         {this.props.currentUser ? (
             [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/add" key='add'>
               Club Explorer
             </Menu.Item>,
-              <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/list" key='list'>
+              <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
                 Announcements</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
