@@ -18,8 +18,8 @@ class EditAnnouncement extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { Title, Description, _id } = data;
-    Announcements.update(_id, { $set: { Title, Description } }, (error) => (error ?
+    const { title, description, _id } = data;
+    Announcements.update(_id, { $set: { title, description } }, (error) => (error ?
         swal('Error', error.message, 'error') :
         swal('Success', 'Item updated successfully', 'success')));
   }
@@ -37,11 +37,12 @@ class EditAnnouncement extends React.Component {
             <Header as="h2" textAlign="center">Edit Announcement</Header>
             <AutoForm schema={AnnouncementSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
-                <TextField name='Title'/>
-                <LongTextField name='Description'/>
+                <TextField name='title'/>
+                <LongTextField name='description'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' />
+                <HiddenField name='club' />
               </Segment>
             </AutoForm>
           </Grid.Column>

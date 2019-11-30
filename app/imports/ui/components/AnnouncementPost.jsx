@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 
@@ -15,6 +16,12 @@ class AnnouncementPost extends React.Component {
               {this.props.announcement.description}
             </Card.Description>
           </Card.Content>
+        <Card.Content>
+        {(Meteor.user().profile.leader === this.props.announcement.club) ? (
+            <Link exact to={`/editannouncement/${this.props.announcement._id}`}>
+              Edit Announcement</Link>
+        ) : ''}
+        </Card.Content>
       </Card>
     );
   }
