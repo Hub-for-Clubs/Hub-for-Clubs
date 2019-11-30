@@ -19,7 +19,7 @@
   ],
 
   "defaultAnnouncements": [
-      { "owner": "john@foo.com", "title": "Help needed", "description": "We spent all of our club funds on that last tailgate and now we need more money"}
+      { "owner": "admin@foo.com", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"}
   ],
   "clubs": [
     {

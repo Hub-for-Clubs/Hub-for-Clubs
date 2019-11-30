@@ -7,9 +7,10 @@ const Announcements = new Mongo.Collection('Announcements');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const AnnouncementSchema = new SimpleSchema({
-  owner: String,
   title: String,
   description: String,
+  owner: String,
+  club: String,
 
 }, { tracker: Tracker });
 

@@ -13,8 +13,8 @@ import SimpleSchema from 'simpl-schema';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
-  Title: String,
-  Description: String,
+  title: String,
+  description: String,
 });
 
 /** Renders the Page for adding a document. */
@@ -22,14 +22,16 @@ class AddAnnouncement extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { Title, Description } = data;
+    const { title, description } = data;
     const owner = Meteor.user().username;
-    Announcements.insert({ Title, Description, owner },
+    const club = Meteor.user().profile.leader;
+    console.log(club);
+    Announcements.insert({ title, description, owner, club },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
         } else {
-          swal('Success', 'Item added successfully', 'success');
+          swal('Success', 'Post added successfully', 'success');
           formRef.reset();
         }
       });
@@ -44,8 +46,8 @@ class AddAnnouncement extends React.Component {
             <Header as="h2" textAlign="center">Add Announcement</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='Title'/>
-                <LongTextField name='Description'/>
+                <TextField name='title'/>
+                <LongTextField name='description'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
