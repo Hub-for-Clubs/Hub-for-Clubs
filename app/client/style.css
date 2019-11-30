@@ -1,7 +1,40 @@
 @import url('https://fonts.google.com/specimen/Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+/* Resetting Variables */
+body, html {margin:0; padding:0}
+
+/*
+  For: Parallax
+*/
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.parallax::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+/*
+
+  For: Navbar and Footer
+  Notes:
+
+ */
 
 #navbar {
   background-color: black !important;
+  position: relative;
+  z-index: 500;
 }
 
 #navbar div.right.item .navitem {
@@ -12,26 +45,76 @@
   padding-top: 15px;
   background-color: #134600;
   color: white;
+  position: relative;
+  z-index: 500;
 }
 
-.signup_description {
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 20px;
+/*
+
+  For: Sign Up Page
+  Notes: Front Page for Unregistered Users
+
+*/
+
+.signup {
+  font-family: "Lora", sans-serif;
+  height: 100vh;
 }
 
-.signup_form {
-  background-color: #49EEAF;
-  padding: 5em !important;
-  border-radius: 10px;
+.signup .background {
+  background-image: linear-gradient(150deg, green, white);
+  transform: skewY(-12deg);
+  width: 100%;
+  height: 100%;
+  transform-origin: -10em;
   position: absolute;
+  z-index: 0;
 }
 
-.signup_form .item{
+.signup .heading {
+  color: white !important;
+  margin-top: 0em !important;
+  font-size: 60px !important;
+  font-family: "Lora", sans-serif !important;
   text-align: left;
+  z-index: 1;
 }
 
-/* No one touch. I am still trying to figure out why some of this stuff works and other's don't */
+.signup .description {
+  color: white !important;
+  padding-right: 5em !important;
+  font-family: "Lora", sans-serif !important;
+  font-weight: normal !important;
+  text-align: left;
+  z-index: 1;
+}
+
+.signup .form {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+}
+
+.signup .form .item {
+  text-align: left;
+  font-size: 15px;
+  margin: 3em 1em !important;
+}
+
+/*
+
+  For: Sign In Page
+  Notes: No one touch.  I am still trying to figure out why some of this stuff works and other's don't
+
+ */
+.ui.container .signin {
+  margin-left: 0 !important;
+}
+
 .signin {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_Garden_%40_UH_Manoa_%285674163092%29.jpg");
   background-size: cover;
@@ -40,10 +123,43 @@
   height: 100vh;
   position: relative;
 }
-
-.ui.container .signin {
-  margin-left: 0 !important;
+/* Sign in general */
+.signin .p {
+  font-family: "Open Sans", sans-serif;
+  font-size: .7em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  opacity: .5;
+  text-align: center;
 }
+
+.signin .logo {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  top: 50%;
+  left: 30%;
+}
+
+/* Sign in form */
+
+.signin .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.signin .form .input {
+  background: #49EEAF;
+  width: 65%;
+  color: #359B74 ;
+  border: none;
+  padding: 9px;
+  margin: 5px -1em !important;
+}
+
+/* Midground Box, Contains Logo and Sign Up Button */
 
 .midground_box {
   background: white;
@@ -56,33 +172,13 @@
   box-shadow: 20px 20px 50px rgba(0,0,0,.1);
 }
 
-.foreground_box {
-  position: absolute;
-  top: -10%;
-  left: 5%;
-  background: #49EEAF;
-  width: 320px;
-  height: 500px;
-  border-radius: 5px;
-  box-shadow: 10px 19px 40px rgba(0, 0, 0, .1);
-  z-index: 2;
-}
-
-.rightbox {
+.midground_box .description {
   position: absolute;
   width: 50%;
   right: -2%;
 }
 
-.myh1 {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  margin-top: 100px;
-  font-size: 2em;
-  letter-spacing: 8px;
-}
-
-.title {
+.midground_box .title {
   font-family: "Open Sans", sans-serif;
   opacity: 0.8;
   color: #8E9AAF;
@@ -93,55 +189,38 @@
   margin-top: 20%;
 }
 
-.signup {
-  margin-top: 45%;
-  font-size: 10px;
-}
+/* Foreground Box, Contians Sign In Form */
 
-.p {
-  font-family: "Open Sans", sans-serif;
-  font-size: .7em;
-  letter-spacing: 2px;
-  color: #8E9AAF;
-  opacity: .5;
-  text-align: center;
-}
-
-.logo {
+.foreground_box {
   position: absolute;
-  width: 150px;
-  height: 120px;
-  top: 50%;
-  left: 30%;
-}
-
-.button2 {
-  padding: 12px;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 10px;
-  margin: auto;
-  outline: none;
-  display: block;
-  letter-spacing: 3px;
-  font-size: 11px;
-  align-items: center;
-  color: white;
-  background-color: white;
-}
-
-.signin_form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 7px;
-}
-
-.signin_form.input {
+  top: 20%;
+  right: 45%;
   background: #49EEAF;
-  width: 65%;
-  color: #359B74 ;
-  border: none;
-  border-bottom: 1px solid white;
-  padding: 9px;
-  margin: 7px;
+  width: 320px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 10px 19px 40px rgba(0, 0, 0, .1);
+  z-index: 2;
+}
+
+.foreground_box .heading {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+/*
+
+  For: Profile Page
+
+*/
+
+.profile .user_info {
+  background-color: blue;
+}
+
+.profile .club_info {
+  background-color: green;
 }

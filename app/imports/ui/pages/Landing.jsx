@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import '../../../client/style.css';
 
 import Signup from './Signup';
 import Profile from './Profile';
