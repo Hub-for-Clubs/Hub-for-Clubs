@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Grid, Header } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Redirect } from 'react-router-dom';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -8,7 +9,7 @@ import { Accounts } from 'meteor/accounts-base';
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: '', email: '', password: '', error: '', redirectToReferer: false };
+    this.state = { username: '', email: '', password: '', error: '', redirectToProfile: false };
   }
 
   handleChange = (e, { name, value }) => {
@@ -21,12 +22,15 @@ class Signup extends React.Component {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        this.setState({ error: '', redirectToReferer: true });
+        this.setState({ error: '', redirectToProfile: true });
       }
     });
   }
 
   render() {
+    if (this.state.redirectToProfile) {
+      return <Redirect to='/profile'/>
+    }
     return (
         <div className="signup" style={{ paddingTop: '30px' }}>
           <div className="background"/>

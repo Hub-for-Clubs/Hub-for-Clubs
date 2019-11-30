@@ -12,7 +12,7 @@ class NavBar extends React.Component {
     const menuStyle = { padding: '0px' };
     return (
       <Menu id='navbar' attached="top" borderless>
-        <Menu.Item style={menuStyle} as={NavLink} activeClassName="" exact to="/">
+        <Menu.Item style={menuStyle} as={NavLink} activeClassName="" exact to={this.props.currentUser === '' ? '' : '/profile'}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         {this.props.currentUser ? (
