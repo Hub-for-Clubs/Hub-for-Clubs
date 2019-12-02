@@ -58,8 +58,9 @@ if (Interests.find().count() === 0) {
 
 if (Clubs.find().count() === 0) {
   console.log('Creating default clubs');
-  if (Meteor.settings.defaultClubs) {
-    Meteor.settings.defaultClubs.map(data => addClub(data));
+  const clubJSON = JSON.parse(Assets.getText('RIOS.json')).RIOS;
+  if (clubJSON.length !== 0) {
+    clubJSON.map(data => addClub(data));
   }
 }
 
