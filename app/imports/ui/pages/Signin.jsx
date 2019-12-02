@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Redirect } from 'react-router-dom';
+import { Redirect, NavLink } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import '../../../client/style.css';
 import { Header, Button, Image, Form } from 'semantic-ui-react';
@@ -46,12 +46,12 @@ export default class Signin extends React.Component {
             <div className="midground_box">
               <div className="description">
                 <div className="title">
-                  <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
+                  <Header as="h2" color='grey'>HUB FOR CLUBS</Header>
                   <Header as="h5" className="p"> find your perfect club </Header>
                   <Image className="logo" src="images/HubForClubsLogo.png"/>
                   <Header as="h5" className="p" style={{ marginTop: '15%', fontSize: '10px' }}>
                     Don&apos;t have an account?</Header>
-                  <Button basic color='green'>sign up</Button>
+                  <Button basic color='green' as={NavLink} exact to="/">sign up</Button>
                 </div>
               </div>
             </div>

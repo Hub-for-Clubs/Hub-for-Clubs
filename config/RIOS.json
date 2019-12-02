@@ -24,7 +24,7 @@
         "email": "vkilonzo@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", "christian", "social"]
+        "tags": ["religion", "christian", "social"]
     },
     {
         "Name": "Advocates for Public Interest Law",
@@ -276,7 +276,7 @@
         "email": "spenner@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Baptist College Ministries",
@@ -285,7 +285,7 @@
         "email": "natwell@hawaii.edu",
         "website": "www.bcmoahu.org",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Belly Dance Raqs- Manoa",
@@ -465,7 +465,7 @@
         "email": "yinghui@hawaii.edu",
         "website": "churchinhonolulu.net",
         "description": "",
-        "tags": ["religious", "social"]
+        "tags": ["religion", "social"]
     },
     {
         "Name": "Circle K International",
@@ -528,7 +528,7 @@
         "email": "ltsamous@hawaii.edu",
         "website": "hawaiicru.jimdo.com",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "CTAHR Student Ambassadors",
@@ -618,7 +618,7 @@
         "email": "tmahi@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Family Medicine Interest Group",
@@ -969,7 +969,7 @@
         "email": "summerss@hawaii.edu",
         "website": "www.intervarsityhawaii.org",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Institute of Electrical and Electronic Engineers",
@@ -987,7 +987,7 @@
         "email": "bairdr@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Judo Club/Team at University of Hawaii at Manoa",
@@ -1050,7 +1050,7 @@
         "email": "etapasa@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Kappa Sigma",
@@ -1131,7 +1131,7 @@
         "email": "lwang2@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Loea Consulting Group (Consultx)",
@@ -1329,7 +1329,7 @@
         "email": "jacect@hawaii.edu",
         "website": "oahuchurch.org",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Na Koa Lani Booster Club",
@@ -1635,7 +1635,7 @@
         "email": "joshuahu@hawaii.edu",
         "website": "rvfhawaii.org",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Rural Health Interest Group at JABSOM",
@@ -1905,7 +1905,7 @@
         "email": "cjblake@hawaii.edu",
         "website": "elohist.club",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "The Engineers' Council at the University of Hawaii",
@@ -1968,7 +1968,7 @@
         "email": "blockln7@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "The Pre-Dental Association at the University of Hawaii at Manoa",
@@ -2004,7 +2004,7 @@
         "email": "BondTL@hawaii.edu",
         "website": "",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Travel Industry Management Student Association",
@@ -2067,7 +2067,7 @@
         "email": "st37@hawaii.edu",
         "website": "Wesleyfoundationhawaii.com",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     },
     {
         "Name": "Wilderness Medicine Hawaii",
@@ -2094,6 +2094,6 @@
         "email": "mmhickey@hawaii.edu",
         "website": "younglife.org",
         "description": "",
-        "tags": ["religious", " social"]
+        "tags": ["religion", " social"]
     }
 ]
