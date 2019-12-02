@@ -46,7 +46,7 @@ export default class Signin extends React.Component {
             <div className="midground_box">
               <div className="description">
                 <div className="title">
-                  <Header as="h2" color='gray'>HUB FOR CLUBS</Header>
+                  <Header as="h2" color='grey'>HUB FOR CLUBS</Header>
                   <Header as="h5" className="p"> find your perfect club </Header>
                   <Image className="logo" src="images/HubForClubsLogo.png"/>
                   <Header as="h5" className="p" style={{ marginTop: '15%', fontSize: '10px' }}>

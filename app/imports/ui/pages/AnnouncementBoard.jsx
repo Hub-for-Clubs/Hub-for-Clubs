@@ -21,7 +21,7 @@ class AnnouncementBoard extends React.Component {
         <Header as="h2" textAlign="center" inverted>List Announcements</Header>
         <Card.Group centered style={{ marginBottom: '1em' }}>
           {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
-                                                                                             announcement={announcement}/>)}
+                                                                                       announcement={announcement}/>)}
         </Card.Group>
       </Container>
   );

@@ -3,41 +3,52 @@
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": [],
       "favorite": []
-    }, "interests": ["Art", "Video Games", "Cats"], "major": ["Computer Science"] },
+    }, "interests": ["academic"], "majors": ["Computer Science"] },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {
       "joined": [],
       "favorite": []
-    }, "interests": ["Video Games", "Dogs"], "major": ["Visual Design"] },
+    }, "interests": [], "majors": ["Visual Design"] },
     { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {
       "joined": [],
       "favorite": []
-    }, "interests": ["Dogs"], "major": ["Computer Science"] },
+    }, "interests": ["art"], "majors": ["Computer Science"] },
     { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
       "joined": [{"name":  "PANDA", "subname":  "Programming AND Algorithms", "description":  "A club for people"}],
       "favorite": [{"name":  "Art Club", "subname":  "Artsy Fartsy", "description":  "For Artsy Fartsy Kind of people"}, {"name":  "Dogo Club", "subname":  "Dogs", "description":  "What do you think this club is for?"}]
-    }, "interests": ["Art", "Video Games", "Dogs"], "major": ["Computer Science", "Visual Design"] }
+    }, "interests": ["art", "academic"], "majors": ["Computer Science", "Visual Design"] }
   ],
 
   "defaultAnnouncements": [
       { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"}
   ],
-  "clubs": [
+  "defaultClubs": [
     {
       "name": "Academy for Creative Media Student Association",
+      "subname": "ACMSA",
       "type": "Academic/Professional",
       "leader": "Emma Daily",
       "email": "edaily@hawaii.edu",
-      "website": "",
+      "website": "https://sites.google.com/a/hawaii.edu/acmsa/",
       "description": "",
       "tags": ["art", "technology", "academic", "professional"]
     },
     {
       "name": "Accounting Club at UH Manoa",
+      "subname": "ACUH",
       "type": "Academic/Professional",
       "leader": "Chelsi Morishige",
       "email": "chelsicm@hawaii.edu",
       "website": "acuhmanoa.com",
       "description": "",
       "tags": ["business", "accounting", "academic", "professional"]
-    }]
+    }],
+  "defaultInterests": [{
+    "name": "art",
+    "associated_clubs": ["Academy for Creative Media Student Association"]
+  },
+    {
+      "name": "academic",
+      "associated_clubs": ["Academy for Creative Media Student Association", "Accounting Club at UH Manoa"]
+    }],
+  "defaultMajors": [{ "name": "Computer Science"}, {"name":  "Accounting"}, {"name": "Art"}, {"name": "Chinese"}, {"name": "Computer Engineering"}]
 }

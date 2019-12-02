@@ -1,6 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Announcements } from '../../api/announcement/Announcements';
+import { Interests } from '../../api/interest/Interest';
+import { Clubs } from '../../api/club/Club';
+import { Majors } from '../../api/major/Major';
 
 /* eslint-disable no-console */
 
@@ -11,8 +14,23 @@ function addData(data) {
 }
 
 function addAnnouncements(data) {
-  console.log(`  Adding: ${data.Title} (${data.owner})`);
+  console.log(`  Adding: ${data.title} (${data.owner})`);
   Announcements.insert(data);
+}
+
+function addInterest(data) {
+  console.log(`  Adding: ${data.name}`);
+  Interests.insert(data);
+}
+
+function addClub(data) {
+  console.log(`  Adding: ${data.name}`);
+  Clubs.insert(data);
+}
+
+function addMajor(data) {
+  console.log(`  Adding: ${data.name}`);
+  Majors.insert(data);
 }
 
 /** Initialize the collection if empty. */
@@ -28,5 +46,26 @@ if (Announcements.find().count() === 0) {
   if (Meteor.settings.defaultAnnouncements) {
     console.log('Creating default announcements.');
     Meteor.settings.defaultAnnouncements.map(data => addAnnouncements(data));
+  }
+}
+
+if (Interests.find().count() === 0) {
+  console.log('Creating default interests.')
+  if (Meteor.settings.defaultInterests) {
+    Meteor.settings.defaultInterests.map(data => addInterest(data));
+  }
+}
+
+if (Clubs.find().count() === 0) {
+  console.log('Creating default clubs');
+  if (Meteor.settings.defaultClubs) {
+    Meteor.settings.defaultClubs.map(data => addClub(data));
+  }
+}
+
+if (Majors.find().count() === 0) {
+  console.log('Creating default majors');
+  if (Meteor.settings.defaultMajors) {
+    Meteor.settings.defaultMajors.map(data => addMajor(data));
   }
 }
