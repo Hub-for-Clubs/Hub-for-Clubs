@@ -137,10 +137,8 @@ class Profile extends React.Component {
                        :
 
                   activeItem === 'announcements' ?
-                      // eslint-disable-next-line no-nested-ternary
-                      Meteor.user().profile.clubs.favorite.map((name, index) => Announcements.find({ club: name }).map((announcement) => <AnnouncementPost key={index}
-                                                                                                  announcement= {announcement} />))
-                      /*Meteor.user().profile.clubs.favorite.map((name, index) => console.log(`${name} ${index}`))*/
+                      // eslint-disable-next-line no-nested-ternary,max-len
+                      Meteor.user().profile.clubs.favorite.map((name, index) => Announcements.find({ club: name }).map((announcement) => <AnnouncementPost key={index} announcement= {announcement} />))
                       :
                       <Header>Something went terribly terribly wrong</Header>
                 }
