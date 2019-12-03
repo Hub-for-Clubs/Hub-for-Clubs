@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     return (
       <Menu id='navbar' attached="top" borderless>
         <Menu.Item style={menuStyle} as={NavLink} activeClassName=""
-                   exact to={this.props.currentUser === '' ? '' : '/profile'}>
+                   exact to={this.props.currentUser === '' ? '' : `/profile/${Meteor.user()._id}`}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         {this.props.currentUser ? (

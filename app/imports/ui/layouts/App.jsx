@@ -29,7 +29,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Signup}/>
               <Route path="/signin" component={Signin}/>
-              <Route path="/profile" component={Profile}/>
+              <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <Route path="/clubpage/:_id" component={ClubPage}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
