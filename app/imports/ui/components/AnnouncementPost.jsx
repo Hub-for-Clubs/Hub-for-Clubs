@@ -17,10 +17,10 @@ class AnnouncementPost extends React.Component {
             </Card.Description>
           </Card.Content>
         <Card.Content>
-        {(Meteor.user().profile.leader === this.props.announcement.club) ? (
+        { (Meteor.user() !== null) ? ((Meteor.user().profile.leader === this.props.announcement.club) ? (
             <Link exact to={`/editannouncement/${this.props.announcement._id}`}>
               Edit Announcement</Link>
-        ) : ''}
+        ) : '') : '' }
         </Card.Content>
       </Card>
     );
@@ -29,8 +29,7 @@ class AnnouncementPost extends React.Component {
 
 /** Require a document to be passed to this component. */
 AnnouncementPost.propTypes = {
-    announcement: PropTypes.object.isRequired,
-    club: PropTypes.object.isRequired,
+    announcement: PropTypes.object.isRequired
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

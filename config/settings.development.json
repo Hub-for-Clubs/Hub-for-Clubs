@@ -23,27 +23,7 @@
     { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club"},
     { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things"}
   ],
-  "defaultClubs": [
-    {
-      "name": "Academy for Creative Media Student Association",
-      "subname": "ACMSA",
-      "type": "Academic/Professional",
-      "leader": "Emma Daily",
-      "email": "edaily@hawaii.edu",
-      "website": "https://sites.google.com/a/hawaii.edu/acmsa/",
-      "description": "",
-      "tags": ["art", "technology", "academic", "professional"]
-    },
-    {
-      "name": "Accounting Club at UH Manoa",
-      "subname": "ACUH",
-      "type": "Academic/Professional",
-      "leader": "Chelsi Morishige",
-      "email": "chelsicm@hawaii.edu",
-      "website": "acuhmanoa.com",
-      "description": "",
-      "tags": ["business", "accounting", "academic", "professional"]
-    }],
+
   "defaultInterests": [{
     "name": "art",
     "associated_clubs": ["Academy for Creative Media Student Association"]
