@@ -10,6 +10,7 @@ import AnnouncementBoard from '../pages/AnnouncementBoard';
 import AddAnnouncement from '../pages/AddAnnouncement';
 import EditAnnouncement from '../pages/EditAnnouncement';
 import ListStuff from '../pages/ListStuff';
+import ClubPage from '../pages/ClubPage';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
 import NotFound from '../pages/NotFound';
@@ -32,6 +33,7 @@ class App extends React.Component {
               <Route path="/profile" component={Profile}/>
               <Route path="/editprofile" component={EditProfile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
+              <Route path="/clubpage/:_id" component={ClubPage}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
