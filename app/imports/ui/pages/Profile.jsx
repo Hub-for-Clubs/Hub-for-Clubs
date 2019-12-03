@@ -1,12 +1,14 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
+import { Meteor, _ } from 'meteor/meteor';
 import { Image, Loader, Grid, Header, List, Menu, Card, Form } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
+import { Announcements } from '../../api/announcement/Announcements';
 import { Interests } from '../../api/interest/Interest';
 import { Majors } from '../../api/major/Major';
 import { Clubs } from '../../api/club/Club';
+import AnnouncementPost from '../components/AnnouncementPost';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Profile extends React.Component {
@@ -135,14 +137,12 @@ class Profile extends React.Component {
                        :
 
                   activeItem === 'announcements' ?
-                  <ClubCard club={{
-                    name: "Algorithm's Club", subname: 'Announcements', description: 'A club for people who ' +
-                        'demonstrate many' +
-                        'qualities such as loyalty, consistency, and commitment.  When people in this club claim they' +
-                        'will attend a meeting, it is expected that they attend the meeting.',
-                    image: 'images/AlgorithmsLogojpg.jpg',
-                  }}/> :
-                  <Header>Something went terribly terribly wrong</Header>
+                      // eslint-disable-next-line no-nested-ternary
+                      Meteor.user().profile.clubs.favorite.map((name, index) => Announcements.find({ club: name }).map((announcement) => <AnnouncementPost key={index}
+                                                                                                  announcement= {announcement} />))
+                      /*Meteor.user().profile.clubs.favorite.map((name, index) => console.log(`${name} ${index}`))*/
+                      :
+                      <Header>Something went terribly terribly wrong</Header>
                 }
               </Card.Group>
             </Grid.Column>
@@ -154,6 +154,7 @@ class Profile extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 Profile.propTypes = {
+  announcements: PropTypes.array.isRequired,
   interests: PropTypes.array.isRequired,
   majors: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
@@ -165,10 +166,12 @@ export default withTracker(() => {
   const interests_sub = Meteor.subscribe('Interests');
   const majors_sub = Meteor.subscribe('Majors');
   const clubs_sub = Meteor.subscribe('Clubs');
+  const announcements_sub = Meteor.subscribe('Announcements');
   return {
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.find({}).fetch(),
-    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready(),
+    announcements: Announcements.find({}).fetch(),
+    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
   };
 })(Profile);

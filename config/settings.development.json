@@ -5,8 +5,8 @@
       "favorite": []
     }, "interests": ["academic"], "majors": ["Computer Science"] },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {
-      "joined": [],
-      "favorite": []
+      "joined": ["Academy for Creative Media Student Association"],
+      "favorite": ["Academy for Creative Media Student Association"]
     }, "interests": [], "majors": ["Visual Design"] },
     { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {
       "joined": [],
@@ -19,7 +19,9 @@
   ],
 
   "defaultAnnouncements": [
-      { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"}
+      { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"},
+    { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club"},
+    { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things"}
   ],
   "defaultClubs": [
     {
