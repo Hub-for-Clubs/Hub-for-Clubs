@@ -10,10 +10,12 @@ const ClubSchema = new SimpleSchema({
   name: String,
   subname: String,
   type: String,
+  description: String,
   leader: String,
   email: String,
   website: String,
   tags: [String],
+  members: [String],
 
 }, { tracker: Tracker });
 
