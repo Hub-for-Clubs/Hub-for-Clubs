@@ -123,26 +123,32 @@ class Profile extends React.Component {
                 <Menu.Item name="announcements" active={ activeItem === 'announcements' }
                            onClick={this.handleMenuClick}/>
               </Menu>
-              <Card.Group>
-                {/* eslint-disable-next-line no-nested-ternary */}
-                {activeItem === 'clubs-joined' ?
-                    Meteor.user().profile.clubs.joined.map((club, index) => <ClubCard key={index} club={club}/>) :
-                    // eslint-disable-next-line no-nested-ternary
-                  activeItem === 'favorite-clubs' ?
-                      Meteor.user().profile.clubs.favorite.map((club, index) => <ClubCard key={index} club={club}/>) :
+              {
+                // eslint-disable-next-line max-len
+                (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && recommendations.length > 0) ?
+                <Card.Group>
+                  {/* eslint-disable-next-line no-nested-ternary */}
+                  {activeItem === 'clubs-joined' ?
+                      Meteor.user().profile.clubs.joined.map((club, index) => <ClubCard key={index} club={club}/>) :
                       // eslint-disable-next-line no-nested-ternary
-                  activeItem === 'recommended-clubs' ?
-                      // eslint-disable-next-line max-len,array-callback-return
-                      recommendations.map((recommendation, index) => <ClubCard key={index} club={Clubs.findOne({ name: recommendation })}/>)
-                       :
+                      activeItem === 'favorite-clubs' ?
+                          Meteor.user().profile.clubs.favorite.map((club, index) => <ClubCard key={index}
+                                                                                              club={club}/>) :
+                          // eslint-disable-next-line no-nested-ternary
+                          activeItem === 'recommended-clubs' ?
+                              // eslint-disable-next-line max-len,array-callback-return
+                              recommendations.map((recommendation, index) => <ClubCard key={index}
+                                                                       club={Clubs.findOne({ name: recommendation })}/>)
+                              :
 
-                  activeItem === 'announcements' ?
-                      // eslint-disable-next-line no-nested-ternary,max-len
-                      Meteor.user().profile.clubs.favorite.map((name, index) => Announcements.find({ club: name }).map((announcement) => <AnnouncementPost key={index} announcement= {announcement} />))
-                      :
-                      <Header>Something went terribly terribly wrong</Header>
-                }
-              </Card.Group>
+                              activeItem === 'announcements' ?
+                                  // eslint-disable-next-line no-nested-ternary,max-len
+                                  Meteor.user().profile.clubs.favorite.map((name, index) => Announcements.find({ club: name }).map((announcement) => <AnnouncementPost key={index} announcement={announcement}/>))
+                                  :
+                                  <Header>Something went terribly terribly wrong</Header>
+                  }
+                </Card.Group> : null
+              }
             </Grid.Column>
           </Grid>
         </div>
