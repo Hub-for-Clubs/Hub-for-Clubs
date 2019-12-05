@@ -3,7 +3,7 @@
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": [],
       "favorite": []
-    }, "interests": ["academic"], "majors": ["Computer Science"] },
+    }, "interests": ["Academic"], "majors": ["Computer Science"] },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {
       "joined": ["Academy for Creative Media Student Association"],
       "favorite": ["Academy for Creative Media Student Association"]
@@ -11,11 +11,11 @@
     { "username": "john","email": "john@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs" : {
       "joined": [],
       "favorite": []
-    }, "interests": ["art"], "majors": ["Computer Science"] },
+    }, "interests": ["Art"], "majors": ["Computer Science"] },
     { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
-      "joined": [{"name":  "PANDA", "subname":  "Programming AND Algorithms", "description":  "A club for people"}],
-      "favorite": [{"name":  "Art Club", "subname":  "Artsy Fartsy", "description":  "For Artsy Fartsy Kind of people"}, {"name":  "Dogo Club", "subname":  "Dogs", "description":  "What do you think this club is for?"}]
-    }, "interests": ["art", "academic"], "majors": ["Computer Science", "Visual Design"] }
+      "joined": ["Academy for Creative Media Student Association"],
+      "favorite": ["Smash Bros. Club at The University of Hawaii at Manoa", "Cannabis Club"]
+    }, "interests": ["Art", "Academic"], "majors": ["Computer Science", "Visual Design"] }
   ],
 
   "defaultAnnouncements": [

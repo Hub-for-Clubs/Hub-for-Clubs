@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Grid, Header } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { Redirect } from 'react-router-dom';
 
@@ -40,11 +41,12 @@ class Signup extends React.Component {
 
   render() {
     if (this.state.redirectToProfile) {
-      return <Redirect to='/profile'/>;
+      return <Redirect to={ `/profile/${Meteor.user()._id}` }/>;
     }
     return (
         <div className="signup" style={{ paddingTop: '30px' }}>
           <div className="background"/>
+          <div className="image"/>
           <Grid verticalAlign='middle' textAlign='center' container>
             <Grid.Column className="description" width={10}>
               <Header className="heading" as="h1">Finding clubs that are right for you</Header>

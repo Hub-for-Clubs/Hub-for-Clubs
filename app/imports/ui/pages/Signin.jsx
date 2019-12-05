@@ -38,7 +38,7 @@ export default class Signin extends React.Component {
   render() {
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
-      return <Redirect to={'/profile'}/>;
+      return <Redirect to={ `/profile/${Meteor.user()._id}` }/>;
     }
     // Otherwise return the Login form.
     return (
