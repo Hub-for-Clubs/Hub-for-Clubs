@@ -8,7 +8,6 @@ import { withRouter, Link } from 'react-router-dom';
 class AnnouncementPost extends React.Component {
   render() {
     return (
-        <div class="card-style">
       <Card fluid color='green'>
           <Card.Content>
             <Card.Header>{this.props.announcement.club}: {this.props.announcement.title}</Card.Header>
@@ -23,8 +22,7 @@ class AnnouncementPost extends React.Component {
               Edit Announcement</Link>
         ) : '') : '' }
         </Card.Content>
-      </Card>
-        </div>
+  </Card>
     );
   }
 }

@@ -64,12 +64,15 @@ class ClubExplorer extends React.Component {
               {
                 // eslint-disable-next-line max-len
                 (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && recommendations.length > 0) ?
-                    <Card.Group>
+                    <Card.Group centered>
+                      <Grid container stretched centered relaxed='very' columns='equal'>
+
                       {/* eslint-disable-next-line no-nested-ternary */}
                       {activeItem === 'clubs-joined' ?
                           Clubs.find({}).fetch().map((club, index) => <ClubCard key={index} club={club}/>) :
                                       <Header>Something went terribly terribly wrong</Header>
                       }
+                      </Grid>
                     </Card.Group> : null
               }
         </div>

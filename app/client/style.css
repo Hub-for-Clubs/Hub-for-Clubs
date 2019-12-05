@@ -280,8 +280,6 @@ body, html {margin:0; padding:0}
 .club-explorer-background {
   background-image: url("https://pbs.twimg.com/media/Cyd_72BVIAAI4PS.jpg");
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat
 }
 
 .card-shadow {
