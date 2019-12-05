@@ -89,7 +89,8 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
+                {Meteor.user().profile.interests ? Meteor.user().profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>) : null}
+              </List>
               <Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
@@ -112,7 +113,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
+                {Meteor.user().profile.majors ? Meteor.user().profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>) : null}
               </List>
               <Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
