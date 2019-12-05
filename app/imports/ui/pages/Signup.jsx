@@ -28,7 +28,7 @@ class Signup extends React.Component {
         leader: '',
         clubs: { joined: [], favorite: [] },
         interests: [],
-        major: [],
+        majors: [],
       },
     }, (err) => {
       if (err) {

@@ -75,6 +75,7 @@ class Profile extends React.Component {
     }
 
     const announcements = [];
+    console.log(Meteor.user().profile);
     const subscribed = Meteor.user().profile.clubs.favorite.concat(Meteor.user().profile.clubs.joined);
     // eslint-disable-next-line max-len
     subscribed.map((clubName) => Announcements.find({ club: clubName }).map((announcement) => (!announcements.find((a) => a._id === announcement._id) ? announcements.push(announcement) : null)));
@@ -89,8 +90,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.interests ? Meteor.user().profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>) : null}
-              </List>
+                {Meteor.user().profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
               <Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
@@ -113,7 +113,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.majors ? Meteor.user().profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>) : null}
+                {Meteor.user().profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
               </List>
               <Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
