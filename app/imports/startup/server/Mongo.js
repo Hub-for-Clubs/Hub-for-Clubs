@@ -19,7 +19,7 @@ function addAnnouncements(data) {
 }
 
 function addInterest(data) {
-  console.log(`  Adding: ${data.name}`);
+  console.log(`  Adding: ${data.name}`)
   Interests.insert(data);
 }
 
@@ -49,18 +49,19 @@ if (Announcements.find().count() === 0) {
   }
 }
 
-if (Interests.find().count() === 0) {
-  console.log('Creating default interests.')
-  if (Meteor.settings.defaultInterests) {
-    Meteor.settings.defaultInterests.map(data => addInterest(data));
-  }
-}
-
 if (Clubs.find().count() === 0) {
   console.log('Creating default clubs');
   const clubJSON = JSON.parse(Assets.getText('RIOS.json')).RIOS;
   if (clubJSON.length !== 0) {
     clubJSON.map(data => addClub(data));
+  }
+}
+
+if (Interests.find().count() === 0) {
+  console.log('Creating default interests.');
+  const interestJSON = JSON.parse(Assets.getText('Interests.json')).Interest;
+  if (interestJSON.length !== 0) {
+    interestJSON.map(data => addInterest(data));
   }
 }
 

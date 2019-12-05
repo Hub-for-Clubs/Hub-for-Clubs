@@ -24,6 +24,7 @@ class NavBar extends React.Component {
                 Announcements</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'leader') ? (
+            // eslint-disable-next-line max-len
             <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/addannouncement" key='leader'>
               Post Announcement</Menu.Item>
         ) : ''}
