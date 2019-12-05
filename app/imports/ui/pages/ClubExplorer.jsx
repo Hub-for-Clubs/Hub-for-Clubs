@@ -11,51 +11,8 @@ import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubExplorer extends React.Component {
-
-  state = { activeItem: 'clubs-joined', interest: '', major: '', recommendations: [] };
-
-  handleMenuClick = (e, { name }) => {this.setState({ activeItem: name })};
-
-  handleChange = (e, { name, value }) => {
-    this.setState({ [name]: value });
-  }
-
-  handleInterestSubmit = () => {
-    // eslint-disable-next-line max-len
-    if (Interests.findOne({ name: this.state.interest }) && !(Meteor.user().profile.interests.includes(this.state.interest))) {
-      Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.interests': Meteor.user().profile.interests.concat([this.state.interest]) } });
-      this.setState({ interest: '' });
-    }
-  }
-
-  handleMajorSubmit = () => {
-    if (this.state.major in this.props.majors) {
-      Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.majors': Meteor.user().profile.majors.concat([this.state.major]) } });
-      this.setState({ m: '' });
-    }
-  }
-
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
-  }
-
-  /** Render the page once subscriptions have been received. */
-  renderPage() {
-    const { activeItem } = this.state;
-    const recommendations = [];
-    for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
-      const clubs = Interests.findOne({ name: Meteor.user().profile.interests[i] }).associated_clubs;
-      for (let j = 0; j < clubs.length; j++) {
-        if (!recommendations.includes(clubs[j])) {
-          recommendations.push(clubs[j]);
-        }
-      }
-    }
-
-    console.log(recommendations);
     return (
         <div className="club-explorer-background">
           <div className="club-explorer-text">
@@ -63,17 +20,14 @@ class ClubExplorer extends React.Component {
           </div>
               {
                 // eslint-disable-next-line max-len
-                (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && recommendations.length > 0) ?
                     <Card.Group centered>
                       <Grid container stretched centered relaxed='very' columns='equal'>
 
                       {/* eslint-disable-next-line no-nested-ternary */}
-                      {activeItem === 'clubs-joined' ?
-                          Clubs.find({}).fetch().map((club, index) => <ClubCard key={index} club={club}/>) :
-                                      <Header>Something went terribly terribly wrong</Header>
+                        {Clubs.find({}).fetch().map((club, index) => <ClubCard key={index} club={club}/>)
                       }
                       </Grid>
-                    </Card.Group> : null
+                    </Card.Group>
               }
         </div>
     );
