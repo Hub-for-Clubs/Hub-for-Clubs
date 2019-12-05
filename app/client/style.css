@@ -202,6 +202,22 @@ body, html {margin:0; padding:0}
   margin-top: 20%;
 }
 
+/* Annoucement Board */
+
+.announcementBoard-image {
+  background-image: url("https://live.staticflickr.com/5265/5674159978_d44fa6320f_b.jpg");
+  background-size: cover;
+}
+
+.announcementBoard-header {
+  text-shadow: 2px 2px 7px #000000;
+  padding-top: 10px;
+}
+
+.card-style {
+  box-shadow: -8px 10px 76px -16px rgba(0,0,0,0.64);
+}
+
 /* Foreground Box, Contians Sign In Form */
 
 .foreground_box {

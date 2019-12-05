@@ -8,7 +8,8 @@ import { withRouter, Link } from 'react-router-dom';
 class AnnouncementPost extends React.Component {
   render() {
     return (
-      <Card fluid>
+        <div class="card-style">
+      <Card fluid color='green'>
           <Card.Content>
             <Card.Header>{this.props.announcement.club}: {this.props.announcement.title}</Card.Header>
             <Card.Meta>{this.props.announcement.owner}</Card.Meta>
@@ -23,6 +24,7 @@ class AnnouncementPost extends React.Component {
         ) : '') : '' }
         </Card.Content>
       </Card>
+        </div>
     );
   }
 }

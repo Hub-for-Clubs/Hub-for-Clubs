@@ -17,13 +17,17 @@ class AnnouncementBoard extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+        <div className="announcementBoard-image">
       <Container>
+        <div className="announcementBoard-header">
         <Header as="h2" textAlign="center" inverted>List Announcements</Header>
-        <Card.Group centered style={{ marginBottom: '1em' }}>
+        </div>
+        <Card.Group centered style={{ marginBottom: '1em', marginTop:'1em' }}>
           {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
                                                                                        announcement={announcement}/>)}
         </Card.Group>
       </Container>
+        </div>
   );
   }
 }

@@ -18,6 +18,7 @@ class ClubCard extends React.Component {
 
             <Card.Description>
               {this.props.club.description}
+              {this.props.club.tags}
             </Card.Description>
           </Card.Content>
           {/* <Card.Content extra> */}
