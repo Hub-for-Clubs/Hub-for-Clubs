@@ -1,26 +1,30 @@
 import React from 'react';
 import { Card, Image, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
 import { withRouter, Link } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class ClubCard extends React.Component {
   render() {
     return (
-        <Card>
+        <div className="card-shadow">
+          {/* eslint-disable-next-line no-template-curly-in-string */}
+        <Card as={Link} to={`/clubpage/${this.props.club._id}`}>
+          <Image src="https://www.staradvertiser.com/wp-content/uploads/2018/08/web1_20171228_brk_uhm01.jpg" wrapped ui={false}></Image>
           <Card.Content>
-            <Image floated='right' size='mini' src={this.props.club.image}/>
             <Card.Header>{this.props.club.name}</Card.Header>
             <Card.Meta>{this.props.club.subname}</Card.Meta>
+
             <Card.Description>
               {this.props.club.description}
             </Card.Description>
-            <Button as={Link} to={`/clubpage/`}>Check it out</Button>
           </Card.Content>
           {/* <Card.Content extra> */}
           {/*  <Link to={`/editclub/${this.props.club._id}`}>Edit</Link> */}
           {/* </Card.Content> */}
         </Card>
+        </div>
     );
   }
 }
