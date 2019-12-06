@@ -10,6 +10,7 @@ const ClubSchema = new SimpleSchema({
   name: String,
   subname: String,
   type: String,
+  image: String,
   description: String,
   leader: String,
   email: String,
