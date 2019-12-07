@@ -75,7 +75,6 @@ class Profile extends React.Component {
     }
 
     const announcements = [];
-    console.log(this.props.user);
     const subscribed = this.props.user.profile.clubs.favorite.concat(this.props.user.profile.clubs.joined);
     // eslint-disable-next-line max-len
     subscribed.map((clubName) => Announcements.find({ club: clubName }).map((announcement) => (!announcements.find((a) => a._id === announcement._id) ? announcements.push(announcement) : null)));
@@ -91,7 +90,7 @@ class Profile extends React.Component {
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
                 {this.props.user.profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
-              <Form onSubmit={this.handleInterestSubmit}>
+              {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
                     <Form.Input style={{ marginLeft: '3em' }}
@@ -108,14 +107,14 @@ class Profile extends React.Component {
                             type='submit'>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
-              </Form>
+              </Form>) : ''}
               <Header className="heading">Majors</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
                 {this.props.user.profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
               </List>
-              <Form onSubmit={this.handleMajorSubmit}>
+              {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
                     <div>
@@ -134,7 +133,7 @@ class Profile extends React.Component {
                             type='submit'>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
-              </Form>
+              </Form>) : ''}
             </Grid.Column>
             <Grid.Column width={12} className="club_info">
               <Menu pointing secondary>
