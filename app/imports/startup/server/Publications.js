@@ -34,8 +34,16 @@ Meteor.publish('Interests', function publish() {
 
 Meteor.publish('Majors', function publish() {
   return Majors.find();
-})
+});
 
 Meteor.publish('Clubs', function publish() {
   return Clubs.find();
-})
+});
+
+Meteor.publish('userData', function () {
+  if (this.userId) {
+    return Meteor.users.find();
+  } else {
+    return this.ready();
+  }
+});
