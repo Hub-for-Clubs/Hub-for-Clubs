@@ -1,22 +1,55 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Form } from 'semantic-ui-react';
+import { Loader, Header, Card, Grid, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
-import { Announcements } from '../../api/announcement/Announcements';
-import { Interests } from '../../api/interest/Interest';
-import { Majors } from '../../api/major/Major';
 import { Clubs } from '../../api/club/Club';
+import { Interests } from '../../api/interest/Interest';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
+
+  state = { selectedTags: [] };
+
   render() {
+    return this.props.ready ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+  selectTag(name) {
+    if (this.state.selectedTags.includes(name)) {
+      this.setState( { selectedTags: this.state.selectedTags.filter((value) => value !== name) });
+    } else {
+      this.setState({ selectedTags: this.state.selectedTags.concat([name]) });
+    }
+  }
+
+  doesClubMatchInterest(club) {
+    let count = 0;
+    for (let i = 0; i < this.state.selectedTags.length; i++) {
+      if (club.tags.includes(this.state.selectedTags[i].toLowerCase())) {
+        count += 1;
+      }
+    }
+
+    console.log(club);
+    console.log(this.state.selectedTags);
+    return count === this.state.selectedTags.length;
+  }
+
+  /** Render the page once subscriptions have been received. */
+  renderPage() {
     return (
         <div className="club-explorer-background">
           <div className="club-explorer-text">
-          <Header as='h1' textAlign='center' inverted>CLUB EXPLORER</Header>
+            <Header as='h1' textAlign='center' inverted>CLUB EXPLORER</Header>
+          </div>
+          <div style={{ marginLeft: '20%', marginRight: '20%', marginBottom: '5%', backgroundColor: 'white' }}>
+            {Interests.find({}).fetch().map((interest, index) => <Button key={index}
+                                             color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
+                                             content={interest.name} style={{ margin: '1%' }}
+                                             onClick={() => this.selectTag(interest.name)}/>)}
           </div>
               {
                 // eslint-disable-next-line max-len
@@ -24,11 +57,11 @@ class ClubExplorer extends React.Component {
                       <Grid container stretched centered relaxed='very' columns='equal'>
 
                       {/* eslint-disable-next-line no-nested-ternary */}
-                        {Clubs.find({}).fetch().map((club, index) => <ClubCard key={index} club={club}/>)
-                      }
+                        {Clubs.find({}).fetch().map((club, index) => this.doesClubMatchInterest(club) ? <ClubCard key={index} club={club}/> : null)}
                       </Grid>
                     </Card.Group>
               }
+            <div style={{ paddingBottom: '10%' }}/>
         </div>
     );
   }
@@ -36,24 +69,18 @@ class ClubExplorer extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 ClubExplorer.propTypes = {
-  announcements: PropTypes.array.isRequired,
-  interests: PropTypes.array.isRequired,
-  majors: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const interests_sub = Meteor.subscribe('Interests');
-  const majors_sub = Meteor.subscribe('Majors');
   const clubs_sub = Meteor.subscribe('Clubs');
-  const announcements_sub = Meteor.subscribe('Announcements');
+  const interests_sub = Meteor.subscribe('Interests');
+
   return {
     interests: Interests.find({}).fetch(),
-    majors: Majors.find({}).fetch(),
     clubs: Clubs.find({}).fetch(),
-    announcements: Announcements.find({}).fetch(),
-    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
+    ready: clubs_sub.ready() && interests_sub.ready(),
   };
 })(ClubExplorer);

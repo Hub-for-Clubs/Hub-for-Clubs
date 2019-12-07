@@ -32,9 +32,9 @@ class App extends React.Component {
               <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <Route path="/clubpage/:_id" component={ClubPage}/>
+              <Route path="/clubexplorer" component={ClubExplorer}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
-              <Route path="/clubexplorer" component={ClubExplorer}/>
               <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>

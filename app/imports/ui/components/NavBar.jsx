@@ -16,11 +16,11 @@ class NavBar extends React.Component {
                    exact to={this.props.currentUser === '' ? '' : `/profile/${Meteor.user()._id}`}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
+        <Menu.Item as={NavLink} className="navitem" activeClassName="" exact to="/clubexplorer" key='clubexplorer'>
+          Club Explorer
+        </Menu.Item>
         {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/clubexplorer" key='clubexplorer'>
-              Club Explorer
-            </Menu.Item>,
-              <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
+            [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
                 Announcements</Menu.Item>,
               <Menu.Item key='searchbar'>
                 <Input className='icon' icon='search' placeholder='Search...' />
