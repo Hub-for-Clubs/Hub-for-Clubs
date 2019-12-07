@@ -13,6 +13,9 @@ class UserCard extends React.Component {
             <Image src={this.props.user.profile.image} wrapped ui={false}></Image>
             <Card.Content>
               <Card.Header>{this.props.user.username}</Card.Header>
+              {(this.props.user.profile.majors[0]) ? <Card.Meta>{this.props.user.profile.majors[0]}</Card.Meta> : ''}
+              {(this.props.user.profile.majors[1]) ? <Card.Meta>{this.props.user.profile.majors[1]}</Card.Meta> : ''}
+              {(this.props.user.profile.majors[2]) ? <Card.Meta>{this.props.user.profile.majors[2]}</Card.Meta> : ''}
             </Card.Content>
             {/* <Card.Content extra> */}
             {/*  <Link to={`/editclub/${this.props.club._id}`}>Edit</Link> */}

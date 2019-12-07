@@ -62,7 +62,7 @@ class Signup extends React.Component {
               <Grid.Row>
                 <Form style={{ borderStyle: 'none', boxShadow: 'none' }} onSubmit={this.submit}>
                   <Form.Field>
-                    <Form.Input className="item" fluid label='Username:' placeholder='Username' name='username'
+                    <Form.Input className="item" fluid label='Name:' placeholder='John Doe' name='username'
                                 onChange={this.handleChange}/>
                     <Form.Input className="item" fluid label='Email:' placeholder='Email' name='email'
                                 onChange={this.handleChange}/>
