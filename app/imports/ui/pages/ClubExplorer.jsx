@@ -3,6 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { Loader, Header, Card, Grid, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { _ } from 'meteor/underscore';
 import ClubCard from '../components/ClubCard';
 import { Clubs } from '../../api/club/Club';
 import { Interests } from '../../api/interest/Interest';
@@ -11,26 +12,19 @@ import { Interests } from '../../api/interest/Interest';
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
 
-  state = { tags: [] };
-
-  createTags() {
-    const temp = Interests.find({}).fetch();
-    console.log(temp);
-    // eslint-disable-next-line guard-for-in,no-restricted-syntax
-    for (const i of temp) {
-      console.log(i);
-      temp.push((i, false));
-    }
-    return temp;
-  }
+  state = { tags: [_.map(Interests.find({}).fetch(), (interest) => (interest, false))] };
 
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    if (this.props.ready) {
+      return this.renderPage();
+    }
+
+    return <Loader active>Getting data</Loader>;
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    this.setState({ tags: this.createTags() });
+    console.log(this.state);
     return (
         <div className="club-explorer-background">
           <div className="club-explorer-text">

@@ -15,20 +15,6 @@ class Profile extends React.Component {
 
   state = { activeItem: 'clubs-joined', interest: '', major: '', recommendations: [], temp: '' };
 
-  getRecommendations() {
-    const recommendations = [];
-    for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
-      const clubs = Interests.findOne({ name: Meteor.user().profile.interests[i] }).associated_clubs;
-      for (let j = 0; j < clubs.length; j++) {
-        if (!recommendations.includes(clubs[j]) && !Meteor.user().profile.clubs.favorite.includes(clubs[j])
-            && !Meteor.user().profile.clubs.joined.includes(clubs[j])) {
-          recommendations.push(clubs[j]);
-        }
-      }
-    }
-    return recommendations;
-  }
-
   handleMenuClick = (e, { name }) => { this.setState({ activeItem: name }); };
 
   handleChange = (e, { name, value }) => {
@@ -37,9 +23,9 @@ class Profile extends React.Component {
 
   handleInterestSubmit = () => {
     // eslint-disable-next-line max-len
-    if (Interests.findOne({ name: this.state.interest }) && !(Meteor.user().profile.interests.includes(this.state.interest))) {
+    if (Interests.findOne({ name: this.state.interest }) && !(this.props.user.profile.interests.includes(this.state.interest))) {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.interests': Meteor.user().profile.interests.concat([this.state.interest]) } });
+          { $set: { 'profile.interests': this.props.user.profile.interests.concat([this.state.interest]) } });
       this.setState({ interest: '' });
     }
   }
@@ -48,22 +34,23 @@ class Profile extends React.Component {
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
           // eslint-disable-next-line max-len
-          { $set: { 'profile.interests': Meteor.user().profile.interests.filter(function (value) { return value !== interest; }) } });
-      console.log(Meteor.users().profile);
+          { $set: { 'profile.interests': this.props.user.profile.interests.filter(function (value) { return value !== interest; }) } });
+      window.location.reload(false);
     };
   }
 
   removeMajor = function (major) {
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.majors': Meteor.user().profile.majors.filter(function (value) { return value !== major; }) } });
-    }
+          { $set: { 'profile.majors': this.props.user.profile.majors.filter(function (value) { return value !== major; }) } });
+      window.location.reload(false);
+    };
   }
 
   handleMajorSubmit = () => {
-    if (Majors.findOne({ name: this.state.major }) && !Meteor.user().profile.majors.includes(this.state.major)) {
+    if (Majors.findOne({ name: this.state.major }) && !this.props.user.profile.majors.includes(this.state.major)) {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.majors': Meteor.user().profile.majors.concat([this.state.major]) } });
+          { $set: { 'profile.majors': this.props.user.profile.majors.concat([this.state.major]) } });
       this.setState({ major: '' });
     }
   }
@@ -76,10 +63,20 @@ class Profile extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
-    const announcements = [];
-    console.log(Meteor.user().profile);
-    const subscribed = Meteor.user().profile.clubs.favorite.concat(Meteor.user().profile.clubs.joined);
+    const recommendations = [];
+    for (let i = 0; i < this.props.user.profile.interests.length; i++) {
+      const clubs = Interests.findOne({ name: this.props.user.profile.interests[i] }).associated_clubs;
+      for (let j = 0; j < clubs.length; j++) {
+        if (!recommendations.includes(clubs[j]) && !this.props.user.profile.clubs.favorite.includes(clubs[j])
+            && !this.props.user.profile.clubs.joined.includes(clubs[j])) {
+          recommendations.push(clubs[j]);
+        }
+      }
+    }
 
+    const announcements = [];
+    console.log(this.props.user);
+    const subscribed = this.props.user.profile.clubs.favorite.concat(this.props.user.profile.clubs.joined);
     // eslint-disable-next-line max-len
     subscribed.map((clubName) => Announcements.find({ club: clubName }).map((announcement) => (!announcements.find((a) => a._id === announcement._id) ? announcements.push(announcement) : null)));
 
@@ -87,13 +84,13 @@ class Profile extends React.Component {
         <div className="profile">
           <Grid>
             <Grid.Column width={4} className="user_info">
-              <Image className="profile_picture" src={Meteor.user().profile.image} size="medium"/>
-              <Header className="name">{Meteor.user().username}</Header>
+              <Image className="profile_picture" src={ this.props.user.profile.image } size="medium"/>
+              <Header className="name">{this.props.user.username}</Header>
               <Header className="heading">Interest</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
+                {this.props.user.profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
               <Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
@@ -116,7 +113,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {Meteor.user().profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
+                {this.props.user.profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
               </List>
               <Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
@@ -151,20 +148,20 @@ class Profile extends React.Component {
               </Menu>
               {
                 // eslint-disable-next-line max-len
-                (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && this.getRecommendations().length > 0) || (activeItem === 'announcements') ?
+                (activeItem === 'clubs-joined' && this.props.user.profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && this.props.user.profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && recommendations.length > 0) || (activeItem === 'announcements') ?
                 <Card.Group>
                   {
                     // eslint-disable-next-line no-nested-ternary
                     activeItem === 'clubs-joined' ?
                      // eslint-disable-next-line max-len
-                      Meteor.user().profile.clubs.joined.map((club, index) => <ClubCard key={index} club={Clubs.findOne({ name: club })}/>) :
+                      this.props.user.profile.clubs.joined.map((club, index) => <ClubCard key={index} club={Clubs.findOne({ name: club })}/>) :
                     // eslint-disable-next-line no-nested-ternary
                     activeItem === 'favorite-clubs' ?
-                      Meteor.user().profile.clubs.favorite.map((club, index) => <ClubCard
+                      this.props.user.profile.clubs.favorite.map((club, index) => <ClubCard
                                                               key={index} club={Clubs.findOne({ name: club })}/>) :
                     // eslint-disable-next-line no-nested-ternary
                     activeItem === 'recommended-clubs' ?
-                      this.getRecommendations().map((recommendation, index) => <ClubCard key={index}
+                      recommendations.map((recommendation, index) => <ClubCard key={index}
                                          club={Clubs.findOne({ name: recommendation })}/>) :
 
                     activeItem === 'announcements' ?
@@ -188,21 +185,27 @@ Profile.propTypes = {
   majors: PropTypes.array.isRequired,
   clubs: PropTypes.array.isRequired,
   announcements: PropTypes.array.isRequired,
+  user: PropTypes.object.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(() => {
+export default withTracker(({ match }) => {
   // Get access to Stuff documents.
   const interests_sub = Meteor.subscribe('Interests');
   const majors_sub = Meteor.subscribe('Majors');
   const clubs_sub = Meteor.subscribe('Clubs');
   const announcements_sub = Meteor.subscribe('Announcements');
+  const documentId = match.params._id;
+  const users_sub = Meteor.subscribe('userData');
+
   return {
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.find({}).fetch(),
     announcements: Announcements.find({}).fetch(),
-    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
+    user: Meteor.users.findOne({ _id: documentId }),
+    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() &&
+        announcements_sub.ready() && users_sub.ready(),
   };
 })(Profile);
