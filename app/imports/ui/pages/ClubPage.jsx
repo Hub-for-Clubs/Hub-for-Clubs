@@ -8,8 +8,10 @@ import { Majors } from '../../api/major/Major';
 import { Clubs } from '../../api/club/Club';
 import { Announcements } from '../../api/announcement/Announcements';
 import AnnouncementPost from '../components/AnnouncementPost';
+import UserCard from '../components/UserCard';
 import swal from 'sweetalert';
 import { Link } from 'react-router-dom';
+import ClubCard from '../components/ClubCard';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubPage extends React.Component {
@@ -29,6 +31,7 @@ class ClubPage extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    console.log(this.props.users);
     const { activeItem } = this.state;
     if (this.props.clubs === undefined) {
       return (
@@ -58,7 +61,7 @@ class ClubPage extends React.Component {
               <Grid.Column width={12} className="club_info">
                 <Menu pointing secondary>
                   <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
-                  <Menu.Item name="announcements" active={activeItem === 'announcements'}
+                  <Menu.Item name="Members" active={activeItem === 'Members'}
                              onClick={this.handleMenuClick}/>
 
                 </Menu>
@@ -67,14 +70,15 @@ class ClubPage extends React.Component {
                     {/* eslint-disable-next-line no-nested-ternary */}
                     {activeItem === 'About-Us' ?
                         <Container>
-                          <h3>{this.props.clubs.description}</h3>
+                          {(this.props.clubs.description !== 'N/A') ? <h3>{this.props.clubs.description}</h3> : <h3> </h3>}
+                          <h2>Our Announcements</h2>
                           {Announcements.find({ club: this.props.clubs.name }).map((announcement, index) =>
                               <AnnouncementPost key={index} announcement={announcement}/>)}
                         </Container>
                         :
-                        activeItem === 'announcements' ?
-                            Announcements.find({ club: this.props.clubs.name }).map((announcement, index) => ((index <= 5) ?
-                                <AnnouncementPost key={index} announcement={announcement}/> : ''))
+                        activeItem === 'Members' ?
+                            this.props.users.filter((user) => ((user.profile.clubs.joined.includes(this.props.clubs.name))))
+                                .map((user, index) => <UserCard key={index} user={user}/>)
                             :
                             <Header>Something went terribly terribly wrong</Header>
                     }
@@ -94,6 +98,7 @@ ClubPage.propTypes = {
   interests: PropTypes.array.isRequired,
   majors: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
+  users: PropTypes.array.isRequired,
   announcements: PropTypes.array.isRequired,
 };
 
@@ -105,15 +110,15 @@ export default withTracker(({ match }) => {
   const clubs_sub = Meteor.subscribe('Clubs');
   const announcements_sub = Meteor.subscribe('Announcements');
   const documentId = match.params._id;
+  const users_sub = Meteor.subscribe('userData');
 
-  console.log(documentId);
   return {
 
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
     announcements: Announcements.find({}).fetch(),
-
-    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
+    users: Meteor.users.find({}).fetch(),
+    ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready() && users_sub.ready(),
   };
 })(ClubPage);

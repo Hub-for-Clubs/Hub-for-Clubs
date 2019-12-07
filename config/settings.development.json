@@ -1,8 +1,8 @@
 {
   "defaultAccounts": [
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
-      "joined": [],
-      "favorite": []
+      "joined": ["Accounting Club at UH Manoa"],
+      "favorite": ["Accounting Club at UH Manoa"]
     }, "interests": ["Academic"], "majors": ["Computer Science"] },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "Academy for Creative Media Student Association", "clubs" : {
       "joined": ["Academy for Creative Media Student Association"],
