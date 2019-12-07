@@ -10,7 +10,7 @@ class ClubCard extends React.Component {
     return (
         <div className="card-shadow">
           {/* eslint-disable-next-line no-template-curly-in-string */}
-        <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: "450px" }}>
+        <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: '450px' }}>
           {/* eslint-disable-next-line max-len */}
           <Image src={(this.props.club.image !== 'N/A') ? this.props.club.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'} wrapped ui={false}/>
           <Card.Content>

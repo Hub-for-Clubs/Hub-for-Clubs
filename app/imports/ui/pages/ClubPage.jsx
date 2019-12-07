@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Container } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Interests } from '../../api/interest/Interest';
@@ -10,7 +10,7 @@ import { Announcements } from '../../api/announcement/Announcements';
 import AnnouncementPost from '../components/AnnouncementPost';
 import UserCard from '../components/UserCard';
 import swal from 'sweetalert';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import ClubCard from '../components/ClubCard';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -35,6 +35,17 @@ class ClubPage extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
+  toggleJoin(name) {
+    const index = Meteor.user().profile.clubs.joined.indexOf(name);
+    if (index !== -1) {
+      Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.filter((club) => club != name) } });
+    } else {
+      Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.concat([name]) } });
+    }
+  }
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
@@ -52,15 +63,23 @@ class ClubPage extends React.Component {
                        alt={'Club Picture'}
                        size="medium"/>
                 <Header className="name">{this.props.clubs.name}</Header>
+
+                {Meteor.user() ? <Button content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+                    'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
+                <Button as={NavLink} exact to={''} content={'Join'}/>}
+
+                {Meteor.user() ? <Button content={'Favorite'}/> :
+                <Button content={'Favorite'}/>}
+
                 <Header className="heading">Leader</Header>
                 <h3>{this.props.clubs.leader}</h3>
                 <h4>{this.props.clubs.email}</h4>
                 <hr style={{ marginLeft: '1em' }}/>
                 <Header className="heading">Our Website</Header>
-                <h3><Link exact to={this.props.clubs.website}>
+                <h3><Link exact to={this.props.clubs.website.toString()}>
                   {this.props.clubs.website}</Link></h3>
                 <hr style={{ marginLeft: '1em' }}/>
-                <Header className={"heading"}>Interests</Header>
+                <Header className={'heading'}>Interests</Header>
                 <List bulleted className="list">
                   {this.props.clubs.tags.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
                 </List>
