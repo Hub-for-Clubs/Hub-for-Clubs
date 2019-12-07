@@ -3,7 +3,6 @@ import { Meteor } from 'meteor/meteor';
 import { Loader, Header, Card, Grid, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { _ } from 'meteor/underscore';
 import ClubCard from '../components/ClubCard';
 import { Clubs } from '../../api/club/Club';
 import { Interests } from '../../api/interest/Interest';
@@ -12,19 +11,35 @@ import { Interests } from '../../api/interest/Interest';
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
 
-  state = { tags: [_.map(Interests.find({}).fetch(), (interest) => (interest, false))] };
+  state = { selectedTags: [] };
 
   render() {
-    if (this.props.ready) {
-      return this.renderPage();
+    return this.props.ready ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+  selectTag(name) {
+    if (this.state.selectedTags.includes(name)) {
+      this.setState( { selectedTags: this.state.selectedTags.filter((value) => value !== name) });
+    } else {
+      this.setState({ selectedTags: this.state.selectedTags.concat([name]) });
+    }
+  }
+
+  doesClubMatchInterest(club) {
+    let count = 0;
+    for (let i = 0; i < this.state.selectedTags.length; i++) {
+      if (club.tags.includes(this.state.selectedTags[i].toLowerCase())) {
+        count += 1;
+      }
     }
 
-    return <Loader active>Getting data</Loader>;
+    console.log(club);
+    console.log(this.state.selectedTags);
+    return count === this.state.selectedTags.length;
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    console.log(this.state);
     return (
         <div className="club-explorer-background">
           <div className="club-explorer-text">
@@ -32,7 +47,9 @@ class ClubExplorer extends React.Component {
           </div>
           <div style={{ marginLeft: '20%', marginRight: '20%', marginBottom: '5%', backgroundColor: 'white' }}>
             {Interests.find({}).fetch().map((interest, index) => <Button key={index}
-                                             content={interest.name} style={{ margin: '1%' }}/>)}
+                                             color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
+                                             content={interest.name} style={{ margin: '1%' }}
+                                             onClick={() => this.selectTag(interest.name)}/>)}
           </div>
               {
                 // eslint-disable-next-line max-len
@@ -40,8 +57,7 @@ class ClubExplorer extends React.Component {
                       <Grid container stretched centered relaxed='very' columns='equal'>
 
                       {/* eslint-disable-next-line no-nested-ternary */}
-                        {Clubs.find({}).fetch().map((club, index) => <ClubCard key={index} club={club}/>)
-                      }
+                        {Clubs.find({}).fetch().map((club, index) => this.doesClubMatchInterest(club) ? <ClubCard key={index} club={club}/> : null)}
                       </Grid>
                     </Card.Group>
               }

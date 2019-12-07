@@ -10,18 +10,15 @@ class ClubCard extends React.Component {
     return (
         <div className="card-shadow">
           {/* eslint-disable-next-line no-template-curly-in-string */}
-        <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: '100%' }}>
-          <Image src="https://www.staradvertiser.com/wp-content/uploads/2018/08/web1_20171228_brk_uhm01.jpg"
-                 wrapped ui={false}/>
+        <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: "450px" }}>
+          {/* eslint-disable-next-line max-len */}
+          <Image src={(this.props.club.image !== 'N/A') ? this.props.club.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'} wrapped ui={false}/>
           <Card.Content>
             <Card.Header>{this.props.club.name}</Card.Header>
-            {this.props.club.name.length < 30 ? <br/> : null}
-            <Card.Meta>{this.props.club.subname}</Card.Meta>
+            <Card.Meta>{(this.props.club.subname !== 'N/A') ? this.props.club.subname : '' }</Card.Meta>
 
             <Card.Description>
-              {/* eslint-disable-next-line no-nested-ternary */}
-              {this.props.club.description > 100 ? this.props.club.description.slice(0, 100).concat('...') :
-                  this.props.club.description.slice(0, 100)}
+              {(this.props.club.description !== 'N/A') ? (this.props.club.description.slice(0, 50)).concat('...') : '' }
             </Card.Description>
           </Card.Content>
           {/* <Card.Content extra> */}
