@@ -105,6 +105,7 @@ export default withTracker(({ match }) => {
   const clubs_sub = Meteor.subscribe('Clubs');
   const announcements_sub = Meteor.subscribe('Announcements');
   const documentId = match.params._id;
+
   console.log(documentId);
   return {
 
@@ -112,6 +113,7 @@ export default withTracker(({ match }) => {
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
     announcements: Announcements.find({}).fetch(),
+
     ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
   };
 })(ClubPage);
