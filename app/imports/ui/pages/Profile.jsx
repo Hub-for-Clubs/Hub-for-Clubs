@@ -15,6 +15,20 @@ class Profile extends React.Component {
 
   state = { activeItem: 'clubs-joined', interest: '', major: '', recommendations: [], temp: '' };
 
+  getRecommendations() {
+    const recommendations = [];
+    for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
+      const clubs = Interests.findOne({ name: Meteor.user().profile.interests[i] }).associated_clubs;
+      for (let j = 0; j < clubs.length; j++) {
+        if (!recommendations.includes(clubs[j]) && !Meteor.user().profile.clubs.favorite.includes(clubs[j])
+            && !Meteor.user().profile.clubs.joined.includes(clubs[j])) {
+          recommendations.push(clubs[j]);
+        }
+      }
+    }
+    return recommendations;
+  }
+
   handleMenuClick = (e, { name }) => { this.setState({ activeItem: name }); };
 
   handleChange = (e, { name, value }) => {
@@ -35,7 +49,7 @@ class Profile extends React.Component {
       Meteor.users.update({ _id: Meteor.userId() },
           // eslint-disable-next-line max-len
           { $set: { 'profile.interests': Meteor.user().profile.interests.filter(function (value) { return value !== interest; }) } });
-      window.location.reload(false);
+      console.log(Meteor.users().profile);
     };
   }
 
@@ -43,7 +57,6 @@ class Profile extends React.Component {
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
           { $set: { 'profile.majors': Meteor.user().profile.majors.filter(function (value) { return value !== major; }) } });
-      window.location.reload(false);
     }
   }
 
@@ -63,20 +76,10 @@ class Profile extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
-    const recommendations = [];
-    for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
-      const clubs = Interests.findOne({ name: Meteor.user().profile.interests[i] }).associated_clubs;
-      for (let j = 0; j < clubs.length; j++) {
-        if (!recommendations.includes(clubs[j]) && !Meteor.user().profile.clubs.favorite.includes(clubs[j])
-            && !Meteor.user().profile.clubs.joined.includes(clubs[j])) {
-          recommendations.push(clubs[j]);
-        }
-      }
-    }
-
     const announcements = [];
     console.log(Meteor.user().profile);
     const subscribed = Meteor.user().profile.clubs.favorite.concat(Meteor.user().profile.clubs.joined);
+
     // eslint-disable-next-line max-len
     subscribed.map((clubName) => Announcements.find({ club: clubName }).map((announcement) => (!announcements.find((a) => a._id === announcement._id) ? announcements.push(announcement) : null)));
 
@@ -148,7 +151,7 @@ class Profile extends React.Component {
               </Menu>
               {
                 // eslint-disable-next-line max-len
-                (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && recommendations.length > 0) || (activeItem === 'announcements') ?
+                (activeItem === 'clubs-joined' && Meteor.user().profile.clubs.joined.length > 0) || (activeItem === 'favorite-clubs' && Meteor.user().profile.clubs.favorite.length > 0) || (activeItem === 'recommended-clubs' && this.getRecommendations().length > 0) || (activeItem === 'announcements') ?
                 <Card.Group>
                   {
                     // eslint-disable-next-line no-nested-ternary
@@ -161,7 +164,7 @@ class Profile extends React.Component {
                                                               key={index} club={Clubs.findOne({ name: club })}/>) :
                     // eslint-disable-next-line no-nested-ternary
                     activeItem === 'recommended-clubs' ?
-                      recommendations.map((recommendation, index) => <ClubCard key={index}
+                      this.getRecommendations().map((recommendation, index) => <ClubCard key={index}
                                          club={Clubs.findOne({ name: recommendation })}/>) :
 
                     activeItem === 'announcements' ?

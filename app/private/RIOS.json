@@ -1,2565 +1,3882 @@
 {"RIOS": [
-  {
-    "name": "Academy for Creative Media Student Association",
-    "subname": "ACMSA",
-    "type": "Academic/Professional",
-    "leader": "Emma Daily",
-    "email": "edaily@hawaii.edu",
-    "website": "https://sites.google.com/a/hawaii.edu/acmsa/",
-    "description": "The Academy for Creative Media Student Association (ACMSA) is a Registered Independent Organization (RIO) at the University of Hawaii Manoa (UHM).\n\nThe ACMSA is the student association for the Academy for Creative Media (ACM) which is an undergraduate bachelor's program at UHM.  ACM falls under the College of Arts & Humanities.\n\nWe strive to connect ACM Student filmmakers with each other and others in the community to collaborate and produce student films.",
-    "members": [],
-    "tags": ["art", "technology", "academic", "professional"]
-  },
-  {
-    "name": "Accounting Club at UH Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Chelsi Morishige",
-    "email": "chelsicm@hawaii.edu",
-    "website": "acuhmanoa.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "accounting", "academic", "professional"]
-  },
-  {
-    "name": "Adventist Christian Fellowship",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Victor Kolonzo",
-    "email": "vkilonzo@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", "christian", "social"]
-  },
-  {
-    "name": "Advocates for Public Interest Law",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Rebekah Ray",
-    "email": "rray2@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["law", "academic", "professional"]
-  },
-  {
-    "name": "AAUW-UHM",
-    "subname": "N/A",
-    "type": "Political",
-    "leader": "Ronja Steinbach",
-    "email": "ronja36@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "political"
-  },
-  {
-    "name": "AECT-Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Waynele Yu",
-    "email": "waynele@hawaii.edu",
-    "website": "https://bit.ly/aect-hi",
-    "description": "N/A",
-    "members": [],
-    "tags": ["technology", "education", "social", "academic", "professional"]
-  },
-  {
-    "name": "Aikido @ UHM",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Timothy Halliday",
-    "email": "halliday@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Alpha Gamma Delta, Delta Sigma Chapter",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Emma Archambeau",
-    "email": "earchamb@hawaii.edu",
-    "website": "hawaii.alphagammadelta.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Alpha Sigma Phi",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Abel Salinas",
-    "email": "abels@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "AlohaNation Flowarts",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Nathan Onaka",
-    "email": "onankan@hawaii.edu",
-    "website": "anfclub.github.io/AlohaNation-Flowarts",
-    "description": "N/A",
-    "members": [],
-    "tags": ["technology", "recreational", "social"]
-  },
-  {
-    "name": "AMA/HMA Student Chapter at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jester Galiza",
-    "email": "jpgaliza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "biology", "academic", "professional", "social", "service"]
-  },
-  {
-    "name": "American Cetacean Society Student Coalition at University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Opal Stanfield",
-    "email": "opalstan@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["biology", "ecology", "social", "service"]
-  },
-  {
-    "name": "American Indian Science and Engineering Society",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kathleen Kodama",
-    "email": "kmmk4@hawaii.edu",
-    "website": "aiseshawaii.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "ethnic", "academic", "professional"]
-  },
-  {
-    "name": "American Institute of Architecture Students",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Celeste Guarin",
-    "email": "cguarin@hawaii.edu",
-    "website": "aiashawaii.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "art"]
-  },
-  {
-    "name": "American Library Association Student Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Katie Joe Lang",
-    "email": "langk@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "language arts"]
-  },
-  {
-    "name": "American Marketing Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Ashley Regaspi",
-    "email": "aregaspi@hawaii.edu",
-    "website": "amauhm.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional", "social"]
-  },
-  {
-    "name": "American Meterological Society Aloha Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Terrence John Corrigan",
-    "email": "tjc21@hawaii.edu",
-    "website": "amsalohachapter.wixsite.com/aloha",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ecology", "academic", "professional"]
-  },
-  {
-    "name": "American Society of Civil Engineers",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Maynard Lazo",
-    "email": "lazom@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "academic", "professional"]
-  },
-  {
-    "name": "American Society of Mechanical Enginers",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Daryll Suyat",
-    "email": "suyatd@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "academic", "professional"]
-  },
-  {
-    "name": "American Society for Microbiology Hawaii Student Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Albert To",
-    "email": "albertto@hawaii.edu",
-    "website": "http://www.asmbranches.org/brhawaii/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["biology", "academic", "professional"]
-  },
-  {
-    "name": "Anesthesiology Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Nicholas Fancher",
-    "email": "nfancher@hawaii.edu",
-    "website": "sites.google.com/view/jabsomaig",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "biology", "academic", "professional"]
-  },
-  {
-    "name": "Animal Science Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Cody Ching",
-    "email": "codylc@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["biology", "academic", "professional", "social"]
-  },
-  {
-    "name": "Anthropology Undergraduate Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jitrudi Scheiman",
-    "email": "jms26@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social sciences", "academic", "professional"]
-  },
-  {
-    "name": "Artists and Musicians at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "social", "art", "music"]
-  },
-  {
-    "name": "Associated Students at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jester Galiza",
-    "email": "jpgaliza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "biology", "academic", "professional", "social"]
-  },
-  {
-    "name": "Association For Computing Machinery at Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Marty Joshua Apilado",
-    "email": "mjka@hawaii.edu",
-    "website": "acmanoa.github.io",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "technology"]
-  },
-  {
-    "name": "Atherton YMCA",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Christina Andres",
-    "email": "andrescc@hawaii.edu",
-    "website": "athertonymca.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "social"]
-  },
-  {
-    "name": "Athletic Training Student Society",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kumiko Hashida",
-    "email": "hashidak@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "social", "leisure"]
-  },
-  {
-    "name": "Autonomous Control Theory-Unmanned Aerial Systems",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Evan Kawamura",
-    "email": "evankawa@hawaii.edu",
-    "website": "manoa.hawaii.edu/actuas",
-    "description": "N/A",
-    "members": [],
-    "tags": ["technology", "academic", "professional"]
-  },
-  {
-    "name": "Bachelor of Social Work Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kelsey Mills",
-    "email": "kelseyjp@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Baha'i Association at UH Manoa",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Dale Spenner",
-    "email": "spenner@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Baptist College Ministries",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Nathaniel Atwell",
-    "email": "natwell@hawaii.edu",
-    "website": "www.bcmoahu.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Belly Dance Raqs- Manoa",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Brittany Castle",
-    "email": "bcastle9@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "social", "recreational"]
-  },
-  {
-    "name": "Best Buddies Hawaii-UH Manoa/SAAC Chapter",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Rhonda S. Black",
-    "email": "rblack@hawaii.edu",
-    "website": "www.bestbuddies.org/find-programs/hawaii",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service"]
-  },
-  {
-    "name": "Beta Alpha Psi, Delta Theta Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Janae Stilwell",
-    "email": "janaeeps@hawaii.edu",
-    "website": "www.bapuhm.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "academic", "professional", "social"]
-  },
-  {
-    "name": "Beta Beta Gamma Sorority",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Moana Nomura",
-    "email": "nomura76@hawaii.edu",
-    "website": "http://betabetagamma.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Black Law Students Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Britagne Johnson",
-    "email": "bnjohnso@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "academic", "professional", "social", "law"]
-  },
-  {
-    "name": "Blue Zones Project",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Robert Nieto",
-    "email": "robertfn@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service"]
-  },
-  {
-    "name": "Botanical Society of America Hawaii Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Christian Streit",
-    "email": "cstreit@hawaii.edu",
-    "website": "www.botany.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["biology", "academic", "professional"]
-  },
-  {
-    "name": "Buddhi Yoga Manoa",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Veronica Gibson",
-    "email": "vgibson@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "social", "recreational"]
-  },
-  {
-    "name": "Business Executive Society of Tomorrow",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kristyn Fujii",
-    "email": "fujiik7@hawaii.edu",
-    "website": "bestuhm.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional", "social"]
-  },
-  {
-    "name": "Campus Drummers",
-    "subname": "N/A",
-    "type": "Leisure/Recreational",
-    "leader": "Susan Jacob",
-    "email": "sjacob77@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "recreational", "social", "music", "art"]
-  },
-  {
-    "name": "Cannabis Club",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Damon Grayson",
-    "email": "dgrayson@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "social"]
-  },
-  {
-    "name": "Capoeira Senzala",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Rachel Mamiya Hernandez",
-    "email": "rmamiya@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "CARP Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Chizuko Allen",
-    "email": "chizuko@hawaii.edu",
-    "website": "www.carplife.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Change for Charity",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Michaela Kop",
-    "email": "mkop@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "social"]
-  },
-  {
-    "name": "Chemistry Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Taha Elwir",
-    "email": "elwira@hawaii.edu",
-    "website": "chemclubatuhm.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social", "chemistry", "science"]
-  },
-  {
-    "name": "Chess Club",
-    "subname": "N/A",
-    "type": "Leisure/Recreational",
-    "leader": "Michael Omori",
-    "email": "omorim@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "recreational", "social"]
-  },
-  {
-    "name": "Chi Epsilon",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Theodore Uekawa",
-    "email": "hawaii.xe@gmail.com",
-    "website": "Sites.google.com/site/xeuhmanoa/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Chinese Students and Scholars Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Manrui Xue",
-    "email": "mxue@hawaii.edu",
-    "website": "http://www2.hawaii.edu/~cssauh/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "academic", "professional"]
-  },
-  {
-    "name": "Chinese Xiqu Club",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Xingli Zhang",
-    "email": "xinliz@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural"]
-  },
-  {
-    "name": "Church in Honolulu",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Yinghui Chen",
-    "email": "yinghui@hawaii.edu",
-    "website": "churchinhonolulu.net",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", "social"]
-  },
-  {
-    "name": "Circle K International",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Kristian Kim",
-    "email": "knik@hawaii.edu",
-    "website": "ckiuhmaweebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "social"]
-  },
-  {
-    "name": "Clay Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Brad Taylor",
-    "email": "brad2@hawaiiedu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["art", "social"]
-  },
-  {
-    "name": "Clinical and Translational Research Program Student Organization at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Devin Takahashi",
-    "email": "devint@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "biology", "academic", "professional"]
-  },
-  {
-    "name": "Club Management of America",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kylie Butts",
-    "email": "kyliekb@hawaii.edu",
-    "website": "cmaa.org/studentmembership",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "social"]
-  },
-  {
-    "name": "Coalition to Stop Campus Hunger",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Ratu Serupepeli Tagivakatini",
-    "email": "ratuseru@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "service"
-  },
-  {
-    "name": "C.O.P. Alaka'ina",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Ilikea Silva",
-    "email": "ilikea.silva@hawaii.edu",
-    "website": "www.hawaii.edu/cop/mentoring",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Cru",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Liam Tsamous",
-    "email": "ltsamous@hawaii.edu",
-    "website": "hawaiicru.jimdo.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "CTAHR Student Ambassadors",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michelle Au",
-    "email": "aumi@hawaii.edu",
-    "website": "cms.ctahr.hawaii.edu/Academics/ASAO/Ambassadors",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Delta Sigma Pi, Rho Chi",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Victoria Huynh",
-    "email": "N/A",
-    "website": "dspuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Disney Ohana Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Delaney Singletary",
-    "email": "delaneys@hawaii.edu",
-    "website": "disneyoc.wixsite.com/disneyohanaclub",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "Emergency Medicine Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "biology"]
-  },
-  {
-    "name": "Engineering Ohana",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Creselle Moraels",
-    "email": "creselle@hawaii.edu",
-    "website": "eng.hawaii.edu",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "academic", "professional", "social"]
-  },
-  {
-    "name": "Engineering Network",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jing Yang Zheng",
-    "email": "jzheng@hawaii.edu",
-    "website": "enuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Eta Kappa Nu",
-    "subname": "N/A",
-    "type": "Honorary Society",
-    "leader": "Jeanalyn Wadsock-Myers",
-    "email": "jlwm@hawaii.edu",
-    "website": "hknhawaii.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "professional", "social"]
-  },
-  {
-    "name": "Eta Sigma Delta",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Tara-Ann Marie Pacubas",
-    "email": "tpacubas@hawaii.edu",
-    "website": "https://www.chrie.org/i4a/pages/index.cfm?pageid=1",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional", "social"]
-  },
-  {
-    "name": "Ethnic Studies Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Ruben Campos",
-    "email": "recampos@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "social sciencse", "academic"]
-  },
-  {
-    "name": "Every Nation Campus Pearlside",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Taylor Mahi",
-    "email": "tmahi@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Family Medicine Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Anthony Knon",
-    "email": "aknon@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "medical"]
-  },
-  {
-    "name": "Financial Management Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Nicholas Miyamoto",
-    "email": "npmiyamo@hawaii.edu",
-    "website": "fmahawaii.club",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional"]
-  },
-  {
-    "name": "Food Science and Human Nutrition Council",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michael Yanos",
-    "email": "mpyanos@hawaii.edu",
-    "website": "fshncouncil.wordpress.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["biology", "professional"]
-  },
-  {
-    "name": "Formula SAE Rainbow Warrior Racing",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Silvija Djelic",
-    "email": "silvijad@hawaii.edu",
-    "website": "rip.eng.hawaii.edu/project/sae-formula",
-    "description": "N/A",
-    "members": [],
-    "tags": ["engineering", "professional"]
-  },
-  {
-    "name": "Freestyle Dance Club",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Jason Wong",
-    "email": "jbwong@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Friends of the Family",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Brigitte Tampon-Aragon",
-    "email": "btampona@hawaii.edu",
-    "website": "fofatuhm.wixsite.com/home",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "professional", "social"]
-  },
-  {
-    "name": "Generation Action at the University of Hawai'i at M?noa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Emma Ishihara",
-    "email": "emmaishi@hawaii.edu",
-    "website": "act.plannedparenthoodaction.org/groups-university-of-hawaii-manoa-generation-action",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "professional", "social"]
-  },
-  {
-    "name": "Glass Art Family",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Nygell Halverson",
-    "email": "nygell@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "art"
-  },
-  {
-    "name": "Golden Key International Honour Society",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Arlene Colis",
-    "email": "arlenejc@hawaii.edu",
-    "website": "goldenkeyhawaii.wixsite.com/uhmgkwebsite",
-    "description": "N/A",
-    "members": [],
-    "tags": "professional"
-  },
-  {
-    "name": "Graduate Arts Council",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Katherine Kazlauskas",
-    "email": "kvk@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["art", "professional"]
-  },
-  {
-    "name": "Graduate Business Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kirstin Seal",
-    "email": "seal@hawaii.edu",
-    "website": "sites.google.com/a/hawaii.edu/graduate-business-student-association",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional"]
-  },
-  {
-    "name": "Graduate Hui Ola Pono",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Princess Mae Visconde",
-    "email": "pviscond@hawaii.ed",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Graduate Student Sociological Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Hannah Liebreich",
-    "email": "hannahli@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social sciences", "professional"]
-  },
-  {
-    "name": "Graduate Women in Science Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Madeline McKenna",
-    "email": "mmck@hawaii.edu",
-    "website": "www.gwishawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "science"]
-  },
-  {
-    "name": "Grey Hats at UHM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Chad Morita",
-    "email": "chadmmm@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "technology"]
-  },
-  {
-    "name": "Hanwoori Hawaii",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Ingrid Adams",
-    "email": "adamsi@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Hawaii African Dance and Drum Club RIO at UHM",
-    "subname": "N/A",
-    "type": "Recreation/Leisure",
-    "leader": "Elizabeth (Liza) Simon",
-    "email": "csimon@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["recreation", "cultural", "leisure", "social"]
-  },
-  {
-    "name": "Hawaii Chapter of the Society for Conservation Biology",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Chad Wilhite",
-    "email": "cwilhite@hawaii.edu",
-    "website": "www.hiscb.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ecology", "biology", "service"]
-  },
-  {
-    "name": "Hawaii Educational Research Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Susan Saka",
-    "email": "ssaka@hawaii.edu",
-    "website": "hawaii.edu/hera",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Hawaii H.O.M.E. Project",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Jason Huynh",
-    "email": "huynhjas@hawaii.edu",
-    "website": "www.hawaiihomeproject.org",
-    "description": "N/A",
-    "members": [],
-    "tags": "service"
-  },
-  {
-    "name": "Hawaii Shotokan Karate",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Scott Oshiro",
-    "email": "scottosh@hawaii.edu",
-    "website": "hawaiishotokankarate.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Hawaii Streams and Ecosystems",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Aurelia Gonzalez",
-    "email": "aureliag@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "ecology"
-  },
-  {
-    "name": "Hawaii Student Entrepreneurs",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Asher Uchiyama",
-    "email": "au234@hawaii.edu",
-    "website": "http://www.hsentrepreneurs.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional", "social"]
-  },
-  {
-    "name": "Hawaii Undergraduate Initiative",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kaitlin Nalani Tilitile",
-    "email": "tilitie@hawaii.edu",
-    "website": "manoa.hawaii.edu/omsshui",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Her Campus Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Avery Nueva",
-    "email": "averymn@hawaii.edu",
-    "website": "https://www.hercampus.com/school/hawaii",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "High Intensity Athletics at UHM",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Lynette Rudolfo",
-    "email": "rudolfo@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Higher Education Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kawehi Kina",
-    "email": "kinak@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "HOSA at UHM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jessica Loi",
-    "email": "jkloi@hawaii.edu",
-    "website": "hosauhm.wixsite.com/home",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "medical", "professional"]
-  },
-  {
-    "name": "Hui Dui",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Katie Joe Lang",
-    "email": "langk@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Hui M?lama Honua",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Donna Lee (Sweetie) Kuehu",
-    "email": "dkueku@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "academic", "professional"]
-  },
-  {
-    "name": "Hui Ola Pono",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Swastika Maharjan",
-    "email": "swastika@hawaii.edu",
-    "website": "publichealthhui.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "academic", "professional"]
-  },
-  {
-    "name": "Ilima Sacnas Chapter at UH",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Dr. Healani Chang",
-    "email": "hchang@hawaii.edu",
-    "website": "www.sacnashawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Information Technology Management Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Luke Clements",
-    "email": "lclement@hawaii.edu",
-    "website": "http://www.itmahawaii.com/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["technology", "academic", "professional"]
-  },
-  {
-    "name": "Interactive Story Telling Club",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Kyle Tran",
-    "email": "kyletran@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Inter-Business Council",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jordan Abanto",
-    "email": "abanto@hawaii.edu",
-    "website": "www.ibcuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "business"]
-  },
-  {
-    "name": "International Business Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Rachel Dunn",
-    "email": "dunnrach@hawaii.edu",
-    "website": "ibouhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "business"]
-  },
-  {
-    "name": "International Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Ryan Matsumoto",
-    "email": "ryantm2@hawaii.edu",
-    "website": "www.isauhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Internal Medicine Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Geoffrey Kusaka",
-    "email": "gkusaka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "biology"]
-  },
-  {
-    "name": "Intervarsity Christian Fellowship",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Sabrina Summers",
-    "email": "summerss@hawaii.edu",
-    "website": "www.intervarsityhawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Institute of Electrical and Electronic Engineers",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Christopher J Blake",
-    "email": "cjblake@hawaii.edu",
-    "website": "ieeeatuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "engineering"]
-  },
-  {
-    "name": "Jehowah's Witnesses at the University of Hawai'i - Manoa",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Roberta Baird",
-    "email": "bairdr@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Judo Club/Team at University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Larson Abilla",
-    "email": "labilla@hawaii.edu",
-    "website": "www2.hawaii.edu/~judo",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure"]
-  },
-  {
-    "name": "K-Mixx Club",
-    "subname": "N/A",
-    "type": "Leisure/Recreational",
-    "leader": "Isaiah Avilla",
-    "email": "isaiaha@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "recreational", "social"]
-  },
-  {
-    "name": "Ka Lau O Ka Lahui",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Karli Rose Keanu",
-    "email": "kkeanu4@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service"]
-  },
-  {
-    "name": "Ka Lama Kukui Interest Group",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "K?lai Pohaku",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Diana Moana Nomura",
-    "email": "nomura76@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Ka Mea Kolo Entomology Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michelle Au",
-    "email": "aumi@hawaii.edu",
-    "website": "sites.google.com/site/kameakolo",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "biology"]
-  },
-  {
-    "name": "Kanoa",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Ebony Tapasa",
-    "email": "etapasa@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Kappa Sigma",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Carlos Tucker",
-    "email": "carlos42@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Katipunan Club",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Christine Joy Baltazar",
-    "email": "cbaltaza@hawaii.edu",
-    "website": "https://manoa.hawaii.edu/rio/katipunan/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Kempo Club at UHM",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Kevin Hanaoka",
-    "email": "hanaokak@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure"]
-  },
-  {
-    "name": "Kim's Tae Kwon Do @ UHM",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Mason Nakadomari",
-    "email": "nakadoma@hawaii.edu",
-    "website": "hawaiitaekwondo.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure"]
-  },
-  {
-    "name": "Kinesiology and Rehabilitation Sciences Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Keaton Yaw",
-    "email": "keatony@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Korean Drama Interest Group",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Jarren Takaki",
-    "email": "jarrent@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "La Raza Unida",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Shea Ryan Charles",
-    "email": "sc67@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Lifesaver Club",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Sarai Vargas",
-    "email": "svargas9@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service"]
-  },
-  {
-    "name": "Living Stone Chinese Christian Fellowship",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Liana Wang",
-    "email": "lwang2@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Loea Consulting Group (Consultx)",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Ha Nguyen",
-    "email": "ha777@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["business", "professional"]
-  },
-  {
-    "name": "Lotus",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Venkataraman Balaraman",
-    "email": "Fmuza",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Manoa Creative Production",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Tiffany Anne Ganti",
-    "email": "tganti@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "art"]
-  },
-  {
-    "name": "Manoa Darts",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Katsuyuki Yoshia",
-    "email": "ky7312@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Manoa Debate Union at UHM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michelle Park",
-    "email": "parkmj@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Manoa Improv Players",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Emily Steward",
-    "email": "esteward@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Manoa Peer Advisor Program",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Sherylynne Andrada",
-    "email": "sma3@hawaii.edu",
-    "website": "manoa.hawaii.edu/undergrad/mac/mpa",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Manoa Pre-Law Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Teana Motoyama",
-    "email": "teanam@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Manoa Sophomore Experience",
-    "subname": "N/A",
-    "type": "Student Affairs",
-    "leader": "Leilani Harjati",
-    "email": "ltakeuc@hawaii.edu",
-    "website": "http://manoa.hawaii.edu/undergrad/sophomore",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "Manoa Ultimate Disc",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Van Wishingrad",
-    "email": "vanw@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Marine Robotics at University of Hawaii",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Paula Rae Penullar",
-    "email": "paularae@hawaii.edu",
-    "website": "rig.eng.hawaii.edu/research/unmanned-x-systems/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "technology"]
-  },
-  {
-    "name": "Medt Student Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Lauren Loualhati",
-    "email": "lloual3@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Medical Education Student Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Dann Poe ?",
-    "email": "dpoei@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Medical Innovation and Design Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Alexander Ribao",
-    "email": "ribaoa@hawaii.edu",
-    "website": "mindhawaii.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Medical Students for Choice",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Clare-Marie Anderson",
-    "email": "cmanders@hawaii.edu",
-    "website": "msfc.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Medical Student Mentorship Program",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Eileen Chen",
-    "email": "esrchen@hawaii.edu",
-    "website": "uhmsmp.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Medical Students of the Class of 2022 at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jester Galiza",
-    "email": "jpgaliza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Micronesia Connections at UH Manoa",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Austin Haleyalpiy",
-    "email": "austin46@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "MILUN",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Man Dhoj Rai",
-    "email": "mandhoj@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Mortar Board Senior National Honor Society (Hui Po'okela Chapter)",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Aime Le",
-    "email": "ale77@hawaii.edu",
-    "website": "mortarboardmanoa.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "N? Hawai'i 'Imi Loa Hui Haum?na",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Sharnelle Renti Cruz",
-    "email": "sprc@hawaii.edu",
-    "website": "http://nhilhh.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "Na Koa",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Jace Nakama",
-    "email": "jacect@hawaii.edu",
-    "website": "oahuchurch.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Na Koa Lani Booster Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Brock Barr",
-    "email": "barrb@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Narrative Medicine Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kyung Moo Kim",
-    "email": "kkim29@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["Medical", "professional"]
-  },
-  {
-    "name": "National Panhellenic Conferene",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Avery Nueva",
-    "email": "averymn@hawaii.edu",
-    "website": "uhmpanhel.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Natural Sciences Student Ambassadors",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Taha Elwir",
-    "email": "elwira@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "OB/GYN Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Clare-Marie Anderson",
-    "email": "cmanders@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "biology"]
-  },
-  {
-    "name": "Oncology Interest Group at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Nicholas Fancher",
-    "email": "nfancher@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "biology", "medical"]
-  },
-  {
-    "name": "Opthalmology Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kevin Card",
-    "email": "cardk@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "biology"]
-  },
-  {
-    "name": "Pacific Asia Travel Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jay-O Alforque",
-    "email": "alforque@hawaii.edu",
-    "website": "patahawaii.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "business"]
-  },
-  {
-    "name": "Pacific Asian Legal Student Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Richard Crum",
-    "email": "crumr@hawaii.edu",
-    "website": "https://www.law.hawaii.edu/student-organization",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Partners in Health Engage UH Manoa Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Akane Dunn",
-    "email": "akane2@hawaii.edu",
-    "website": "https://www.pih.org/engage",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Partnership for Social Justice at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "social"]
-  },
-  {
-    "name": "Patient Safety and Quality Improvement Interest Group",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kristine Vo",
-    "email": "kbvo@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["medical", "professional", "social"]
-  },
-  {
-    "name": "Pediatric Interest Group at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kevin Pham",
-    "email": "kevinph@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Peer Mentor Ohana",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Rosemarie Woodruff",
-    "email": "N/A",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "social"]
-  },
-  {
-    "name": "Peer Mentoring Program at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "medical", "social"]
-  },
-  {
-    "name": "Phi Alpha Nu Sigma Honor Society",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Julie Anne Bacaro",
-    "email": "jafb@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Phi Alpha Theta (Alpha Beta Epsilon)",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Emily Holmberg",
-    "email": "emilyhol@hawaii.edu",
-    "website": "phialphatheta.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Phi Mu",
-    "subname": "N/A",
-    "type": "Fraternity/Sorority",
-    "leader": "Sarai Vargas",
-    "email": "svargas9@hawaii.edu",
-    "website": "hawaii.phimu.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["fraternity", "sorority", "social"]
-  },
-  {
-    "name": "Philippine Medical Student Association of Hawaii",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Arlene Kiyohara",
-    "email": "arlenecp@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "medical", "cultural", "social"]
-  },
-  {
-    "name": "Pi Gamma Mu",
-    "subname": "N/A",
-    "type": "Honorary Society",
-    "leader": "Vendela Lindahl",
-    "email": "vendelal@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "academic", "social"]
-  },
-  {
-    "name": "Pi Sigma Alpha- Tau Pi Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Justin Menina",
-    "email": "jmenina@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Pi Tau Sigma",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michael Dang",
-    "email": "mkdang@hawaii.edu",
-    "website": "uhmsigmapi.wixsite.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Political Science Club at UH",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Justin Menina",
-    "email": "jmenina@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social sciences"]
-  },
-  {
-    "name": "Powerlifting Club at the University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Jaron Yamane",
-    "email": "jarony@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Pre-Medical Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Taylor Pu'uohau",
-    "email": "tpuuohau@hawaii.edu",
-    "website": "http://premed-at-uhm.uhm.squarespace.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Pre-Phamarcy Association at UH Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Tran Trinh",
-    "email": "trant2@hawaii.edu",
-    "website": "uhmprepharmacyassociation.wordpress.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Primary Care Progress at University of Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jester Galiza",
-    "email": "jpgaliza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Protection of Ocean and Nature Organization",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Maiko Ikeda",
-    "email": "maikoi@hawaii.edu",
-    "website": "ponohawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["service", "ecology"]
-  },
-  {
-    "name": "Psi SIgma: The Psychology Connection",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "BrandonBanuelos",
-    "email": "bbanuelo@hawaii.ed",
-    "website": "thepsychologyconnection.blogspot.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["professional", "social"]
-  },
-  {
-    "name": "Public Administration Student Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Lydia Chung",
-    "email": "lydiajc@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Public Relations Student Society of America",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Mei Jie Wu",
-    "email": "meijiew@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Rainbow Jugglers Juggling Club",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Stephen Case",
-    "email": "stevec@hawaii.edu",
-    "website": "www.rainbowjugglers.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social"]
-  },
-  {
-    "name": "Regent and Presidential Scholars Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Noah Rodrigues",
-    "email": "noahrodr@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Reformed University Fellowship",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Joshua Hu",
-    "email": "joshuahu@hawaii.edu",
-    "website": "rvfhawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Rural Health Interest Group at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "S-cubed",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Barbara Watanabe",
-    "email": "blwatana@hawaii.edu",
-    "website": "manoa.hawaii.edu/undergrad/sss",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Salsa Dancing @ UHM",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Gordon Walker",
-    "email": "gwalker@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social", "recreational"]
-  },
-  {
-    "name": "Science Communicators Ohana",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Sarah Tucker",
-    "email": "tucker4@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Second Language Studies Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Leeseul Park",
-    "email": "leeseul@hawaii.edu",
-    "website": "http://blog.hawaii.edu/slssa/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Shooting Stars",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michael Liu",
-    "email": "liumicha@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Silver Wings",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Anthony Lee",
-    "email": "awl@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Smash Bros. Club at The University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Leisure/Recreational",
-    "leader": "Isaiah Sheppard-Nelson",
-    "email": "isaiahsn@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "recreational", "social"]
-  },
-  {
-    "name": "Society of American Archivists University of Hawai'i Student Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Marleah Renti Cruz",
-    "email": "marleah@hawaii.edu",
-    "website": "http://hisaasc.weebly.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Society of Automotive Engineers at UH Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Michael Dang",
-    "email": "mkdang@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "engineering"]
-  },
-  {
-    "name": "Society for Human Resource Management, Aloha Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Josiah J. Villar",
-    "email": "josiahlj@hawaii.edu",
-    "website": "shrmuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social sciences"]
-  },
-  {
-    "name": "Society of Nepalese in Hawaii",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Man Dhoj Rai",
-    "email": "mandhoj@hawaii.edu",
-    "website": "www.esneha.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Society of Physics Students at the University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Zachary Martin",
-    "email": "zmart@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Society of Women Engineers",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Candice Sarangay",
-    "email": "sarangay@hawaii.edu",
-    "website": "uhm.swe.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "engineering"]
-  },
-  {
-    "name": "Spanish and Portugese Club",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Megan Fereira",
-    "email": "fereira@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Speech Communication Society",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Kittra Evenson",
-    "email": "evenson8@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "STAR Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Sharon Widup",
-    "email": "swidup@hawaii.edu",
-    "website": "https://www.star.hawaii.edu",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "technology"]
-  },
-  {
-    "name": "Stole Society",
-    "subname": "N/A",
-    "type": "Student Affairs",
-    "leader": "Mark Oandasan",
-    "email": "markco@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "Students for a National Health Program at University of Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jester Galiza",
-    "email": "jpgaliza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Student Immunization Initiative",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Albert To",
-    "email": "albertto@hawaii.edu",
-    "website": "https://www.sihawaii.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "service"]
-  },
-  {
-    "name": "Student Interest Group for Neurology and Psychiatry",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Christina Tse",
-    "email": "tsec@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "social sciences"]
-  },
-  {
-    "name": "Students Interested in Pathology",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Chad Russell",
-    "email": "chadruss@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": "academic"
-  },
-  {
-    "name": "Students with Keiki @ the University of Hawaii- Manoa",
-    "subname": "N/A",
-    "type": "Student Affairs",
-    "leader": "Angelique K. Solomon",
-    "email": "gotkids@hawaii.edu",
-    "website": "uhmstudentswkeiki.wixsite.com/website",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "student affairs"]
-  },
-  {
-    "name": "Student Nurses' Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Miki Matsuoka",
-    "email": "snamanoa@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Student Veteran Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Andrew Lanza",
-    "email": "ajlanza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Supporting Women in Information, Technology and Computing in Hawaii at the University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Quinne Uchida",
-    "email": "qauchida@hawaii.edu",
-    "website": "swith-uhm.github.io",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "technology"]
-  },
-  {
-    "name": "Surfrider Foundation UH Manoa Club",
-    "subname": "N/A",
-    "type": "Sports/Leisure",
-    "leader": "Laurel Perun",
-    "email": "lperun@hawaii.edu",
-    "website": "uhmanoasurfrider.wordpress.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["sports", "leisure", "social", "service"]
-  },
-  {
-    "name": "Thai Studies Club",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Anongard Nusartlert",
-    "email": "an2009@hawaii.edu",
-    "website": "thaistudieshawaii.wordpress.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "academic"]
-  },
-  {
-    "name": "The Anime Manga Society of Hawaii at UH Manoa",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Barryn Chun",
-    "email": "chun808@hawaii.edu",
-    "website": "www.amsmanoa.org",
-    "description": "N/A",
-    "members": [],
-    "tags": "social"
-  },
-  {
-    "name": "The Elohist Club at UH",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Christopher Blake",
-    "email": "cjblake@hawaii.edu",
-    "website": "elohist.club",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "The Engineers' Council at the University of Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jianna Leonora Orias",
-    "email": "jlorias@hawaii.edu",
-    "website": "http://www.ecuh.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "engineering"]
-  },
-  {
-    "name": "The Ethnomusicology Association",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Travis Shaver",
-    "email": "tshaver@hawaii.edu",
-    "website": "https://www.emauhm.org/",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "art", "music", "recreational"]
-  },
-  {
-    "name": "The Healing Earth Initiative",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Ashley Ostendorf",
-    "email": "ashleyno@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service", "ecology"]
-  },
-  {
-    "name": "The iMua Learned Society at the Univeristy of Hawaii (iMua Living Labs)",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Justin Menina",
-    "email": "jmenina@hawaii.edu",
-    "website": "manoa.cc",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "technology"]
-  },
-  {
-    "name": "The Language Documentation Training Center",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jessica Charest",
-    "email": "jcharest@hawaii.edu",
-    "website": "ldtc.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "The National Society of Collegiate Scholars, University of Hawai'i at Manoa Chapter",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Alyssa Hironaka",
-    "email": "alyssahi@hawaii.edu",
-    "website": "nscs.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "The Navigators",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Lauren Block",
-    "email": "blockln7@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "The Pre-Dental Association at the University of Hawaii at Manoa",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Paolo Atienza",
-    "email": "patienza@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "The Students for Success Club",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Nicole Panos",
-    "email": "npanos@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Timpuyog Organization",
-    "subname": "N/A",
-    "type": "Ethnic/Cultural",
-    "leader": "Jane Nicole Teneza",
-    "email": "teneza20@hawaii.edu",
-    "website": "manoa.hawaii.edu/ilokano/timpuyog.html",
-    "description": "N/A",
-    "members": [],
-    "tags": ["ethnic", "cultural", "social"]
-  },
-  {
-    "name": "Transcendental Meditation Club",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Taryn Bond",
-    "email": "BondTL@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Travel Industry Management Student Association",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Sharmaine Domingo",
-    "email": "sd21@hawaii.edu",
-    "website": "www.timsaatuhm.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "social"]
-  },
-  {
-    "name": "Tropical Plant and Soil Sciences Graduate Student Organization",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Jaclyn Nicole R. Uy",
-    "email": "uyjnr69@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "science"]
-  },
-  {
-    "name": "Ultrasound Interest Group at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Volunteers for Intercultural and Definitive Adventures (VIDA)",
-    "subname": "N/A",
-    "type": "Service",
-    "leader": "Airi Morita",
-    "email": "airimori@hawaii.edu",
-    "website": "https://vidahawaii.wixsite.com/uhmanoa http://www.vidavounteer.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["social", "service", "cultural"]
-  },
-  {
-    "name": "WADEM SIG at UHM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Gary Glauberman",
-    "email": "glauber@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional"]
-  },
-  {
-    "name": "Waikiki Acrobatics Troupe",
-    "subname": "N/A",
-    "type": "Leisure/Recreational",
-    "leader": "Liam Griffin",
-    "email": "liam9999@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["leisure", "recreational", "social"]
-  },
-  {
-    "name": "Wesley Foundation @ UH Manoa",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Sateki Taulanga",
-    "email": "st37@hawaii.edu",
-    "website": "Wesleyfoundationhawaii.com",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  },
-  {
-    "name": "Wilderness Medicine Hawaii",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Weston Mccue",
-    "email": "wmccue@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical", "recreational"]
-  },
-  {
-    "name": "Women's Interest Group at JABSOM",
-    "subname": "N/A",
-    "type": "Academic/Professional",
-    "leader": "Amandalin Rock",
-    "email": "rocka@hawaii.edu",
-    "website": "N/A",
-    "description": "N/A",
-    "members": [],
-    "tags": ["academic", "professional", "medical"]
-  },
-  {
-    "name": "Younglife",
-    "subname": "N/A",
-    "type": "Religious/Spiritual",
-    "leader": "Makenzie Hickey",
-    "email": "mmhickey@hawaii.edu",
-    "website": "younglife.org",
-    "description": "N/A",
-    "members": [],
-    "tags": ["religious", " social"]
-  }
-]}
+   {
+      "name":"Academy for Creative Media Student Association",
+      "type":"Academic/Professional",
+      "leader":"Emma Daily",
+      "email":"edaily@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "art",
+         "technology",
+         "academic",
+         "professional"
+      ],
+      "subname":"AFCMSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Accounting Club at UH Manoa",
+      "type":"Academic/Professional",
+      "leader":"Chelsi Morishige",
+      "email":"chelsicm@hawaii.edu",
+      "website":"acuhmanoa.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"ACAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Adventist Christian Fellowship",
+      "type":"Religious/Spiritual",
+      "leader":"Victor Kolonzo",
+      "email":"vkilonzo@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         "christian",
+         "social"
+      ],
+      "subname":"ACF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Advocates for Public Interest Law",
+      "type":"Academic/Professional",
+      "leader":"Rebekah Ray",
+      "email":"rray4@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "law",
+         "academic",
+         "professional"
+      ],
+      "subname":"AFPIL",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"AAUW-UHM",
+      "type":"Political",
+      "leader":"Ronja Steinbach",
+      "email":"ronja36@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"political",
+      "subname":"A",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"AECT-Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Waynele Yu",
+      "email":"waynele@hawaii.edu",
+      "website":"https://bit.ly/aect-hi",
+      "description":"N/A",
+      "tags":[
+         "technology",
+         "education",
+         "social",
+         "academic",
+         "professional"
+      ],
+      "subname":"A",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Aikido @ UHM",
+      "type":"Sports/Leisure",
+      "leader":"Timothy Halliday",
+      "email":"halliday@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"A@U",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Alpha Gamma Delta, Delta Sigma Chapter",
+      "type":"Fraternity/Sorority",
+      "leader":"Emma Archambeau",
+      "email":"earchamb@hawaii.edu",
+      "website":"hawaii.alphagammadelta.org",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"AGDDSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Alpha Sigma Phi",
+      "type":"Fraternity/Sorority",
+      "leader":"Abel Salinas",
+      "email":"abels@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"ASP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"AlohaNation Flowarts",
+      "type":"Ethnic/Cultural",
+      "leader":"Nathan Onaka",
+      "email":"onankan@hawaii.edu",
+      "website":"anfclub.github.io/AlohaNation-Flowarts",
+      "description":"N/A",
+      "tags":[
+         "technology",
+         "recreational",
+         "social"
+      ],
+      "subname":"AF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"AMA/HMA Student Chapter at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Jester Galiza",
+      "email":"jpgaliza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "biology",
+         "academic",
+         "professional",
+         "social",
+         "service"
+      ],
+      "subname":"ASCAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Cetacean Society Student Coalition at University of Hawaii at Manoa",
+      "type":"Service",
+      "leader":"Opal Stanfield",
+      "email":"opalstan@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "biology",
+         "ecology",
+         "social",
+         "service"
+      ],
+      "subname":"ACSSCAUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Indian Science and Engineering Society",
+      "type":"Academic/Professional",
+      "leader":"Kathleen Kodama",
+      "email":"kmmk4@hawaii.edu",
+      "website":"aiseshawaii.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "ethnic",
+         "academic",
+         "professional"
+      ],
+      "subname":"AISAES",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Institute of Architecture Students",
+      "type":"Academic/Professional",
+      "leader":"Celeste Guarin",
+      "email":"cguarin@hawaii.edu",
+      "website":"aiashawaii.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "art"
+      ],
+      "subname":"AIOAS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Library Association Student Chapter",
+      "type":"Academic/Professional",
+      "leader":"Katie Joe Lang",
+      "email":"langk@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "language arts"
+      ],
+      "subname":"ALASC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Marketing Association",
+      "type":"Academic/Professional",
+      "leader":"Ashley Regaspi",
+      "email":"aregaspi@hawaii.edu",
+      "website":"amauhm.org",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional",
+         "social"
+      ],
+      "subname":"AMA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Meterological Society Aloha Chapter",
+      "type":"Academic/Professional",
+      "leader":"Terrence John Corrigan",
+      "email":"tjc21@hawaii.edu",
+      "website":"amsalohachapter.wixsite.com/aloha",
+      "description":"N/A",
+      "tags":[
+         "ecology",
+         "academic",
+         "professional"
+      ],
+      "subname":"AMSAC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Society of Civil Engineers",
+      "type":"Academic/Professional",
+      "leader":"Maynard Lazo",
+      "email":"lazom@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "academic",
+         "professional"
+      ],
+      "subname":"ASOCE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Society of Mechanical Enginers",
+      "type":"Academic/Professional",
+      "leader":"Daryll Suyat",
+      "email":"suyatd@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "academic",
+         "professional"
+      ],
+      "subname":"ASOME",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"American Society for Microbiology Hawaii Student Chapter",
+      "type":"Academic/Professional",
+      "leader":"Albert To",
+      "email":"albertto@hawaii.edu",
+      "website":"http://www.asmbranches.org/brhawaii/",
+      "description":"N/A",
+      "tags":[
+         "biology",
+         "academic",
+         "professional"
+      ],
+      "subname":"ASFMHSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Anesthesiology Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Nicholas Fancher",
+      "email":"nfancher@hawaii.edu",
+      "website":"sites.google.com/view/jabsomaig",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "biology",
+         "academic",
+         "professional"
+      ],
+      "subname":"AIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Animal Science Club",
+      "type":"Academic/Professional",
+      "leader":"Cody Ching",
+      "email":"codylc@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "biology",
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"ASC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Anthropology Undergraduate Student Association",
+      "type":"Academic/Professional",
+      "leader":"Jitrudi Scheiman",
+      "email":"jms26@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social sciences",
+         "academic",
+         "professional"
+      ],
+      "subname":"AUSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Artists and Musicians at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "social",
+         "art",
+         "music"
+      ],
+      "subname":"AAMAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Associated Students at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Jester Galiza",
+      "email":"jpgaliza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "biology",
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"ASAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Association For Computing Machinery at Manoa",
+      "type":"Academic/Professional",
+      "leader":"Marty Joshua Apilado",
+      "email":"mjka@hawaii.edu",
+      "website":"acmanoa.github.io",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "technology"
+      ],
+      "subname":"AFCMAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Atherton YMCA",
+      "type":"Academic/Professional",
+      "leader":"Christina Andres",
+      "email":"andrescc@hawaii.edu",
+      "website":"athertonymca.org",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "social"
+      ],
+      "subname":"AY",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Athletic Training Student Society",
+      "type":"Academic/Professional",
+      "leader":"Kumiko Hashida",
+      "email":"hashidak@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "social",
+         "leisure"
+      ],
+      "subname":"ATSS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Autonomous Control Theory-Unmanned Aerial Systems",
+      "type":"Academic/Professional",
+      "leader":"Evan Kawamura",
+      "email":"evankawa@hawaii.edu",
+      "website":"manoa.hawaii.edu/actuas",
+      "description":"N/A",
+      "tags":[
+         "technology",
+         "academic",
+         "professional"
+      ],
+      "subname":"ACTAS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Bachelor of Social Work Organization",
+      "type":"Academic/Professional",
+      "leader":"Kelsey Mills",
+      "email":"kelseyjp@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"BOSWO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Baha'i Association at UH Manoa",
+      "type":"Religious/Spiritual",
+      "leader":"Dale Spenner",
+      "email":"spenner@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"BAAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Baptist College Ministries",
+      "type":"Religious/Spiritual",
+      "leader":"Nathaniel Atwell",
+      "email":"natwell@hawaii.edu",
+      "website":"www.bcmoahu.org",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"BCM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Belly Dance Raqs- Manoa",
+      "type":"Sports/Leisure",
+      "leader":"Brittany Castle",
+      "email":"bcastle9@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "social",
+         "recreational"
+      ],
+      "subname":"BDRM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Best Buddies Hawaii-UH Manoa/SAAC Chapter",
+      "type":"Service",
+      "leader":"Rhonda S. Black",
+      "email":"rblack@hawaii.edu",
+      "website":"www.bestbuddies.org/find-programs/hawaii",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service"
+      ],
+      "subname":"BBHMC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Beta Alpha Psi, Delta Theta Chapter",
+      "type":"Academic/Professional",
+      "leader":"Janae Stilwell",
+      "email":"janaeeps@hawaii.edu",
+      "website":"www.bapuhm.org",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"BAPDTC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Beta Beta Gamma Sorority",
+      "type":"Fraternity/Sorority",
+      "leader":"Moana Nomura",
+      "email":"nomura76@hawaii.edu",
+      "website":"http://betabetagamma.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"BBGS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Black Law Students Association",
+      "type":"Academic/Professional",
+      "leader":"Britagne Johnson",
+      "email":"bnjohnso@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "academic",
+         "professional",
+         "social",
+         "law"
+      ],
+      "subname":"BLSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Blue Zones Project",
+      "type":"Service",
+      "leader":"Robert Nieto",
+      "email":"robertfn@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service"
+      ],
+      "subname":"BZP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Botanical Society of America Hawaii Chapter",
+      "type":"Academic/Professional",
+      "leader":"Christian Streit",
+      "email":"cstreit@hawaii.edu",
+      "website":"www.botany.org",
+      "description":"N/A",
+      "tags":[
+         "biology",
+         "academic",
+         "professional"
+      ],
+      "subname":"BSOAHC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Buddhi Yoga Manoa",
+      "type":"Sports/Leisure",
+      "leader":"Veronica Gibson",
+      "email":"vgibson@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "social",
+         "recreational"
+      ],
+      "subname":"BYM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Business Executive Society of Tomorrow",
+      "type":"Academic/Professional",
+      "leader":"Kristyn Fujii",
+      "email":"fujiik7@hawaii.edu",
+      "website":"bestuhm.org",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional",
+         "social"
+      ],
+      "subname":"BESOT",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Campus Drummers",
+      "type":"Leisure/Recreational",
+      "leader":"Susan Jacob",
+      "email":"sjacob77@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "recreational",
+         "social",
+         "music",
+         "art"
+      ],
+      "subname":"CD",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Cannabis Club",
+      "type":"Sports/Leisure",
+      "leader":"Damon Grayson",
+      "email":"dgrayson@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "social"
+      ],
+      "subname":"CC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Capoeira Senzala",
+      "type":"Sports/Leisure",
+      "leader":"Rachel Mamiya Hernandez",
+      "email":"rmamiya@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"CS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"CARP Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Chizuko Allen",
+      "email":"chizuko@hawaii.edu",
+      "website":"www.carplife.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"CH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Change for Charity",
+      "type":"Service",
+      "leader":"Michaela Kop",
+      "email":"mkop@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "social"
+      ],
+      "subname":"CFC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Chemistry Club",
+      "type":"Academic/Professional",
+      "leader":"Taha Elwir",
+      "email":"elwira@hawaii.edu",
+      "website":"chemclubatuhm.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social",
+         "chemistry",
+         "science"
+      ],
+      "subname":"CC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Chess Club",
+      "type":"Leisure/Recreational",
+      "leader":"Michael Omori",
+      "email":"omorim@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "recreational",
+         "social"
+      ],
+      "subname":"CC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Chi Epsilon",
+      "type":"Academic/Professional",
+      "leader":"Theodore Uekawa",
+      "email":"hawaii.xe@gmail.com",
+      "website":"Sites.google.com/site/xeuhmanoa/",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"CE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Chinese Students and Scholars Association",
+      "type":"Academic/Professional",
+      "leader":"Manrui Xue",
+      "email":"mxue@hawaii.edu",
+      "website":"http://www2.hawaii.edu/~cssauh/",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "academic",
+         "professional"
+      ],
+      "subname":"CSASA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Chinese Xiqu Club",
+      "type":"Ethnic/Cultural",
+      "leader":"Xingli Zhang",
+      "email":"xinliz@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural"
+      ],
+      "subname":"CXC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Church in Honolulu",
+      "type":"Religious/Spiritual",
+      "leader":"Yinghui Chen",
+      "email":"yinghui@hawaii.edu",
+      "website":"churchinhonolulu.net",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         "social"
+      ],
+      "subname":"CIH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Circle K International",
+      "type":"Service",
+      "leader":"Kristian Kim",
+      "email":"knik@hawaii.edu",
+      "website":"ckiuhmaweebly.com",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "social"
+      ],
+      "subname":"CKI",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Clay Club",
+      "type":"Academic/Professional",
+      "leader":"Brad Taylor",
+      "email":"brad2@hawaiiedu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "art",
+         "social"
+      ],
+      "subname":"CC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Clinical and Translational Research Program Student Organization at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Devin Takahashi",
+      "email":"devint@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "biology",
+         "academic",
+         "professional"
+      ],
+      "subname":"CATRPSOAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Club Management of America",
+      "type":"Academic/Professional",
+      "leader":"Kylie Butts",
+      "email":"kyliekb@hawaii.edu",
+      "website":"cmaa.org/studentmembership",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "social"
+      ],
+      "subname":"CMOA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Coalition to Stop Campus Hunger",
+      "type":"Service",
+      "leader":"Ratu Serupepeli Tagivakatini",
+      "email":"ratuseru@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"service",
+      "subname":"CTSCH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"C.O.P. Alaka'ina",
+      "type":"Academic/Professional",
+      "leader":"Ilikea Silva",
+      "email":"ilikea.silva@hawaii.edu",
+      "website":"www.hawaii.edu/cop/mentoring",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"CA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Cru",
+      "type":"Religious/Spiritual",
+      "leader":"Liam Tsamous",
+      "email":"ltsamous@hawaii.edu",
+      "website":"hawaiicru.jimdo.com",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"C",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"CTAHR Student Ambassadors",
+      "type":"Academic/Professional",
+      "leader":"Michelle Au",
+      "email":"aumi@hawaii.edu",
+      "website":"cms.ctahr.hawaii.edu/Academics/ASAO/Ambassadors",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"CSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Delta Sigma Pi, Rho Chi",
+      "type":"Fraternity/Sorority",
+      "leader":"Victoria Huynh",
+      "email":"N/A",
+      "website":"dspuhm.com",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"DSPRC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Disney Ohana Club",
+      "type":"Academic/Professional",
+      "leader":"Delaney Singletary",
+      "email":"delaneys@hawaii.edu",
+      "website":"disneyoc.wixsite.com/disneyohanaclub",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"DOC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Emergency Medicine Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "biology"
+      ],
+      "subname":"EMIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Engineering Ohana",
+      "type":"Academic/Professional",
+      "leader":"Creselle Moraels",
+      "email":"creselle@hawaii.edu",
+      "website":"eng.hawaii.edu",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"EO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Engineering Network",
+      "type":"Academic/Professional",
+      "leader":"Jing Yang Zheng",
+      "email":"jzheng@hawaii.edu",
+      "website":"enuhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"EN",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Eta Kappa Nu",
+      "type":"Honorary Society",
+      "leader":"Jeanalyn Wadsock-Myers",
+      "email":"jlwm@hawaii.edu",
+      "website":"hknhawaii.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "professional",
+         "social"
+      ],
+      "subname":"EKN",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Eta Sigma Delta",
+      "type":"Academic/Professional",
+      "leader":"Tara-Ann Marie Pacubas",
+      "email":"tpacubas@hawaii.edu",
+      "website":"https://www.chrie.org/i4a/pages/index.cfm?pageid=1",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional",
+         "social"
+      ],
+      "subname":"ESD",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ethnic Studies Student Association",
+      "type":"Academic/Professional",
+      "leader":"Ruben Campos",
+      "email":"recampos@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "social sciencse",
+         "academic"
+      ],
+      "subname":"ESSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Every Nation Campus Pearlside",
+      "type":"Religious/Spiritual",
+      "leader":"Taylor Mahi",
+      "email":"tmahi@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"ENCP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Family Medicine Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Anthony Knon",
+      "email":"aknon@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "medical"
+      ],
+      "subname":"FMIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Financial Management Association",
+      "type":"Academic/Professional",
+      "leader":"Nicholas Miyamoto",
+      "email":"npmiyamo@hawaii.edu",
+      "website":"fmahawaii.club",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional"
+      ],
+      "subname":"FMA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Food Science and Human Nutrition Council",
+      "type":"Academic/Professional",
+      "leader":"Michael Yanos",
+      "email":"mpyanos@hawaii.edu",
+      "website":"fshncouncil.wordpress.com",
+      "description":"N/A",
+      "tags":[
+         "biology",
+         "professional"
+      ],
+      "subname":"FSAHNC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Formula SAE Rainbow Warrior Racing",
+      "type":"Academic/Professional",
+      "leader":"Silvija Djelic",
+      "email":"silvijad@hawaii.edu",
+      "website":"rip.eng.hawaii.edu/project/sae-formula",
+      "description":"N/A",
+      "tags":[
+         "engineering",
+         "professional"
+      ],
+      "subname":"FSRWR",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Freestyle Dance Club",
+      "type":"Sports/Leisure",
+      "leader":"Jason Wong",
+      "email":"jbwong@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"FDC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Friends of the Family",
+      "type":"Academic/Professional",
+      "leader":"Brigitte Tampon-Aragon",
+      "email":"btampona@hawaii.edu",
+      "website":"fofatuhm.wixsite.com/home",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "professional",
+         "social"
+      ],
+      "subname":"FOTF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Generation Action at the University of Hawai'i at M?noa",
+      "type":"Academic/Professional",
+      "leader":"Emma Ishihara",
+      "email":"emmaishi@hawaii.edu",
+      "website":"act.plannedparenthoodaction.org/groups-university-of-hawaii-manoa-generation-action",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "professional",
+         "social"
+      ],
+      "subname":"GAATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Glass Art Family",
+      "type":"Academic/Professional",
+      "leader":"Nygell Halverson",
+      "email":"nygell@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"art",
+      "subname":"GAF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Golden Key International Honour Society",
+      "type":"Academic/Professional",
+      "leader":"Arlene Colis",
+      "email":"arlenejc@hawaii.edu",
+      "website":"goldenkeyhawaii.wixsite.com/uhmgkwebsite",
+      "description":"N/A",
+      "tags":"professional",
+      "subname":"GKIHS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Graduate Arts Council",
+      "type":"Academic/Professional",
+      "leader":"Katherine Kazlauskas",
+      "email":"kvk@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "art",
+         "professional"
+      ],
+      "subname":"GAC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Graduate Business Student Association",
+      "type":"Academic/Professional",
+      "leader":"Kirstin Seal",
+      "email":"seal@hawaii.edu",
+      "website":"sites.google.com/a/hawaii.edu/graduate-business-student-association",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional"
+      ],
+      "subname":"GBSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Graduate Hui Ola Pono",
+      "type":"Academic/Professional",
+      "leader":"Princess Mae Visconde",
+      "email":"pviscond@hawaii.ed",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"GHOP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Graduate Student Sociological Association",
+      "type":"Academic/Professional",
+      "leader":"Hannah Liebreich",
+      "email":"hannahli@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social sciences",
+         "professional"
+      ],
+      "subname":"GSSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Graduate Women in Science Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Madeline McKenna",
+      "email":"mmck@hawaii.edu",
+      "website":"www.gwishawaii.org",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "science"
+      ],
+      "subname":"GWISH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Grey Hats at UHM",
+      "type":"Academic/Professional",
+      "leader":"Chad Morita",
+      "email":"chadmmm@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "technology"
+      ],
+      "subname":"GHAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hanwoori Hawaii",
+      "type":"Ethnic/Cultural",
+      "leader":"Ingrid Adams",
+      "email":"adamsi@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"HH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii African Dance and Drum Club RIO at UHM",
+      "type":"Recreation/Leisure",
+      "leader":"Elizabeth (Liza) Simon",
+      "email":"csimon@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "recreation",
+         "cultural",
+         "leisure",
+         "social"
+      ],
+      "subname":"HADADCRAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Chapter of the Society for Conservation Biology",
+      "type":"Academic/Professional",
+      "leader":"Chad Wilhite",
+      "email":"cwilhite@hawaii.edu",
+      "website":"www.hiscb.org",
+      "description":"N/A",
+      "tags":[
+         "ecology",
+         "biology",
+         "service"
+      ],
+      "subname":"HCOTSFCB",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Educational Research Association",
+      "type":"Academic/Professional",
+      "leader":"Susan Saka",
+      "email":"ssaka@hawaii.edu",
+      "website":"hawaii.edu/hera",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"HERA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii H.O.M.E. Project",
+      "type":"Service",
+      "leader":"Jason Huynh",
+      "email":"huynhjas@hawaii.edu",
+      "website":"www.hawaiihomeproject.org",
+      "description":"N/A",
+      "tags":"service",
+      "subname":"HHP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Shotokan Karate",
+      "type":"Sports/Leisure",
+      "leader":"Scott Oshiro",
+      "email":"scottosh@hawaii.edu",
+      "website":"hawaiishotokankarate.com",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"HSK",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Streams and Ecosystems",
+      "type":"Service",
+      "leader":"Aurelia Gonzalez",
+      "email":"aureliag@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"ecology",
+      "subname":"HSAE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Student Entrepreneurs",
+      "type":"Academic/Professional",
+      "leader":"Asher Uchiyama",
+      "email":"au234@hawaii.edu",
+      "website":"http://www.hsentrepreneurs.com",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional",
+         "social"
+      ],
+      "subname":"HSE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hawaii Undergraduate Initiative",
+      "type":"Academic/Professional",
+      "leader":"Kaitlin Nalani Tilitile",
+      "email":"tilitie@hawaii.edu",
+      "website":"manoa.hawaii.edu/omsshui",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"HUI",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Her Campus Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Avery Nueva",
+      "email":"averymn@hawaii.edu",
+      "website":"https://www.hercampus.com/school/hawaii",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"HCH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"High Intensity Athletics at UHM",
+      "type":"Sports/Leisure",
+      "leader":"Lynette Rudolfo",
+      "email":"rudolfo@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"HIAAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Higher Education Student Association",
+      "type":"Academic/Professional",
+      "leader":"Kawehi Kina",
+      "email":"kinak@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"HESA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"HOSA at UHM",
+      "type":"Academic/Professional",
+      "leader":"Jessica Loi",
+      "email":"jkloi@hawaii.edu",
+      "website":"hosauhm.wixsite.com/home",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "medical",
+         "professional"
+      ],
+      "subname":"HAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hui Dui",
+      "type":"Academic/Professional",
+      "leader":"Katie Joe Lang",
+      "email":"langk@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"HD",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hui M?lama Honua",
+      "type":"Academic/Professional",
+      "leader":"Donna Lee (Sweetie) Kuehu",
+      "email":"dkueku@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "academic",
+         "professional"
+      ],
+      "subname":"HMH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Hui Ola Pono",
+      "type":"Academic/Professional",
+      "leader":"Swastika Maharjan",
+      "email":"swastika@hawaii.edu",
+      "website":"publichealthhui.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "academic",
+         "professional"
+      ],
+      "subname":"HOP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ilima Sacnas Chapter at UH",
+      "type":"Ethnic/Cultural",
+      "leader":"Dr. Healani Chang",
+      "email":"hchang@hawaii.edu",
+      "website":"www.sacnashawaii.org",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"ISCAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Information Technology Management Association",
+      "type":"Academic/Professional",
+      "leader":"Luke Clements",
+      "email":"lclement@hawaii.edu",
+      "website":"http://www.itmahawaii.com/",
+      "description":"N/A",
+      "tags":[
+         "technology",
+         "academic",
+         "professional"
+      ],
+      "subname":"ITMA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Interactive Story Telling Club",
+      "type":"Ethnic/Cultural",
+      "leader":"Kyle Tran",
+      "email":"kyletran@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"ISTC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Inter-Business Council",
+      "type":"Academic/Professional",
+      "leader":"Jordan Abanto",
+      "email":"abanto@hawaii.edu",
+      "website":"www.ibcuhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "business"
+      ],
+      "subname":"IC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"International Business Organization",
+      "type":"Academic/Professional",
+      "leader":"Rachel Dunn",
+      "email":"dunnrach@hawaii.edu",
+      "website":"ibouhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "business"
+      ],
+      "subname":"IBO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"International Student Association",
+      "type":"Academic/Professional",
+      "leader":"Ryan Matsumoto",
+      "email":"ryantm2@hawaii.edu",
+      "website":"www.isauhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"ISA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Internal Medicine Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Geoffrey Kusaka",
+      "email":"gkusaka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "biology"
+      ],
+      "subname":"IMIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Intervarsity Christian Fellowship",
+      "type":"Religious/Spiritual",
+      "leader":"Sabrina Summers",
+      "email":"summerss@hawaii.edu",
+      "website":"www.intervarsityhawaii.org",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"ICF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Institute of Electrical and Electronic Engineers",
+      "type":"Academic/Professional",
+      "leader":"Christopher J Blake",
+      "email":"cjblake@hawaii.edu",
+      "website":"ieeeatuhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "engineering"
+      ],
+      "subname":"IOEAEE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Jehowah's Witnesses at the University of Hawai'i - Manoa",
+      "type":"Religious/Spiritual",
+      "leader":"Roberta Baird",
+      "email":"bairdr@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"JWATUOH-M",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Judo Club/Team at University of Hawaii at Manoa",
+      "type":"Sports/Leisure",
+      "leader":"Larson Abilla",
+      "email":"labilla@hawaii.edu",
+      "website":"www2.hawaii.edu/~judo",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure"
+      ],
+      "subname":"JCAUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"K-Mixx Club",
+      "type":"Leisure/Recreational",
+      "leader":"Isaiah Avilla",
+      "email":"isaiaha@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "recreational",
+         "social"
+      ],
+      "subname":"KC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ka Lau O Ka Lahui",
+      "type":"Service",
+      "leader":"Karli Rose Keanu",
+      "email":"kkeanu4@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service"
+      ],
+      "subname":"KLOKL",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ka Lama Kukui Interest Group",
+      "type":"Ethnic/Cultural",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"KLKIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"K?lai Pohaku",
+      "type":"Academic/Professional",
+      "leader":"Diana Moana Nomura",
+      "email":"nomura76@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"KP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ka Mea Kolo Entomology Club",
+      "type":"Academic/Professional",
+      "leader":"Michelle Au",
+      "email":"aumi@hawaii.edu",
+      "website":"sites.google.com/site/kameakolo",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "biology"
+      ],
+      "subname":"KMKEC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Kanoa",
+      "type":"Religious/Spiritual",
+      "leader":"Ebony Tapasa",
+      "email":"etapasa@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"K",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Kappa Sigma",
+      "type":"Fraternity/Sorority",
+      "leader":"Carlos Tucker",
+      "email":"carlos42@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"KS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Katipunan Club",
+      "type":"Ethnic/Cultural",
+      "leader":"Christine Joy Baltazar",
+      "email":"cbaltaza@hawaii.edu",
+      "website":"https://manoa.hawaii.edu/rio/katipunan/",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"KC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Kempo Club at UHM",
+      "type":"Sports/Leisure",
+      "leader":"Kevin Hanaoka",
+      "email":"hanaokak@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure"
+      ],
+      "subname":"KCAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Kim's Tae Kwon Do @ UHM",
+      "type":"Sports/Leisure",
+      "leader":"Mason Nakadomari",
+      "email":"nakadoma@hawaii.edu",
+      "website":"hawaiitaekwondo.com",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure"
+      ],
+      "subname":"KTKD@U",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Kinesiology and Rehabilitation Sciences Club",
+      "type":"Academic/Professional",
+      "leader":"Keaton Yaw",
+      "email":"keatony@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"KARSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Korean Drama Interest Group",
+      "type":"Ethnic/Cultural",
+      "leader":"Jarren Takaki",
+      "email":"jarrent@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"KDIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"La Raza Unida",
+      "type":"Ethnic/Cultural",
+      "leader":"Shea Ryan Charles",
+      "email":"sc67@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"LRU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Lifesaver Club",
+      "type":"Service",
+      "leader":"Sarai Vargas",
+      "email":"svargas9@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service"
+      ],
+      "subname":"LC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Living Stone Chinese Christian Fellowship",
+      "type":"Religious/Spiritual",
+      "leader":"Liana Wang",
+      "email":"lwang2@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"LSCCF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Loea Consulting Group (Consultx)",
+      "type":"Academic/Professional",
+      "leader":"Ha Nguyen",
+      "email":"ha777@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "business",
+         "professional"
+      ],
+      "subname":"LCG(",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Lotus",
+      "type":"Ethnic/Cultural",
+      "leader":"Venkataraman Balaraman",
+      "email":"Fmuza",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"L",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Creative Production",
+      "type":"Academic/Professional",
+      "leader":"Tiffany Anne Ganti",
+      "email":"tganti@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "art"
+      ],
+      "subname":"MCP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Darts",
+      "type":"Sports/Leisure",
+      "leader":"Katsuyuki Yoshia",
+      "email":"ky7312@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"MD",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Debate Union at UHM",
+      "type":"Academic/Professional",
+      "leader":"Michelle Park",
+      "email":"parkmj@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"MDUAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Improv Players",
+      "type":"Sports/Leisure",
+      "leader":"Emily Steward",
+      "email":"esteward@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"MIP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Peer Advisor Program",
+      "type":"Academic/Professional",
+      "leader":"Sherylynne Andrada",
+      "email":"sma3@hawaii.edu",
+      "website":"manoa.hawaii.edu/undergrad/mac/mpa",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"MPAP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Pre-Law Association",
+      "type":"Academic/Professional",
+      "leader":"Teana Motoyama",
+      "email":"teanam@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"MPA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Sophomore Experience",
+      "type":"Student Affairs",
+      "leader":"Leilani Harjati",
+      "email":"ltakeuc@hawaii.edu",
+      "website":"http://manoa.hawaii.edu/undergrad/sophomore",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"MSE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Manoa Ultimate Disc",
+      "type":"Sports/Leisure",
+      "leader":"Van Wishingrad",
+      "email":"vanw@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"MUD",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Marine Robotics at University of Hawaii",
+      "type":"Sports/Leisure",
+      "leader":"Paula Rae Penullar",
+      "email":"paularae@hawaii.edu",
+      "website":"rig.eng.hawaii.edu/research/unmanned-x-systems/",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "technology"
+      ],
+      "subname":"MRAUOH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medt Student Organization",
+      "type":"Academic/Professional",
+      "leader":"Lauren Loualhati",
+      "email":"lloual3@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"MSO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medical Education Student Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Dann Poe ?",
+      "email":"dpoei@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"MESIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medical Innovation and Design Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Alexander Ribao",
+      "email":"ribaoa@hawaii.edu",
+      "website":"mindhawaii.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"MIADH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medical Students for Choice",
+      "type":"Academic/Professional",
+      "leader":"Clare-Marie Anderson",
+      "email":"cmanders@hawaii.edu",
+      "website":"msfc.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"MSFC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medical Student Mentorship Program",
+      "type":"Academic/Professional",
+      "leader":"Eileen Chen",
+      "email":"esrchen@hawaii.edu",
+      "website":"uhmsmp.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"MSMP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Medical Students of the Class of 2022 at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Jester Galiza",
+      "email":"jpgaliza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"MSOTCO2AJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Micronesia Connections at UH Manoa",
+      "type":"Ethnic/Cultural",
+      "leader":"Austin Haleyalpiy",
+      "email":"austin46@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"MCAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"MILUN",
+      "type":"Ethnic/Cultural",
+      "leader":"Man Dhoj Rai",
+      "email":"mandhoj@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"M",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Mortar Board Senior National Honor Society (Hui Po'okela Chapter)",
+      "type":"Academic/Professional",
+      "leader":"Aime Le",
+      "email":"ale77@hawaii.edu",
+      "website":"mortarboardmanoa.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"MBSNHS(PC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"N? Hawai'i 'Imi Loa Hui Haum?na",
+      "type":"Service",
+      "leader":"Sharnelle Renti Cruz",
+      "email":"sprc@hawaii.edu",
+      "website":"http://nhilhh.weebly.com",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"NH'LHH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Na Koa",
+      "type":"Religious/Spiritual",
+      "leader":"Jace Nakama",
+      "email":"jacect@hawaii.edu",
+      "website":"oahuchurch.org",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"NK",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Na Koa Lani Booster Club",
+      "type":"Academic/Professional",
+      "leader":"Brock Barr",
+      "email":"barrb@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"NKLBC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Narrative Medicine Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Kyung Moo Kim",
+      "email":"kkim29@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "Medical",
+         "professional"
+      ],
+      "subname":"NMIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"National Panhellenic Conferene",
+      "type":"Fraternity/Sorority",
+      "leader":"Avery Nueva",
+      "email":"averymn@hawaii.edu",
+      "website":"uhmpanhel.com",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"NPC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Natural Sciences Student Ambassadors",
+      "type":"Academic/Professional",
+      "leader":"Taha Elwir",
+      "email":"elwira@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"NSSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"OB/GYN Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Clare-Marie Anderson",
+      "email":"cmanders@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "biology"
+      ],
+      "subname":"OIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Oncology Interest Group at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Nicholas Fancher",
+      "email":"nfancher@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "biology",
+         "medical"
+      ],
+      "subname":"OIGAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Opthalmology Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Kevin Card",
+      "email":"cardk@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "biology"
+      ],
+      "subname":"OIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pacific Asia Travel Association",
+      "type":"Academic/Professional",
+      "leader":"Jay-O Alforque",
+      "email":"alforque@hawaii.edu",
+      "website":"patahawaii.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "business"
+      ],
+      "subname":"PATA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pacific Asian Legal Student Organization",
+      "type":"Academic/Professional",
+      "leader":"Richard Crum",
+      "email":"crumr@hawaii.edu",
+      "website":"https://www.law.hawaii.edu/student-organization",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"PALSO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Partners in Health Engage UH Manoa Chapter",
+      "type":"Academic/Professional",
+      "leader":"Akane Dunn",
+      "email":"akane2@hawaii.edu",
+      "website":"https://www.pih.org/engage",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"PIHEUMC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Partnership for Social Justice at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "social"
+      ],
+      "subname":"PFSJAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Patient Safety and Quality Improvement Interest Group",
+      "type":"Academic/Professional",
+      "leader":"Kristine Vo",
+      "email":"kbvo@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "medical",
+         "professional",
+         "social"
+      ],
+      "subname":"PSAQIIG",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pediatric Interest Group at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Kevin Pham",
+      "email":"kevinph@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"PIGAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Peer Mentor Ohana",
+      "type":"Academic/Professional",
+      "leader":"Rosemarie Woodruff",
+      "email":"N/A",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "social"
+      ],
+      "subname":"PMO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Peer Mentoring Program at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "medical",
+         "social"
+      ],
+      "subname":"PMPAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Phi Alpha Nu Sigma Honor Society",
+      "type":"Academic/Professional",
+      "leader":"Julie Anne Bacaro",
+      "email":"jafb@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"PANSHS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Phi Alpha Theta (Alpha Beta Epsilon)",
+      "type":"Academic/Professional",
+      "leader":"Emily Holmberg",
+      "email":"emilyhol@hawaii.edu",
+      "website":"phialphatheta.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"PAT(BE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Phi Mu",
+      "type":"Fraternity/Sorority",
+      "leader":"Sarai Vargas",
+      "email":"svargas9@hawaii.edu",
+      "website":"hawaii.phimu.org",
+      "description":"N/A",
+      "tags":[
+         "fraternity",
+         "sorority",
+         "social"
+      ],
+      "subname":"PM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Philippine Medical Student Association of Hawaii",
+      "type":"Ethnic/Cultural",
+      "leader":"Arlene Kiyohara",
+      "email":"arlenecp@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "medical",
+         "cultural",
+         "social"
+      ],
+      "subname":"PMSAOH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pi Gamma Mu",
+      "type":"Honorary Society",
+      "leader":"Vendela Lindahl",
+      "email":"vendelal@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "academic",
+         "social"
+      ],
+      "subname":"PGM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pi Sigma Alpha- Tau Pi Chapter",
+      "type":"Academic/Professional",
+      "leader":"Justin Menina",
+      "email":"jmenina@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"PSATPC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pi Tau Sigma",
+      "type":"Academic/Professional",
+      "leader":"Michael Dang",
+      "email":"mkdang@hawaii.edu",
+      "website":"uhmsigmapi.wixsite.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"PTS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Political Science Club at UH",
+      "type":"Academic/Professional",
+      "leader":"Justin Menina",
+      "email":"jmenina@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social sciences"
+      ],
+      "subname":"PSCAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Powerlifting Club at the University of Hawaii at Manoa",
+      "type":"Sports/Leisure",
+      "leader":"Jaron Yamane",
+      "email":"jarony@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"PCATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pre-Medical Association",
+      "type":"Academic/Professional",
+      "leader":"Taylor Pu'uohau",
+      "email":"tpuuohau@hawaii.edu",
+      "website":"http://premed-at-uhm.uhm.squarespace.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"PA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Pre-Phamarcy Association at UH Manoa",
+      "type":"Academic/Professional",
+      "leader":"Tran Trinh",
+      "email":"trant2@hawaii.edu",
+      "website":"uhmprepharmacyassociation.wordpress.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"PAAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Primary Care Progress at University of Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Jester Galiza",
+      "email":"jpgaliza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"PCPAUOH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Protection of Ocean and Nature Organization",
+      "type":"Service",
+      "leader":"Maiko Ikeda",
+      "email":"maikoi@hawaii.edu",
+      "website":"ponohawaii.org",
+      "description":"N/A",
+      "tags":[
+         "service",
+         "ecology"
+      ],
+      "subname":"POOANO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Psi SIgma: The Psychology Connection",
+      "type":"Academic/Professional",
+      "leader":"BrandonBanuelos",
+      "email":"bbanuelo@hawaii.ed",
+      "website":"thepsychologyconnection.blogspot.com",
+      "description":"N/A",
+      "tags":[
+         "professional",
+         "social"
+      ],
+      "subname":"PSTPC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Public Administration Student Organization",
+      "type":"Academic/Professional",
+      "leader":"Lydia Chung",
+      "email":"lydiajc@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"PASO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Public Relations Student Society of America",
+      "type":"Academic/Professional",
+      "leader":"Mei Jie Wu",
+      "email":"meijiew@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"PRSSOA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Rainbow Jugglers Juggling Club",
+      "type":"Sports/Leisure",
+      "leader":"Stephen Case",
+      "email":"stevec@hawaii.edu",
+      "website":"www.rainbowjugglers.org",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social"
+      ],
+      "subname":"RJJC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Regent and Presidential Scholars Club",
+      "type":"Academic/Professional",
+      "leader":"Noah Rodrigues",
+      "email":"noahrodr@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"RAPSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Reformed University Fellowship",
+      "type":"Religious/Spiritual",
+      "leader":"Joshua Hu",
+      "email":"joshuahu@hawaii.edu",
+      "website":"rvfhawaii.org",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"RUF",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Rural Health Interest Group at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"RHIGAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"S-cubed",
+      "type":"Academic/Professional",
+      "leader":"Barbara Watanabe",
+      "email":"blwatana@hawaii.edu",
+      "website":"manoa.hawaii.edu/undergrad/sss",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"S",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Salsa Dancing @ UHM",
+      "type":"Ethnic/Cultural",
+      "leader":"Gordon Walker",
+      "email":"gwalker@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social",
+         "recreational"
+      ],
+      "subname":"SD@U",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Science Communicators Ohana",
+      "type":"Academic/Professional",
+      "leader":"Sarah Tucker",
+      "email":"tucker4@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"SCO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Second Language Studies Student Association",
+      "type":"Academic/Professional",
+      "leader":"Leeseul Park",
+      "email":"leeseul@hawaii.edu",
+      "website":"http://blog.hawaii.edu/slssa/",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"SLSSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Shooting Stars",
+      "type":"Academic/Professional",
+      "leader":"Michael Liu",
+      "email":"liumicha@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"SS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Silver Wings",
+      "type":"Academic/Professional",
+      "leader":"Anthony Lee",
+      "email":"awl@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"SW",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Smash Bros. Club at The University of Hawaii at Manoa",
+      "type":"Leisure/Recreational",
+      "leader":"Isaiah Sheppard-Nelson",
+      "email":"isaiahsn@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "recreational",
+         "social"
+      ],
+      "subname":"SBCATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society of American Archivists University of Hawai'i Student Chapter",
+      "type":"Academic/Professional",
+      "leader":"Marleah Renti Cruz",
+      "email":"marleah@hawaii.edu",
+      "website":"http://hisaasc.weebly.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"SOAAUOHSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society of Automotive Engineers at UH Manoa",
+      "type":"Academic/Professional",
+      "leader":"Michael Dang",
+      "email":"mkdang@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "engineering"
+      ],
+      "subname":"SOAEAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society for Human Resource Management, Aloha Chapter",
+      "type":"Academic/Professional",
+      "leader":"Josiah J. Villar",
+      "email":"josiahlj@hawaii.edu",
+      "website":"shrmuhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social sciences"
+      ],
+      "subname":"SFHRMAC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society of Nepalese in Hawaii",
+      "type":"Ethnic/Cultural",
+      "leader":"Man Dhoj Rai",
+      "email":"mandhoj@hawaii.edu",
+      "website":"www.esneha.org",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"SONIH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society of Physics Students at the University of Hawaii at Manoa",
+      "type":"Academic/Professional",
+      "leader":"Zachary Martin",
+      "email":"zmart@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"SOPSATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Society of Women Engineers",
+      "type":"Academic/Professional",
+      "leader":"Candice Sarangay",
+      "email":"sarangay@hawaii.edu",
+      "website":"uhm.swe.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "engineering"
+      ],
+      "subname":"SOWE",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Spanish and Portugese Club",
+      "type":"Ethnic/Cultural",
+      "leader":"Megan Fereira",
+      "email":"fereira@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"SAPC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Speech Communication Society",
+      "type":"Academic/Professional",
+      "leader":"Kittra Evenson",
+      "email":"evenson8@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"SCS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"STAR Club",
+      "type":"Academic/Professional",
+      "leader":"Sharon Widup",
+      "email":"swidup@hawaii.edu",
+      "website":"https://www.star.hawaii.edu",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "technology"
+      ],
+      "subname":"SC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Stole Society",
+      "type":"Student Affairs",
+      "leader":"Mark Oandasan",
+      "email":"markco@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"SS",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Students for a National Health Program at University of Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Jester Galiza",
+      "email":"jpgaliza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"SFANHPAUOH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Student Immunization Initiative",
+      "type":"Academic/Professional",
+      "leader":"Albert To",
+      "email":"albertto@hawaii.edu",
+      "website":"https://www.sihawaii.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "service"
+      ],
+      "subname":"SII",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Student Interest Group for Neurology and Psychiatry",
+      "type":"Academic/Professional",
+      "leader":"Christina Tse",
+      "email":"tsec@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "social sciences"
+      ],
+      "subname":"SIGFNAP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Students Interested in Pathology",
+      "type":"Academic/Professional",
+      "leader":"Chad Russell",
+      "email":"chadruss@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":"academic",
+      "subname":"SIIP",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Students with Keiki @ the University of Hawaii- Manoa",
+      "type":"Student Affairs",
+      "leader":"Angelique K. Solomon",
+      "email":"gotkids@hawaii.edu",
+      "website":"uhmstudentswkeiki.wixsite.com/website",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "student affairs"
+      ],
+      "subname":"SWK@TUOHM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Student Nurses' Association",
+      "type":"Academic/Professional",
+      "leader":"Miki Matsuoka",
+      "email":"snamanoa@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"SNA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Student Veteran Organization",
+      "type":"Academic/Professional",
+      "leader":"Andrew Lanza",
+      "email":"ajlanza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"SVO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Supporting Women in Information, Technology and Computing in Hawaii at the University of Hawaii at Manoa",
+      "type":"Academic/Professional",
+      "leader":"Quinne Uchida",
+      "email":"qauchida@hawaii.edu",
+      "website":"swith-uhm.github.io",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "technology"
+      ],
+      "subname":"SWIITACIHATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Surfrider Foundation UH Manoa Club",
+      "type":"Sports/Leisure",
+      "leader":"Laurel Perun",
+      "email":"lperun@hawaii.edu",
+      "website":"uhmanoasurfrider.wordpress.com",
+      "description":"N/A",
+      "tags":[
+         "sports",
+         "leisure",
+         "social",
+         "service"
+      ],
+      "subname":"SFUMC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Thai Studies Club",
+      "type":"Ethnic/Cultural",
+      "leader":"Anongard Nusartlert",
+      "email":"an2009@hawaii.edu",
+      "website":"thaistudieshawaii.wordpress.com",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "academic"
+      ],
+      "subname":"TSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Anime Manga Society of Hawaii at UH Manoa",
+      "type":"Ethnic/Cultural",
+      "leader":"Barryn Chun",
+      "email":"chun808@hawaii.edu",
+      "website":"www.amsmanoa.org",
+      "description":"N/A",
+      "tags":"social",
+      "subname":"TAMSOHAUM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Elohist Club at UH",
+      "type":"Religious/Spiritual",
+      "leader":"Christopher Blake",
+      "email":"cjblake@hawaii.edu",
+      "website":"elohist.club",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"TECAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Engineers' Council at the University of Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Jianna Leonora Orias",
+      "email":"jlorias@hawaii.edu",
+      "website":"http://www.ecuh.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "engineering"
+      ],
+      "subname":"TECATUOH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Ethnomusicology Association",
+      "type":"Ethnic/Cultural",
+      "leader":"Travis Shaver",
+      "email":"tshaver@hawaii.edu",
+      "website":"https://www.emauhm.org/",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "art",
+         "music",
+         "recreational"
+      ],
+      "subname":"TEA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Healing Earth Initiative",
+      "type":"Service",
+      "leader":"Ashley Ostendorf",
+      "email":"ashleyno@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service",
+         "ecology"
+      ],
+      "subname":"THEI",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The iMua Learned Society at the Univeristy of Hawaii (iMua Living Labs)",
+      "type":"Academic/Professional",
+      "leader":"Justin Menina",
+      "email":"jmenina@hawaii.edu",
+      "website":"manoa.cc",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "technology"
+      ],
+      "subname":"TILSATUOH(LL",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Language Documentation Training Center",
+      "type":"Academic/Professional",
+      "leader":"Jessica Charest",
+      "email":"jcharest@hawaii.edu",
+      "website":"ldtc.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"TLDTC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The National Society of Collegiate Scholars, University of Hawai'i at Manoa Chapter",
+      "type":"Academic/Professional",
+      "leader":"Alyssa Hironaka",
+      "email":"alyssahi@hawaii.edu",
+      "website":"nscs.org",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"TNSOCSUOHAMC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Navigators",
+      "type":"Religious/Spiritual",
+      "leader":"Lauren Block",
+      "email":"blockln7@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"TN",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Pre-Dental Association at the University of Hawaii at Manoa",
+      "type":"Academic/Professional",
+      "leader":"Paolo Atienza",
+      "email":"patienza@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"TPAATUOHAM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"The Students for Success Club",
+      "type":"Academic/Professional",
+      "leader":"Nicole Panos",
+      "email":"npanos@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"TSFSC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Timpuyog Organization",
+      "type":"Ethnic/Cultural",
+      "leader":"Jane Nicole Teneza",
+      "email":"teneza20@hawaii.edu",
+      "website":"manoa.hawaii.edu/ilokano/timpuyog.html",
+      "description":"N/A",
+      "tags":[
+         "ethnic",
+         "cultural",
+         "social"
+      ],
+      "subname":"TO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Transcendental Meditation Club",
+      "type":"Religious/Spiritual",
+      "leader":"Taryn Bond",
+      "email":"BondTL@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"TMC",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Travel Industry Management Student Association",
+      "type":"Academic/Professional",
+      "leader":"Sharmaine Domingo",
+      "email":"sd21@hawaii.edu",
+      "website":"www.timsaatuhm.com",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "social"
+      ],
+      "subname":"TIMSA",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Tropical Plant and Soil Sciences Graduate Student Organization",
+      "type":"Academic/Professional",
+      "leader":"Jaclyn Nicole R. Uy",
+      "email":"uyjnr69@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "science"
+      ],
+      "subname":"TPASSGSO",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Ultrasound Interest Group at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"UIGAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Volunteers for Intercultural and Definitive Adventures (VIDA)",
+      "type":"Service",
+      "leader":"Airi Morita",
+      "email":"airimori@hawaii.edu",
+      "website":"https://vidahawaii.wixsite.com/uhmanoa http://www.vidavounteer.org",
+      "description":"N/A",
+      "tags":[
+         "social",
+         "service",
+         "cultural"
+      ],
+      "subname":"VFIADA(",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"WADEM SIG at UHM",
+      "type":"Academic/Professional",
+      "leader":"Gary Glauberman",
+      "email":"glauber@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional"
+      ],
+      "subname":"WSAU",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Waikiki Acrobatics Troupe",
+      "type":"Leisure/Recreational",
+      "leader":"Liam Griffin",
+      "email":"liam9999@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "leisure",
+         "recreational",
+         "social"
+      ],
+      "subname":"WAT",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Wesley Foundation @ UH Manoa",
+      "type":"Religious/Spiritual",
+      "leader":"Sateki Taulanga",
+      "email":"st37@hawaii.edu",
+      "website":"Wesleyfoundationhawaii.com",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"WF@UM",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Wilderness Medicine Hawaii",
+      "type":"Academic/Professional",
+      "leader":"Weston Mccue",
+      "email":"wmccue@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical",
+         "recreational"
+      ],
+      "subname":"WMH",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Women's Interest Group at JABSOM",
+      "type":"Academic/Professional",
+      "leader":"Amandalin Rock",
+      "email":"rocka@hawaii.edu",
+      "website":"N/A",
+      "description":"N/A",
+      "tags":[
+         "academic",
+         "professional",
+         "medical"
+      ],
+      "subname":"WIGAJ",
+      "members":[
+
+      ]
+   },
+   {
+      "name":"Younglife",
+      "type":"Religious/Spiritual",
+      "leader":"Makenzie Hickey",
+      "email":"mmhickey@hawaii.edu",
+      "website":"younglife.org",
+      "description":"N/A",
+      "tags":[
+         "religion",
+         " social"
+      ],
+      "subname":"Y",
+      "members":[
+
+      ]
+   }
+]
+}
