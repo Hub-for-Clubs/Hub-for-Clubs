@@ -1,4 +1,9 @@
 {
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb+srv://admin:lilykoi1@cluster0-r2giz.mongodb.net/test?retryWrites=true&w=majority"
+    }
+  },
   "defaultAccounts": [
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": [],
@@ -19,7 +24,7 @@
   ],
 
   "defaultAnnouncements": [
-      { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"},
+    { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"},
     { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club"},
     { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things"}
   ],
@@ -33,4 +38,7 @@
       "associated_clubs": ["Academy for Creative Media Student Association", "Accounting Club at UH Manoa"]
     }],
   "defaultMajors": [{ "name": "Computer Science"}, {"name":  "Accounting"}, {"name": "Art"}, {"name": "Chinese"}, {"name": "Computer Engineering"}]
+
+
+
 }

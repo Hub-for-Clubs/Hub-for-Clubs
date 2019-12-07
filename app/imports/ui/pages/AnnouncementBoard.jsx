@@ -16,6 +16,7 @@ class AnnouncementBoard extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+      console.log(this.props.announcements);
     return (
         <div className="announcementBoard-image">
       <Container>
