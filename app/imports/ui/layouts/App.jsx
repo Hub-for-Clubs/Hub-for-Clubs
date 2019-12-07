@@ -19,6 +19,7 @@ import Signout from '../pages/Signout';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import EditProfile from '../pages/EditProfile';
+import EditClubPage from '../pages/EditClubPage';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -31,9 +32,10 @@ class App extends React.Component {
               <Route exact path="/" component={Signup}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/profile/:_id" component={Profile}/>
-              <Route path="/editprofile" component={EditProfile}/>
+              <Route path="/editprofile/:_id" component={EditProfile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <Route path="/clubpage/:_id" component={ClubPage}/>
+              <Route path="/editclubpage/:_id" component={EditClubPage}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <Route path="/clubexplorer" component={ClubExplorer}/>
