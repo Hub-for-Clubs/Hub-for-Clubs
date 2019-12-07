@@ -38,6 +38,18 @@ class EditProfile extends React.Component {
     }
   }
 
+  handleImageSubmit = () => {
+      Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.image': [this.state.image] } });
+      this.setState({ image: '' });
+  }
+
+  handleNameSubmit = () => {
+      Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.username': this.state.name } });
+      this.setState({ name: '' });
+  }
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -62,7 +74,41 @@ class EditProfile extends React.Component {
           <Grid>
             <Grid.Column width={4} className="user_info">
               <Image className="profile_picture" src={Meteor.user().profile.image} size="medium"/>
+              <Form onSubmit={this.handleImageSubmit}>
+                <Grid columns={2}>
+                  <Grid.Column>
+                    <div>
+                      <Form.Input style={{ marginLeft: '3em' }}
+                                  placeholer="profile picture URL"
+                                  name="picture"
+                                  value={this.state.image}
+                                  onChange={this.handleChange}/>
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Form.Button style={{ marginLeft: '2em' }}
+                                 type='submit'>Submit</Form.Button>
+                  </Grid.Column>
+                </Grid>
+              </Form>
               <Header className="name">{Meteor.user().username}</Header>
+              <Form onSubmit={this.handleNameSubmit}>
+                <Grid columns={2}>
+                  <Grid.Column>
+                    <div>
+                      <Form.Input style={{ marginLeft: '3em' }}
+                                  placeholer="profile picture URL"
+                                  name="name"
+                                  value={this.state.name}
+                                  onChange={this.handleChange}/>
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Form.Button style={{ marginLeft: '2em' }}
+                                 type='submit'>Submit</Form.Button>
+                  </Grid.Column>
+                </Grid>
+              </Form>
               <Header className="heading">Interest</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
