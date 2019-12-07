@@ -30,54 +30,62 @@ class ClubPage extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
-    console.log(this.props.clubs.description);
-    return (
-        <div className="profile">
-          <Grid>
-            <Grid.Column width={4} className="user_info">
-              <Image className="profile_picture" src={'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'} size="medium"/>
-              <Header className="name">{this.props.clubs.name}</Header>
-              <Header className="heading">Leader</Header>
-              <h3>{ this.props.clubs.leader }</h3>
-              <hr style={{ marginLeft: '1em' }}/>
-              <Header className="heading">Our Website</Header>
-              <h3> <Link exact to={ this.props.clubs.website }>
-                { this.props.clubs.website }</Link></h3>
-              <hr style={{ marginLeft: '1em' }}/>
-              <List bulleted className="list">
-                {this.props.clubs.tags.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
-              </List>
-            </Grid.Column>
+    if (this.props.clubs === undefined) {
+      return (
+          <h1>ERROR 404: Yo put in something that exists</h1>
+      );
+    }
+      return (
+          <div className="profile">
+            <Grid>
+              <Grid.Column width={4} className="user_info">
+                <Image className="profile_picture"
+                       src={'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'}
+                       size="medium"/>
+                <Header className="name">{this.props.clubs.name}</Header>
+                <Header className="heading">Leader</Header>
+                <h3>{this.props.clubs.leader}</h3>
+                <hr style={{ marginLeft: '1em' }}/>
+                <Header className="heading">Our Website</Header>
+                <h3><Link exact to={this.props.clubs.website}>
+                  {this.props.clubs.website}</Link></h3>
+                <hr style={{ marginLeft: '1em' }}/>
+                <List bulleted className="list">
+                  {this.props.clubs.tags.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
+                </List>
+              </Grid.Column>
 
-            <Grid.Column width={12} className="club_info">
-              <Menu pointing secondary>
-                <Menu.Item name="About-Us" active={ activeItem === 'About-Us' } onClick={this.handleMenuClick}/>
-                <Menu.Item name="announcements" active={ activeItem === 'announcements' }
-                           onClick={this.handleMenuClick}/>
+              <Grid.Column width={12} className="club_info">
+                <Menu pointing secondary>
+                  <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
+                  <Menu.Item name="announcements" active={activeItem === 'announcements'}
+                             onClick={this.handleMenuClick}/>
 
-              </Menu>
-              <Container>
-              <Card.Group>
-                {/* eslint-disable-next-line no-nested-ternary */}
-                {activeItem === 'About-Us' ?
-                    <Container>
-                      <h3>{this.props.clubs.description}</h3>
-                      {Announcements.find({ club: this.props.clubs.name }).map((announcement, index) => <AnnouncementPost key={index} announcement= {announcement} />)}
-                    </Container>
-                    :
-                    activeItem === 'announcements' ?
-                        Announcements.find({ club: this.props.clubs.name }).map((announcement, index) => ((index <= 5) ? <AnnouncementPost key={index} announcement= {announcement} /> : ''))
+                </Menu>
+                <Container>
+                  <Card.Group>
+                    {/* eslint-disable-next-line no-nested-ternary */}
+                    {activeItem === 'About-Us' ?
+                        <Container>
+                          <h3>{this.props.clubs.description}</h3>
+                          {Announcements.find({ club: this.props.clubs.name }).map((announcement, index) =>
+                              <AnnouncementPost key={index} announcement={announcement}/>)}
+                        </Container>
                         :
-                        <Header>Something went terribly terribly wrong</Header>
-                }
-              </Card.Group>
-              </Container>
-            </Grid.Column>
+                        activeItem === 'announcements' ?
+                            Announcements.find({ club: this.props.clubs.name }).map((announcement, index) => ((index <= 5) ?
+                                <AnnouncementPost key={index} announcement={announcement}/> : ''))
+                            :
+                            <Header>Something went terribly terribly wrong</Header>
+                    }
+                  </Card.Group>
+                </Container>
+              </Grid.Column>
 
-          </Grid>
-        </div>
-    );
-  }
+            </Grid>
+          </div>
+      );
+    }
 }
 
 /** Require an array of Stuff documents in the props. */
@@ -97,6 +105,7 @@ export default withTracker(({ match }) => {
   const clubs_sub = Meteor.subscribe('Clubs');
   const announcements_sub = Meteor.subscribe('Announcements');
   const documentId = match.params._id;
+
   console.log(documentId);
   return {
 
@@ -104,6 +113,7 @@ export default withTracker(({ match }) => {
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
     announcements: Announcements.find({}).fetch(),
+
     ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready(),
   };
 })(ClubPage);

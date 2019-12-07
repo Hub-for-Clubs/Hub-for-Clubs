@@ -8,7 +8,7 @@ import { withRouter, Link } from 'react-router-dom';
 class AnnouncementPost extends React.Component {
   render() {
     return (
-      <Card fluid>
+      <Card fluid color='green'>
           <Card.Content>
             <Card.Header>{this.props.announcement.club}: {this.props.announcement.title}</Card.Header>
             <Card.Meta>{this.props.announcement.owner}</Card.Meta>
@@ -22,14 +22,14 @@ class AnnouncementPost extends React.Component {
               Edit Announcement</Link>
         ) : '') : '' }
         </Card.Content>
-      </Card>
+  </Card>
     );
   }
 }
 
 /** Require a document to be passed to this component. */
 AnnouncementPost.propTypes = {
-    announcement: PropTypes.object.isRequired
+    announcement: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

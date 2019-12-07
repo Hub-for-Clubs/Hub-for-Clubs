@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Image } from 'semantic-ui-react';
+import { Menu, Dropdown, Image, Input } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
@@ -13,17 +13,21 @@ class NavBar extends React.Component {
     return (
       <Menu id='navbar' attached="top" borderless>
         <Menu.Item style={menuStyle} as={NavLink} activeClassName=""
-                   exact to={this.props.currentUser === '' ? '' : '/profile'}>
+                   exact to={this.props.currentUser === '' ? '' : `/profile/${Meteor.user()._id}`}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/add" key='add'>
+            [<Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/clubexplorer" key='clubexplorer'>
               Club Explorer
             </Menu.Item>,
               <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
-                Announcements</Menu.Item>]
+                Announcements</Menu.Item>,
+              <Menu.Item key='searchbar'>
+                <Input className='icon' icon='search' placeholder='Search...' />
+              </Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'leader') ? (
+            // eslint-disable-next-line max-len
             <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/addannouncement" key='leader'>
               Post Announcement</Menu.Item>
         ) : ''}
