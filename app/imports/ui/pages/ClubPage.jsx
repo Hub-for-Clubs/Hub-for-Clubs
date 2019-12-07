@@ -36,13 +36,36 @@ class ClubPage extends React.Component {
   }
 
   toggleJoin(name) {
-    const index = Meteor.user().profile.clubs.joined.indexOf(name);
+    let index = Meteor.user().profile.clubs.joined.indexOf(name);
     if (index !== -1) {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.filter((club) => club != name) } });
+          // eslint-disable-next-line eqeqeq
+          { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.filter((club) => club !== name) } });
     } else {
       Meteor.users.update({ _id: Meteor.userId() },
           { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.concat([name]) } });
+      index = Meteor.user().profile.clubs.favorite.indexOf(name);
+      if (index !== -1) {
+        Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.clubs.favorite': Meteor.user().profile.clubs.favorite.filter((club) => club !== name) } });
+      }
+    }
+  }
+
+  toggleFavorite(name) {
+    let index = Meteor.user().profile.clubs.favorite.indexOf(name);
+    if (index !== -1) {
+      Meteor.users.update({ _id: Meteor.userId() },
+          // eslint-disable-next-line eqeqeq
+          { $set: { 'profile.clubs.favorite': Meteor.user().profile.clubs.favorite.filter((club) => club !== name) } });
+    } else {
+      Meteor.users.update({ _id: Meteor.userId() },
+          { $set: { 'profile.clubs.favorite': Meteor.user().profile.clubs.favorite.concat([name]) } });
+      index = Meteor.user().profile.clubs.joined.indexOf(name);
+      if (index !== -1) {
+        Meteor.users.update({ _id: Meteor.userId() },
+            { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.filter((club) => club !== name) } });
+      }
     }
   }
 
@@ -68,8 +91,9 @@ class ClubPage extends React.Component {
                     'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
                 <Button as={NavLink} exact to={''} content={'Join'}/>}
 
-                {Meteor.user() ? <Button content={'Favorite'}/> :
-                <Button content={'Favorite'}/>}
+                {Meteor.user() ? <Button content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+                    'Unfavorite' : 'Favorite'} onClick={() => this.toggleFavorite(this.props.clubs.name)}/> :
+                <Button as={NavLink} exact to={''} content={'Favorite'}/>}
 
                 <Header className="heading">Leader</Header>
                 <h3>{this.props.clubs.leader}</h3>
