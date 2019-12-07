@@ -3,14 +3,14 @@ import { Meteor } from 'meteor/meteor';
 import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Link, NavLink } from 'react-router-dom';
+import swal from 'sweetalert';
 import { Interests } from '../../api/interest/Interest';
 import { Majors } from '../../api/major/Major';
 import { Clubs } from '../../api/club/Club';
 import { Announcements } from '../../api/announcement/Announcements';
 import AnnouncementPost from '../components/AnnouncementPost';
 import UserCard from '../components/UserCard';
-import swal from 'sweetalert';
-import { Link, NavLink } from 'react-router-dom';
 import ClubCard from '../components/ClubCard';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */

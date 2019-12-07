@@ -33,8 +33,6 @@ class ClubExplorer extends React.Component {
       }
     }
 
-    console.log(club);
-    console.log(this.state.selectedTags);
     return count === this.state.selectedTags.length;
   }
 
