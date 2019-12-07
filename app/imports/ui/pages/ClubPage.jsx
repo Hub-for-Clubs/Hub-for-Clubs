@@ -24,6 +24,12 @@ class ClubPage extends React.Component {
     this.setState({ [name]: value });
   }
 
+  submit(data) {
+    Meteor.user().update(_id, { $set: {  } }, (error) => (error ?
+        swal('Error', error.message, 'error') :
+        swal('Success', 'Item updated successfully', 'success')));
+  }
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -31,7 +37,6 @@ class ClubPage extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    console.log(this.props.users);
     const { activeItem } = this.state;
     if (this.props.clubs === undefined) {
       return (
@@ -43,16 +48,19 @@ class ClubPage extends React.Component {
             <Grid>
               <Grid.Column width={4} className="user_info">
                 <Image className="profile_picture"
-                       src={'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'}
+                       src={(this.props.clubs.image !== 'N/A') ? this.props.clubs.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'}
+                       alt={'Club Picture'}
                        size="medium"/>
                 <Header className="name">{this.props.clubs.name}</Header>
                 <Header className="heading">Leader</Header>
                 <h3>{this.props.clubs.leader}</h3>
+                <h4>{this.props.clubs.email}</h4>
                 <hr style={{ marginLeft: '1em' }}/>
                 <Header className="heading">Our Website</Header>
                 <h3><Link exact to={this.props.clubs.website}>
                   {this.props.clubs.website}</Link></h3>
                 <hr style={{ marginLeft: '1em' }}/>
+                <Header className={"heading"}>Interests</Header>
                 <List bulleted className="list">
                   {this.props.clubs.tags.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
                 </List>
