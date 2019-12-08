@@ -2,7 +2,7 @@
   {
     "name": "Academy for Creative Media Student Association",
     "subname": "ACMSA",
-    "image": "N/A",
+    "image": "https://f113fc96-a-a308b7b9-s-sites.googlegroups.com/a/hawaii.edu/acmsa/home/acmsalogo.jpg?attachauth=ANoY7crG-3n9eXNg4duX8n8i_9QbLpTFgyddzRVpFAqJqoKPXdtoRsHS0qLc_zK90_YSBCdezXy34TbpaZ2nkrOcSvK8X8wltJXyxgKGofn3vFE57WY2PcGDkboyCpl-PmdhbbqEz4swQAVeh3Mo9FQd_MncbxLaCTD3qlhxQ7afEAPbE_SDLo01eolrUcT8sLvgOzaGFXKgIBKN9s6_NTilz05S6hXjsg%3D%3D&attredirects=0",
     "type": "Academic/Professional",
     "leader": "Emma Daily",
     "email": "edaily@hawaii.edu",
@@ -14,7 +14,7 @@
   {
     "name": "Accounting Club at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://acuhmanoa.com/wp-content/uploads/2018/09/New-AC-Logo.png",
     "type": "Academic/Professional",
     "leader": "Chelsi Morishige",
     "email": "chelsicm@hawaii.edu",
@@ -26,7 +26,7 @@
   {
     "name": "Adventist Christian Fellowship",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/v1/570fc94f62cd943d5d38e035/1466479195547-P1SNY1VW4N76WP6Y0IPC/ke17ZwdGBToddI8pDm48kJFjiAAEKQOxhtR6kyGixEZZw-zPPgdn4jUwVcJE1ZvWpAuGZwXoRS87cO5MbU0Jwfut3m2EIRkoOCEuUXL6Bqkp2ryTI0HqTOaaUohrI8PIGk7rgIwt9VgR-6RuQDsSrfG5vcYMS8ml6wnCYSNK0Q0KMshLAGzx4R3EDFOm1kBS/ACFlogo.jpg?format=750w",
     "type": "Religious/Spiritual",
     "leader": "Victor Kolonzo",
     "email": "vkilonzo@hawaii.edu",
@@ -38,11 +38,11 @@
   {
     "name": "Advocates for Public Interest Law",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/28958853_181879115762304_3022913633509179392_n.jpg?_nc_cat=105&_nc_ohc=RhQgqUEdLiUAQnRBaLbrF_FT5Tqs_lzTc7dSNPy4xrjwBLWInbpGPvIVQ&_nc_ht=scontent-dfw5-2.xx&oh=aa469a5c902ea2a04dfc8323a787ebc4&oe=5E8A20A3",
     "type": "Academic/Professional",
     "leader": "Rebekah Ray",
     "email": "rray2@hawaii.edu",
-    "website": "N/A",
+    "website": "https://www.law.hawaii.edu/student-organizations/advocates-public-interest-law-apil",
     "description": "N/A",
     "members": [],
     "tags": ["law", "academic", "professional"]
@@ -50,7 +50,7 @@
   {
     "name": "AAUW-UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.aauw.org/wp-content/themes/aauw/images/logo.png",
     "type": "Political",
     "leader": "Ronja Steinbach",
     "email": "ronja36@hawaii.edu",
@@ -62,7 +62,7 @@
   {
     "name": "AECT-Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://aecthi.weebly.com/uploads/2/3/7/2/23725204/1423445195.png",
     "type": "Academic/Professional",
     "leader": "Waynele Yu",
     "email": "waynele@hawaii.edu",
@@ -74,7 +74,7 @@
   {
     "name": "Aikido @ UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.aikidohawaii.org/images/toplogo.gif",
     "type": "Sports/Leisure",
     "leader": "Timothy Halliday",
     "email": "halliday@hawaii.edu",
@@ -86,7 +86,7 @@
   {
     "name": "Alpha Gamma Delta, Delta Sigma Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Alpha_Gamma_Delta_crest.png",
     "type": "Fraternity/Sorority",
     "leader": "Emma Archambeau",
     "email": "earchamb@hawaii.edu",
@@ -98,7 +98,7 @@
   {
     "name": "Alpha Sigma Phi",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Alpha_Sigma_Phi_Coat_of_Arms.png",
     "type": "Fraternity/Sorority",
     "leader": "Abel Salinas",
     "email": "abels@hawaii.edu",
@@ -110,7 +110,7 @@
   {
     "name": "AlohaNation Flowarts",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/23559929_805372749670054_7826493517560609704_n.png?_nc_cat=106&_nc_ohc=nWWYAF0SEbwAQmfE3jihssKnpmwXiEMdEW_9XmuSV-wf5W5thtK4Nuz_w&_nc_ht=scontent-dfw5-2.xx&oh=7bae1ddb3a8769e6770b0a2535af2937&oe=5E71C3C4",
     "type": "Ethnic/Cultural",
     "leader": "Nathan Onaka",
     "email": "onankan@hawaii.edu",
@@ -122,7 +122,7 @@
   {
     "name": "AMA/HMA Student Chapter at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Jester Galiza",
     "email": "jpgaliza@hawaii.edu",
@@ -134,7 +134,7 @@
   {
     "name": "American Cetacean Society Student Coalition at University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/11010598_1555444781380717_4588144097754214773_n.jpg?_nc_cat=109&_nc_ohc=rk9HEjucdzcAQnCg9nJ-5AO0_ODyzaFUCFAJvB4qj3gKEiPweTi2tPZdQ&_nc_ht=scontent-dfw5-2.xx&oh=3bc831f2d1e4c997e1a37d8207aa0f14&oe=5E87EA4D",
     "type": "Service",
     "leader": "Opal Stanfield",
     "email": "opalstan@hawaii.edu",
@@ -146,7 +146,7 @@
   {
     "name": "American Indian Science and Engineering Society",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.aises.org/sites/default/files/aises-logo_2_0.png",
     "type": "Academic/Professional",
     "leader": "Kathleen Kodama",
     "email": "kmmk4@hawaii.edu",
@@ -158,7 +158,7 @@
   {
     "name": "American Institute of Architecture Students",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.aias.org/wp-content/themes/aias/images/AIAS-logo-main.svg",
     "type": "Academic/Professional",
     "leader": "Celeste Guarin",
     "email": "cguarin@hawaii.edu",
@@ -170,7 +170,7 @@
   {
     "name": "American Library Association Student Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.ala.org/aboutala/sites/all/themes/alaV2/logo.png",
     "type": "Academic/Professional",
     "leader": "Katie Joe Lang",
     "email": "langk@hawaii.edu",
@@ -182,7 +182,7 @@
   {
     "name": "American Marketing Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.ama.org/wp-content/themes/ama/assets/images/ama-logo-trans.png",
     "type": "Academic/Professional",
     "leader": "Ashley Regaspi",
     "email": "aregaspi@hawaii.edu",
@@ -194,7 +194,7 @@
   {
     "name": "American Meterological Society Aloha Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.ametsoc.org/ams/cache/file/E1E7BFCA-77DA-4A30-B6154D7A5350534C.jpg",
     "type": "Academic/Professional",
     "leader": "Terrence John Corrigan",
     "email": "tjc21@hawaii.edu",
@@ -206,7 +206,7 @@
   {
     "name": "American Society of Civil Engineers",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/ASCE_logo.svg",
     "type": "Academic/Professional",
     "leader": "Maynard Lazo",
     "email": "lazom@hawaii.edu",
@@ -216,9 +216,9 @@
     "tags": ["engineering", "academic", "professional"]
   },
   {
-    "name": "American Society of Mechanical Enginers",
+    "name": "American Society of Mechanical Engineers",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/e8/Logo_of_the_ASME.jpg",
     "type": "Academic/Professional",
     "leader": "Daryll Suyat",
     "email": "suyatd@hawaii.edu",
@@ -230,7 +230,7 @@
   {
     "name": "American Society for Microbiology Hawaii Student Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.asmbranches.org/brhawaii/index_files/image3151.jpg",
     "type": "Academic/Professional",
     "leader": "Albert To",
     "email": "albertto@hawaii.edu",
@@ -242,7 +242,7 @@
   {
     "name": "Anesthesiology Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://lh5.googleusercontent.com/-x9A5vIboPVzQD9nx1zXI8wvX15z16hUpYudD6ncgLMT25PpL-phABuzdDW9eJmxq_p24cD4=w16383",
     "type": "Academic/Professional",
     "leader": "Nicholas Fancher",
     "email": "nfancher@hawaii.edu",
@@ -266,7 +266,7 @@
   {
     "name": "Anthropology Undergraduate Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://xdj1sd684n-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/ausa-2.png",
     "type": "Academic/Professional",
     "leader": "Jitrudi Scheiman",
     "email": "jms26@hawaii.edu",
@@ -278,7 +278,7 @@
   {
     "name": "Artists and Musicians at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://lh4.googleusercontent.com/g0ttxOmfdSTwkIA66Y0yWnI1zphkcl53Z4m6Ttd3A7sOXM7oR7cPDvbmVWbkp42WNA5J7zsE=w572",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -290,7 +290,7 @@
   {
     "name": "Associated Students at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Jester Galiza",
     "email": "jpgaliza@hawaii.edu",
@@ -302,7 +302,7 @@
   {
     "name": "Association For Computing Machinery at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://avatars1.githubusercontent.com/u/17691904?s=200&v=4",
     "type": "Academic/Professional",
     "leader": "Marty Joshua Apilado",
     "email": "mjka@hawaii.edu",
@@ -314,7 +314,7 @@
   {
     "name": "Atherton YMCA",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.athertonymca.org/uploads/4/1/2/6/4126141/published/ymca-blk-rgb-r.png?1573867041",
     "type": "Academic/Professional",
     "leader": "Christina Andres",
     "email": "andrescc@hawaii.edu",
@@ -326,7 +326,7 @@
   {
     "name": "Athletic Training Student Society",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://pbs.twimg.com/profile_images/1116496145004392448/PJANRS6y.jpg",
     "type": "Academic/Professional",
     "leader": "Kumiko Hashida",
     "email": "hashidak@hawaii.edu",
@@ -338,7 +338,7 @@
   {
     "name": "Autonomous Control Theory-Unmanned Aerial Systems",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.hawaii.edu/actuas/wp-content/uploads/2018/05/image-300x140.png",
     "type": "Academic/Professional",
     "leader": "Evan Kawamura",
     "email": "evankawa@hawaii.edu",
@@ -350,7 +350,7 @@
   {
     "name": "Bachelor of Social Work Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.hawaii.edu/sswork/wp-content/uploads/logo-sharp.png",
     "type": "Academic/Professional",
     "leader": "Kelsey Mills",
     "email": "kelseyjp@hawaii.edu",
@@ -362,7 +362,7 @@
   {
     "name": "Baha'i Association at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/39253395_10160651371195487_5206554515230162944_n.png?_nc_cat=101&_nc_ohc=aqG1vb8O68oAQkL3hgQ_NnlDOwDMuf6TFPHVqALMnQp6tZVuuFhsi8jyw&_nc_ht=scontent-lax3-1.xx&oh=c74b7c709e7c7b3c8636859657946aa5&oe=5E3E442D",
     "type": "Religious/Spiritual",
     "leader": "Dale Spenner",
     "email": "spenner@hawaii.edu",
@@ -374,7 +374,7 @@
   {
     "name": "Baptist College Ministries",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/58814db51e5b6c1419a11dd7/1484870245373-GCP33IWNADQJ51CTO1LN/Main+Logo+-+Islands+only+copy.png?content-type=image%2Fpng",
     "type": "Religious/Spiritual",
     "leader": "Nathaniel Atwell",
     "email": "natwell@hawaii.edu",
@@ -398,7 +398,7 @@
   {
     "name": "Best Buddies Hawaii-UH Manoa/SAAC Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.bestbuddies.org/wp-content/uploads/2015/05/footer-logo.png",
     "type": "Service",
     "leader": "Rhonda S. Black",
     "email": "rblack@hawaii.edu",
@@ -410,7 +410,7 @@
   {
     "name": "Beta Alpha Psi, Delta Theta Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.bapuhm.org/uploads/1/2/1/2/121255561/bap-publicity-logo-1-2_orig.png",
     "type": "Academic/Professional",
     "leader": "Janae Stilwell",
     "email": "janaeeps@hawaii.edu",
@@ -422,7 +422,7 @@
   {
     "name": "Beta Beta Gamma Sorority",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/13173867_662801460525728_6018986387129726318_n.jpg?_nc_cat=104&_nc_ohc=GXr8LjG66uUAQk8RPk4iX76-FI8wd-hiCO2_3wU_cG-XajaoMq7R6Lxaw&_nc_ht=scontent-dfw5-2.xx&oh=0f98db554b036ec8c3639ebd9e385a71&oe=5E7DE2E9",
     "type": "Fraternity/Sorority",
     "leader": "Moana Nomura",
     "email": "nomura76@hawaii.edu",
@@ -434,7 +434,7 @@
   {
     "name": "Black Law Students Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://static.wixstatic.com/media/a83462_356620cb65424ed1a7284793485b3208~mv2_d_2003_2000_s_2.png/v1/fill/w_214,h_96,al_c,q_80,usm_0.66_1.00_0.01/a83462_356620cb65424ed1a7284793485b3208~mv2_d_2003_2000_s_2.webp",
     "type": "Academic/Professional",
     "leader": "Britagne Johnson",
     "email": "bnjohnso@hawaii.edu",
@@ -446,7 +446,7 @@
   {
     "name": "Blue Zones Project",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://info.bluezonesproject.com/hs-fs/hubfs/BZP%20Logo%202017/bzplogo2017white.png?width=1800&name=bzplogo2017white.png",
     "type": "Service",
     "leader": "Robert Nieto",
     "email": "robertfn@hawaii.edu",
@@ -458,7 +458,7 @@
   {
     "name": "Botanical Society of America Hawaii Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/52432313_2027778330609263_6965782255067201536_n.jpg?_nc_cat=111&_nc_ohc=2SbVm-jjqWwAQnK8Nj5zZkQ6IRWjVof9YOm6amWlhV4CWS-yKwifoo2wA&_nc_ht=scontent-lax3-2.xx&oh=5c4db8a5071ad754e36dd9d279d6b4a1&oe=5E76B8DF",
     "type": "Academic/Professional",
     "leader": "Christian Streit",
     "email": "cstreit@hawaii.edu",
@@ -482,7 +482,7 @@
   {
     "name": "Business Executive Society of Tomorrow",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/5d37c623ac033d0001fd45d5/1566024774819-Q36SZB9DOXZ17LRU43UE/bestlogo.png?content-type=image%2Fpng",
     "type": "Academic/Professional",
     "leader": "Kristyn Fujii",
     "email": "fujiik7@hawaii.edu",
@@ -494,7 +494,7 @@
   {
     "name": "Campus Drummers",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/53484836_1508183802652266_8662170418590777344_n.jpg?_nc_cat=108&_nc_ohc=5twE3CHKI1YAQlzrlh6tITL6D3w2xmJ_hCRZcmTKO1jB2fI5jUxdqH1rg&_nc_ht=scontent-lax3-1.xx&oh=e1c7c58ec5412ee810943049d95b0332&oe=5E7047A7",
     "type": "Leisure/Recreational",
     "leader": "Susan Jacob",
     "email": "sjacob77@hawaii.edu",
@@ -518,7 +518,7 @@
   {
     "name": "Capoeira Senzala",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/556837_170810186382012_844461435_n.jpg?_nc_cat=100&_nc_ohc=MZSmxC2uqBwAQnbf6DiwtQv-nw3jaL9bPsYHB4BoF5A7OHW86y_zjWbTw&_nc_ht=scontent-dfw5-2.xx&oh=328c69678f78185d2d771d17b49c0f93&oe=5E6C31AD",
     "type": "Sports/Leisure",
     "leader": "Rachel Mamiya Hernandez",
     "email": "rmamiya@hawaii.edu",
@@ -530,7 +530,7 @@
   {
     "name": "CARP Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/5aea18b9ec4eb72fa0676189/1537816691347-7MJBOXEM5KDSSL3WIDT6/CARP-LOGO-colored-light-mark.png?content-type=image%2Fpng",
     "type": "Academic/Professional",
     "leader": "Chizuko Allen",
     "email": "chizuko@hawaii.edu",
@@ -542,7 +542,7 @@
   {
     "name": "Change for Charity",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://giventree.org/dynamic/content/1062/29/c4c%20logo%202_YJ5H9.jpg",
     "type": "Service",
     "leader": "Michaela Kop",
     "email": "mkop@hawaii.edu",
@@ -554,7 +554,7 @@
   {
     "name": "Chemistry Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://chemclubatuhm.weebly.com/uploads/1/1/1/0/111020511/screen-shot-2017-08-31-at-8-14-48-pm_orig.png",
     "type": "Academic/Professional",
     "leader": "Taha Elwir",
     "email": "elwira@hawaii.edu",
@@ -566,7 +566,7 @@
   {
     "name": "Chess Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/1108_460760857303929_962059011_n.jpg?_nc_cat=107&_nc_ohc=k5zeWfV3TYAAQkg-xSO1GOzHC6pQkn-9wS00IY5c6ZpCfzbYc9h1f1Avw&_nc_ht=scontent-dfw5-2.xx&oh=7bc45e5371da1491a72ec0d4f27ce53d&oe=5E896021",
     "type": "Leisure/Recreational",
     "leader": "Michael Omori",
     "email": "omorim@hawaii.edu",
@@ -578,7 +578,7 @@
   {
     "name": "Chi Epsilon",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.chi-epsilon.org/xewebgeneral2/Images/Header/chi5Logo.png",
     "type": "Academic/Professional",
     "leader": "Theodore Uekawa",
     "email": "hawaii.xe@gmail.com",
@@ -590,7 +590,7 @@
   {
     "name": "Chinese Students and Scholars Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www2.hawaii.edu/~cssauh/images/title.jpg",
     "type": "Academic/Professional",
     "leader": "Manrui Xue",
     "email": "mxue@hawaii.edu",
@@ -602,7 +602,7 @@
   {
     "name": "Chinese Xiqu Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/45088629_486109205230752_4448562812632956928_n.jpg?_nc_cat=109&_nc_ohc=WrthAgy0nDUAQkKf4Onol2MGY_Ty_RjKvZlmGu4sN5XBBAjVTgmSBNgIg&_nc_ht=scontent-lax3-1.xx&oh=7d39b0ccdc19ac92bd8e8606f396d82b&oe=5E805A0A",
     "type": "Ethnic/Cultural",
     "leader": "Xingli Zhang",
     "email": "xinliz@hawaii.edu",
@@ -626,7 +626,7 @@
   {
     "name": "Circle K International",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://ckiuhm.weebly.com/uploads/8/6/7/3/86734930/11994145-1125200664174836-55470367-o_orig.jpg",
     "type": "Service",
     "leader": "Kristian Kim",
     "email": "knik@hawaii.edu",
@@ -638,7 +638,7 @@
   {
     "name": "Clay Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://instagram.fvno1-1.fna.fbcdn.net/vp/79f630a4fa1eb3905c5a6e2bd3e499a0/5E7E9C64/t51.2885-19/s150x150/28157492_1981437845440130_562999577473449984_n.jpg?_nc_ht=instagram.fvno1-1.fna.fbcdn.net",
     "type": "Academic/Professional",
     "leader": "Brad Taylor",
     "email": "brad2@hawaiiedu",
@@ -650,7 +650,7 @@
   {
     "name": "Clinical and Translational Research Program Student Organization at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Devin Takahashi",
     "email": "devint@hawaii.edu",
@@ -662,7 +662,7 @@
   {
     "name": "Club Management of America",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://tim.hawaii.edu/wp-content/uploads/2017/12/cmaa-logo_65x65.png",
     "type": "Academic/Professional",
     "leader": "Kylie Butts",
     "email": "kyliekb@hawaii.edu",
@@ -686,7 +686,7 @@
   {
     "name": "C.O.P. Alaka'ina",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.hawaii.edu/cop/images/logo.png",
     "type": "Academic/Professional",
     "leader": "Ilikea Silva",
     "email": "ilikea.silva@hawaii.edu",
@@ -698,7 +698,7 @@
   {
     "name": "Cru",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://cdn2-www.cru.org/communities/campus/us/wp-content/themes/cru/assets/images/cru-logo.png.pagespeed.ce.YoTKO1-QTL.png",
     "type": "Religious/Spiritual",
     "leader": "Liam Tsamous",
     "email": "ltsamous@hawaii.edu",
@@ -710,7 +710,7 @@
   {
     "name": "CTAHR Student Ambassadors",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://cms.ctahr.hawaii.edu/Portals/0/newUHMCTAHRlogothumb.png?ver=2017-02-28-215853-150",
     "type": "Academic/Professional",
     "leader": "Michelle Au",
     "email": "aumi@hawaii.edu",
@@ -722,7 +722,7 @@
   {
     "name": "Delta Sigma Pi, Rho Chi",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/5209b34be4b00fb51876dab6/1574310884150-B6NT7A1EMU3X23IVY9VW/RHO+CHI+Chapter.png?content-type=image%2Fpng",
     "type": "Fraternity/Sorority",
     "leader": "Victoria Huynh",
     "email": "N/A",
@@ -734,7 +734,7 @@
   {
     "name": "Disney Ohana Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/14432970_1781406738813937_8009980737470299922_n.jpg?_nc_cat=107&_nc_ohc=irEJOTnpneUAQm8tk0PhnNdNVP5Ral_19t8zAcpSNNWa7qPoVD-1HDUIQ&_nc_ht=scontent-lax3-2.xx&oh=69788b12342e84d3894869c92e4e7ef0&oe=5E749297",
     "type": "Academic/Professional",
     "leader": "Delaney Singletary",
     "email": "delaneys@hawaii.edu",
@@ -746,7 +746,7 @@
   {
     "name": "Emergency Medicine Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -758,7 +758,7 @@
   {
     "name": "Engineering Ohana",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.eng.hawaii.edu/wp-content/uploads/2019/07/CoElogo.white_.png",
     "type": "Academic/Professional",
     "leader": "Creselle Moraels",
     "email": "creselle@hawaii.edu",
@@ -770,7 +770,7 @@
   {
     "name": "Engineering Network",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.enuhm.com/wp-content/uploads/2018/10/enetworkClear-e1539888780586.png",
     "type": "Academic/Professional",
     "leader": "Jing Yang Zheng",
     "email": "jzheng@hawaii.edu",
@@ -782,7 +782,7 @@
   {
     "name": "Eta Kappa Nu",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://hkn.ieee.org/wp-content/uploads/2019/07/Logo_HKN_Header_changed-min.png",
     "type": "Honorary Society",
     "leader": "Jeanalyn Wadsock-Myers",
     "email": "jlwm@hawaii.edu",
@@ -794,7 +794,7 @@
   {
     "name": "Eta Sigma Delta",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.cdninstagram.com/vp/b043c565a3526022c7ccb7b602c0d52e/5E85346B/t51.2885-19/s150x150/27579777_185333978865603_8760865825000259584_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com",
     "type": "Academic/Professional",
     "leader": "Tara-Ann Marie Pacubas",
     "email": "tpacubas@hawaii.edu",
@@ -806,7 +806,7 @@
   {
     "name": "Ethnic Studies Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/264476_635323149834141_293520764_n.png?_nc_cat=109&_nc_ohc=HTs2VN2YIm8AQnCGd_RKjbxkyBpZsh5YaeyIXukIw3nYPH_dzte5DAIPA&_nc_ht=scontent-lax3-1.xx&oh=0474c9557571c810433ecb4aa93ccc1f&oe=5E8591E8",
     "type": "Academic/Professional",
     "leader": "Ruben Campos",
     "email": "recampos@hawaii.edu",
@@ -818,7 +818,7 @@
   {
     "name": "Every Nation Campus Pearlside",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.everynation.org/wp-content/uploads/2017/06/Pearlside.jpg",
     "type": "Religious/Spiritual",
     "leader": "Taylor Mahi",
     "email": "tmahi@hawaii.edu",
@@ -830,7 +830,7 @@
   {
     "name": "Family Medicine Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/33585842_1645474902173991_5211844184067014656_n.jpg?_nc_cat=108&_nc_ohc=CJFf6-aAQLIAQnvCx8f4xQCKL54KsTGy9YuFgqlbtNDxRYUneqDRboRkg&_nc_ht=scontent-lax3-1.xx&oh=5e768cfcc66786c42257f70c025619cb&oe=5E8C999A",
     "type": "Academic/Professional",
     "leader": "Anthony Knon",
     "email": "aknon@hawaii.edu",
@@ -842,7 +842,7 @@
   {
     "name": "Financial Management Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://static.wixstatic.com/media/c20262_b490e6849a0a4a9b92e0245568c86bfd~mv2.png/v1/crop/x_0,y_63,w_1312,h_1073/fill/w_210,h_171,al_c,q_80,usm_0.66_1.00_0.01/Screen%20Shot%202018-08-31%20at%206_37_46%20PM.webp",
     "type": "Academic/Professional",
     "leader": "Nicholas Miyamoto",
     "email": "npmiyamo@hawaii.edu",
@@ -854,7 +854,7 @@
   {
     "name": "Food Science and Human Nutrition Council",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://fshncouncil.files.wordpress.com/2017/05/cropped-heart-fruit-and-vegetables.jpg",
     "type": "Academic/Professional",
     "leader": "Michael Yanos",
     "email": "mpyanos@hawaii.edu",
@@ -866,7 +866,7 @@
   {
     "name": "Formula SAE Rainbow Warrior Racing",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://rip.eng.hawaii.edu/wp-content/uploads/2018/05/Untitled-2-600x175.png",
     "type": "Academic/Professional",
     "leader": "Silvija Djelic",
     "email": "silvijad@hawaii.edu",
@@ -890,7 +890,7 @@
   {
     "name": "Friends of the Family",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://fofatuhm.weebly.com/uploads/8/2/2/7/82279120/bitmap1922257707502208323.png",
     "type": "Academic/Professional",
     "leader": "Brigitte Tampon-Aragon",
     "email": "btampona@hawaii.edu",
@@ -902,7 +902,7 @@
   {
     "name": "Generation Action at the University of Hawai'i at M?noa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/21752186_175875532961318_9136564078968625412_n.jpg?_nc_cat=101&_nc_ohc=eAk9UW0D69EAQkyxTlRFUlbtfSXrxhrdzVrEwxHOVnVXFkBhU4dqPC8_Q&_nc_ht=scontent-lax3-1.xx&oh=05450fb591fb993284f7d3e2211e8eeb&oe=5E7BFEAC",
     "type": "Academic/Professional",
     "leader": "Emma Ishihara",
     "email": "emmaishi@hawaii.edu",
@@ -926,7 +926,7 @@
   {
     "name": "Golden Key International Honour Society",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.cdninstagram.com/vp/4103f5e7fc4f7906c572d2a7201df6eb/5E809938/t51.2885-19/s320x320/75332700_2508106795941505_8052192639157534720_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com",
     "type": "Academic/Professional",
     "leader": "Arlene Colis",
     "email": "arlenejc@hawaii.edu",
@@ -938,7 +938,7 @@
   {
     "name": "Graduate Arts Council",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/251545_191206941012106_689179673_n.jpg?_nc_cat=109&_nc_ohc=wLnd6NY2qwMAQl8o_oOwxrg6w_ZzlUNMC_KC3z9vI80zcRAX6xo_9MZvQ&_nc_ht=scontent-lax3-1.xx&oh=ab0f741947e3e00a261a0e0b09aff2b3&oe=5E8051B6",
     "type": "Academic/Professional",
     "leader": "Katherine Kazlauskas",
     "email": "kvk@hawaii.edu",
@@ -950,7 +950,7 @@
   {
     "name": "Graduate Business Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/50739374_713833342343799_7455348006427033600_n.png?_nc_cat=107&_nc_ohc=Uk5IbzvMeYgAQmDDMnPQfdNygVFxuETHR7mljNh_sh-D2wrTua0dTcXgg&_nc_ht=scontent-lax3-2.xx&oh=200134ca655feec7253ccb27df83e78d&oe=5E73ED02",
     "type": "Academic/Professional",
     "leader": "Kirstin Seal",
     "email": "seal@hawaii.edu",
@@ -962,7 +962,7 @@
   {
     "name": "Graduate Hui Ola Pono",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://publichealthhui.weebly.com/uploads/1/3/1/3/13132264/1365054056.png",
     "type": "Academic/Professional",
     "leader": "Princess Mae Visconde",
     "email": "pviscond@hawaii.ed",
@@ -974,7 +974,7 @@
   {
     "name": "Graduate Student Sociological Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://g8ojrop9qx-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/gssa-crop.png",
     "type": "Academic/Professional",
     "leader": "Hannah Liebreich",
     "email": "hannahli@hawaii.edu",
@@ -986,7 +986,7 @@
   {
     "name": "Graduate Women in Science Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/56980871_2335047639879050_1813581620414775296_n.jpg?_nc_cat=109&_nc_ohc=PSvMPPORWkIAQnm6RtIl72iYqNkDy-5o4m6Qmu7C7T0L43mAQ-CDW8eaw&_nc_ht=scontent-lax3-1.xx&oh=31ad27d1b27d85923a741b4cbf285346&oe=5E6B72B3",
     "type": "Academic/Professional",
     "leader": "Madeline McKenna",
     "email": "mmck@hawaii.edu",
@@ -998,7 +998,7 @@
   {
     "name": "Grey Hats at UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://acmanoa.github.io/assets/img/logos/greyhats.png",
     "type": "Academic/Professional",
     "leader": "Chad Morita",
     "email": "chadmmm@hawaii.edu",
@@ -1010,7 +1010,7 @@
   {
     "name": "Hanwoori Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/22539906_728507734001021_2926665202248254184_n.png?_nc_cat=102&_nc_ohc=U9R7pwQnMvUAQld_qVcYdo1z7bxxpSiX2i9T7WAsMQR7jKBglCOgr3RLg&_nc_ht=scontent-lax3-1.xx&oh=7337230f30d608e3dfb67540b4bef487&oe=5E6CE8F3",
     "type": "Ethnic/Cultural",
     "leader": "Ingrid Adams",
     "email": "adamsi@hawaii.edu",
@@ -1034,7 +1034,7 @@
   {
     "name": "Hawaii Chapter of the Society for Conservation Biology",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.hiscb.org/uploads/1/9/4/3/19437393/screen-shot-2017-01-31-at-11-52-15-am.png",
     "type": "Academic/Professional",
     "leader": "Chad Wilhite",
     "email": "cwilhite@hawaii.edu",
@@ -1046,7 +1046,7 @@
   {
     "name": "Hawaii Educational Research Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.hawaii.edu/hera/images/chera.jpg",
     "type": "Academic/Professional",
     "leader": "Susan Saka",
     "email": "ssaka@hawaii.edu",
@@ -1058,7 +1058,7 @@
   {
     "name": "Hawaii H.O.M.E. Project",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://hawaiihomeproject.org/wp-content/uploads/2016/06/homeauctitle.png",
     "type": "Service",
     "leader": "Jason Huynh",
     "email": "huynhjas@hawaii.edu",
@@ -1070,7 +1070,7 @@
   {
     "name": "Hawaii Shotokan Karate",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/259890_225796364111820_927645_n.jpg?_nc_cat=110&_nc_ohc=bLj9dBZOfqsAQkmZL5_-IEKpjbn9KHn16pqHJOALON6Hk2oWsSrNTra1w&_nc_ht=scontent-lax3-1.xx&oh=95a8adc4aa66f784f1d63d29497897f3&oe=5E7F5BAB",
     "type": "Sports/Leisure",
     "leader": "Scott Oshiro",
     "email": "scottosh@hawaii.edu",
@@ -1094,7 +1094,7 @@
   {
     "name": "Hawaii Student Entrepreneurs",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.hsentrepreneurs.com/wp-content/uploads/2017/07/hse_logo-1-e1500527836708.png",
     "type": "Academic/Professional",
     "leader": "Asher Uchiyama",
     "email": "au234@hawaii.edu",
@@ -1106,7 +1106,7 @@
   {
     "name": "Hawaii Undergraduate Initiative",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.hawaii.edu/omsshui/images/logo.png",
     "type": "Academic/Professional",
     "leader": "Kaitlin Nalani Tilitile",
     "email": "tilitie@hawaii.edu",
@@ -1118,7 +1118,7 @@
   {
     "name": "Her Campus Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.hercampus.com/sites/all/themes/hcxo/logo.png",
     "type": "Academic/Professional",
     "leader": "Avery Nueva",
     "email": "averymn@hawaii.edu",
@@ -1130,7 +1130,7 @@
   {
     "name": "High Intensity Athletics at UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/5aeca8de710699d21a754f60/1525459866513-G95WRNHAWNG7M4SZA61X/88009E62-248E-4F6C-BFB2-208E5D1ED5BC.png?format=1500w&content-type=image%2Fpng",
     "type": "Sports/Leisure",
     "leader": "Lynette Rudolfo",
     "email": "rudolfo@hawaii.edu",
@@ -1142,7 +1142,7 @@
   {
     "name": "Higher Education Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12316336_1063681487031193_5276557760343531073_n.jpg?_nc_cat=110&_nc_ohc=mgZhP3p_8tIAQm4jzVmEiwBWrhtEAZKUu35q97ysO-gvnr-oopNpphJRA&_nc_ht=scontent-lax3-1.xx&oh=7d46292054d1efa6ba386fd79866de33&oe=5E7C6FC6",
     "type": "Academic/Professional",
     "leader": "Kawehi Kina",
     "email": "kinak@hawaii.edu",
@@ -1154,7 +1154,7 @@
   {
     "name": "HOSA at UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://hosauhm.weebly.com/uploads/4/8/7/4/48742669/12359957-1700377993532695-1735723911079137871-n.jpg",
     "type": "Academic/Professional",
     "leader": "Jessica Loi",
     "email": "jkloi@hawaii.edu",
@@ -1178,7 +1178,7 @@
   {
     "name": "Hui M?lama Honua",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://pbs.twimg.com/profile_images/845581742350098432/jv9aRiNa_400x400.jpg",
     "type": "Academic/Professional",
     "leader": "Donna Lee (Sweetie) Kuehu",
     "email": "dkueku@hawaii.edu",
@@ -1190,7 +1190,7 @@
   {
     "name": "Hui Ola Pono",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://publichealthhui.weebly.com/uploads/1/3/1/3/13132264/1365054056.png",
     "type": "Academic/Professional",
     "leader": "Swastika Maharjan",
     "email": "swastika@hawaii.edu",
@@ -1202,7 +1202,7 @@
   {
     "name": "Ilima Sacnas Chapter at UH",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/931449_443238975766763_1095160782_n.jpg?_nc_cat=108&_nc_ohc=S0wfMQEPzYcAQlI4QOazpKumRTLfzPQQl6FEj8NWOZdbRRJ7MKH_pmyJg&_nc_ht=scontent-lax3-1.xx&oh=9f36ac448f97e49be9c11f4b10de4916&oe=5E71AAF9",
     "type": "Ethnic/Cultural",
     "leader": "Dr. Healani Chang",
     "email": "hchang@hawaii.edu",
@@ -1214,7 +1214,7 @@
   {
     "name": "Information Technology Management Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.itmahawaii.com/wp-content/uploads/2019/09/cropped-ITMA-Text-Logo-2019.png",
     "type": "Academic/Professional",
     "leader": "Luke Clements",
     "email": "lclement@hawaii.edu",
@@ -1238,7 +1238,7 @@
   {
     "name": "Inter-Business Council",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12112099_873540546075944_2508073264709764313_n.jpg?_nc_cat=103&_nc_ohc=OT5h6eeOinMAQknQbs474J9lAqAGs-cXsxtJdnmJzysjxGBX7VQgjkVBg&_nc_ht=scontent-lax3-1.xx&oh=60bb15cb1a2d3c1c45a1a95222a186cb&oe=5E3FEB86",
     "type": "Academic/Professional",
     "leader": "Jordan Abanto",
     "email": "abanto@hawaii.edu",
@@ -1250,7 +1250,7 @@
   {
     "name": "International Business Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/599e0588ccc5c5c024b0a411/1546068059779-BY2UO4HBSQ4FY8IZ52ON/IBO+Logo+White+copy.png?format=1500w&content-type=image%2Fpng",
     "type": "Academic/Professional",
     "leader": "Rachel Dunn",
     "email": "dunnrach@hawaii.edu",
@@ -1262,7 +1262,7 @@
   {
     "name": "International Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www2.hawaii.edu/~isauhm/images/isa.gif",
     "type": "Academic/Professional",
     "leader": "Ryan Matsumoto",
     "email": "ryantm2@hawaii.edu",
@@ -1274,7 +1274,7 @@
   {
     "name": "Internal Medicine Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Geoffrey Kusaka",
     "email": "gkusaka@hawaii.edu",
@@ -1286,7 +1286,7 @@
   {
     "name": "Intervarsity Christian Fellowship",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://intervarsity.org/sites/all/modules/ivcf_topbar/images/IV_informal_horizontal_lockup_gradient.svg",
     "type": "Religious/Spiritual",
     "leader": "Sabrina Summers",
     "email": "summerss@hawaii.edu",
@@ -1298,7 +1298,7 @@
   {
     "name": "Institute of Electrical and Electronic Engineers",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/globals/88857-22.gif",
     "type": "Academic/Professional",
     "leader": "Christopher J Blake",
     "email": "cjblake@hawaii.edu",
@@ -1310,7 +1310,7 @@
   {
     "name": "Jehowah's Witnesses at the University of Hawai'i - Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://i.pinimg.com/originals/59/e5/c6/59e5c686186185836ad17a5a3f3cc1f1.png",
     "type": "Religious/Spiritual",
     "leader": "Roberta Baird",
     "email": "bairdr@hawaii.edu",
@@ -1322,7 +1322,7 @@
   {
     "name": "Judo Club/Team at University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www2.hawaii.edu/~judo/JudoTeamAtTheUniversityOfHawaii.png",
     "type": "Sports/Leisure",
     "leader": "Larson Abilla",
     "email": "labilla@hawaii.edu",
@@ -1358,7 +1358,7 @@
   {
     "name": "Ka Lama Kukui Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/10355560_649212808488044_8619129822464035939_o.jpg?_nc_cat=101&_nc_ohc=fQv9oj3spisAQmnPNFh_RMkqtPSC3VaR4iacT1Fe7JmlwBpzWo6w9wFTg&_nc_ht=scontent-lax3-1.xx&oh=8c6bf5a23afdbbfe02a64e4de0f42db7&oe=5E6BA532",
     "type": "Ethnic/Cultural",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -1370,7 +1370,7 @@
   {
     "name": "K?lai Pohaku",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/15492215_120938871731978_1299500989123450923_n.png?_nc_cat=102&_nc_ohc=KvVH3GXSGi4AQkKsT9YfGIvnWisImFVMfF_R2CGfQlk_GFxAU-Z-2MzEg&_nc_ht=scontent-lax3-1.xx&oh=8711a3db331313e656bc99fd0a98afcd&oe=5E7D320C",
     "type": "Academic/Professional",
     "leader": "Diana Moana Nomura",
     "email": "nomura76@hawaii.edu",
@@ -1382,7 +1382,7 @@
   {
     "name": "Ka Mea Kolo Entomology Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12036656_1637086016563731_1021139795093518537_n.png?_nc_cat=104&_nc_ohc=wcVsnuLMY8sAQnm6X_NyDpBrGEZHrQ_FGEB6ghBBDdRuPx6uwE3aJKNbw&_nc_ht=scontent-lax3-1.xx&oh=902f9df6dd4b511a36e8ca8db6e9cd69&oe=5E69F005",
     "type": "Academic/Professional",
     "leader": "Michelle Au",
     "email": "aumi@hawaii.edu",
@@ -1406,7 +1406,7 @@
   {
     "name": "Kappa Sigma",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/10314652_538228159687611_8229613519786786884_n.jpg?_nc_cat=107&_nc_ohc=lYHU8meY_s4AQm6aRkYIW11XAiND5Kkv0dnx4qjASTIVGUFYGYkSAxNsQ&_nc_ht=scontent-lax3-2.xx&oh=d0bdf6c1535bf4bd70700147d1230462&oe=5E7774B6",
     "type": "Fraternity/Sorority",
     "leader": "Carlos Tucker",
     "email": "carlos42@hawaii.edu",
@@ -1418,7 +1418,7 @@
   {
     "name": "Katipunan Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://manoa.hawaii.edu/rio/katipunan/wp-content/uploads/2018/07/transparent-logo.png",
     "type": "Ethnic/Cultural",
     "leader": "Christine Joy Baltazar",
     "email": "cbaltaza@hawaii.edu",
@@ -1442,7 +1442,7 @@
   {
     "name": "Kim's Tae Kwon Do @ UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www2.hawaii.edu/~nakadoma/homepage/patch.gif",
     "type": "Sports/Leisure",
     "leader": "Mason Nakadomari",
     "email": "nakadoma@hawaii.edu",
@@ -1454,7 +1454,7 @@
   {
     "name": "Kinesiology and Rehabilitation Sciences Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://yt3.ggpht.com/-cmz_y_en65I/AAAAAAAAAAI/AAAAAAAAAAA/1o6taa6WRcg/s900-c-k-no/photo.jpg",
     "type": "Academic/Professional",
     "leader": "Keaton Yaw",
     "email": "keatony@hawaii.edu",
@@ -1502,7 +1502,7 @@
   {
     "name": "Living Stone Chinese Christian Fellowship",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/20993102_1968728646734930_4812152535548383552_n.jpg?_nc_cat=100&_nc_ohc=LOYGs1z3MMoAQlIZ16ENmkvKdNA2lb_AOROm_mgjS06xhQMKwwrYt1XhQ&_nc_ht=scontent-lax3-1.xx&oh=b641f93621874553745573aaa7441eb7&oe=5E6B0AD1",
     "type": "Religious/Spiritual",
     "leader": "Liana Wang",
     "email": "lwang2@hawaii.edu",
@@ -1562,7 +1562,7 @@
   {
     "name": "Manoa Debate Union at UHM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/22405622_981539642010216_6280940106613401929_n.jpg?_nc_cat=108&_nc_ohc=dLUZGNoKDNUAQm3T9LdbgNu9q5NSgZreSRCJ0GN80a-H6XjszLhk7SE8A&_nc_ht=scontent-lax3-1.xx&oh=fcd9868981d58488c416b9063a5c5444&oe=5E6AB63B",
     "type": "Academic/Professional",
     "leader": "Michelle Park",
     "email": "parkmj@hawaii.edu",
@@ -1586,7 +1586,7 @@
   {
     "name": "Manoa Peer Advisor Program",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/11722277_918704594857272_3199455466178274811_o.jpg?_nc_cat=105&_nc_ohc=b9ma9uYzU8IAQkdiyj0yIMoUQRlMWfyyuUgSf5b5c7hah81ApXVyVWLOw&_nc_ht=scontent-lax3-1.xx&oh=dc69b9290e190f1c49155dac9c0a760c&oe=5E8C9FF1",
     "type": "Academic/Professional",
     "leader": "Sherylynne Andrada",
     "email": "sma3@hawaii.edu",
@@ -1598,7 +1598,7 @@
   {
     "name": "Manoa Pre-Law Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.law.hawaii.edu/sites/all/themes/custom/law/images/logo_normal.png",
     "type": "Academic/Professional",
     "leader": "Teana Motoyama",
     "email": "teanam@hawaii.edu",
@@ -1610,7 +1610,7 @@
   {
     "name": "Manoa Sophomore Experience",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1450187_1415147062050565_2079481171_n.png?_nc_cat=109&_nc_ohc=8VTfye9wc58AQlyprHzkjvWMaFXsXoQ6psBqJqsaNEhRZ85HqlSc2NRFQ&_nc_ht=scontent-lax3-1.xx&oh=3eadec445f9cf2dbe56b8f5d80af5071&oe=5E402ABC",
     "type": "Student Affairs",
     "leader": "Leilani Harjati",
     "email": "ltakeuc@hawaii.edu",
@@ -1622,7 +1622,7 @@
   {
     "name": "Manoa Ultimate Disc",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.hawaii.edu/site/calendar/uploads/31829.jpg",
     "type": "Sports/Leisure",
     "leader": "Van Wishingrad",
     "email": "vanw@hawaii.edu",
@@ -1634,7 +1634,7 @@
   {
     "name": "Marine Robotics at University of Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1390750_425728010860782_460085787_n.png?_nc_cat=101&_nc_ohc=3Kn5WbtRWLkAQkWzLYZADopdgSvB_Fl6kDJioOVOhP8_PRhaC6lvMGSzw&_nc_ht=scontent-lax3-1.xx&oh=a9f78f4c5b47e5da9e00dd5eb548b4b4&oe=5E7C5A3E",
     "type": "Sports/Leisure",
     "leader": "Paula Rae Penullar",
     "email": "paularae@hawaii.edu",
@@ -1646,7 +1646,7 @@
   {
     "name": "Medt Student Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://yt3.ggpht.com/-cmz_y_en65I/AAAAAAAAAAI/AAAAAAAAAAA/1o6taa6WRcg/s900-c-k-no/photo.jpg",
     "type": "Academic/Professional",
     "leader": "Lauren Loualhati",
     "email": "lloual3@hawaii.edu",
@@ -1658,7 +1658,7 @@
   {
     "name": "Medical Education Student Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Dann Poe ?",
     "email": "dpoei@hawaii.edu",
@@ -1670,7 +1670,7 @@
   {
     "name": "Medical Innovation and Design Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.cdninstagram.com/vp/d650eb1212e552a3c35a0240a742b6a8/5E6835CF/t51.2885-19/s320x320/23417034_366015467173949_7156778149345230848_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com",
     "type": "Academic/Professional",
     "leader": "Alexander Ribao",
     "email": "ribaoa@hawaii.edu",
@@ -1682,7 +1682,7 @@
   {
     "name": "Medical Students for Choice",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://msfc.org/wp-content/themes/ms4c/images/logo.png",
     "type": "Academic/Professional",
     "leader": "Clare-Marie Anderson",
     "email": "cmanders@hawaii.edu",
@@ -1694,7 +1694,7 @@
   {
     "name": "Medical Student Mentorship Program",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://uhmsmp.org/wp-content/uploads/2014/06/logo1.png",
     "type": "Academic/Professional",
     "leader": "Eileen Chen",
     "email": "esrchen@hawaii.edu",
@@ -1706,7 +1706,7 @@
   {
     "name": "Medical Students of the Class of 2022 at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Jester Galiza",
     "email": "jpgaliza@hawaii.edu",
@@ -1718,7 +1718,7 @@
   {
     "name": "Micronesia Connections at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg",
     "type": "Ethnic/Cultural",
     "leader": "Austin Haleyalpiy",
     "email": "austin46@hawaii.edu",
@@ -1742,7 +1742,7 @@
   {
     "name": "Mortar Board Senior National Honor Society (Hui Po'okela Chapter)",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://mortarboardmanoa.weebly.com/uploads/2/3/0/1/23010832/mortar-board.jpg",
     "type": "Academic/Professional",
     "leader": "Aime Le",
     "email": "ale77@hawaii.edu",
@@ -1754,7 +1754,7 @@
   {
     "name": "N? Hawai'i 'Imi Loa Hui Haum?na",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://pbs.twimg.com/profile_images/918175567442087936/9N8un20K_400x400.jpg",
     "type": "Service",
     "leader": "Sharnelle Renti Cruz",
     "email": "sprc@hawaii.edu",
@@ -1766,7 +1766,7 @@
   {
     "name": "Na Koa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://uploads-ssl.webflow.com/5cfa1af8e1b658b5fd949a4a/5d6f1f2900df072efc45734a_occ-logo-blue-square-256%20(1).png",
     "type": "Religious/Spiritual",
     "leader": "Jace Nakama",
     "email": "jacect@hawaii.edu",
@@ -1778,7 +1778,7 @@
   {
     "name": "Na Koa Lani Booster Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/26907923_145293859501735_8991609379731508986_n.jpg?_nc_cat=111&_nc_ohc=gib-PhArZFAAQkNh-1T1WRuehF6FkmCB_ke8xYQ-QQ312BxKp3Dg97W5g&_nc_ht=scontent-lax3-2.xx&oh=b0f6af0a2ee2b2ac87311a2bcb2bcce0&oe=5E403F9C",
     "type": "Academic/Professional",
     "leader": "Brock Barr",
     "email": "barrb@hawaii.edu",
@@ -1790,7 +1790,7 @@
   {
     "name": "Narrative Medicine Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Kyung Moo Kim",
     "email": "kkim29@hawaii.edu",
@@ -1802,7 +1802,7 @@
   {
     "name": "National Panhellenic Conferene",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://static.wixstatic.com/media/2468d8_6a2e65436c9741b68cd6bdb7dc32f9d4~mv2.png/v1/fill/w_199,h_175,al_c,q_80,usm_0.66_1.00_0.01/NPC.webp",
     "type": "Fraternity/Sorority",
     "leader": "Avery Nueva",
     "email": "averymn@hawaii.edu",
@@ -1814,7 +1814,7 @@
   {
     "name": "Natural Sciences Student Ambassadors",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://natsci.manoa.hawaii.edu/index_files/stacks-image-7cd506a.png",
     "type": "Academic/Professional",
     "leader": "Taha Elwir",
     "email": "elwira@hawaii.edu",
@@ -1826,7 +1826,7 @@
   {
     "name": "OB/GYN Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Clare-Marie Anderson",
     "email": "cmanders@hawaii.edu",
@@ -1838,7 +1838,7 @@
   {
     "name": "Oncology Interest Group at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Nicholas Fancher",
     "email": "nfancher@hawaii.edu",
@@ -1850,7 +1850,7 @@
   {
     "name": "Opthalmology Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Kevin Card",
     "email": "cardk@hawaii.edu",
@@ -1862,7 +1862,7 @@
   {
     "name": "Pacific Asia Travel Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://patahawaii.com/wp-content/uploads/2016/01/PATAHawaiilogowebhome.jpg",
     "type": "Academic/Professional",
     "leader": "Jay-O Alforque",
     "email": "alforque@hawaii.edu",
@@ -1874,7 +1874,7 @@
   {
     "name": "Pacific Asian Legal Student Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.law.hawaii.edu/sites/all/themes/custom/law/images/logo_normal.png",
     "type": "Academic/Professional",
     "leader": "Richard Crum",
     "email": "crumr@hawaii.edu",
@@ -1886,7 +1886,7 @@
   {
     "name": "Partners in Health Engage UH Manoa Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.pih.org/sites/default/files/pih-header-logo-orange.png",
     "type": "Academic/Professional",
     "leader": "Akane Dunn",
     "email": "akane2@hawaii.edu",
@@ -1898,7 +1898,7 @@
   {
     "name": "Partnership for Social Justice at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -1910,7 +1910,7 @@
   {
     "name": "Patient Safety and Quality Improvement Interest Group",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Kristine Vo",
     "email": "kbvo@hawaii.edu",
@@ -1922,7 +1922,7 @@
   {
     "name": "Pediatric Interest Group at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Kevin Pham",
     "email": "kevinph@hawaii.edu",
@@ -1934,7 +1934,7 @@
   {
     "name": "Peer Mentor Ohana",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/10354727_854060154674084_5827577646524596692_n.png?_nc_cat=102&_nc_ohc=Q__RKjmAcOAAQk_D4F3viUveETW3BGbwZuQX0qnv_q9eQzCoh5FhneaIQ&_nc_ht=scontent-lax3-1.xx&oh=96e04f9cefe8e08c227e83ac82bc501d&oe=5E7E4F9D",
     "type": "Academic/Professional",
     "leader": "Rosemarie Woodruff",
     "email": "N/A",
@@ -1946,7 +1946,7 @@
   {
     "name": "Peer Mentoring Program at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -1958,7 +1958,7 @@
   {
     "name": "Phi Alpha Nu Sigma Honor Society",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1236617_146615132215090_166759346_n.jpg?_nc_cat=101&_nc_ohc=Yp0k88t-U5AAQnI_yDGCUivnyB7aR_3m63GL-uYHMCaJ66WQ4QIO09duQ&_nc_ht=scontent-lax3-1.xx&oh=ac22780f60c718d957ea8fb3e2c45dc1&oe=5E8C2896",
     "type": "Academic/Professional",
     "leader": "Julie Anne Bacaro",
     "email": "jafb@hawaii.edu",
@@ -1970,7 +1970,7 @@
   {
     "name": "Phi Alpha Theta (Alpha Beta Epsilon)",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://phialphatheta.org/wp-content/uploads/footer-logo.png",
     "type": "Academic/Professional",
     "leader": "Emily Holmberg",
     "email": "emilyhol@hawaii.edu",
@@ -1982,7 +1982,7 @@
   {
     "name": "Phi Mu",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://hawaii.phimu.org/r/images/logo-2.png",
     "type": "Fraternity/Sorority",
     "leader": "Sarai Vargas",
     "email": "svargas9@hawaii.edu",
@@ -1994,7 +1994,7 @@
   {
     "name": "Philippine Medical Student Association of Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/v1/5d0463c2a0e6450001e1c145/1566012029085-KL7VMUN5S4QTPXIQTTU3/ke17ZwdGBToddI8pDm48kJs2VOiJuSdjERp5gg55715Zw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7a3IG1vtna7BEUjBtarIuosHnt-5XhpaIEt7_8NwaYvBD97TG4HPg6dx-2Ktfr8UHA/pmahfinal.png?format=300w",
     "type": "Ethnic/Cultural",
     "leader": "Arlene Kiyohara",
     "email": "arlenecp@hawaii.edu",
@@ -2006,7 +2006,7 @@
   {
     "name": "Pi Gamma Mu",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://pigammamu.org/images2c/graphics/pgm-key.jpg",
     "type": "Honorary Society",
     "leader": "Vendela Lindahl",
     "email": "vendelal@hawaii.edu",
@@ -2018,7 +2018,7 @@
   {
     "name": "Pi Sigma Alpha- Tau Pi Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://politicalscience.hawaii.edu/images/psa_masthead.gif",
     "type": "Academic/Professional",
     "leader": "Justin Menina",
     "email": "jmenina@hawaii.edu",
@@ -2030,7 +2030,7 @@
   {
     "name": "Pi Tau Sigma",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://pitausigma.net/sites/default/files/HEAD_1_1.png",
     "type": "Academic/Professional",
     "leader": "Michael Dang",
     "email": "mkdang@hawaii.edu",
@@ -2054,7 +2054,7 @@
   {
     "name": "Powerlifting Club at the University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.cdninstagram.com/vp/210eaec68ef6ccd71047f8b21bc32b52/5E7D45F7/t51.2885-19/s320x320/53302436_2108604739364487_6680730725945180160_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com",
     "type": "Sports/Leisure",
     "leader": "Jaron Yamane",
     "email": "jarony@hawaii.edu",
@@ -2066,7 +2066,7 @@
   {
     "name": "Pre-Medical Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/57cb3928d482e9784e3f3431/1472936953632-4XN7HTAY2A62IMXHWIPU/PMA.png?format=1500w&content-type=image%2Fpng",
     "type": "Academic/Professional",
     "leader": "Taylor Pu'uohau",
     "email": "tpuuohau@hawaii.edu",
@@ -2078,7 +2078,7 @@
   {
     "name": "Pre-Phamarcy Association at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Tran Trinh",
     "email": "trant2@hawaii.edu",
@@ -2090,7 +2090,7 @@
   {
     "name": "Primary Care Progress at University of Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Jester Galiza",
     "email": "jpgaliza@hawaii.edu",
@@ -2114,7 +2114,7 @@
   {
     "name": "Psi SIgma: The Psychology Connection",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://4.bp.blogspot.com/-9UMMS5KZ5z4/W4-unEFG6JI/AAAAAAAACCQ/yo-4WJuTgaIAEJOaDvPh2dwYnx8AX2HOgCK4BGAYYCw/s342/Psi%2BSigma%2BLogo.png",
     "type": "Academic/Professional",
     "leader": "BrandonBanuelos",
     "email": "bbanuelo@hawaii.ed",
@@ -2126,7 +2126,7 @@
   {
     "name": "Public Administration Student Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/20525393_145072786076369_8177590783577375306_n.jpg?_nc_cat=104&_nc_ohc=-uNG55DlxkQAQmAWF7JJ5WUJqRyXweaVGE_kfxlY84QoY-RsO2JJKt3Eg&_nc_ht=scontent-lax3-1.xx&oh=bab276fccfd09f2a2ea8f0aa854905aa&oe=5E6900CF",
     "type": "Academic/Professional",
     "leader": "Lydia Chung",
     "email": "lydiajc@hawaii.edu",
@@ -2138,7 +2138,7 @@
   {
     "name": "Public Relations Student Society of America",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/375129_195534080523907_1056604432_n.jpg?_nc_cat=110&_nc_ohc=hKF1Ne7C-PUAQm2MM_2YGcf3xQb9riZATBL4U4nzZ9XwxmfJoOki29WeQ&_nc_ht=scontent-lax3-1.xx&oh=8e85219e117f76640dee89aa2cc75e37&oe=5E8BD24E",
     "type": "Academic/Professional",
     "leader": "Mei Jie Wu",
     "email": "meijiew@hawaii.edu",
@@ -2150,7 +2150,7 @@
   {
     "name": "Rainbow Jugglers Juggling Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www2.hawaii.edu/~jugglers/images/rainbow.gif",
     "type": "Sports/Leisure",
     "leader": "Stephen Case",
     "email": "stevec@hawaii.edu",
@@ -2174,7 +2174,7 @@
   {
     "name": "Reformed University Fellowship",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://s3-us-west-2.amazonaws.com/ruf.org/brands/RUF_UnivHawaii_White_MAINLOGO.png",
     "type": "Religious/Spiritual",
     "leader": "Joshua Hu",
     "email": "joshuahu@hawaii.edu",
@@ -2186,7 +2186,7 @@
   {
     "name": "Rural Health Interest Group at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -2198,7 +2198,7 @@
   {
     "name": "S-cubed",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.hawaii.edu/undergrad/sss/wp-content/uploads/2013/11/ssslogo1.png",
     "type": "Academic/Professional",
     "leader": "Barbara Watanabe",
     "email": "blwatana@hawaii.edu",
@@ -2222,7 +2222,7 @@
   {
     "name": "Science Communicators Ohana",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/31265446_1231243603645102_282977553839292416_n.jpg?_nc_cat=106&_nc_ohc=Ly7e8NCxb1sAQkEgPvnLmyXttXl-RuqgN6RwClsx-xuPugIdGOntx7OsA&_nc_ht=scontent-lax3-2.xx&oh=9bd2ade90cb1cad52cadd294285497e8&oe=5E7143D6",
     "type": "Academic/Professional",
     "leader": "Sarah Tucker",
     "email": "tucker4@hawaii.edu",
@@ -2234,7 +2234,7 @@
   {
     "name": "Second Language Studies Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "data:image/jpeg;base64,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",
     "type": "Academic/Professional",
     "leader": "Leeseul Park",
     "email": "leeseul@hawaii.edu",
@@ -2270,7 +2270,7 @@
   {
     "name": "Smash Bros. Club at The University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://i.pinimg.com/originals/74/68/fa/7468faac2989a11d7117b18a7d2e1d70.jpg",
     "type": "Leisure/Recreational",
     "leader": "Isaiah Sheppard-Nelson",
     "email": "isaiahsn@hawaii.edu",
@@ -2282,7 +2282,7 @@
   {
     "name": "Society of American Archivists University of Hawai'i Student Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www2.archivists.org/sites/all/files/saa_pressblog_logo.png",
     "type": "Academic/Professional",
     "leader": "Marleah Renti Cruz",
     "email": "marleah@hawaii.edu",
@@ -2294,7 +2294,7 @@
   {
     "name": "Society of Automotive Engineers at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.sae.org/webfiles/1575547884626/images/sae-international-logo.png",
     "type": "Academic/Professional",
     "leader": "Michael Dang",
     "email": "mkdang@hawaii.edu",
@@ -2306,7 +2306,7 @@
   {
     "name": "Society for Human Resource Management, Aloha Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.shrmuhm.com/uploads/1/2/2/2/122255341/published/shrmalohalogo-chapter-2013_3.png?1540334875",
     "type": "Academic/Professional",
     "leader": "Josiah J. Villar",
     "email": "josiahlj@hawaii.edu",
@@ -2318,7 +2318,7 @@
   {
     "name": "Society of Nepalese in Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://esneha.org/wp-content/uploads/2018/03/1b_MemorialDay_t13.jpg",
     "type": "Ethnic/Cultural",
     "leader": "Man Dhoj Rai",
     "email": "mandhoj@hawaii.edu",
@@ -2330,7 +2330,7 @@
   {
     "name": "Society of Physics Students at the University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.phys.hawaii.edu/~sps/images/logo_2.svg?crc=3975549469",
     "type": "Academic/Professional",
     "leader": "Zachary Martin",
     "email": "zmart@hawaii.edu",
@@ -2342,7 +2342,7 @@
   {
     "name": "Society of Women Engineers",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://swe.org/weebly-assets/open/swe_logo.png",
     "type": "Academic/Professional",
     "leader": "Candice Sarangay",
     "email": "sarangay@hawaii.edu",
@@ -2378,7 +2378,7 @@
   {
     "name": "STAR Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://www.star.hawaii.edu/studentinterface/images/student-login/STAR_Logo_UpperLeft_v2.svg",
     "type": "Academic/Professional",
     "leader": "Sharon Widup",
     "email": "swidup@hawaii.edu",
@@ -2414,7 +2414,7 @@
   {
     "name": "Student Immunization Initiative",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://static.wixstatic.com/media/a2b9bb_036782b335f4403f904b537be2cbd4be~mv2.jpg/v1/crop/x_0,y_161,w_720,h_239/fill/w_864,h_287,al_c,lg_1,q_80,usm_4.00_1.00_0.00/SII%20logo%20powerpoint3.webp",
     "type": "Academic/Professional",
     "leader": "Albert To",
     "email": "albertto@hawaii.edu",
@@ -2438,7 +2438,7 @@
   {
     "name": "Students Interested in Pathology",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Chad Russell",
     "email": "chadruss@hawaii.edu",
@@ -2450,7 +2450,7 @@
   {
     "name": "Students with Keiki @ the University of Hawaii- Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/44629758_358193538085976_3243619083588993024_n.png?_nc_cat=111&_nc_ohc=U7QFH7NjXWEAQm-mQCRyeRU9YGyC-AWh9Z0OHv_YxJBfJSirdqHh_8f7Q&_nc_ht=scontent-lax3-2.xx&oh=670936b41adda2dad67835ec206f9332&oe=5E6B7726",
     "type": "Student Affairs",
     "leader": "Angelique K. Solomon",
     "email": "gotkids@hawaii.edu",
@@ -2462,7 +2462,7 @@
   {
     "name": "Student Nurses' Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://nursing.hawaii.edu/wp-content/uploads/sites/www.nursing.hawaii.edu/files/image/sna-e1525724703460-150x150.jpg",
     "type": "Academic/Professional",
     "leader": "Miki Matsuoka",
     "email": "snamanoa@hawaii.edu",
@@ -2474,7 +2474,7 @@
   {
     "name": "Student Veteran Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.hawaii.edu/veterans/wp-content/uploads/ovss-logo.png",
     "type": "Academic/Professional",
     "leader": "Andrew Lanza",
     "email": "ajlanza@hawaii.edu",
@@ -2486,7 +2486,7 @@
   {
     "name": "Supporting Women in Information, Technology and Computing in Hawaii at the University of Hawaii at Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://switch-uhm.github.io/images//index-hero.png",
     "type": "Academic/Professional",
     "leader": "Quinne Uchida",
     "email": "qauchida@hawaii.edu",
@@ -2498,7 +2498,7 @@
   {
     "name": "Surfrider Foundation UH Manoa Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://manoa.hawaii.edu/sustainability/wp-content/uploads/2013/09/surfrideruhmanoa.jpg",
     "type": "Sports/Leisure",
     "leader": "Laurel Perun",
     "email": "lperun@hawaii.edu",
@@ -2510,7 +2510,7 @@
   {
     "name": "Thai Studies Club",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/10749938_368039680030497_2176298790331985018_o.jpg?_nc_cat=107&_nc_ohc=sB8bmAuAiQsAQnNgcg77P0lWxqu7VOTkQOyV6Q9RiktrC0ADHvq4e4cQQ&_nc_ht=scontent-lax3-2.xx&oh=e0923e715c0d568b0ba5cec21240b630&oe=5E74AC35",
     "type": "Ethnic/Cultural",
     "leader": "Anongard Nusartlert",
     "email": "an2009@hawaii.edu",
@@ -2522,7 +2522,7 @@
   {
     "name": "The Anime Manga Society of Hawaii at UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://i0.wp.com/www.amshawaii.org/wp-content/uploads/2019/01/AMS-Hawaii-@-UHM-Logo-W-Med.png?resize=300%2C300&ssl=1",
     "type": "Ethnic/Cultural",
     "leader": "Barryn Chun",
     "email": "chun808@hawaii.edu",
@@ -2546,7 +2546,7 @@
   {
     "name": "The Engineers' Council at the University of Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://secureservercdn.net/166.62.106.104/dvj.2d9.myftpupload.com/wp-content/uploads/2019/04/ECUH-Alternate-Logo.png",
     "type": "Academic/Professional",
     "leader": "Jianna Leonora Orias",
     "email": "jlorias@hawaii.edu",
@@ -2582,7 +2582,7 @@
   {
     "name": "The iMua Learned Society at the Univeristy of Hawaii (iMua Living Labs)",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.cc/ResizeImage.aspx?img=/Websites/imua/WebsiteLogo.png&w=280",
     "type": "Academic/Professional",
     "leader": "Justin Menina",
     "email": "jmenina@hawaii.edu",
@@ -2594,7 +2594,7 @@
   {
     "name": "The Language Documentation Training Center",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://images.squarespace-cdn.com/content/5b9477b8b27e399cc6fa15d5/1537131193543-SFUF3AXLX6332L25L4R9/LDTC+Color+Horizontal.png?format=1500w&content-type=image%2Fpng",
     "type": "Academic/Professional",
     "leader": "Jessica Charest",
     "email": "jcharest@hawaii.edu",
@@ -2606,7 +2606,7 @@
   {
     "name": "The National Society of Collegiate Scholars, University of Hawai'i at Manoa Chapter",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/25536_384895463971_5659484_n.jpg?_nc_cat=103&_nc_ohc=FowmzWN44g0AQnwGdXzWojgRY1k6o0lWgF5vr7chIfnUSWXXd5IqOqc7w&_nc_ht=scontent-lax3-1.xx&oh=f09636065855f20c35014775dc9cb411&oe=5E89D9E4",
     "type": "Academic/Professional",
     "leader": "Alyssa Hironaka",
     "email": "alyssahi@hawaii.edu",
@@ -2618,7 +2618,7 @@
   {
     "name": "The Navigators",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://pbs.twimg.com/profile_images/980827513185275904/lKmJsdvT_400x400.jpg",
     "type": "Religious/Spiritual",
     "leader": "Lauren Block",
     "email": "blockln7@hawaii.edu",
@@ -2654,7 +2654,7 @@
   {
     "name": "Timpuyog Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://manoa.hawaii.edu/rio/timpuyog/img/timpuyogbanner.png",
     "type": "Ethnic/Cultural",
     "leader": "Jane Nicole Teneza",
     "email": "teneza20@hawaii.edu",
@@ -2678,7 +2678,7 @@
   {
     "name": "Travel Industry Management Student Association",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "http://www.timsaatuhm.com/uploads/1/1/9/6/119612757/published/timsa-email-logo_1.jpg?1526086109",
     "type": "Academic/Professional",
     "leader": "Sharmaine Domingo",
     "email": "sd21@hawaii.edu",
@@ -2690,7 +2690,7 @@
   {
     "name": "Tropical Plant and Soil Sciences Graduate Student Organization",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://manoa.hawaii.edu/ctahr/tpss/wp-content/themes/tpss/images/breadfruit-32.png",
     "type": "Academic/Professional",
     "leader": "Jaclyn Nicole R. Uy",
     "email": "uyjnr69@hawaii.edu",
@@ -2702,7 +2702,7 @@
   {
     "name": "Ultrasound Interest Group at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -2714,7 +2714,7 @@
   {
     "name": "Volunteers for Intercultural and Definitive Adventures (VIDA)",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://static.wixstatic.com/media/6e5eb0_b94682e5ff6545d28954957319b1c76f~mv2.png/v1/fill/w_140,h_70,al_c,q_80,usm_0.66_1.00_0.01/6e5eb0_b94682e5ff6545d28954957319b1c76f~mv2.webp",
     "type": "Service",
     "leader": "Airi Morita",
     "email": "airimori@hawaii.edu",
@@ -2750,7 +2750,7 @@
   {
     "name": "Wesley Foundation @ UH Manoa",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/11990661_1034851689888668_6752733825018787309_n.jpg?_nc_cat=106&_nc_ohc=1awxSrC-wwMAQkJl9hrqpmDWixZyo-yCUb0tZ8CQMtHMxmIARZN7AOmOg&_nc_ht=scontent-lax3-2.xx&oh=d7358bebd82890087f8000232430a784&oe=5E897117",
     "type": "Religious/Spiritual",
     "leader": "Sateki Taulanga",
     "email": "st37@hawaii.edu",
@@ -2762,7 +2762,7 @@
   {
     "name": "Wilderness Medicine Hawaii",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Weston Mccue",
     "email": "wmccue@hawaii.edu",
@@ -2774,7 +2774,7 @@
   {
     "name": "Women's Interest Group at JABSOM",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://jabsom.hawaii.edu/wp-content/themes/jabsom/images/jabsom-logo-mark.jpg",
     "type": "Academic/Professional",
     "leader": "Amandalin Rock",
     "email": "rocka@hawaii.edu",
@@ -2786,7 +2786,7 @@
   {
     "name": "Younglife",
     "subname": "N/A",
-    "image": "N/A",
+    "image": "https://hawaii.younglife.org/_layouts/images/mSites/Logos/YounglifeLogo.png",
     "type": "Religious/Spiritual",
     "leader": "Makenzie Hickey",
     "email": "mmhickey@hawaii.edu",
