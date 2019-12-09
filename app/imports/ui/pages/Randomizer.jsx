@@ -22,8 +22,6 @@ class Randomizer extends React.Component {
     if (this.props.isPseudoRandom === 'true') {
       for (let i = 0; i < this.props.clubs.length; i++) {
         for (let j = 0; j < Meteor.user().profile.interests.length; j++) {
-          console.log(this.props.clubs[i].tags);
-          console.log(Meteor.user().profile.interests[j]);
           if (this.props.clubs[i].tags.includes(Meteor.user().profile.interests[j].toLowerCase())) {
             available.push(this.props.clubs[i]);
             break;
@@ -33,7 +31,6 @@ class Randomizer extends React.Component {
     } else {
       available = this.props.clubs;
     }
-    console.log(available);
     return <Redirect to={`/clubpage/${available[Math.floor(Math.random() * available.length)]._id}`}/>;
   }
 }
