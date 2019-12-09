@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Container } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card, Container, AutoForm, Form } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Interests } from '../../api/interest/Interest';
@@ -11,7 +11,7 @@ import AnnouncementPost from '../components/AnnouncementPost';
 import UserCard from '../components/UserCard';
 import swal from 'sweetalert';
 import { Link } from 'react-router-dom';
-import ClubCard from '../components/ClubCard';
+import HiddenField from 'uniforms-semantic/HiddenField';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubPage extends React.Component {
@@ -24,8 +24,9 @@ class ClubPage extends React.Component {
     this.setState({ [name]: value });
   }
 
-  submit(data) {
-    Meteor.user().update(_id, { $set: {  } }, (error) => (error ?
+  addData(data) {
+    const { new_club } = data;
+    Meteor.user().profile.clubs.joined.update({ $push: { new_club } }, (error) => (error ?
         swal('Error', error.message, 'error') :
         swal('Success', 'Item updated successfully', 'success')));
   }
@@ -51,6 +52,7 @@ class ClubPage extends React.Component {
                        src={(this.props.clubs.image !== 'N/A') ? this.props.clubs.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'}
                        alt={'Club Picture'}
                        size="medium"/>
+                <Form.Button style={{ marginLeft: '2em' }} onClick={this.addData(this.props.clubs.name)}>Join</Form.Button>
                 <Header className="name">{this.props.clubs.name}</Header>
                 <Header className="heading">Leader</Header>
                 <h3>{this.props.clubs.leader}</h3>
