@@ -13,7 +13,8 @@ import AnnouncementPost from '../components/AnnouncementPost';
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Profile extends React.Component {
 
-  state = { activeItem: Meteor.user().profile.newUser ? 'recommended-clubs' : 'clubs-joined', interest: '', major: '', recommendations: [], image: '' };
+  state = { activeItem: Meteor.user().profile.newUser ? 'recommended-clubs' : 'clubs-joined', interest: '',
+    major: '', recommendations: [], image: '', interests: [], majors: [], flag: true };
 
   handleMenuClick = (e, { name }) => { this.setState({ activeItem: name }); };
 
@@ -22,35 +23,40 @@ class Profile extends React.Component {
   }
 
   handleInterestSubmit = () => {
-    // eslint-disable-next-line max-len
-    if (Interests.findOne({ name: this.state.interest }) && !(this.props.user.profile.interests.includes(this.state.interest))) {
+    if (Interests.findOne({ name: this.state.interest }) && !(this.state.interests.includes(this.state.interest))) {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.interests': this.props.user.profile.interests.concat([this.state.interest]) } });
+          { $set: { 'profile.interests': this.state.interests.concat([this.state.interest]) } });
+      this.setState({ interests: this.state.interests.concat([this.state.interest]) });
       this.setState({ interest: '' });
     }
   }
 
-  removeInterest = function (interest) {
+  removeInterest = (interest) => {
+    const interests = this.state.interests;
+    const tempThis = this;
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
           // eslint-disable-next-line max-len
-          { $set: { 'profile.interests': this.props.user.profile.interests.filter(function (value) { return value !== interest; }) } });
-      window.location.reload(false);
+          { $set: { 'profile.interests': interests.filter(function (value) { return value !== interest; }) } });
+      tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };
   }
 
-  removeMajor = function (major) {
+  removeMajor = (major) => {
+    const majors = this.state.majors;
+    const tempThis = this;
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.majors': this.props.user.profile.majors.filter(function (value) { return value !== major; }) } });
-      window.location.reload(false);
+        { $set: { 'profile.majors': majors.filter(function (value) { return value !== major; }) } });
+      tempThis.setState({ majors: majors.filter((value) => value !== major) });
     };
   }
 
   handleMajorSubmit = () => {
-    if (Majors.findOne({ name: this.state.major }) && !this.props.user.profile.majors.includes(this.state.major)) {
+    if (Majors.findOne({ name: this.state.major }) && !this.state.majors.includes(this.state.major)) {
       Meteor.users.update({ _id: Meteor.userId() },
-          { $set: { 'profile.majors': this.props.user.profile.majors.concat([this.state.major]) } });
+          { $set: { 'profile.majors': this.state.majors.concat([this.state.major]) } });
+      this.setState({ majors: this.state.majors.concat([this.state.major]) });
       this.setState({ major: '' });
     }
   }
@@ -69,8 +75,8 @@ class Profile extends React.Component {
   renderPage() {
     const { activeItem } = this.state;
     const recommendations = [];
-    for (let i = 0; i < this.props.user.profile.interests.length; i++) {
-      const clubs = Interests.findOne({ name: this.props.user.profile.interests[i] }).associated_clubs;
+    for (let i = 0; i < this.state.interests.length; i++) {
+      const clubs = Interests.findOne({ name: this.state.interests[i] }).associated_clubs;
       for (let j = 0; j < clubs.length; j++) {
         if (!recommendations.includes(clubs[j]) && !this.props.user.profile.clubs.favorite.includes(clubs[j])
             && !this.props.user.profile.clubs.joined.includes(clubs[j])) {
@@ -81,6 +87,12 @@ class Profile extends React.Component {
 
     if (this.props.user.profile.newUser) {
       Meteor.users.update({ _id: Meteor.userId() }, { $set: { 'profile.newUser': false } });
+    }
+
+    if (this.state.flag) {
+      this.setState({ flag: false });
+      this.setState({ interests: Meteor.user().profile.interests });
+      this.setState({ majors: Meteor.user().profile.majors });
     }
 
     const announcements = [];
@@ -132,7 +144,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.props.user.profile.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
+                {this.state.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
               </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
