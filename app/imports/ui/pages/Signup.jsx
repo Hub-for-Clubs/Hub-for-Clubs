@@ -24,11 +24,12 @@ class Signup extends React.Component {
       email: email,
       password: password,
       profile: {
-        image: 'images/TestProfilePicture.jfif',
+        image: 'images/empty-profile.png',
         leader: '',
         clubs: { joined: [], favorite: [] },
         interests: [],
         majors: [],
+        newUser: true,
       },
     }, (err) => {
       if (err) {

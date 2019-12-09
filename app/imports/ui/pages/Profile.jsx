@@ -13,7 +13,7 @@ import AnnouncementPost from '../components/AnnouncementPost';
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Profile extends React.Component {
 
-  state = { activeItem: 'clubs-joined', interest: '', major: '', recommendations: [], temp: '' };
+  state = { activeItem: Meteor.user().profile.newUser ? 'recommended-clubs' : 'clubs-joined', interest: '', major: '', recommendations: [], image: '' };
 
   handleMenuClick = (e, { name }) => { this.setState({ activeItem: name }); };
 
@@ -55,6 +55,11 @@ class Profile extends React.Component {
     }
   }
 
+  handleImageSubmit = () => {
+    Meteor.users.update({ _id: Meteor.userId() }, { $set: { 'profile.image': this.state.image } });
+    this.setState({ image: '' });
+  }
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -74,6 +79,10 @@ class Profile extends React.Component {
       }
     }
 
+    if (this.props.user.profile.newUser) {
+      Meteor.users.update({ _id: Meteor.userId() }, { $set: { 'profile.newUser': false } });
+    }
+
     const announcements = [];
     const subscribed = this.props.user.profile.clubs.favorite.concat(this.props.user.profile.clubs.joined);
     // eslint-disable-next-line max-len
@@ -84,6 +93,17 @@ class Profile extends React.Component {
           <Grid>
             <Grid.Column width={4} className="user_info">
               <Image className="profile_picture" src={ this.props.user.profile.image } size="medium"/>
+              <Form onSubmit={this.handleImageSubmit}>
+                <Grid column={16}>
+                  <Grid.Column width={4}>
+                    <Header>Image:</Header>
+                  </Grid.Column>
+                  <Grid.Column width={12}>
+                    <Form.Input style={{ marginLeft: '3em' }} name='image' value={this.state.image}
+                      onChange={this.handleChange}/>
+                  </Grid.Column>
+                </Grid>
+              </Form>
               <Header className="name">{this.props.user.username}</Header>
               <Header className="heading">Interest</Header>
               <hr style={{ marginLeft: '1em' }}/>
