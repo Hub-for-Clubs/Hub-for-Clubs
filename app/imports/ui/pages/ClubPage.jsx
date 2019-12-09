@@ -100,8 +100,8 @@ class ClubPage extends React.Component {
                 <h4>{this.props.clubs.email}</h4>
                 <hr style={{ marginLeft: '1em' }}/>
                 <Header className="heading">Our Website</Header>
-                <h3><Link exact to={this.props.clubs.website.toString()}>
-                  {this.props.clubs.website}</Link></h3>
+                <h3><a target="_blank" href={`//${this.props.clubs.website.toString()}`}>
+                  {this.props.clubs.website}</a></h3>
                 <hr style={{ marginLeft: '1em' }}/>
                 <Header className={'heading'}>Interests</Header>
                 <List bulleted className="list">
