@@ -4,7 +4,7 @@ import { Roles } from 'meteor/alanning:roles';
 
 /* eslint-disable no-console */
 
-function createUser(username, email, password, image, role, leader, clubs, interests, majors) {
+function createUser(username, email, password, image, role, leader, clubs, interests, majors, newUser) {
   console.log(`Creating user: ${interests}`);
   // eslint-disable-next-line no-param-reassign
   if (image === 'N/A') image = 'images/empty-profile.png';
@@ -18,6 +18,7 @@ function createUser(username, email, password, image, role, leader, clubs, inter
       clubs: clubs,
       interests: interests,
       majors: majors,
+      newUser: newUser,
     },
   });
 
@@ -34,8 +35,8 @@ if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
     // eslint-disable-next-line max-len
-    Meteor.settings.defaultAccounts.map(({ username, email, password, image, role, leader, clubs, interests, majors }) => createUser(
-        username, email, password, image, role, leader, clubs, interests, majors,
+    Meteor.settings.defaultAccounts.map(({ username, email, password, image, role, leader, clubs, interests, majors, newUser, }) => createUser(
+        username, email, password, image, role, leader, clubs, interests, majors, newUser,
     ));
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
