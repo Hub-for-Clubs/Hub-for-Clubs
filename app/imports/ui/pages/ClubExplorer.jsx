@@ -23,6 +23,7 @@ class ClubExplorer extends React.Component {
     } else {
       this.setState({ selectedTags: this.state.selectedTags.concat([name]) });
     }
+    this.setState({ pageNumber: 0 });
   }
 
   doesClubMatchInterest(club) {
@@ -38,6 +39,7 @@ class ClubExplorer extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
+    const interestMatchLength = display.length;
     display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
@@ -61,7 +63,7 @@ class ClubExplorer extends React.Component {
                     </Card.Group>
               }
           {this.state.pageNumber > 0 ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber - 1 })}>Back</Button> : null}
-          {(this.state.pageNumber + 1) * 12 < Clubs.find({}).fetch().length ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber + 1 })}>Next</Button> : null}
+          {(this.state.pageNumber + 1) * 12 < interestMatchLength ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber + 1 })}>Next</Button> : null}
             <div style={{ paddingBottom: '10%' }}/>
         </div>
     );
