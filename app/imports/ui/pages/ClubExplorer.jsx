@@ -11,7 +11,7 @@ import { Interests } from '../../api/interest/Interest';
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
 
-  state = { selectedTags: [] };
+  state = { selectedTags: [], pageNumber: 0 };
 
   render() {
     return this.props.ready ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -19,7 +19,7 @@ class ClubExplorer extends React.Component {
 
   selectTag(name) {
     if (this.state.selectedTags.includes(name)) {
-      this.setState( { selectedTags: this.state.selectedTags.filter((value) => value !== name) });
+      this.setState({ selectedTags: this.state.selectedTags.filter((value) => value !== name) });
     } else {
       this.setState({ selectedTags: this.state.selectedTags.concat([name]) });
     }
@@ -32,12 +32,13 @@ class ClubExplorer extends React.Component {
         count += 1;
       }
     }
-
     return count === this.state.selectedTags.length;
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
+    display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
           <div className="club-explorer-text">
@@ -54,11 +55,13 @@ class ClubExplorer extends React.Component {
                     <Card.Group centered>
                       <Grid container stretched centered relaxed='very' columns='equal'>
 
-                      {/* eslint-disable-next-line no-nested-ternary */}
-                        {Clubs.find({}).fetch().map((club, index) => this.doesClubMatchInterest(club) ? <ClubCard key={index} club={club}/> : null)}
+                      {/* eslint-disable-next-line no-nested-ternary,max-len */}
+                        {display.map((club, index) => <ClubCard key={index} club={club}/>)}
                       </Grid>
                     </Card.Group>
               }
+          {this.state.pageNumber > 0 ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber - 1 })}>Back</Button> : null}
+          {(this.state.pageNumber + 1) * 12 < Clubs.find({}).fetch().length ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber + 1 })}>Next</Button> : null}
             <div style={{ paddingBottom: '10%' }}/>
         </div>
     );
