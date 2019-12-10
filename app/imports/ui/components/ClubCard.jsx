@@ -8,7 +8,6 @@ import { withRouter, Link } from 'react-router-dom';
 class ClubCard extends React.Component {
   render() {
     if (!this.props.club) {
-      console.log('Not');
       return null;
     }
     return (
