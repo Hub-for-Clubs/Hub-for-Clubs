@@ -13,7 +13,7 @@ class NavBar extends React.Component {
 
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
   render() {
     const menuStyle = { padding: '0px' };

@@ -15,6 +15,7 @@ import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
+import Landing from '../pages/Landing';
 import Signout from '../pages/Signout';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
@@ -29,7 +30,7 @@ class App extends React.Component {
           <div>
             <NavBar/>
             <Switch>
-              <Route exact path="/" component={Signup}/>
+              <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
