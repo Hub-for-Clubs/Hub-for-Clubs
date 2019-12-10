@@ -11,6 +11,7 @@ import AddAnnouncement from '../pages/AddAnnouncement';
 import EditAnnouncement from '../pages/EditAnnouncement';
 import ListStuff from '../pages/ListStuff';
 import ClubPage from '../pages/ClubPage';
+import EditClub from '../pages/EditClub';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
@@ -36,6 +37,7 @@ class App extends React.Component {
               <Route path="/clubexplorer" component={ClubExplorer}/>
               <Route path="/randomizer/:isPseudoRandom" component={Randomizer}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
+              <LeaderProtectedRoute path="/editclub/:_id" component={EditClub}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
