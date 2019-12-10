@@ -4,6 +4,7 @@ import { Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import Redirect from 'react-router/Redirect';
+import swal from 'sweetalert';
 import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -32,7 +33,7 @@ class Randomizer extends React.Component {
     } else if (this.props.isPseudoRandom === 'false') {
       available = this.props.clubs;
     } else if (Meteor.user().profile.interests.length === 0) {
-      alert('No suggestions, please add interests so we know what to show you.');
+      swal('Error', 'No suggestions, please add interests so we know what to show you.', 'error');
       valid = false;
     }
     if (valid) {

@@ -4,6 +4,7 @@ import { Redirect, NavLink } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import '../../../client/style.css';
 import { Header, Button, Image, Form } from 'semantic-ui-react';
+import swal from 'sweetalert';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -28,7 +29,7 @@ export default class Signin extends React.Component {
     Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         this.setState({ error: err.reason });
-        alert(err.reason);
+        swal('Error', err.reason, 'error');
       } else {
         this.setState({ error: '', redirectToReferer: true });
       }

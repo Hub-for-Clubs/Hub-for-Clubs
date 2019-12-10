@@ -34,6 +34,7 @@ class Signup extends React.Component {
     }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
+        swal('Error', err.reason, 'error');
       } else {
         this.setState({ error: '', redirectToProfile: true });
       }
