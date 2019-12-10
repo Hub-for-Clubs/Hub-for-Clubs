@@ -2,12 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Image, Input } from 'semantic-ui-react';
+import { withRouter, NavLink, Redirect} from 'react-router-dom';
+import { Menu, Dropdown, Image, Form } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
+
+  state = { search: '', submit: false };
+
+  handleChange = (e, { name, value }) => {
+    this.setState({ [name]: value });
+  }
+
   render() {
     const menuStyle = { padding: '0px' };
     return (
@@ -27,11 +34,14 @@ class NavBar extends React.Component {
               Random Suggestion
             </Menu.Item>,
               <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
-                Announcements</Menu.Item>,
-              <Menu.Item key='searchbar'>
-                <Input className='icon' icon='search' placeholder='Search...' />
-              </Menu.Item>]
+                Announcements</Menu.Item>]
         ) : ''}
+        <Menu.Item key='searchbar'>
+          <Form onSubmit={() => this.setState({ submit: true })}>
+            <Form.Input onChange={this.handleChange} name='search'
+                        className='icon' icon='search' placeholder='Search...' />
+          </Form>
+        </Menu.Item>
         {Roles.userIsInRole(Meteor.userId(), 'leader') ? (
             // eslint-disable-next-line max-len
             <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/addannouncement" key='leader'>
@@ -52,6 +62,8 @@ class NavBar extends React.Component {
             </Dropdown>
           )}
         </Menu.Item>
+        {this.state.submit ? <Redirect exact to={`/search/${this.state.search}`}/> : null}
+        {this.state.submit ? this.setState({ submit: false }) : null}
       </Menu>
     );
   }
