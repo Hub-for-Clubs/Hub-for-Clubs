@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-class ClubCard extends React.Component {
+export class ClubCard extends React.Component {
   render() {
     if (!this.props.club) {
       return null;
