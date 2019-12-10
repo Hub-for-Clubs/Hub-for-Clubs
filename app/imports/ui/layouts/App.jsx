@@ -11,10 +11,12 @@ import AddAnnouncement from '../pages/AddAnnouncement';
 import EditAnnouncement from '../pages/EditAnnouncement';
 import ListStuff from '../pages/ListStuff';
 import ClubPage from '../pages/ClubPage';
+import EditClub from '../pages/EditClub';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
+import Landing from '../pages/Landing';
 import Signout from '../pages/Signout';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
@@ -29,7 +31,7 @@ class App extends React.Component {
           <div>
             <NavBar/>
             <Switch>
-              <Route exact path="/" component={Signup}/>
+              <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
@@ -38,6 +40,7 @@ class App extends React.Component {
               <Route path="/randomizer/:isPseudoRandom" component={Randomizer}/>
               <Route path="/search/:searchQuery" component={Search}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
+              <LeaderProtectedRoute path="/editclub/:_id" component={EditClub}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
