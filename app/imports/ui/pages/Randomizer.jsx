@@ -19,7 +19,8 @@ class Randomizer extends React.Component {
   /** Render the page once subscriptions have been received. */
   redirect() {
     let available = [];
-    if (this.props.isPseudoRandom === 'true') {
+    let valid = true;
+    if (this.props.isPseudoRandom === 'true' && Meteor.user().profile.interests.length > 0) {
       for (let i = 0; i < this.props.clubs.length; i++) {
         for (let j = 0; j < Meteor.user().profile.interests.length; j++) {
           if (this.props.clubs[i].tags.includes(Meteor.user().profile.interests[j].toLowerCase())) {
@@ -28,10 +29,18 @@ class Randomizer extends React.Component {
           }
         }
       }
-    } else {
+    } else if (this.props.isPseudoRandom === 'false') {
       available = this.props.clubs;
+    } else if (Meteor.user().profile.interests.length === 0) {
+      alert('No suggestions, please add interests so we know what to show you.');
+      valid = false;
     }
-    return <Redirect to={`/clubpage/${available[Math.floor(Math.random() * available.length)]._id}`}/>;
+    if (valid) {
+      return <Redirect to={`/clubpage/${available[Math.floor(Math.random() * available.length)]._id}`}/>;
+    } else {
+      return <Redirect to={`/profile/${Meteor.user()._id}`}/>;
+    }
+
   }
 }
 
