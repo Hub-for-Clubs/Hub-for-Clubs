@@ -47,7 +47,9 @@ class Signup extends React.Component {
         <div className="landing-body">
         <div className="img-background">
             <Image src="/images/hubforclubbackground.png" fluid />
-          <div className="content">
+            <Form.Input label="Name:" placeholder="John Doe" name="username" onChange={this.handleChange}/>
+            
+            <div className="content">
             <Header as="h1" size='medium' color='yellow'>
             Hub for Clubs
           </Header>
@@ -124,5 +126,7 @@ class Signup extends React.Component {
     );
   }
 }
+
+
 
 export default Signup;
