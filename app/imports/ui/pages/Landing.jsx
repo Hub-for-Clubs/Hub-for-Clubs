@@ -12,7 +12,7 @@ class Landing extends React.Component {
         <div className="landing-body">
           <div className="img-background">
             <Image src="/images/hubforclubbackground.png" fluid />
-            <div className="content">
+            <div className="content2">
               <Header as="h1" size='medium' color='yellow'>
                 Hub for Clubs
               </Header>
