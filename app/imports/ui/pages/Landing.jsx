@@ -1,13 +1,23 @@
 import React from 'react';
 import { Header, Image, Card, Icon } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
-import { Redirect } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Clubs } from '../../api/club/Club';
+import { ClubCard } from '../components/ClubCard';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
  */
 class Landing extends React.Component {
   render() {
+    const results = [];
+    for (let i = 0; i < 3; i++) {
+      const found = Clubs.find({}).fetch()[Math.floor(Math.random() * Clubs.find({}).fetch().length)];
+      if (!results.includes(found)) {
+        results.push(found);
+      }
+    }
+    console.log(results);
     return (
         <div className="landing-body">
           <div className="img-background">
@@ -32,57 +42,7 @@ class Landing extends React.Component {
           </div>
           <div className='card-layout'>
             <Card.Group centered>
-              <Card>
-                <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-                <Card.Content>
-                  <div className='card-description'>
-                    <Card.Header>PANDAS</Card.Header>
-                    <Card.Description>
-                      Matthew is a musician living in Nashville.
-                    </Card.Description>
-                  </div>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='user' />
-                    22 Members
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card>
-                <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-                <Card.Content>
-                  <div className='card-description'>
-                    <Card.Header>PANDAS</Card.Header>
-                    <Card.Description>
-                      Matthew is a musician living in Nashville.
-                    </Card.Description>
-                  </div>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='user' />
-                    22 Members
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card>
-                <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-                <Card.Content>
-                  <div className='card-description'>
-                    <Card.Header>PANDAS</Card.Header>
-                    <Card.Description>
-                      Matthew is a musician living in Nashville.
-                    </Card.Description>
-                  </div>
-                </Card.Content>
-                <Card.Content extra>
-                  <a>
-                    <Icon name='user' />
-                    22 Members
-                  </a>
-                </Card.Content>
-              </Card>
+              {results.map((result, index) => <ClubCard key={index} club={result}/>)}
             </Card.Group>
           </div>
         </div>
@@ -90,4 +50,12 @@ class Landing extends React.Component {
   }
 }
 
-export default Landing;
+export default withTracker(() => {
+  // Get access to Stuff documents.
+  const clubs_sub = Meteor.subscribe('Clubs');
+
+  return {
+    clubs: Clubs.find({}).fetch(),
+    ready: clubs_sub.ready(),
+  };
+})(Landing);
