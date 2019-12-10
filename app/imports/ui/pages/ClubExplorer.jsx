@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Loader, Header, Card, Grid, Button } from 'semantic-ui-react';
+import { Loader, Header, Menu, Segment, Card, Grid, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -43,28 +43,32 @@ class ClubExplorer extends React.Component {
     display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
-          <div className="club-explorer-text">
-            <Header as='h1' textAlign='center' inverted>CLUB EXPLORER</Header>
-          </div>
-          <div style={{ marginLeft: '20%', marginRight: '20%', marginBottom: '5%', backgroundColor: 'white' }}>
-            {Interests.find({}).fetch().map((interest, index) => <Button key={index}
-                                             color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
-                                             content={interest.name} style={{ margin: '1%' }}
+            <Grid>
+            <Grid.Column width={4}>
+              <Menu fluid vertical tabular>
+                <Segment inverted>
+
+                {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index} name={index}
+                                           color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
+                                             content={interest.name} style={{ color: 'white' }}
                                              onClick={() => this.selectTag(interest.name)}/>)}
-          </div>
+                </Segment>
+              </Menu>
+            </Grid.Column>
+            <Grid.Column width={8} relaxed>
               {
                 // eslint-disable-next-line max-len
-                    <Card.Group centered>
-                      <Grid container stretched centered relaxed='very' columns='equal'>
+                    <Card.Group stretched relaxed fluid itemsPerRow={3}>
 
                       {/* eslint-disable-next-line no-nested-ternary,max-len */}
-                        {display.map((club, index) => <ClubCard key={index} club={club}/>)}
-                      </Grid>
+                        {display.map((club, index) => <ClubCard key={index} club={club} style={{ padding: '20px 20px 20px 20px' }}/>)}
+
                     </Card.Group>
               }
           {this.state.pageNumber > 0 ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber - 1 })}>Back</Button> : null}
           {(this.state.pageNumber + 1) * 12 < interestMatchLength ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber + 1 })}>Next</Button> : null}
-            <div style={{ paddingBottom: '10%' }}/>
+            </Grid.Column>
+            </Grid>
         </div>
     );
   }

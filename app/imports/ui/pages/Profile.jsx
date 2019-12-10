@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Meteor, _ } from 'meteor/meteor';
+import React from 'react';
+import { Meteor } from 'meteor/meteor';
 import { Image, Loader, Grid, Header, List, Menu, Card, Form } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -108,7 +108,7 @@ class Profile extends React.Component {
               <Form onSubmit={this.handleImageSubmit}>
                 <Grid column={16}>
                   <Grid.Column width={4}>
-                    <Header>Image:</Header>
+                    <Header>Image Link:</Header>
                   </Grid.Column>
                   <Grid.Column width={12}>
                     <Form.Input style={{ marginLeft: '3em' }} name='image' value={this.state.image}

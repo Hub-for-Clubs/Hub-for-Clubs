@@ -20,6 +20,7 @@ import Signout from '../pages/Signout';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import Randomizer from '../pages/Randomizer';
+import Search from '../pages/Search';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -36,6 +37,7 @@ class App extends React.Component {
               <Route path="/clubpage/:_id" component={ClubPage}/>
               <Route path="/clubexplorer" component={ClubExplorer}/>
               <Route path="/randomizer/:isPseudoRandom" component={Randomizer}/>
+              <Route path="/search/:searchQuery" component={Search}/>
               <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <LeaderProtectedRoute path="/editclub/:_id" component={EditClub}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
