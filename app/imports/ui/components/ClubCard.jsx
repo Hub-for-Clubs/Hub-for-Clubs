@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Button } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withRouter, Link } from 'react-router-dom';
@@ -7,12 +7,16 @@ import { withRouter, Link } from 'react-router-dom';
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class ClubCard extends React.Component {
   render() {
+    if (!this.props.club) {
+      console.log('Not');
+      return null;
+    }
     return (
         <div className="card-shadow">
           {/* eslint-disable-next-line no-template-curly-in-string */}
         <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: '450px' }}>
           {/* eslint-disable-next-line max-len */}
-          <Image src={(this.props.club.image !== 'N/A') ? this.props.club.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'} wrapped ui={false}/>
+          <Image src={(this.props.club.image !== 'N/A') ? this.props.club.image : 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg'} style={{ height: '60%' }} />
           <Card.Content>
             <Card.Header>{this.props.club.name}</Card.Header>
             <Card.Meta>{(this.props.club.subname !== 'N/A') ? this.props.club.subname : '' }</Card.Meta>
