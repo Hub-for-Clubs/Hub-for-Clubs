@@ -110,10 +110,13 @@ class ClubPage extends React.Component {
               </Grid.Column>
 
               <Grid.Column width={12} className="club_info">
+                {Meteor.user().profile.leader === this.props.clubs.name ? <Button as={NavLink} exact to={`/editclub/${this.props.clubs._id}`} content={'Manage Club Info'}/> : ''}
                 <Menu pointing secondary>
                   <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
-                  <Menu.Item name="Members" active={activeItem === 'Members'}
-                             onClick={this.handleMenuClick}/>
+                  <Menu.Item name={'Members'} active={activeItem === 'Members'}
+                                                                onClick={this.handleMenuClick}/>
+
+
 
                 </Menu>
                 <Container>
@@ -129,7 +132,7 @@ class ClubPage extends React.Component {
                         :
                         activeItem === 'Members' ?
                             this.props.users.filter((user) => ((user.profile.clubs.joined.includes(this.props.clubs.name))))
-                                .map((user, index) => <UserCard key={index} user={user}/>)
+                                .map((user, index) => <UserCard key={index} club={this.props.clubs} user={user}/>)
                             :
                             <Header>Something went terribly terribly wrong</Header>
                     }
