@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Loader, Header, Menu, Segment, Card, Grid, Button } from 'semantic-ui-react';
+import { Loader, Form, Menu, Segment, Card, Grid, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -11,7 +11,7 @@ import { Interests } from '../../api/interest/Interest';
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
 
-  state = { selectedTags: [], pageNumber: 0 };
+  state = { selectedTags: [], pageNumber: 0, search: '', ignoreTags: true, display: [] };
 
   render() {
     return this.props.ready ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -36,13 +36,49 @@ class ClubExplorer extends React.Component {
     return count === this.state.selectedTags.length;
   }
 
+  handleChange = (e, { name, value }) => {
+    this.setState({ [name]: value });
+  };
+
+  searchForClub = () => {
+    const searchQuery = this.state.search.toLowerCase().split(' ');
+    const clubs = [];
+    const results = {};
+    this.setState({ display: [] });
+
+    Clubs.find({}).fetch().map((club) => clubs.push(club.name));
+
+    for (let i = 0; i < clubs.length; i++) {
+      const temp = clubs[i].split(' ').map((word) => word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()@?']/g, ''));
+      for (let j = 0; j < temp.length; j++) {
+        if (results[temp[j].toLowerCase()] && !results[temp[j].toLowerCase()].includes(clubs[i])) {
+          results[temp[j].toLowerCase()].push(clubs[i]);
+        } else {
+          results[temp[j].toLowerCase()] = [clubs[i]];
+        }
+      }
+    }
+    console.log(results);
+    delete results[''];
+
+    for (let i = 0; i < searchQuery.length; i++) {
+      if (results[searchQuery[i]]) {
+        this.setState({ display: this.state.display.concat(results[searchQuery[i]]) });
+      }
+    }
+  };
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
+
+    let display = this.state.display;
     const interestMatchLength = display.length;
     display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
+          <Form onSubmit={this.searchForClub}>
+            <Form.Input onChange={this.handleChange} name='search' content={this.state.search}/>
+          </Form>
             <Grid>
             <Grid.Column width={4}>
               <Menu fluid vertical tabular>

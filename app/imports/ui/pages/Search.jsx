@@ -17,13 +17,30 @@ class Search extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   redirect() {
+    let searchQuery = this.props.searchQuery;
+    let clubs = Clubs.find({}).fetch();
+    let results = {};
+
+    for (let i = 0; i < clubs.length; i++) {
+      const temp = clubs[i].split(' ');
+      for (let j = 0; j < temp.length; j++) {
+        if (results[temp[j]] && !results[temp[j]].includes(clubs[i])) {
+          results[temp[j]].push(clubs[i]);
+        } else {
+          results[temp[j]] = [clubs[i]];
+        }
+      }
+    }
+
+    searchQuery = searchQuery.toLowerCase();
+
     const club = Clubs.findOne({ name: this.props.searchQuery });
     if (club) {
       return <Redirect to={`/clubpage/${club._id}`}/>;
     }
 
     swal('Error', 'The club that you searched for could not be found.  Maybe look for it here?', 'error');
-    return <Redirect to={`/clubexplorer`}/>
+    return <Redirect to={`/clubexplorer`}/>;
   }
 }
 
