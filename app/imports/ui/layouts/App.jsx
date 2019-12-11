@@ -7,7 +7,6 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import AnnouncementBoard from '../pages/AnnouncementBoard';
-import AddAnnouncement from '../pages/AddAnnouncement';
 import EditAnnouncement from '../pages/EditAnnouncement';
 import ListStuff from '../pages/ListStuff';
 import ClubPage from '../pages/ClubPage';
@@ -39,7 +38,6 @@ class App extends React.Component {
               <Route path="/clubexplorer" component={ClubExplorer}/>
               <Route path="/randomizer/:isPseudoRandom" component={Randomizer}/>
               <Route path="/search/:searchQuery" component={Search}/>
-              <LeaderProtectedRoute path="/addannouncement" component={AddAnnouncement}/>
               <LeaderProtectedRoute path="/editclub/:_id" component={EditClub}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>

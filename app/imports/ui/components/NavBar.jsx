@@ -33,23 +33,19 @@ class NavBar extends React.Component {
             [<Menu.Item as={NavLink} className="navitem" activeClassName="" exact to="/randomizer/true" key='pseudo'>
               Random Suggestion
             </Menu.Item>,
-              <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
-                Announcements</Menu.Item>]
+              ]
         ) : ''}
+        <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
+          Announcements</Menu.Item>
         <Menu.Item key='searchbar'>
           <Form onSubmit={() => this.setState({ submit: true })}>
             <Form.Input onChange={this.handleChange} name='search'
                         className='icon' icon='search' placeholder='Search...' />
           </Form>
         </Menu.Item>
-        {Roles.userIsInRole(Meteor.userId(), 'leader') ? (
-            // eslint-disable-next-line max-len
-            <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/addannouncement" key='leader'>
-              Post Announcement</Menu.Item>
-        ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (
-              <Menu.Item className="navitem" as={NavLink} exact to="/signin">Sign In</Menu.Item>
+              <Menu.Item className="navitem" as={NavLink} exact to="/signin"><h4>Sign In</h4></Menu.Item>
           ) : (
             <Dropdown className="navitem" text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>

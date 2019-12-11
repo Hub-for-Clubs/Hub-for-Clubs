@@ -197,7 +197,7 @@ class Profile extends React.Component {
 
                     activeItem === 'announcements' ?
                     // eslint-disable-next-line no-nested-ternary,max-len
-                        announcements.map((announcement, index) => <AnnouncementPost
+                        announcements.reverse().map((announcement, index) => <AnnouncementPost
                             key={index} announcement={announcement}/>) :
                     null
                   }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button, Segment } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Redirect } from 'react-router-dom';
 import swal from 'sweetalert';
 import { Interests } from '../../api/interest/Interest';
 import { Majors } from '../../api/major/Major';
@@ -11,7 +11,17 @@ import { Clubs } from '../../api/club/Club';
 import { Announcements } from '../../api/announcement/Announcements';
 import AnnouncementPost from '../components/AnnouncementPost';
 import UserCard from '../components/UserCard';
-import ClubCard from '../components/ClubCard';
+import TextField from 'uniforms-semantic/TextField';
+import LongTextField from 'uniforms-semantic/LongTextField';
+import SubmitField from 'uniforms-semantic/SubmitField';
+import ErrorsField from 'uniforms-semantic/ErrorsField';
+import AutoForm from 'uniforms-semantic/AutoForm';
+import SimpleSchema from 'simpl-schema';
+
+const formSchema = new SimpleSchema({
+  title: String,
+  description: String,
+});
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubPage extends React.Component {
@@ -24,10 +34,24 @@ class ClubPage extends React.Component {
     this.setState({ [name]: value });
   }
 
-  submit(data) {
-    Meteor.user().update(_id, { $set: {  } }, (error) => (error ?
-        swal('Error', error.message, 'error') :
-        swal('Success', 'Item updated successfully', 'success')));
+
+
+  /** On submit, insert the data. */
+  submit(data, formRef) {
+    const { title, description } = data;
+    const owner = Meteor.user().username;
+    const club = Meteor.user().profile.leader;
+    console.log(club);
+    Announcements.insert({ title, description, owner, club },
+        (error) => {
+          if (error) {
+            swal('Error', error.message, 'error');
+          } else {
+            swal('Success', 'Post added successfully', 'success');
+            formRef.reset();
+
+          }
+        });
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -72,11 +96,13 @@ class ClubPage extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
+    let fRef = null;
     if (this.props.clubs === undefined) {
       return (
           <h1>ERROR 404: Yo put in something that exists</h1>
       );
     }
+
       return (
           <div className="profile">
             <Grid>
@@ -126,8 +152,19 @@ class ClubPage extends React.Component {
                         <Container>
                           {(this.props.clubs.description !== 'N/A') ? <h3>{this.props.clubs.description}</h3> : <h3> </h3>}
                           <h2>Our Announcements</h2>
-                          {Announcements.find({ club: this.props.clubs.name }).map((announcement, index) =>
-                              <AnnouncementPost key={index} announcement={announcement}/>)}
+
+                          <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+                            <h2>Make an Announcement!</h2>
+                            <Segment>
+                              <TextField name='title'/>
+                              <LongTextField name='description'/>
+                              <SubmitField value='Submit'/>
+                              <ErrorsField/>
+                            </Segment>
+                          </AutoForm>
+
+                          {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
+                                                                                                              announcement={announcement}/>)}
                         </Container>
                         :
                         activeItem === 'Members' ?
@@ -165,13 +202,13 @@ export default withTracker(({ match }) => {
   const announcements_sub = Meteor.subscribe('Announcements');
   const documentId = match.params._id;
   const users_sub = Meteor.subscribe('userData');
-
+  const clubname = Announcements.findOne({ _id: documentId });
   return {
 
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
-    announcements: Announcements.find({}).fetch(),
+    announcements: Announcements.find({ name: clubname }).fetch(),
     users: Meteor.users.find({}).fetch(),
     ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready() && users_sub.ready(),
   };
