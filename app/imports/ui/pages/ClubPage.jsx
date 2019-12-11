@@ -110,7 +110,7 @@ class ClubPage extends React.Component {
               </Grid.Column>
 
               <Grid.Column width={12} className="club_info">
-                {Meteor.user().profile.leader === this.props.clubs.name ? <Button as={NavLink} exact to={`/editclub/${this.props.clubs._id}`} content={'Manage Club Info'}/> : ''}
+                {Meteor.user() && Meteor.user().profile.leader === this.props.clubs.name ? <Button as={NavLink} exact to={`/editclub/${this.props.clubs._id}`} content={'Manage Club Info'}/> : ''}
                 <Menu pointing secondary>
                   <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
                   <Menu.Item name={'Members'} active={activeItem === 'Members'}

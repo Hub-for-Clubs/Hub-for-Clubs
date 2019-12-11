@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Image, Card, Icon } from 'semantic-ui-react';
+import { Header, Image, Card } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Clubs } from '../../api/club/Club';
