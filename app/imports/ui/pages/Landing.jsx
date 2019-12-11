@@ -21,7 +21,7 @@ class Landing extends React.Component {
     return (
         <div className="landing-body">
           <div className="img-background">
-            <Image src="/images/hubforclubbackground.png" fluid />
+            <Image src="/images/hubforclubbackground.png" style={{ marginTop: '-10%' }} fluid />
             <div className="content2">
               <Header as="h1" size='medium' color='yellow'>
                 Hub for Clubs
@@ -41,7 +41,7 @@ class Landing extends React.Component {
             </Header>
           </div>
           <div className='card-layout'>
-            <Card.Group centered>
+            <Card.Group centered style={{ marginTop: '10%' }}>
               {results.map((result, index) => <ClubCard key={index} club={result}/>)}
             </Card.Group>
           </div>
