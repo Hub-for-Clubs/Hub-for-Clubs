@@ -44,7 +44,7 @@ class ClubExplorer extends React.Component {
     return (
         <div className="club-explorer-background">
             <Grid>
-            <Grid.Column width={4}>
+            <Grid.Column width={3}>
               <Menu fluid vertical tabular>
                 <Segment inverted>
 
@@ -55,10 +55,10 @@ class ClubExplorer extends React.Component {
                 </Segment>
               </Menu>
             </Grid.Column>
-            <Grid.Column width={8} relaxed>
+            <Grid.Column width={12} relaxed>
               {
                 // eslint-disable-next-line max-len
-                    <Card.Group stretched relaxed fluid itemsPerRow={3}>
+                    <Card.Group centered stretched relaxed fluid itemsPerRow={5}>
 
                       {/* eslint-disable-next-line no-nested-ternary,max-len */}
                         {display.map((club, index) => <ClubCard key={index} club={club} style={{ padding: '20px 20px 20px 20px' }}/>)}

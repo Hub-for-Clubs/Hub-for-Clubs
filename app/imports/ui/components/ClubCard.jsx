@@ -10,7 +10,7 @@ export class ClubCard extends React.Component {
       return null;
     }
     return (
-        <div className="card-shadow">
+        <div className="card-shadow" style={{padding: '4px'}}>
           {/* eslint-disable-next-line no-template-curly-in-string */}
         <Card as={Link} to={`/clubpage/${this.props.club._id}`} style={{ height: '450px' }}>
           {/* eslint-disable-next-line max-len */}
