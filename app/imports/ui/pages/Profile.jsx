@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Form } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card, Form, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -76,11 +76,13 @@ class Profile extends React.Component {
     const { activeItem } = this.state;
     const recommendations = [];
     for (let i = 0; i < this.state.interests.length; i++) {
-      const clubs = Interests.findOne({ name: this.state.interests[i] }).associated_clubs;
-      for (let j = 0; j < clubs.length; j++) {
-        if (!recommendations.includes(clubs[j]) && !this.props.user.profile.clubs.favorite.includes(clubs[j])
-            && !this.props.user.profile.clubs.joined.includes(clubs[j])) {
-          recommendations.push(clubs[j]);
+      if (this.state.interests[i] !== 'Academic' || this.state.interests[i] !== 'Professional') {
+        const clubs = Interests.findOne({ name: this.state.interests[i] }).associated_clubs;
+        for (let j = 0; j < clubs.length; j++) {
+          if (!recommendations.includes(clubs[j]) && !this.props.user.profile.clubs.favorite.includes(clubs[j])
+              && !this.props.user.profile.clubs.joined.includes(clubs[j])) {
+            recommendations.push(clubs[j]);
+          }
         }
       }
     }
@@ -121,7 +123,8 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.props.user.profile.interests.map((interest, index) => <List.Item key={index} onClick={this.removeInterest(interest)}>{interest}</List.Item>)}</List>
+                {this.props.user.profile.interests.map((interest, index) => (<List.Item key={index}>{interest} <Button size={'mini'} content='Remove' onClick={this.removeInterest(interest)}/></List.Item>))}
+              </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
                   <Grid.Column>
