@@ -48,9 +48,9 @@ class ClubExplorer extends React.Component {
               <Menu fluid vertical tabular>
                 <Segment inverted>
 
-                {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index} name={index}
+                {Interests.find({}).fetch().map((interest, index) => <Menu.Item  key={index}     active={index}
                                            color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
-                                             content={interest.name} style={{ color: 'white' }}
+                                             content={interest.name} style={{ color: 'black' }}
                                              onClick={() => this.selectTag(interest.name)}/>)}
                 </Segment>
               </Menu>

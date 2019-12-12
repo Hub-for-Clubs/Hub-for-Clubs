@@ -16,6 +16,7 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Landing from '../pages/Landing';
 import Signout from '../pages/Signout';
+import Signup from '../pages/Signup';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import Randomizer from '../pages/Randomizer';
