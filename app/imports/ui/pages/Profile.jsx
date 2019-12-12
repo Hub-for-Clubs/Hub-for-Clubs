@@ -78,12 +78,14 @@ class Profile extends React.Component {
     for (let i = 0; i < this.state.interests.length; i++) {
       if (this.state.interests[i] !== 'Academic' || this.state.interests[i] !== 'Professional') {
         const clubs = Interests.findOne({ name: this.state.interests[i] }).associated_clubs;
+        const temp = []
         for (let j = 0; j < clubs.length; j++) {
           if (!recommendations.includes(clubs[j]) && !this.props.user.profile.clubs.favorite.includes(clubs[j])
               && !this.props.user.profile.clubs.joined.includes(clubs[j])) {
-            recommendations.push(clubs[j]);
+            temp.push(clubs[j]);
           }
         }
+        recommendations.unshift(...temp);
       }
     }
 

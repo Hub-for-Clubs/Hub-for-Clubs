@@ -21,7 +21,6 @@ import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import Randomizer from '../pages/Randomizer';
 import Search from '../pages/Search';
-import Signup from '../pages/Signup';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
