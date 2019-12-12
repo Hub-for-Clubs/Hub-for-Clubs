@@ -41,8 +41,8 @@ class ClubPage extends React.Component {
     const { title, description } = data;
     const owner = Meteor.user().username;
     const club = Meteor.user().profile.leader;
-    console.log(club);
-    Announcements.insert({ title, description, owner, club },
+    const date = new Date();
+    Announcements.insert({ title, description, owner, club, date },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
