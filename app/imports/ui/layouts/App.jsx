@@ -20,6 +20,7 @@ import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import Randomizer from '../pages/Randomizer';
 import Search from '../pages/Search';
+import Signup from '../pages/Signup';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
+              <Route path="/signup" component={Signup}/>
               <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <Route path="/clubpage/:_id" component={ClubPage}/>
