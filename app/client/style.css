@@ -208,13 +208,32 @@ body, html {margin:0; padding:0}
 /* Annoucement Board */
 
 .announcementBoard-image {
-  background-image: url("https://live.staticflickr.com/5265/5674159978_d44fa6320f_b.jpg");
-  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: rgb(27,111,78);
+  background-size: 400% 400%;
+  background: linear-gradient(0deg, rgba(27,111,78,1) 18%, rgba(20,163,118,1) 46%, rgba(45,196,153,1) 71%, rgba(61,209,167,1) 99%);
+  animation: gradientBG 15s ease infinite !important;
 }
 
+@keyframes gradientBG {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
 .announcementBoard-header {
-  text-shadow: 2px 2px 7px #000000;
-  padding-top: 10px;
+  padding-top: 20px;
+  font-family: "Playfair Display", serif !important;
 }
 
 .card-style {
@@ -282,7 +301,7 @@ body, html {margin:0; padding:0}
 
 .club-explorer-background {
   background-position: center;
-  background-color: black !important;
+  color: black;
 }
 
 .club-explorer-text {
