@@ -45,12 +45,12 @@ class ClubExplorer extends React.Component {
         <div className="club-explorer-background">
             <Grid>
             <Grid.Column width={3}>
-              <Menu fluid vertical tabular>
-                <Segment inverted>
+              <Menu fitted fluid vertical tabular>
+                <Segment>
 
-                {Interests.find({}).fetch().map((interest, index) => <Menu.Item  key={index}     active={index}
-                                           color={this.state.selectedTags.includes(interest.name) ? 'red' : null}
-                                             content={interest.name} style={{ color: 'black' }}
+                {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index}
+                                           style={{ color: this.state.selectedTags.includes(interest.name) ? 'green' : 'black' }}
+                                             content={interest.name}
                                              onClick={() => this.selectTag(interest.name)}/>)}
                 </Segment>
               </Menu>
