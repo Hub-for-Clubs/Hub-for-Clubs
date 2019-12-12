@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import '../../../client/style.css';
 import { Header, Button, Image, Form } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import SignUp from '../pages/signup';
+import SignUp from '../pages/Signup';
 
 
 /**

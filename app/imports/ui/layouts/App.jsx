@@ -16,6 +16,7 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Landing from '../pages/Landing';
 import Signout from '../pages/Signout';
+import Signup from '../pages/Signup';
 import ClubExplorer from '../pages/ClubExplorer';
 import Profile from '../pages/Profile';
 import Randomizer from '../pages/Randomizer';
@@ -31,6 +32,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
+              <Route path="/signup" component={Signup}/>
               <Route path="/profile/:_id" component={Profile}/>
               <Route path="/announcements" component={AnnouncementBoard}/>
               <Route path="/clubpage/:_id" component={ClubPage}/>
