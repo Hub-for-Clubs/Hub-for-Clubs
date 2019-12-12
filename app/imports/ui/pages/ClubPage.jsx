@@ -153,15 +153,17 @@ class ClubPage extends React.Component {
                           {(this.props.clubs.description !== 'N/A') ? <h3>{this.props.clubs.description}</h3> : <h3> </h3>}
                           <h2>Our Announcements</h2>
 
-                          <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
-                            <h2>Make an Announcement!</h2>
-                            <Segment>
-                              <TextField name='title'/>
-                              <LongTextField name='description'/>
-                              <SubmitField value='Submit'/>
-                              <ErrorsField/>
-                            </Segment>
-                          </AutoForm>
+                          { (Meteor.user() !== null) ? ((Meteor.user().profile.leader === this.props.clubs.name) ? (
+                              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+                                <h2>Make an Announcement!</h2>
+                                <Segment>
+                                  <TextField name='title'/>
+                                  <LongTextField name='description'/>
+                                  <SubmitField value='Submit'/>
+                                  <ErrorsField/>
+                                </Segment>
+                              </AutoForm>
+                          ) : '') : '' }
 
                           {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
                                                                                                               announcement={announcement}/>)}

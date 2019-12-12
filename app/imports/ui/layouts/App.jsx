@@ -14,7 +14,6 @@ import EditClub from '../pages/EditClub';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
-import Signup from '../pages/Signup';
 import Landing from '../pages/Landing';
 import Signout from '../pages/Signout';
 import ClubExplorer from '../pages/ClubExplorer';

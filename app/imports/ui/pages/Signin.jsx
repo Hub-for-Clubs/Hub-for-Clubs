@@ -5,6 +5,8 @@ import { Meteor } from 'meteor/meteor';
 import '../../../client/style.css';
 import { Header, Button, Image, Form } from 'semantic-ui-react';
 import swal from 'sweetalert';
+import SignUp from '../pages/signup';
+
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -53,7 +55,7 @@ export default class Signin extends React.Component {
                   <Image className="logo" src="images/HubForClubsLogo.png"/>
                   <Header as="h5" className="p" style={{ marginTop: '15%', fontSize: '10px' }}>
                     Don&apos;t have an account?</Header>
-                  <Button basic color='green' as={NavLink} exact to="/">sign up</Button>
+                  <Button basic color='green' as={NavLink} exact to="/signup" component={SignUp}>sign up</Button>
                 </div>
               </div>
             </div>
