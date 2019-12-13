@@ -162,8 +162,8 @@ class ClubPage extends React.Component {
                               </AutoForm>
                           ) : '') : '' }
 
-                          {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
-                                                                                        announcement={announcement}/>)}
+                          {this.props.announcements.reverse().map((announcement, index) => (this.props.clubs.name === announcement.club) ? <AnnouncementPost key={index}
+                                                                                        announcement={announcement}/> : '')}
                         </Container>
                         :
                         // eslint-disable-next-line no-nested-ternary
@@ -204,13 +204,12 @@ export default withTracker(({ match }) => {
   const announcements_sub = Meteor.subscribe('Announcements');
   const documentId = match.params._id;
   const users_sub = Meteor.subscribe('userData');
-  const clubname = Announcements.findOne({ _id: documentId });
   return {
 
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
-    announcements: Announcements.find({ name: clubname }).fetch(),
+    announcements: Announcements.find({}).fetch(),
     users: Meteor.users.find({}).fetch(),
     ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready() && users_sub.ready(),
   };
