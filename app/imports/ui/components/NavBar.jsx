@@ -37,12 +37,7 @@ class NavBar extends React.Component {
         ) : ''}
         <Menu.Item as={NavLink} className="navitem" activeClassName="active" exact to="/announcements" key='list'>
           Announcements</Menu.Item>
-        <Menu.Item key='searchbar'>
-          <Form onSubmit={() => this.setState({ submit: true })}>
-            <Form.Input onChange={this.handleChange} name='search'
-                        className='icon' icon='search' placeholder='Search...' />
-          </Form>
-        </Menu.Item>
+
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (
               <Menu.Item className="navitem" as={NavLink} exact to="/signin"><h4>Sign In</h4></Menu.Item>

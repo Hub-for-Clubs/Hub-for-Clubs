@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Loader, Header, Menu, Segment, Card, Grid, Button } from 'semantic-ui-react';
+import { Loader, Header, Menu, Segment, Card, Grid, Button, Form } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -11,10 +11,24 @@ import { Interests } from '../../api/interest/Interest';
 class ClubExplorer extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
 
-  state = { selectedTags: [], pageNumber: 0 };
+  state = { selectedTags: [], pageNumber: 0, search: '', cardCount: 0 };
 
   render() {
     return this.props.ready ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+
+  displayCards(display) {
+    if (this.state.search === '') {
+      return display.map((club, index) => <ClubCard key={index} club={club} style={{ padding: '20px 20px 20px 20px' }}/>);
+    } else {
+      return display.map((club, index) => (club.name.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1 ? this.getCard(club, index) : ''));
+    }
+
+  }
+
+  getCard(club, index) {
+    return <ClubCard key={index} club={club} style={{ padding: '20px 20px 20px 20px' }}/>;
   }
 
   selectTag(name) {
@@ -36,13 +50,25 @@ class ClubExplorer extends React.Component {
     return count === this.state.selectedTags.length;
   }
 
+  handleChange = (e, { name, value }) => {
+    this.setState({ [name]: value });
+  };
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
+    const display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
     const interestMatchLength = display.length;
-    display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
+    //display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
+          <Menu id='navbar' borderless style={{ marginBottom: '30px' }}>
+            <Menu.Item key='searchbar'>
+              <Form >
+                <Form.Input onChange={this.handleChange} name='search'
+                            className='icon' icon='search' placeholder='Search...' />
+              </Form>
+            </Menu.Item>
+          </Menu>
             <Grid>
             <Grid.Column width={3}>
               <Menu fluid vertical tabular>
@@ -61,7 +87,7 @@ class ClubExplorer extends React.Component {
                     <Card.Group centered stretched relaxed fluid itemsPerRow={5}>
 
                       {/* eslint-disable-next-line no-nested-ternary,max-len */}
-                        {display.map((club, index) => <ClubCard key={index} club={club} style={{ padding: '20px 20px 20px 20px' }}/>)}
+                      {this.displayCards(display)}
 
                     </Card.Group>
               }
