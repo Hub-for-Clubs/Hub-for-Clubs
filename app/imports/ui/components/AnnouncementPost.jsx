@@ -17,6 +17,9 @@ class AnnouncementPost extends React.Component {
             </Card.Description>
           </Card.Content>
         <Card.Content>
+          <Card.Description>{this.props.announcement.date ? this.props.announcement.date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) : null}</Card.Description>
+        </Card.Content>
+        <Card.Content>
         { (Meteor.user() !== null) ? ((Meteor.user().profile.leader === this.props.announcement.club) ? (
             <Link exact to={`/editannouncement/${this.props.announcement._id}`}>
               Edit Announcement</Link>

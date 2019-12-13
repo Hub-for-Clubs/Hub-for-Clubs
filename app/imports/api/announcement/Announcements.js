@@ -11,6 +11,7 @@ const AnnouncementSchema = new SimpleSchema({
   description: String,
   owner: String,
   club: String,
+  date: Date,
 
 }, { tracker: Tracker });
 

@@ -41,8 +41,8 @@ class ClubPage extends React.Component {
     const { title, description } = data;
     const owner = Meteor.user().username;
     const club = Meteor.user().profile.leader;
-    console.log(club);
-    Announcements.insert({ title, description, owner, club },
+    const date = new Date();
+    Announcements.insert({ title, description, owner, club, date },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -141,9 +141,6 @@ class ClubPage extends React.Component {
                   <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
                   <Menu.Item name={'Members'} active={activeItem === 'Members'}
                                                                 onClick={this.handleMenuClick}/>
-
-
-
                 </Menu>
                 <Container>
                   <Card.Group>
@@ -153,23 +150,28 @@ class ClubPage extends React.Component {
                           {(this.props.clubs.description !== 'N/A') ? <h3>{this.props.clubs.description}</h3> : <h3> </h3>}
                           <h2>Our Announcements</h2>
 
-                          <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
-                            <h2>Make an Announcement!</h2>
-                            <Segment>
-                              <TextField name='title'/>
-                              <LongTextField name='description'/>
-                              <SubmitField value='Submit'/>
-                              <ErrorsField/>
-                            </Segment>
-                          </AutoForm>
+                          { (Meteor.user() !== null) ? ((Meteor.user().profile.leader === this.props.clubs.name) ? (
+                              <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+                                <h2>Make an Announcement!</h2>
+                                <Segment>
+                                  <TextField name='title'/>
+                                  <LongTextField name='description'/>
+                                  <SubmitField value='Submit'/>
+                                  <ErrorsField/>
+                                </Segment>
+                              </AutoForm>
+                          ) : '') : '' }
 
                           {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
-                                                                                                              announcement={announcement}/>)}
+                                                                                        announcement={announcement}/>)}
                         </Container>
                         :
+                        // eslint-disable-next-line no-nested-ternary
                         activeItem === 'Members' ?
+                            (Meteor.user() ?
                             this.props.users.filter((user) => ((user.profile.clubs.joined.includes(this.props.clubs.name))))
-                                .map((user, index) => <UserCard key={index} club={this.props.clubs} user={user}/>)
+                                .map((user, index) => <UserCard key={index} club={this.props.clubs} user={user}/>) :
+                            <Image src={'/images/MembersSignInFix.png'} style={{ marginLeft: '20%' }}/>)
                             :
                             <Header>Something went terribly terribly wrong</Header>
                     }
