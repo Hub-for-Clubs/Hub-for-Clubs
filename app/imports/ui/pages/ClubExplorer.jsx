@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Loader, Header, Menu, Segment, Card, Grid, Button, Form } from 'semantic-ui-react';
+import { Loader, Menu, Segment, Card, Grid, Button, Form } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -45,13 +45,20 @@ class ClubExplorer extends React.Component {
     this.setState({ [name]: value });
   };
 
+  nextPage = () => {
+    this.setState({ pageNumber: this.state.pageNumber + 1 });
+  };
+
+  previousPage = () => {
+    this.setState({ pageNumber: this.state.pageNumber - 1 });
+  };
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
     let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
     display = display.filter((club) => club.name.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1);
-    const interestMatchLength = display.length;
-    display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
-
+    const size = display.length;
+    display = display.filter((club, i) => i >= this.state.pageNumber * 12 && i < (this.state.pageNumber + 1) * 12);
     return (
         <div className="club-explorer-background">
             <Grid>
@@ -71,16 +78,12 @@ class ClubExplorer extends React.Component {
             </Grid.Column>
             <Grid.Column width={12} relaxed>
               {
-                // eslint-disable-next-line max-len
-                    <Card.Group centered stretched relaxed fluid itemsPerRow={5}>
-
-                      {/* eslint-disable-next-line no-nested-ternary,max-len */}
-                      {display.map((club, index) => this.getCard(club, index))}
-
-                    </Card.Group>
+                <Card.Group centered stretched relaxed fluid itemsPerRow={5}>
+                  {display.map((club, index) => this.getCard(club, index))}
+                </Card.Group>
               }
-          {this.state.pageNumber > 0 ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber - 1 })}>Back</Button> : null}
-          {(this.state.pageNumber + 1) * 12 < interestMatchLength ? <Button onClick={() => this.setState({ pageNumber: this.state.pageNumber + 1 })}>Next</Button> : null}
+              {this.state.pageNumber > 0 ? <Button onClick={this.previousPage}>Back</Button> : null}
+              {(this.state.pageNumber + 1) * 12 < size ? <Button onClick={this.nextPage}>Next</Button> : null}
             </Grid.Column>
             </Grid>
         </div>

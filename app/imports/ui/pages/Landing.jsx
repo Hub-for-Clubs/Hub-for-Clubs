@@ -27,9 +27,9 @@ class Landing extends React.Component {
               </Header>
               <div className="description">
                 <Header as="h3" inverted>
-                  With more than 200 registered clubs at the University of Hawai'i at Manoa, it can be challenging to
-                  find ones that align with your interests. Hub for Clubs provides a way for students to quickly search
-                  for clubs that are right for them!
+                  With more than 200 registered clubs at the University of Hawai&apos;i at Manoa, it can be
+                  challenging to find ones that align with your interests. Hub for Clubs provides a way for students to
+                  quickly search for clubs that are right for them!
                 </Header>
               </div>
             </div>

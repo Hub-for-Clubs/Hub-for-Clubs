@@ -1,10 +1,9 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment, Button, Container } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment, Button } from 'semantic-ui-react';
 import { Clubs, ClubSchema } from '/imports/api/club/Club';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import { Meteor } from 'meteor/meteor';
@@ -47,7 +46,8 @@ class EditClub extends React.Component {
                 <TextField label='Club Website' name='website'/>
                 <Button primary type={'submit'} content={'Update Info'} value='Submit'/>
 
-                <Button secondary style={{ float: 'right' }} as={NavLink} exact to={`/clubpage/${this.props.club._id}`} content={'Back to club Page'}/>
+                <Button secondary style={{ float: 'right' }} as={NavLink}
+                  exact to={`/clubpage/${this.props.club._id}`} content={'Back to club Page'}/>
 
                 <ErrorsField/>
                 <HiddenField name='name' />

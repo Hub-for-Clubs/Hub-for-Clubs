@@ -8,10 +8,8 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import AnnouncementBoard from '../pages/AnnouncementBoard';
 import EditAnnouncement from '../pages/EditAnnouncement';
-import ListStuff from '../pages/ListStuff';
 import ClubPage from '../pages/ClubPage';
 import EditClub from '../pages/EditClub';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Landing from '../pages/Landing';
@@ -40,9 +38,7 @@ class App extends React.Component {
               <Route path="/randomizer/:isPseudoRandom" component={Randomizer}/>
               <Route path="/search/:searchQuery" component={Search}/>
               <LeaderProtectedRoute path="/editclub/:_id" component={EditClub}/>
-              <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/editannouncement/:_id" component={EditAnnouncement}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
