@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Grid, Header, Container, Image, Card, Icon } from 'semantic-ui-react';
+import { Form, Container } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { Redirect } from 'react-router-dom';
@@ -24,11 +24,11 @@ class Signup extends React.Component {
       email: email,
       password: password,
       profile: {
-        image: 'images/TestProfilePicture.jfif',
+        image: 'images/empty-profile.png',
         leader: '',
         clubs: { joined: [], favorite: [] },
         interests: [],
-        major: [],
+        majors: [],
       },
     }, (err) => {
       if (err) {

@@ -15,6 +15,7 @@ function addData(data) {
 
 function addAnnouncements(data) {
   console.log(`  Adding: ${data.title} (${data.owner})`);
+  console.log(data);
   Announcements.insert(data);
 }
 

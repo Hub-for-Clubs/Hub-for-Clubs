@@ -32,9 +32,9 @@
   ],
 
   "defaultAnnouncements": [
-    { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money"},
-    { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club"},
-    { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things"}
+    { "owner": "admin", "title": "Help needed", "club": "Accounting Club at UH Manoa", "description" : "We spent all of our club funds on that last tailgate and now we need more money", "date": "\"2014-01-01T23:28:56.782Z\""},
+    { "owner": "bar", "title": "More Members Needed", "club": "Academy for Creative Media Student Association", "description" : "Someone please come to our meetings, we need more people to join for us to be a club", "date" : "\"2014-01-01T23:28:56.782Z\""},
+    { "owner": "bar", "title": "Free Art Supplies!", "club": "Academy for Creative Media Student Association", "description" : "Free art supplies to those who come first and do the prerequiste things", "date" :  "\"2014-01-01T23:28:56.782Z\""}
   ],
 
   "defaultInterests": [{

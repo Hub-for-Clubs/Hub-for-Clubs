@@ -6,6 +6,30 @@ import { withRouter, Link } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class AnnouncementPost extends React.Component {
+
+  dateCreated() {
+    return this.props.announcement.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  renderAnnouncements() {
+    return (
+    <Card.Content>
+      <Card.Description>{this.props.announcement.date ? this.dateCreated() : null}</Card.Description>
+    </Card.Content>
+    );
+  }
+
+  renderEditOption() {
+    if (Meteor.user() !== null && Meteor.user().profile.leader === this.props.announcement.club) {
+      return (
+        <Card.Content>
+          <Link exact to={`/editannouncement/${this.props.announcement._id}`}>Edit Announcement</Link>
+        </Card.Content>
+      );
+    }
+    return null;
+  }
+
   render() {
     return (
       <Card fluid color='green'>
@@ -16,16 +40,9 @@ class AnnouncementPost extends React.Component {
               {this.props.announcement.description}
             </Card.Description>
           </Card.Content>
-        <Card.Content>
-          <Card.Description>{this.props.announcement.date ? this.props.announcement.date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) : null}</Card.Description>
-        </Card.Content>
-        <Card.Content>
-        { (Meteor.user() !== null) ? ((Meteor.user().profile.leader === this.props.announcement.club) ? (
-            <Link exact to={`/editannouncement/${this.props.announcement._id}`}>
-              Edit Announcement</Link>
-        ) : '') : '' }
-        </Card.Content>
-  </Card>
+        {this.props.announcement.date ? this.renderAnnouncements() : null}
+        {this.renderEditOption()}
+      </Card>
     );
   }
 }

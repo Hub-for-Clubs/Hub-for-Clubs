@@ -51,24 +51,17 @@ class ClubExplorer extends React.Component {
     display = display.filter((club) => club.name.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1);
     const interestMatchLength = display.length;
     display = display.filter((club, index) => index >= this.state.pageNumber * 12 && index < (this.state.pageNumber + 1) * 12);
-    console.log(interestMatchLength);
-    console.log(display);
 
     return (
         <div className="club-explorer-background">
-          <Menu id='navbar' borderless style={{ marginBottom: '30px' }}>
-            <Menu.Item key='searchbar'>
-              <Form >
-                <Form.Input onChange={this.handleChange} name='search'
-                            className='icon' icon='search' placeholder='Search...' />
-              </Form>
-            </Menu.Item>
-          </Menu>
             <Grid>
             <Grid.Column width={3}>
               <Menu fitted fluid vertical tabular>
                 <Segment>
-
+                  <Form >
+                    <Form.Input onChange={this.handleChange} name='search'
+                                className='icon' icon='search' placeholder='Search...' />
+                  </Form>
                 {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index}
                                  style={{ color: this.state.selectedTags.includes(interest.name) ? 'green' : 'black' }}
                                  content={interest.name}

@@ -16,14 +16,13 @@ class AnnouncementBoard extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-      console.log(this.props.announcements);
     return (
         <div className="announcementBoard-image">
       <Container>
         <div className="announcementBoard-header">
         <Header as="h2" textAlign="center" inverted>List Announcements</Header>
         </div>
-        <Card.Group centered style={{ marginBottom: '1em', marginTop:'1em' }}>
+        <Card.Group centered style={{ marginBottom: '1em', marginTop: '1em' }}>
           {this.props.announcements.reverse().map((announcement, index) => <AnnouncementPost key={index}
                                                                                        announcement={announcement}/>)}
         </Card.Group>
