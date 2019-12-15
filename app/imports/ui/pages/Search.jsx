@@ -23,7 +23,7 @@ class Search extends React.Component {
     }
 
     swal('Error', 'The club that you searched for could not be found.  Maybe look for it here?', 'error');
-    return <Redirect to={`/clubexplorer`}/>
+    return <Redirect to={'/clubexplorer'}/>;
   }
 }
 

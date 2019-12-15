@@ -20,7 +20,7 @@ class Profile extends React.Component {
 
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
   handleInterestSubmit = () => {
     if (Interests.findOne({ name: this.state.interest }) && !(this.state.interests.includes(this.state.interest))) {
@@ -29,7 +29,7 @@ class Profile extends React.Component {
       this.setState({ interests: this.state.interests.concat([this.state.interest]) });
       this.setState({ interest: '' });
     }
-  }
+  };
 
   removeInterest = (interest) => {
     const interests = this.state.interests;
@@ -40,7 +40,7 @@ class Profile extends React.Component {
           { $set: { 'profile.interests': interests.filter(function (value) { return value !== interest; }) } });
       tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };
-  }
+  };
 
   removeMajor = (major) => {
     const majors = this.state.majors;
@@ -50,7 +50,7 @@ class Profile extends React.Component {
         { $set: { 'profile.majors': majors.filter(function (value) { return value !== major; }) } });
       tempThis.setState({ majors: majors.filter((value) => value !== major) });
     };
-  }
+  };
 
   handleMajorSubmit = () => {
     if (Majors.findOne({ name: this.state.major }) && !this.state.majors.includes(this.state.major)) {
@@ -59,12 +59,12 @@ class Profile extends React.Component {
       this.setState({ majors: this.state.majors.concat([this.state.major]) });
       this.setState({ major: '' });
     }
-  }
+  };
 
   handleImageSubmit = () => {
     Meteor.users.update({ _id: Meteor.userId() }, { $set: { 'profile.image': this.state.image } });
     this.setState({ image: '' });
-  }
+  };
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
