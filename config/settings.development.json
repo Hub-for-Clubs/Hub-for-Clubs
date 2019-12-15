@@ -7,25 +7,29 @@
   "defaultAccounts": [
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "N/A", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": ["Accounting Club at UH Manoa"],
-      "favorite": ["Accounting Club at UH Manoa"]
+      "favorite": ["Accounting Club at UH Manoa"],
+      "banned": []
     }, "interests": ["Academic"], "majors": ["Computer Science"],
       "newUser": false
     },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "N/A", "leader": "Academy for Creative Media Student Association", "clubs" : {
       "joined": ["Academy for Creative Media Student Association"],
-      "favorite": ["Academy for Creative Media Student Association"]
+      "favorite": ["Academy for Creative Media Student Association"],
+      "banned": []
     }, "interests": [], "majors": ["Visual Design"],
       "newUser": false
     },
     { "username": "john","email": "john@foo.com", "password": "changeme", "image": "N/A", "leader": "", "clubs" : {
       "joined": [],
-      "favorite": []
+      "favorite": [],
+      "banned": []
     }, "interests": ["Art"], "majors": ["Computer Science"],
       "newUser": false
     },
     { "username": "JolieChing", "email": "j@email.com", "password": "changeme", "image": "images/TestProfilePicture.jfif", "leader": "", "clubs": {
       "joined": ["Academy for Creative Media Student Association"],
-      "favorite": ["Smash Bros. Club at The University of Hawaii at Manoa", "Cannabis Club"]
+      "favorite": ["Smash Bros. Club at The University of Hawaii at Manoa", "Cannabis Club"],
+      "banned": []
     }, "interests": ["Art", "Academic"], "majors": ["Computer Science", "Visual Design"],
       "newUser": false
     }

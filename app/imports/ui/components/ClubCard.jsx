@@ -20,12 +20,10 @@ export class ClubCard extends React.Component {
               <Card.Meta>{(this.props.club.subname !== 'N/A') ? this.props.club.subname : '' }</Card.Meta>
 
               <Card.Description>
+                {/* eslint-disable-next-line max-len */}
                 {(this.props.club.description !== 'N/A') ? ((this.props.club.description.length >= 150) ? (this.props.club.description.slice(0, 150)).concat('...') : (this.props.club.description)) : '' }
               </Card.Description>
             </Card.Content>
-            {/* <Card.Content extra> */}
-            {/*  <Link to={`/editclub/${this.props.club._id}`}>Edit</Link> */}
-            {/* </Card.Content> */}
           </Card>
         </div>
     );

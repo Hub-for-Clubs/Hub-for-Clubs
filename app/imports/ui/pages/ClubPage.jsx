@@ -63,9 +63,8 @@ class ClubPage extends React.Component {
     let index = Meteor.user().profile.clubs.joined.indexOf(name);
     if (index !== -1) {
       Meteor.users.update({ _id: Meteor.userId() },
-          // eslint-disable-next-line eqeqeq
           { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.filter((club) => club !== name) } });
-    } else {
+    } else if (Meteor.user().profile.clubs.banned.indexOf(name) === -1) {
       Meteor.users.update({ _id: Meteor.userId() },
           { $set: { 'profile.clubs.joined': Meteor.user().profile.clubs.joined.concat([name]) } });
       index = Meteor.user().profile.clubs.favorite.indexOf(name);

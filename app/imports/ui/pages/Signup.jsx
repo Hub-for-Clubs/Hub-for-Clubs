@@ -26,7 +26,7 @@ class Signup extends React.Component {
       profile: {
         image: 'images/empty-profile.png',
         leader: '',
-        clubs: { joined: [], favorite: [] },
+        clubs: { joined: [], favorite: [], banned: [] },
         interests: [],
         majors: [],
       },
