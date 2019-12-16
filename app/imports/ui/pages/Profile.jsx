@@ -111,21 +111,23 @@ class Profile extends React.Component {
               <Image className="profile_picture" src={ this.props.user.profile.image } size="medium"/>
               <Form onSubmit={this.handleImageSubmit}>
                 <Grid column={16}>
-                  <Grid.Column width={4}>
-                    <Header>Image Link:</Header>
-                  </Grid.Column>
-                  <Grid.Column width={12}>
+                  <Grid.Column width={10}>
+                    <Header style={{ marginLeft: '2em' }}>Profile Image Link:</Header>
                     <Form.Input style={{ marginLeft: '3em' }} name='image' value={this.state.image}
                       onChange={this.handleChange}/>
                   </Grid.Column>
+                  <Grid.Column width = {10}>
+                    <Form.Button style={{ marginLeft: '2em' }}
+                                 type='submit'>Submit</Form.Button>
+                  </Grid.Column>
                 </Grid>
               </Form>
-              <Header className="name">{this.props.user.username}</Header>
-              <Header className="heading">Interest</Header>
+              <Header style={{ marginLeft: "1em" }} className="name">{this.props.user.username}</Header>
+              <Header className="heading">Interests</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.props.user.profile.interests.map((interest, index) => (<List.Item key={index}>{interest} <Button size={'mini'} content='Remove' onClick={this.removeInterest(interest)}/></List.Item>))}
+                {this.props.user.profile.interests.map((interest, index) => (<List.Item key={index}>{interest} <Button style={{ marginLeft: '3em' }} size={'mini'} content='Remove' onClick={this.removeInterest(interest)}/></List.Item>))}
               </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
@@ -149,7 +151,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.state.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}</List.Item>)}
+                {this.state.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}<Button style={{ marginLeft: '1em' }} size={'mini'} content='Remove' onClick={this.removeMajor(major)}/></List.Item>)}
               </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
