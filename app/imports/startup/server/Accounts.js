@@ -35,9 +35,7 @@ if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
     // eslint-disable-next-line max-len
-    Meteor.settings.defaultAccounts.map(({ username, email, password, image, role, leader, clubs, interests, majors, newUser, }) => createUser(
-        username, email, password, image, role, leader, clubs, interests, majors, newUser,
-    ));
+    Meteor.settings.defaultAccounts.map(({ username, email, password, image, role, leader, clubs, interests, majors, newUser }) => createUser(username, email, password, image, role, leader, clubs, interests, majors, newUser));
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
   }
