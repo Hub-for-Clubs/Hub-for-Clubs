@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button, Segment } from 'semantic-ui-react';
+import { Image, Loader, Grid, Header, List, Menu, Card, Container, Button, Segment, Icon } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Link, NavLink, Redirect } from 'react-router-dom';
@@ -113,24 +113,24 @@ class ClubPage extends React.Component {
                        size="medium"/>
                 <Header className="name">{this.props.clubs.name}</Header>
 
-                {Meteor.user() ? <Button content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+                {Meteor.user() ? <Button style={{ 'margin-left': '1.5em' }} content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
                     'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
-                <Button as={NavLink} exact to={''} content={'Join'}/>}
+                    <Button color={'blue'} style={{ 'margin-left': '1.5em' }} as={NavLink} exact to={''} content={'Join'}/>}
 
-                {Meteor.user() ? <Button content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+                {Meteor.user() ? <Button style={{ 'margin-left': '1.5em' }} content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
                     'Unfavorite' : 'Favorite'} onClick={() => this.toggleFavorite(this.props.clubs.name)}/> :
-                <Button as={NavLink} exact to={''} content={'Favorite'}/>}
+                <Button color={'blue'} as={NavLink} style={{ 'margin-left': '1.5em' }} exact to={''} content={'Favorite'}/>}
 
-                <Header className="heading">Leader</Header>
-                <h3>{this.props.clubs.leader}</h3>
-                <h4>{this.props.clubs.email}</h4>
+                <Header className="heading" style={{ 'margin-left': '1.5em' }}>Leader</Header>
+                <h4 style={{ 'margin-left': '1.5em' }}>{this.props.clubs.leader}</h4>
+                <h4 style={{ 'margin-left': '1.5em' }}>{this.props.clubs.email}</h4>
                 <hr style={{ marginLeft: '1em' }}/>
                 <Header className="heading">Our Website</Header>
-                <h3><a target="_blank" href={`//${this.props.clubs.website.toString()}`}>
+                <h3 style={{ 'margin-left': '1.5em' }}><a target="_blank" href={`//${this.props.clubs.website.toString()}`}>
                   {this.props.clubs.website}</a></h3>
                 <hr style={{ marginLeft: '1em' }}/>
-                <Header className={'heading'}>Interests</Header>
-                <List bulleted className="list">
+                <Header style={{ 'margin-left': '1.5em' }} className={'heading'}>Interests</Header>
+                <List style={{ 'margin-left': '1.5em' }} bulleted className="list">
                   {this.props.clubs.tags.map((m, index) => <List.Item key={index}>{m}</List.Item>)}
                 </List>
               </Grid.Column>
