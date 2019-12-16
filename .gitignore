@@ -5,3 +5,4 @@ node_modules
 settings.production.json
 json_formatter.py
 RIO_List*
+*.xlsx
