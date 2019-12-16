@@ -96,7 +96,7 @@ class ClubPage extends React.Component {
     if (activeItem === 'About-Us') {
       return (
           <Container>
-            {(this.props.clubs.description !== 'N/A') ? <h3>{this.props.clubs.description}</h3> : <h3> </h3>}
+            {(this.props.clubs.description !== 'N/A') ? <h4 style={{ marginTop: '1em' }}>{this.props.clubs.description}</h4> : <h3> </h3>}
             <h2>Our Announcements</h2>
             {this.displayAddAnnouncements()}
             {this.props.announcements.reverse().map((announcement, i) => this.displayAnnouncements(announcement, i))}
@@ -163,22 +163,23 @@ class ClubPage extends React.Component {
                alt={'Club Picture'}
                size="medium"/>
             <Header className="name">{this.props.clubs.name}</Header>
-
-            {Meteor.user() ? <Button content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+            {Meteor.user() ? <Button color={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
                 'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
-            <Button as={NavLink} exact to={''} content={'Join'}/>}
+            <Button as={NavLink} exact to={''} style={{ marginLeft: '1.5em' }} content={'Join'}/>}
 
-            {Meteor.user() ? <Button content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+            {Meteor.user() ? <Button color={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
                 'Unfavorite' : 'Favorite'} onClick={() => this.toggleFavorite(this.props.clubs.name)}/> :
-            <Button as={NavLink} exact to={''} content={'Favorite'}/>}
+            <Button as={NavLink} style={{ marginLeft: '1.5em' }} exact to={''} content={'Favorite'}/>}
 
-            <Header className="heading">Leader</Header>
-            <h3>{this.props.clubs.leader}</h3>
-            <h4>{this.props.clubs.email}</h4>
+            <h2 className="heading">Leader</h2>
+            <h3 style={{ marginLeft: '1.5em' }}>{this.props.clubs.leader}</h3>
+            <h4 style={{ marginLeft: '1.5em' }}>{this.props.clubs.email}</h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className="heading">Our Website</Header>
-            <h3><a target="_blank" rel='noopener noreferrer' href={`//${this.props.clubs.website.toString()}`}>
-              {this.props.clubs.website}</a></h3>
+            <h4 style={{ marginLeft: '1.5em' }}><a target="_blank" rel='noopener noreferrer' href={`//${this.props.clubs.website.toString()}`}>
+              {this.props.clubs.website}</a></h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className={'heading'}>Interests</Header>
             <List bulleted className="list">
