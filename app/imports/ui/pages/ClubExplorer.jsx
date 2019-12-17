@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Loader, Menu, Segment, Card, Grid, Button, Form } from 'semantic-ui-react';
+import { Loader, Menu, Segment, Card, Grid, Button, Form, Icon } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ClubCard from '../components/ClubCard';
@@ -71,7 +71,7 @@ class ClubExplorer extends React.Component {
                   </Form>
                 {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index}
                                  style={{ color: this.state.selectedTags.includes(interest.name) ? 'green' : 'black' }}
-                                 content={interest.name}
+                                 content={ this.state.selectedTags.includes(interest.name) ? <div>{interest.name} <Icon name={'check'}/></div> : interest.name }
                                  onClick={() => this.selectTag(interest.name)}/>)}
                 </Segment>
               </Menu>
