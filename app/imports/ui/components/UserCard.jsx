@@ -35,7 +35,7 @@ class UserCard extends React.Component {
   };
 
   kickFromClub() {
-    if (this.props.club !== undefined && Meteor.user().profile.leader === this.props.club.name) {
+    if (this.props.club !== undefined && this.props.club.leader.includes(Meteor.user().username)) {
       return (
         <Card.Content>
           <Button content={'Kick From Club'} onClick={this.kick}/>

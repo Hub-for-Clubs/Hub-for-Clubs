@@ -94,12 +94,13 @@ class ClubPage extends React.Component {
   displayActiveItem(activeItem) {
     if (activeItem === 'About-Us') {
       return (
-          <Container>
-            {(this.props.clubs.description !== 'N/A') ? <h4 style={{ marginTop: '1em' }}>{this.props.clubs.description}</h4> : <h3> </h3>}
-            <h2>Our Announcements</h2>
-            {this.displayAddAnnouncements()}
-            {this.props.announcements.reverse().map((announcement, i) => this.displayAnnouncements(announcement, i))}
-          </Container>
+        <Container>
+          {(this.props.clubs.description !== 'N/A') ? <h4 style={{ marginTop: '1em' }}>
+            {this.props.clubs.description}</h4> : <h3> </h3>}
+          <h2>Our Announcements</h2>
+          {this.displayAddAnnouncements()}
+          {this.props.announcements.reverse().map((announcement, i) => this.displayAnnouncements(announcement, i))}
+        </Container>
       );
     }
     if (activeItem === 'Members') {
@@ -116,7 +117,10 @@ class ClubPage extends React.Component {
   }
 
   userCard(user, index) {
-    return <UserCard key={index} club={this.props.clubs} user={user}/>;
+    if (Meteor.user().username !== user.username) {
+      return <UserCard key={index} club={this.props.clubs} user={user}/>;
+    }
+    return null;
   }
 
   displayAddAnnouncements() {
@@ -163,12 +167,14 @@ class ClubPage extends React.Component {
                size="medium"/>
             <Header className="name">{this.props.clubs.name}</Header>
             {Meteor.user() ? <Button color={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
-                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }}
+                 content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
                 'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
             <Button as={NavLink} exact to={''} style={{ marginLeft: '1.5em' }} content={'Join'}/>}
 
             {Meteor.user() ? <Button color={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
-                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }}
+                 content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
                 'Unfavorite' : 'Favorite'} onClick={() => this.toggleFavorite(this.props.clubs.name)}/> :
             <Button as={NavLink} style={{ marginLeft: '1.5em' }} exact to={''} content={'Favorite'}/>}
 
@@ -177,8 +183,8 @@ class ClubPage extends React.Component {
             <h4 style={{ marginLeft: '1.5em' }}>{this.props.clubs.email}</h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className="heading">Our Website</Header>
-            <h4 style={{ marginLeft: '1.5em' }}><a target="_blank" rel='noopener noreferrer' href={`//${this.props.clubs.website.toString()}`}>
-              {this.props.clubs.website}</a></h4>
+            <h4 style={{ marginLeft: '1.5em' }}><a target="_blank" rel='noopener noreferrer'
+             href={`//${this.props.clubs.website.toString()}`}>{this.props.clubs.website}</a></h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className={'heading'}>Interests</Header>
             <List bulleted className="list">
