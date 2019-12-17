@@ -71,7 +71,8 @@ if (Interests.find().count() === 0) {
 
 if (Majors.find().count() === 0) {
   console.log('Creating default majors');
-  if (Meteor.settings.defaultMajors) {
-    Meteor.settings.defaultMajors.map(data => addMajor(data));
+  const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
+  if (majorJSON !== 0) {
+    majorJSON.map(data => addMajor(data));
   }
 }

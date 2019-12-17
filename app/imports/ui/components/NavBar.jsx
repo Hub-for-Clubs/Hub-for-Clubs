@@ -32,7 +32,7 @@ class NavBar extends React.Component {
         </Menu.Item>
         {this.props.currentUser ? (
             [<Menu.Item as={NavLink} className="navitem" activeClassName="" exact to="/randomizer/true" key='pseudo'>
-              Random Suggestion
+              Suggested Club
             </Menu.Item>,
               ]
         ) : ''}
