@@ -19,7 +19,7 @@ function addInterest(data) {
 function addClub(data) {
   console.log(`  Adding: ${data.name}`);
   // eslint-disable-next-line no-param-reassign
-  data.leader = [data.leader];
+  data.leader = [data.leader, 'admin'];
   Clubs.insert(data);
   try {
     Accounts.createUser({
@@ -69,10 +69,10 @@ if (Interests.find().count() === 0) {
   }
 }
 
-if (Majors.find().count() === 0) {
-  console.log('Creating default majors');
-  const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
-  if (majorJSON !== 0) {
-    majorJSON.map(data => addMajor(data));
-  }
-}
+// if (Majors.find().count() === 0) {
+//   console.log('Creating default majors');
+//   const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
+//   if (majorJSON !== 0) {
+//     majorJSON.map(data => addMajor(data));
+//   }
+// }

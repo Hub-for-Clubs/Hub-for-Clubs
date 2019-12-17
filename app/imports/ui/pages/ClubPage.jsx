@@ -124,7 +124,7 @@ class ClubPage extends React.Component {
   }
 
   displayAddAnnouncements() {
-    if (Meteor.user() !== null && Meteor.user().profile.leader === this.props.clubs.name) {
+    if (Meteor.user() !== null && this.props.clubs.leader.includes(Meteor.user().username)) {
       return (
       <AutoForm ref={ref => { this.fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, this.fRef)}>
         <h2>Make an Announcement!</h2>
@@ -145,6 +145,15 @@ class ClubPage extends React.Component {
       return (<AnnouncementPost key={index} announcement={announcement}/>);
     }
     return null;
+  }
+
+  displayLeaders() {
+    let result = this.props.clubs.leader[0];
+    for (let i = 1; i < this.props.clubs.leader.length; i++) {
+      result += `, ${this.props.clubs.leader[i]}`;
+    }
+    console.log(result);
+    return result;
   }
 
   /** Render the page once subscriptions have been received. */
@@ -179,7 +188,7 @@ class ClubPage extends React.Component {
             <Button as={NavLink} style={{ marginLeft: '1.5em' }} exact to={''} content={'Favorite'}/>}
 
             <h2 className="heading">Leader</h2>
-            <h3 style={{ marginLeft: '1.5em' }}>{this.props.clubs.leader}</h3>
+            <h3 style={{ marginLeft: '1.5em' }}>{this.displayLeaders()}</h3>
             <h4 style={{ marginLeft: '1.5em' }}>{this.props.clubs.email}</h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className="heading">Our Website</Header>

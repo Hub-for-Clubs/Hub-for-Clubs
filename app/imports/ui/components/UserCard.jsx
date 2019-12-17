@@ -15,6 +15,7 @@ class UserCard extends React.Component {
         leader: this.props.user.username },
         (err) => {
           if (err) {
+            // eslint-disable-next-line no-undef
             alert(err);
           } else {
             // success
@@ -24,25 +25,6 @@ class UserCard extends React.Component {
       Clubs.update(this.props.club._id, { $set:
         { leader: this.props.club.leader.filter((c) => c !== this.props.user.name) } });
     }
-  }
-
-  kick = () => {
-    Meteor.users.update({ _id: this.props.user._id },
-        { $set: { 'profile.clubs.joined':
-          this.props.user.profile.clubs.joined.filter((club) => club !== this.props.club.name) } });
-    Meteor.users.update({ _id: this.props.user._id },
-        { $set: { 'profile.clubs.banned': this.props.user.profile.clubs.banned.concat([this.props.club.name]) } });
-  };
-
-  kickFromClub() {
-    if (this.props.club !== undefined && this.props.club.leader.includes(Meteor.user().username)) {
-      return (
-        <Card.Content>
-          <Button content={'Kick From Club'} onClick={this.kick}/>
-        </Card.Content>
-      );
-    }
-    return null;
   }
 
   editOfficerPosition() {
@@ -66,16 +48,15 @@ class UserCard extends React.Component {
   render() {
     return (
         <div className="card-shadow">
-          <Card as={Link} to={`/profile/${this.props.user._id}`}>
-            <Image src={this.props.user.profile.image} wrapped ui={false}/>
+          <Card>
+            <Image as={Link} to={`/profile/${this.props.user._id}`}
+              src={this.props.user.profile.image} wrapped ui={false}/>
             <Card.Content style={{ height: '100px' }}>
               <Card.Header>{this.props.user.username}</Card.Header>
               {(this.props.user.profile.majors[0]) ? <Card.Meta>{this.props.user.profile.majors[0]}</Card.Meta> : ''}
               {(this.props.user.profile.majors[1]) ? <Card.Meta>{this.props.user.profile.majors[1]}</Card.Meta> : ''}
               {(this.props.user.profile.majors[2]) ? <Card.Meta>{this.props.user.profile.majors[2]}</Card.Meta> : ''}
             </Card.Content>
-
-            {this.kickFromClub()}
             {this.editOfficerPosition()}
           </Card>
         </div>
