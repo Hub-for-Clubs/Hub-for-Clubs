@@ -32,7 +32,6 @@ class AnnouncementBoard extends React.Component {
       announcements.push(this.props.announcements.reverse()[i]);
     }
     return (
-    <div className="announcementBoard-image">
       <Container>
         <div className="announcementBoard-header">
           <Header as="h2" textAlign="center" inverted>List Announcements</Header>
@@ -43,7 +42,6 @@ class AnnouncementBoard extends React.Component {
       </Container>
       {this.state.pageNumber > 0 ? <Button onClick={this.previousPage}>Back</Button> : null}
       {(this.state.pageNumber + 1) * 3 < size ? <Button onClick={this.nextPage}>Next</Button> : null}
-    </div>
   );
   }
 }
