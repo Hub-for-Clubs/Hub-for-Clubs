@@ -21,7 +21,7 @@ class NavBar extends React.Component {
     return (
       <Menu id='navbar' attached="top" borderless>
         <Menu.Item style={menuStyle} as={NavLink} activeClassName=""
-                   exact to={this.props.currentUser === '' ? '' : `/profile/${Meteor.user()._id}`}>
+                   exact to={''}>
           <Image size='tiny' src='/images/HubForClubsLogo.png'/>
         </Menu.Item>
         <Menu.Item as={NavLink} className="navitem" activeClassName="" exact to="/clubexplorer" key='clubexplorer'>
@@ -46,6 +46,7 @@ class NavBar extends React.Component {
           ]) : (
             <Dropdown className="navitem" text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>
+                <Dropdown.Item icon={'user'} text={'Profile'} as={NavLink} exact to={`/profile/${Meteor.user()._id}`}/>
                 <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
               </Dropdown.Menu>
             </Dropdown>
