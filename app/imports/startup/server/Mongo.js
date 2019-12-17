@@ -69,10 +69,10 @@ if (Interests.find().count() === 0) {
   }
 }
 
-// if (Majors.find().count() === 0) {
-//   console.log('Creating default majors');
-//   const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
-//   if (majorJSON !== 0) {
-//     majorJSON.map(data => addMajor(data));
-//   }
-// }
+if (Majors.find().count() === 0) {
+  console.log('Creating default majors');
+  const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
+  if (majorJSON !== 0) {
+    majorJSON.map(data => addMajor(data));
+  }
+}
