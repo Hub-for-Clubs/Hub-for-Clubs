@@ -79,7 +79,6 @@ class ClubPage extends React.Component {
     let index = Meteor.user().profile.clubs.favorite.indexOf(name);
     if (index !== -1) {
       Meteor.users.update({ _id: Meteor.userId() },
-          // eslint-disable-next-line eqeqeq
           { $set: { 'profile.clubs.favorite': Meteor.user().profile.clubs.favorite.filter((club) => club !== name) } });
     } else {
       Meteor.users.update({ _id: Meteor.userId() },
@@ -95,12 +94,13 @@ class ClubPage extends React.Component {
   displayActiveItem(activeItem) {
     if (activeItem === 'About-Us') {
       return (
-          <Container>
-            {(this.props.clubs.description !== 'N/A') ? <h4 style={{ marginTop: '1em' }}>{this.props.clubs.description}</h4> : <h3> </h3>}
-            <h2>Our Announcements</h2>
-            {this.displayAddAnnouncements()}
-            {this.props.announcements.reverse().map((announcement, i) => this.displayAnnouncements(announcement, i))}
-          </Container>
+        <Container>
+          {(this.props.clubs.description !== 'N/A') ? <h4 style={{ marginTop: '1em' }}>
+            {this.props.clubs.description}</h4> : <h3> </h3>}
+          <h2>Our Announcements</h2>
+          {this.displayAddAnnouncements()}
+          {this.props.announcements.reverse().map((announcement, i) => this.displayAnnouncements(announcement, i))}
+        </Container>
       );
     }
     if (activeItem === 'Members') {
@@ -117,11 +117,14 @@ class ClubPage extends React.Component {
   }
 
   userCard(user, index) {
-    return <UserCard key={index} club={this.props.clubs} user={user}/>;
+    if (Meteor.user().username !== user.username) {
+      return <UserCard key={index} club={this.props.clubs} user={user}/>;
+    }
+    return null;
   }
 
   displayAddAnnouncements() {
-    if (Meteor.user() !== null && Meteor.user().profile.leader === this.props.clubs.name) {
+    if (Meteor.user() !== null && this.props.clubs.leader.includes(Meteor.user().username)) {
       return (
       <AutoForm ref={ref => { this.fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, this.fRef)}>
         <h2>Make an Announcement!</h2>
@@ -144,6 +147,15 @@ class ClubPage extends React.Component {
     return null;
   }
 
+  displayLeaders() {
+    let result = this.props.clubs.leader[0];
+    for (let i = 1; i < this.props.clubs.leader.length; i++) {
+      result += `, ${this.props.clubs.leader[i]}`;
+    }
+    console.log(result);
+    return result;
+  }
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state;
@@ -164,22 +176,24 @@ class ClubPage extends React.Component {
                size="medium"/>
             <Header className="name">{this.props.clubs.name}</Header>
             {Meteor.user() ? <Button color={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
-                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }}
+                 content={Meteor.user().profile.clubs.joined.includes(this.props.clubs.name) ?
                 'Leave Club' : 'Join'} onClick={() => this.toggleJoin(this.props.clubs.name)}/> :
             <Button as={NavLink} exact to={''} style={{ marginLeft: '1.5em' }} content={'Join'}/>}
 
             {Meteor.user() ? <Button color={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
-                'red' : 'blue'} style={{ marginLeft: '1.5em' }} content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
+                'red' : 'blue'} style={{ marginLeft: '1.5em' }}
+                 content={Meteor.user().profile.clubs.favorite.includes(this.props.clubs.name) ?
                 'Unfavorite' : 'Favorite'} onClick={() => this.toggleFavorite(this.props.clubs.name)}/> :
             <Button as={NavLink} style={{ marginLeft: '1.5em' }} exact to={''} content={'Favorite'}/>}
 
             <h2 className="heading">Leader</h2>
-            <h3 style={{ marginLeft: '1.5em' }}>{this.props.clubs.leader}</h3>
+            <h3 style={{ marginLeft: '1.5em' }}>{this.displayLeaders()}</h3>
             <h4 style={{ marginLeft: '1.5em' }}>{this.props.clubs.email}</h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className="heading">Our Website</Header>
-            <h4 style={{ marginLeft: '1.5em' }}><a target="_blank" rel='noopener noreferrer' href={`//${this.props.clubs.website.toString()}`}>
-              {this.props.clubs.website}</a></h4>
+            <h4 style={{ marginLeft: '1.5em' }}><a target="_blank" rel='noopener noreferrer'
+             href={`//${this.props.clubs.website.toString()}`}>{this.props.clubs.website}</a></h4>
             <hr style={{ marginLeft: '1em' }}/>
             <Header className={'heading'}>Interests</Header>
             <List bulleted className="list">

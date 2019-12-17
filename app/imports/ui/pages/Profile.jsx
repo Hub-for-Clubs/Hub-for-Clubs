@@ -36,7 +36,6 @@ class Profile extends React.Component {
     const tempThis = this;
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
-          // eslint-disable-next-line max-len
           { $set: { 'profile.interests': interests.filter(function (value) { return value !== interest; }) } });
       tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };
@@ -122,7 +121,7 @@ class Profile extends React.Component {
                   </Grid.Column>
                 </Grid>
               </Form>
-              <Header style={{ marginLeft: "1em" }} className="name">{this.props.user.username}</Header>
+              <Header style={{ marginLeft: '1em' }} className="name">{this.props.user.username}</Header>
               <Header className="heading">Interests</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
@@ -142,8 +141,7 @@ class Profile extends React.Component {
                     </datalist>
                   </Grid.Column>
                   <Grid.Column>
-                    <Form.Button style={{ marginLeft: '2em' }}
-                            type='submit'>Submit</Form.Button>
+                    <Form.Button style={{ marginLeft: '2em' }} type='submit'>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
               </Form>) : ''}
