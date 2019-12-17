@@ -36,7 +36,6 @@ class Profile extends React.Component {
     const tempThis = this;
     return function () {
       Meteor.users.update({ _id: Meteor.userId() },
-          // eslint-disable-next-line max-len
           { $set: { 'profile.interests': interests.filter(function (value) { return value !== interest; }) } });
       tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };

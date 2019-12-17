@@ -79,7 +79,6 @@ class ClubPage extends React.Component {
     let index = Meteor.user().profile.clubs.favorite.indexOf(name);
     if (index !== -1) {
       Meteor.users.update({ _id: Meteor.userId() },
-          // eslint-disable-next-line eqeqeq
           { $set: { 'profile.clubs.favorite': Meteor.user().profile.clubs.favorite.filter((club) => club !== name) } });
     } else {
       Meteor.users.update({ _id: Meteor.userId() },
