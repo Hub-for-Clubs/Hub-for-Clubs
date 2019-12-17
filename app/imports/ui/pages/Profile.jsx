@@ -122,7 +122,7 @@ class Profile extends React.Component {
                   </Grid.Column>
                 </Grid>
               </Form>
-              <Header style={{ marginLeft: "1em" }} className="name">{this.props.user.username}</Header>
+              <Header style={{ marginLeft: "1em" }} className="name"> {Meteor.user()._id === this.props.user._id ? 'My Profile:\n' + this.props.user.username : this.props.user.username}</Header>
               <Header className="heading">Interests</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
