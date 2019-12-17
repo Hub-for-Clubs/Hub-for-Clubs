@@ -7,14 +7,14 @@
   "defaultAccounts": [
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "N/A", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": ["Accounting Club at UH Manoa"],
-      "favorite": ["Accounting Club at UH Manoa"],
+      "favorite": [],
       "banned": []
     }, "interests": ["Academic"], "majors": ["Computer Science"],
       "newUser": false
     },
     { "username": "bar","email": "bar@foo.com", "password": "changeme", "image": "N/A", "leader": "Academy for Creative Media Student Association", "clubs" : {
       "joined": ["Academy for Creative Media Student Association"],
-      "favorite": ["Academy for Creative Media Student Association"],
+      "favorite": [],
       "banned": []
     }, "interests": [], "majors": ["Visual Design"],
       "newUser": false

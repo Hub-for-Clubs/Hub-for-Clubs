@@ -6,14 +6,14 @@ import { Roles } from 'meteor/alanning:roles';
 
 function createUser(username, email, password, image, role, leader, clubs, interests, majors, newUser) {
   console.log(`Creating user: ${interests}`);
-  // eslint-disable-next-line no-param-reassign
-  if (image === 'N/A') image = 'images/empty-profile.png';
+  let tempImage = image;
+  if (tempImage === 'N/A') tempImage = 'images/empty-profile.png';
   const userID = Accounts.createUser({
     username: username,
     email: email,
     password: password,
     profile: {
-      image: image,
+      image: tempImage,
       leader: leader,
       clubs: clubs,
       interests: interests,

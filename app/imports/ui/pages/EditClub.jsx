@@ -41,13 +41,13 @@ class EditClub extends React.Component {
                 <TextField label='Club Acronym' name='subname'/>
                 <TextField label='Club Image Link' name='image'/>
                 <LongTextField label={'Club Description'} name='description'/>
-                <TextField label='Club Leader' name='leader'/>
+                <HiddenField name='leader'/>
                 <TextField label='Club Leader Email' name='email'/>
                 <TextField label='Club Website' name='website'/>
                 <Button primary type={'submit'} content={'Update Info'} value='Submit'/>
 
                 <Button secondary style={{ float: 'right' }} as={NavLink}
-                  exact to={`/clubpage/${this.props.club._id}`} content={'Back to club Page'}/>
+                  exact to={`/clubpage/${this.props.club._id}`} content={'Back to Club Page'}/>
 
                 <ErrorsField/>
                 <HiddenField name='name' />

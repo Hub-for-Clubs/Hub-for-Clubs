@@ -1,17 +1,9 @@
 import { Meteor } from 'meteor/meteor';
-import { Stuffs } from '../../api/stuff/Stuff.js';
+import { Accounts } from 'meteor/accounts-base';
 import { Announcements } from '../../api/announcement/Announcements';
 import { Interests } from '../../api/interest/Interest';
 import { Clubs } from '../../api/club/Club';
 import { Majors } from '../../api/major/Major';
-
-/* eslint-disable no-console */
-
-/** Initialize the database with a default data document. */
-function addData(data) {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
-  Stuffs.insert(data);
-}
 
 function addAnnouncements(data) {
   console.log(`  Adding: ${data.title} (${data.owner})`);
@@ -26,20 +18,31 @@ function addInterest(data) {
 
 function addClub(data) {
   console.log(`  Adding: ${data.name}`);
+  // eslint-disable-next-line no-param-reassign
+  data.leader = [data.leader, 'admin'];
   Clubs.insert(data);
+  try {
+    Accounts.createUser({
+      username: data.leader[0],
+      email: data.email,
+      password: 'changeme',
+      profile: {
+        image: 'images/empty-profile.png',
+        leader: '',
+        clubs: { joined: [data.name], favorite: [], banned: [] },
+        interests: [],
+        majors: [],
+      },
+    });
+  } catch (e) {
+    console.log(e);
+    // Do not create second account for users that already exist
+  }
 }
 
 function addMajor(data) {
   console.log(`  Adding: ${data.name}`);
   Majors.insert(data);
-}
-
-/** Initialize the collection if empty. */
-if (Stuffs.find().count() === 0) {
-  if (Meteor.settings.defaultData) {
-    console.log('Creating default data.');
-    Meteor.settings.defaultData.map(data => addData(data));
-  }
 }
 
 /** Initialize the collection if empty. */
@@ -66,10 +69,10 @@ if (Interests.find().count() === 0) {
   }
 }
 
-if (Majors.find().count() === 0) {
-  console.log('Creating default majors');
-  const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
-  if (majorJSON !== 0) {
-    majorJSON.map(data => addMajor(data));
-  }
-}
+// if (Majors.find().count() === 0) {
+//   console.log('Creating default majors');
+//   const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;
+//   if (majorJSON !== 0) {
+//     majorJSON.map(data => addMajor(data));
+//   }
+// }
