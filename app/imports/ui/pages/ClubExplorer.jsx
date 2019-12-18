@@ -71,7 +71,8 @@ class ClubExplorer extends React.Component {
                   </Form>
                 {this.props.interests.map((interest, index) => <Menu.Item key={index}
                                  style={{ color: this.state.selectedTags.includes(interest.name) ? 'green' : 'black' }}
-                                 content={ this.state.selectedTags.includes(interest.name) ? <div>{interest.name} <Icon name={'check'}/></div> : interest.name }
+                                 content={ this.state.selectedTags.includes(interest.name) ? <div>{interest.name}
+                                 <Icon name={'check'}/></div> : interest.name }
                                  onClick={() => this.selectTag(interest.name)}/>)}
                 </Segment>
               </Menu>
