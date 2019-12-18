@@ -1,7 +1,8 @@
 import React from 'react';
-import { Header, Image, Card } from 'semantic-ui-react';
+import { Header, Image, Card, Loader } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
 import { ClubCard } from '../components/ClubCard';
 
@@ -10,14 +11,17 @@ import { ClubCard } from '../components/ClubCard';
  */
 class Landing extends React.Component {
   render() {
+    if (!this.props.ready) {
+      return <Loader active>Getting data</Loader>;
+    }
     const results = [];
     for (let i = 0; i < 3; i++) {
-      console.log(Clubs.find({}).fetch());
-      const found = Clubs.find({}).fetch()[Math.floor(Math.random() * Clubs.find({}).fetch().length)];
+      const found = this.props.clubs[Math.floor(Math.random() * this.props.clubs.length)];
       if (!results.includes(found)) {
         results.push(found);
       }
     }
+    console.log(results);
     return (
         <div className="landing-body">
           <div className="img-background">
@@ -49,6 +53,11 @@ class Landing extends React.Component {
     );
   }
 }
+
+Landing.propTypes = {
+  ready: PropTypes.bool.isRequired,
+  clubs: PropTypes.array.isRequired,
+};
 
 export default withTracker(() => {
   // Get access to Stuff documents.

@@ -348,6 +348,21 @@
         "Associated Students at JABSOM",
         "Atherton YMCA",
         "Athletic Training Student Society",
+        "Baha'i Association at UH Manoa",
+        "Baptist College Ministries",
+        "Cru",
+        "Every Nation Campus Pearlside",
+        "Intervarsity Christian Fellowship",
+        "Jehowah's Witnesses at the University of Hawai'i - Manoa",
+        "Kanoa",
+        "Living Stone Chinese Christian Fellowship",
+        "Na Koa",
+        "Reformed University Fellowship",
+        "The Elohist Club at UH",
+        "The Navigators",
+        "Transcendental Meditation Club",
+        "Wesley Foundation @ UH Manoa",
+        "Younglife",
         "Belly Dance Raqs- Manoa",
         "Best Buddies Hawaii-UH Manoa/SAAC Chapter",
         "Beta Alpha Psi, Delta Theta Chapter",
@@ -594,7 +609,8 @@
         "The Pre-Dental Association at the University of Hawaii at Manoa",
         "Ultrasound Interest Group at JABSOM",
         "Wilderness Medicine Hawaii",
-        "Women's Interest Group at JABSOM"
+        "Women's Interest Group at JABSOM",
+        "Narrative Medicine Interest Group"
       ]
     },
     {
@@ -727,26 +743,6 @@
       ]
     },
     {
-      "name":"Social",
-      "associated_clubs":[
-        "Baha'i Association at UH Manoa",
-        "Baptist College Ministries",
-        "Cru",
-        "Every Nation Campus Pearlside",
-        "Intervarsity Christian Fellowship",
-        "Jehowah's Witnesses at the University of Hawai'i - Manoa",
-        "Kanoa",
-        "Living Stone Chinese Christian Fellowship",
-        "Na Koa",
-        "Reformed University Fellowship",
-        "The Elohist Club at UH",
-        "The Navigators",
-        "Transcendental Meditation Club",
-        "Wesley Foundation @ UH Manoa",
-        "Younglife"
-      ]
-    },
-    {
       "name":"Chemistry",
       "associated_clubs":[
         "Chemistry Club"
@@ -789,12 +785,6 @@
       "name":"Recreation",
       "associated_clubs":[
         "Hawaii African Dance and Drum Club RIO at UHM"
-      ]
-    },
-    {
-      "name":"Medical",
-      "associated_clubs":[
-        "Narrative Medicine Interest Group"
       ]
     },
     {
