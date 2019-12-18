@@ -40,7 +40,7 @@ class Landing extends React.Component {
             </Header>
           </div>
           <div className='card-layout'>
-            <Card.Group centered style={{ marginTop: '-4%', marginBottom: '-2%' }}>
+            <Card.Group centered style={{ marginTop: '-4%' }}>
               {results.map((result, index) => <ClubCard key={index} club={result}/>)}
             </Card.Group>
           </div>
