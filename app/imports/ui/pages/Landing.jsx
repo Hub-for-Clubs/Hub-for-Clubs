@@ -12,6 +12,7 @@ class Landing extends React.Component {
   render() {
     const results = [];
     for (let i = 0; i < 3; i++) {
+      console.log(Clubs.find({}).fetch());
       const found = Clubs.find({}).fetch()[Math.floor(Math.random() * Clubs.find({}).fetch().length)];
       if (!results.includes(found)) {
         results.push(found);
@@ -40,7 +41,7 @@ class Landing extends React.Component {
             </Header>
           </div>
           <div className='card-layout'>
-            <Card.Group centered style={{ marginTop: '-4%' }}>
+            <Card.Group centered style={{ marginTop: '10%' }}>
               {results.map((result, index) => <ClubCard key={index} club={result}/>)}
             </Card.Group>
           </div>
