@@ -54,7 +54,7 @@ body, html {margin:0; padding:0}
 
 /*
 
-  For: Sign Up Page
+  For: Landing Page
   Notes: Front Page for Unregistered Users
 
 */
@@ -62,6 +62,23 @@ body, html {margin:0; padding:0}
 .signup {
   font-family: "Lora", sans-serif;
   height: 100vh;
+}
+
+.signup-form {
+  background-image: url("https://mediadc.brightspotcdn.com/dims4/default/5445204/2147483647/strip/true/crop/2290x1321+0+0/resize/2290x1321!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F49%2Fed%2F1a04aae447a2b1ff03e6fe15d5c0%2Funiversity-of-hawaii-manoa.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.signup-format {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.1);
+  z-index: 3;
 }
 
 .signup .background {
@@ -121,6 +138,39 @@ body, html {margin:0; padding:0}
   margin: 3em 1em !important;
 }
 
+
+/*
+  For: Landing Page
+ */
+
+.foreground_box_signup {
+  position: absolute;
+  background: #49EEAF;
+  width: 800px;
+  height: 500px;
+  top: 15%;
+  left: 32%;
+  border-radius: 5px;
+  box-shadow: 10px 19px 40px rgba(0, 0, 0, .1);
+  z-index: 2;
+}
+
+.foreground_box_signup .heading{
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+.signup-input {
+  background: #49EEAF;
+  width: 80%;
+  color: #359B74;
+  border: none;
+}
+
+
 /*
 
   For: Sign In Page
@@ -139,6 +189,7 @@ body, html {margin:0; padding:0}
   height: 100vh;
   position: relative;
 }
+
 /* Sign in general */
 .signin .p {
   font-family: "Open Sans", sans-serif;
@@ -169,7 +220,7 @@ body, html {margin:0; padding:0}
 .signin .form .input {
   background: #49EEAF;
   width: 65%;
-  color: #359B74 ;
+  color: #359B74;
   border: none;
   padding: 9px;
   margin: 5px -1em !important;
@@ -206,30 +257,6 @@ body, html {margin:0; padding:0}
 }
 
 /* Annoucement Board */
-
-.announcementBoard-image {
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  background: rgb(27,111,78);
-  background-size: 400% 400%;
-  background: linear-gradient(0deg, rgba(27,111,78,1) 18%, rgba(20,163,118,1) 46%, rgba(45,196,153,1) 71%, rgba(61,209,167,1) 99%);
-  animation: gradientBG 15s ease infinite !important;
-}
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
 
 .announcementBoard-header {
   padding-top: 20px;

@@ -148,12 +148,15 @@ class ClubPage extends React.Component {
   }
 
   displayLeaders() {
-    let result = this.props.clubs.leader[0];
-    for (let i = 1; i < this.props.clubs.leader.length; i++) {
-      result += `, ${this.props.clubs.leader[i]}`;
+    if (Array.isArray(this.props.clubs.leader)) {
+      let result = this.props.clubs.leader[0];
+      for (let i = 1; i < this.props.clubs.leader.length; i++) {
+        result += `, ${this.props.clubs.leader[i]}`;
+      }
+      console.log(result);
+      return result;
     }
-    console.log(result);
-    return result;
+    return this.props.clubs.leader;
   }
 
   /** Render the page once subscriptions have been received. */

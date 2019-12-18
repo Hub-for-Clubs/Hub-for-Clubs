@@ -21,6 +21,7 @@ class Landing extends React.Component {
         results.push(found);
       }
     }
+    console.log(results);
     return (
         <div className="landing-body">
           <div className="img-background">
@@ -44,10 +45,8 @@ class Landing extends React.Component {
             </Header>
           </div>
           <div className='card-layout'>
-            <Card.Group centered style={{ marginTop: '10%' }}>
-              {console.log(results)}
+            <Card.Group centered style={{ marginTop: '-4%' }}>
               {results.map((result, index) => <ClubCard key={index} club={result}/>)}
-              {console.log('why')}
             </Card.Group>
           </div>
         </div>

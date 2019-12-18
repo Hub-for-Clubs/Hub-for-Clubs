@@ -77,6 +77,7 @@ class ClubExplorer extends React.Component {
               </Menu>
             </Grid.Column>
             <Grid.Column width={12} relaxed>
+              <div className="grid-bg">
               {
                 <Card.Group centered stretched relaxed fluid itemsPerRow={5}>
                   {display.map((club, index) => this.getCard(club, index))}
@@ -84,6 +85,7 @@ class ClubExplorer extends React.Component {
               }
               {this.state.pageNumber > 0 ? <Button onClick={this.previousPage}>Back</Button> : null}
               {(this.state.pageNumber + 1) * 12 < size ? <Button onClick={this.nextPage}>Next</Button> : null}
+              </div>
             </Grid.Column>
             </Grid>
         </div>

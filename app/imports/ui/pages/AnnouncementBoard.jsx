@@ -35,7 +35,7 @@ class AnnouncementBoard extends React.Component {
     <div className="announcementBoard-image">
       <Container>
         <div className="announcementBoard-header">
-          <Header as="h2" textAlign="center" inverted>List Announcements</Header>
+          <Header as="h2" textAlign="center" color='black'>Announcement Board</Header>
         </div>
         <Card.Group centered style={{ marginBottom: '1em', marginTop: '1em' }}>
           {announcements.map((announcement, index) => <AnnouncementPost key={index} announcement={announcement}/>)}
