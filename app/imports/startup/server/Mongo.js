@@ -69,8 +69,6 @@ if (Interests.find().count() === 0) {
   }
 }
 
-console.log()
-
 if (Majors.find().count() === 0) {
   console.log('Creating default majors');
   const majorJSON = JSON.parse(Assets.getText('Majors.json')).Majors;

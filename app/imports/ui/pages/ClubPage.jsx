@@ -8,6 +8,7 @@ import swal from 'sweetalert';
 import TextField from 'uniforms-semantic/TextField';
 import LongTextField from 'uniforms-semantic/LongTextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
+import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import SimpleSchema from 'simpl-schema';
@@ -26,7 +27,7 @@ const formSchema = new SimpleSchema({
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClubPage extends React.Component {
 
-  state = { activeItem: 'About-Us' };
+  state = { activeItem: 'About-Us', club: null };
 
   handleMenuClick = (e, { name }) => { this.setState({ activeItem: name }); };
 
@@ -39,8 +40,8 @@ class ClubPage extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const { title, description } = data;
+    const club = Clubs.findOne(this.props.id).name;
     const owner = Meteor.user().username;
-    const club = Meteor.user().profile.leader;
     const date = new Date();
     Announcements.insert({ title, description, owner, club, date },
         (error) => {
@@ -153,7 +154,6 @@ class ClubPage extends React.Component {
       for (let i = 1; i < this.props.clubs.leader.length; i++) {
         result += `, ${this.props.clubs.leader[i]}`;
       }
-      console.log(result);
       return result;
     }
     return this.props.clubs.leader;
@@ -161,6 +161,9 @@ class ClubPage extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    if (!this.state.club) {
+      this.setState({ club: this.props.clubs });
+    }
     const { activeItem } = this.state;
     const image = 'https://pbs.twimg.com/profile_images/1052001602628857856/AGtSZNoO_400x400.jpg';
     if (this.props.clubs === undefined) {
@@ -168,7 +171,6 @@ class ClubPage extends React.Component {
         <h1>ERROR 404: Yo put in something that exists</h1>
       );
     }
-
     return (
       <div className="profile">
         <Grid>
@@ -205,7 +207,7 @@ class ClubPage extends React.Component {
           </Grid.Column>
 
           <Grid.Column width={12} className="club_info">
-            {Meteor.user() && Meteor.user().profile.leader === this.props.clubs.name ?
+            {Meteor.user() && this.props.clubs.leader.includes(Meteor.user().username) ?
               <Button as={NavLink} exact to={`/editclub/${this.props.clubs._id}`} content={'Manage Club Info'}/> : ''}
             <Menu pointing secondary>
               <Menu.Item name="About-Us" active={activeItem === 'About-Us'} onClick={this.handleMenuClick}/>
@@ -232,6 +234,7 @@ ClubPage.propTypes = {
   ready: PropTypes.bool.isRequired,
   users: PropTypes.array.isRequired,
   announcements: PropTypes.array.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -248,6 +251,7 @@ export default withTracker(({ match }) => {
     interests: Interests.find({}).fetch(),
     majors: Majors.find({}).fetch(),
     clubs: Clubs.findOne({ _id: documentId }),
+    id: documentId,
     announcements: Announcements.find({}).fetch(),
     users: Meteor.users.find({}).fetch(),
     ready: interests_sub.ready() && majors_sub.ready() && clubs_sub.ready() && announcements_sub.ready() &&
