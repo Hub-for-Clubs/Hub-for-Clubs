@@ -1,7 +1,8 @@
 import React from 'react';
-import { Header, Image, Card } from 'semantic-ui-react';
+import { Header, Image, Card, Loader } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
 import { ClubCard } from '../components/ClubCard';
 
@@ -10,9 +11,12 @@ import { ClubCard } from '../components/ClubCard';
  */
 class Landing extends React.Component {
   render() {
+    if (!this.props.ready) {
+      return <Loader active>Getting data</Loader>;
+    }
     const results = [];
     for (let i = 0; i < 3; i++) {
-      const found = Clubs.find({}).fetch()[Math.floor(Math.random() * Clubs.find({}).fetch().length)];
+      const found = this.props.clubs[Math.floor(Math.random() * this.props.clubs.length)];
       if (!results.includes(found)) {
         results.push(found);
       }
@@ -41,13 +45,20 @@ class Landing extends React.Component {
           </div>
           <div className='card-layout'>
             <Card.Group centered style={{ marginTop: '10%' }}>
+              {console.log(results)}
               {results.map((result, index) => <ClubCard key={index} club={result}/>)}
+              {console.log('why')}
             </Card.Group>
           </div>
         </div>
     );
   }
 }
+
+Landing.propTypes = {
+  ready: PropTypes.bool.isRequired,
+  clubs: PropTypes.array.isRequired,
+};
 
 export default withTracker(() => {
   // Get access to Stuff documents.

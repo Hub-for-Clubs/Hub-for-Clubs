@@ -55,7 +55,7 @@ class ClubExplorer extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    let display = Clubs.find({}).fetch().filter((club) => (this.doesClubMatchInterest(club)));
+    let display = this.props.clubs.filter((club) => (this.doesClubMatchInterest(club)));
     display = display.filter((club) => club.name.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1);
     const size = display.length;
     display = display.filter((club, i) => i >= this.state.pageNumber * 12 && i < (this.state.pageNumber + 1) * 12);
@@ -69,7 +69,7 @@ class ClubExplorer extends React.Component {
                     <Form.Input onChange={this.handleChange} name='search'
                                 className='icon' icon='search' placeholder='Search...' />
                   </Form>
-                {Interests.find({}).fetch().map((interest, index) => <Menu.Item key={index}
+                {this.props.interests.map((interest, index) => <Menu.Item key={index}
                                  style={{ color: this.state.selectedTags.includes(interest.name) ? 'green' : 'black' }}
                                  content={ this.state.selectedTags.includes(interest.name) ? <div>{interest.name} <Icon name={'check'}/></div> : interest.name }
                                  onClick={() => this.selectTag(interest.name)}/>)}
@@ -94,6 +94,8 @@ class ClubExplorer extends React.Component {
 /** Require an array of Stuff documents in the props. */
 ClubExplorer.propTypes = {
   ready: PropTypes.bool.isRequired,
+  clubs: PropTypes.array.isRequired,
+  interests: PropTypes.array.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
