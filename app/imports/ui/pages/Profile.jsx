@@ -41,15 +41,7 @@ class Profile extends React.Component {
       tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };
   };
-
-  /* eslint-env browser */
-  swalTutorial = () => {
-    if (document.cookie.indexOf('returning = true') === -1) {
-      swal('Good job!', 'You clicked the button!', 'success');
-      document.cookie = 'returning = true';
-    }
-  }
-
+  
   removeMajor = (major) => {
     const majors = this.state.majors;
     const tempThis = this;
