@@ -3,6 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { Image, Loader, Grid, Header, List, Menu, Card, Form, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import swal from 'sweetalert';
 import ClubCard from '../components/ClubCard';
 import { Announcements } from '../../api/announcement/Announcements';
 import { Interests } from '../../api/interest/Interest';
@@ -40,6 +41,14 @@ class Profile extends React.Component {
       tempThis.setState({ interests: interests.filter((value) => value !== interest) });
     };
   };
+
+  /* eslint-env browser */
+  swalTutorial = () => {
+    if (document.cookie.indexOf('returning = true') === -1) {
+      swal('Good job!', 'You clicked the button!', 'success');
+      document.cookie = 'returning = true';
+    }
+  }
 
   removeMajor = (major) => {
     const majors = this.state.majors;
@@ -116,17 +125,19 @@ class Profile extends React.Component {
                       onChange={this.handleChange}/>
                   </Grid.Column>
                   <Grid.Column width = {10}>
-                    <Form.Button style={{ marginLeft: '2em' }}
-                                 type='submit'>Submit</Form.Button>
+                    <Form.Button primary style={{ marginLeft: '2em' }}
+                                 type='submit' onClick={this.swalTutorial}>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
               </Form>
               <Header style={{ marginLeft: '1em' }} className="name">{this.props.user.username}</Header>
+              <Header style={{ marginLeft: '1em' }} className="name"> {Meteor.user()._id === this.props.user._id ?
+                  'My Profile:\n' + this.props.user.username : this.props.user.username}</Header>
               <Header className="heading">Interests</Header>
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.props.user.profile.interests.map((interest, index) => (<List.Item key={index}>{interest} <Button style={{ marginLeft: '3em' }} size={'mini'} content='Remove' onClick={this.removeInterest(interest)}/></List.Item>))}
+                {this.props.user.profile.interests.map((interest, index) => (<List.Item key={index}>{interest} <Button secondary style={{ marginLeft: '3em' }} size={'mini'} content='Remove' onClick={this.removeInterest(interest)}/></List.Item>))}
               </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleInterestSubmit}>
                 <Grid columns={2}>
@@ -142,6 +153,8 @@ class Profile extends React.Component {
                   </Grid.Column>
                   <Grid.Column>
                     <Form.Button style={{ marginLeft: '2em' }} type='submit'>Submit</Form.Button>
+                    <Form.Button primary style={{ marginLeft: '2em' }}
+                            type='submit'>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
               </Form>) : ''}
@@ -149,7 +162,7 @@ class Profile extends React.Component {
               <hr style={{ marginLeft: '1em' }}/>
               <List bulleted className="list">
                 {/* eslint-disable-next-line max-len */}
-                {this.state.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}<Button style={{ marginLeft: '1em' }} size={'mini'} content='Remove' onClick={this.removeMajor(major)}/></List.Item>)}
+                {this.state.majors.map((major, index) => <List.Item key={index} onClick={this.removeMajor(major)}>{major}<Button secondary style={{ marginLeft: '1em' }} size={'mini'} content='Remove' onClick={this.removeMajor(major)}/></List.Item>)}
               </List>
               {Meteor.user()._id === this.props.user._id ? (<Form onSubmit={this.handleMajorSubmit}>
                 <Grid columns={2}>
@@ -166,7 +179,7 @@ class Profile extends React.Component {
                     </div>
                   </Grid.Column>
                   <Grid.Column>
-                    <Form.Button style={{ marginLeft: '2em' }}
+                    <Form.Button primary style={{ marginLeft: '2em' }}
                             type='submit'>Submit</Form.Button>
                   </Grid.Column>
                 </Grid>
