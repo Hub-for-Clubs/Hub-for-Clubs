@@ -1,9 +1,4 @@
 {
-  "galaxy.meteor.com": {
-    "env": {
-      "MONGO_URL": "mongodb+srv://admin:lilykoi1@cluster0-r2giz.mongodb.net/test?retryWrites=true&w=majority"
-    }
-  },
   "defaultAccounts": [
     { "username": "admin","email": "admin@foo.com", "password": "changeme", "image": "N/A", "role": "admin", "leader": "Accounting Club at UH Manoa", "clubs": {
       "joined": ["Accounting Club at UH Manoa"],
